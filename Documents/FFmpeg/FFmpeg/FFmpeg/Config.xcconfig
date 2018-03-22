@@ -1,0 +1,36 @@
+//
+//  Config.xcconfig
+//  FFmpeg
+//
+//  Created by NamPH on 3/16/17.
+//  Copyright © 2017 dev. All rights reserved.
+//
+// Intermediate build files go here
+PROJECT_TEMP_DIR = $(SRCROOT)/build/$(PROJECT_NAME).build
+
+// Build-related files for the active build configuration go here
+CONFIGURATION_BUILD_DIR = $(SRCROOT)/build/$CONFIGURATION
+
+// The final product executables and other build products go here
+BUILT_PRODUCTS_DIR = $(SRCROOT)/build/$CONFIGURATION
+
+BUILD_DIR = $(SRCROOT)/FFmpeg/build/$CONFIGURATION
+
+//BUILD_DIR="${BUILD_DIR}"
+BUILD_ROOT=${BUILD_ROOT}
+CONFIGURATION_BUILD_DIR=$CONFIGURATION_BUILD_DIR
+OBJROOT=$OBJROOT
+SYMROOT=${SYMROOT}
+VALID_ARCHS="i386 x86_64 armv7 armv7s arm64"
+
+//Sample for Pod
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Alamofire" "$PODS_CONFIGURATION_BUILD_DIR/Stripe"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Stripe/Stripe.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "Stripe"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

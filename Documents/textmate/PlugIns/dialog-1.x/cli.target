@@ -1,0 +1,5 @@
+TARGET_NAME   = tm_dialog
+SOURCES       = tm_dialog.mm
+FRAMEWORKS    = Foundation
+FLAGS        += -DCOMPILE_DATE=\"`date +%Y-%m-%d`\"
+

@@ -1,0 +1,19 @@
+***************
+*** 168,173 ****
+      uint8_t SWFHash[RTMP_SWF_HASHLEN];
+      char SWFVerificationResponse[RTMP_SWF_HASHLEN+10];
+  #endif
+    } RTMP_LNK;
+  
+    /* state for read() wrapper */
+--- 168,177 ----
+      uint8_t SWFHash[RTMP_SWF_HASHLEN];
+      char SWFVerificationResponse[RTMP_SWF_HASHLEN+10];
+  #endif
++ #ifndef NO_RTV_ADDONS
++     AVal akUserid;
++     AVal akPass;
++ #endif
+    } RTMP_LNK;
+  
+    /* state for read() wrapper */

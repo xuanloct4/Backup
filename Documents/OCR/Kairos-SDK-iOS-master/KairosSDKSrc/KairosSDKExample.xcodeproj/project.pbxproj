@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07AA7CCE18D22D2F00C24A69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7CCD18D22D2F00C24A69 /* Foundation.framework */; };
+		07AA7CD018D22D2F00C24A69 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7CCF18D22D2F00C24A69 /* CoreGraphics.framework */; };
+		07AA7CD218D22D2F00C24A69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7CD118D22D2F00C24A69 /* UIKit.framework */; };
+		07AA7CD818D22D2F00C24A69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07AA7CD618D22D2F00C24A69 /* InfoPlist.strings */; };
+		07AA7CDA18D22D2F00C24A69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AA7CD918D22D2F00C24A69 /* main.m */; };
+		07AA7CDE18D22D2F00C24A69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AA7CDD18D22D2F00C24A69 /* AppDelegate.m */; };
+		07AA7CE118D22D2F00C24A69 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AA7CDF18D22D2F00C24A69 /* Main_iPhone.storyboard */; };
+		07AA7CE418D22D2F00C24A69 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AA7CE218D22D2F00C24A69 /* Main_iPad.storyboard */; };
+		07AA7CE718D22D2F00C24A69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AA7CE618D22D2F00C24A69 /* ViewController.m */; };
+		07AA7CE918D22D2F00C24A69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AA7CE818D22D2F00C24A69 /* Images.xcassets */; };
+		07AA7CF018D22D2F00C24A69 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7CEF18D22D2F00C24A69 /* XCTest.framework */; };
+		07AA7CF118D22D2F00C24A69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7CCD18D22D2F00C24A69 /* Foundation.framework */; };
+		07AA7CF218D22D2F00C24A69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7CD118D22D2F00C24A69 /* UIKit.framework */; };
+		07AA7CFA18D22D2F00C24A69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07AA7CF818D22D2F00C24A69 /* InfoPlist.strings */; };
+		07AA7CFC18D22D2F00C24A69 /* KairosSDKExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AA7CFB18D22D2F00C24A69 /* KairosSDKExampleTests.m */; };
+		07AA7D4318D22E4100C24A69 /* libKairosSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7D3D18D22DD100C24A69 /* libKairosSDK.a */; };
+		07DAD05B1981EB6200FA3048 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DAD05A1981EB6200FA3048 /* AVFoundation.framework */; };
+		07DAD05E1981EB6700FA3048 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DAD05D1981EB6700FA3048 /* CoreImage.framework */; };
+		07DAD0601981EB6C00FA3048 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DAD05F1981EB6C00FA3048 /* CoreMedia.framework */; };
+		07DAD0661982E45200FA3048 /* liz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07DAD0651982E45200FA3048 /* liz.jpg */; };
+		07EF7D43198405AD00C8EC47 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF7D42198405AD00C8EC47 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07AA7CF318D22D2F00C24A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AA7CC218D22D2F00C24A69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AA7CC918D22D2F00C24A69;
+			remoteInfo = KairosSDKExample;
+		};
+		07AA7D3C18D22DD100C24A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AA7D3718D22DD000C24A69 /* KairosSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07AA7D0E18D22DD000C24A69;
+			remoteInfo = KairosSDK;
+		};
+		07AA7D3E18D22DD100C24A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AA7D3718D22DD000C24A69 /* KairosSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07AA7D1E18D22DD000C24A69;
+			remoteInfo = KairosSDKTests;
+		};
+		07AA7D4118D22E2D00C24A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AA7D3718D22DD000C24A69 /* KairosSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AA7D0D18D22DD000C24A69;
+			remoteInfo = KairosSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07AA7CCA18D22D2F00C24A69 /* KairosSDKExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KairosSDKExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AA7CCD18D22D2F00C24A69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07AA7CCF18D22D2F00C24A69 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07AA7CD118D22D2F00C24A69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07AA7CD518D22D2F00C24A69 /* KairosSDKExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KairosSDKExample-Info.plist"; sourceTree = "<group>"; };
+		07AA7CD718D22D2F00C24A69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07AA7CD918D22D2F00C24A69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07AA7CDB18D22D2F00C24A69 /* KairosSDKExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KairosSDKExample-Prefix.pch"; sourceTree = "<group>"; };
+		07AA7CDC18D22D2F00C24A69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07AA7CDD18D22D2F00C24A69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07AA7CE018D22D2F00C24A69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		07AA7CE318D22D2F00C24A69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		07AA7CE518D22D2F00C24A69 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		07AA7CE618D22D2F00C24A69 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07AA7CE818D22D2F00C24A69 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07AA7CEE18D22D2F00C24A69 /* KairosSDKExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KairosSDKExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AA7CEF18D22D2F00C24A69 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		07AA7CF718D22D2F00C24A69 /* KairosSDKExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KairosSDKExampleTests-Info.plist"; sourceTree = "<group>"; };
+		07AA7CF918D22D2F00C24A69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07AA7CFB18D22D2F00C24A69 /* KairosSDKExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KairosSDKExampleTests.m; sourceTree = "<group>"; };
+		07AA7D3718D22DD000C24A69 /* KairosSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KairosSDK.xcodeproj; path = KairosSDK/KairosSDK.xcodeproj; sourceTree = "<group>"; };
+		07DAD05A1981EB6200FA3048 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07DAD05D1981EB6700FA3048 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		07DAD05F1981EB6C00FA3048 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		07DAD0651982E45200FA3048 /* liz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = liz.jpg; sourceTree = "<group>"; };
+		07EF7D42198405AD00C8EC47 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07AA7CC718D22D2F00C24A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EF7D43198405AD00C8EC47 /* AudioToolbox.framework in Frameworks */,
+				07DAD0601981EB6C00FA3048 /* CoreMedia.framework in Frameworks */,
+				07DAD05E1981EB6700FA3048 /* CoreImage.framework in Frameworks */,
+				07DAD05B1981EB6200FA3048 /* AVFoundation.framework in Frameworks */,
+				07AA7D4318D22E4100C24A69 /* libKairosSDK.a in Frameworks */,
+				07AA7CD018D22D2F00C24A69 /* CoreGraphics.framework in Frameworks */,
+				07AA7CD218D22D2F00C24A69 /* UIKit.framework in Frameworks */,
+				07AA7CCE18D22D2F00C24A69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AA7CEB18D22D2F00C24A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA7CF018D22D2F00C24A69 /* XCTest.framework in Frameworks */,
+				07AA7CF218D22D2F00C24A69 /* UIKit.framework in Frameworks */,
+				07AA7CF118D22D2F00C24A69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07AA7CC118D22D2F00C24A69 = {
+			isa = PBXGroup;
+			children = (
+				07AA7CD318D22D2F00C24A69 /* KairosSDKExample */,
+				07AA7CF518D22D2F00C24A69 /* KairosSDKExampleTests */,
+				07AA7CCC18D22D2F00C24A69 /* Frameworks */,
+				07AA7CCB18D22D2F00C24A69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07AA7CCB18D22D2F00C24A69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7CCA18D22D2F00C24A69 /* KairosSDKExample.app */,
+				07AA7CEE18D22D2F00C24A69 /* KairosSDKExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AA7CCC18D22D2F00C24A69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07EF7D42198405AD00C8EC47 /* AudioToolbox.framework */,
+				07DAD05F1981EB6C00FA3048 /* CoreMedia.framework */,
+				07DAD05D1981EB6700FA3048 /* CoreImage.framework */,
+				07DAD05A1981EB6200FA3048 /* AVFoundation.framework */,
+				07AA7D3718D22DD000C24A69 /* KairosSDK.xcodeproj */,
+				07AA7CCD18D22D2F00C24A69 /* Foundation.framework */,
+				07AA7CCF18D22D2F00C24A69 /* CoreGraphics.framework */,
+				07AA7CD118D22D2F00C24A69 /* UIKit.framework */,
+				07AA7CEF18D22D2F00C24A69 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07AA7CD318D22D2F00C24A69 /* KairosSDKExample */ = {
+			isa = PBXGroup;
+			children = (
+				07DAD0651982E45200FA3048 /* liz.jpg */,
+				07AA7CDC18D22D2F00C24A69 /* AppDelegate.h */,
+				07AA7CDD18D22D2F00C24A69 /* AppDelegate.m */,
+				07AA7CDF18D22D2F00C24A69 /* Main_iPhone.storyboard */,
+				07AA7CE218D22D2F00C24A69 /* Main_iPad.storyboard */,
+				07AA7CE518D22D2F00C24A69 /* ViewController.h */,
+				07AA7CE618D22D2F00C24A69 /* ViewController.m */,
+				07AA7CE818D22D2F00C24A69 /* Images.xcassets */,
+				07AA7CD418D22D2F00C24A69 /* Supporting Files */,
+			);
+			path = KairosSDKExample;
+			sourceTree = "<group>";
+		};
+		07AA7CD418D22D2F00C24A69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7CD518D22D2F00C24A69 /* KairosSDKExample-Info.plist */,
+				07AA7CD618D22D2F00C24A69 /* InfoPlist.strings */,
+				07AA7CD918D22D2F00C24A69 /* main.m */,
+				07AA7CDB18D22D2F00C24A69 /* KairosSDKExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07AA7CF518D22D2F00C24A69 /* KairosSDKExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7CFB18D22D2F00C24A69 /* KairosSDKExampleTests.m */,
+				07AA7CF618D22D2F00C24A69 /* Supporting Files */,
+			);
+			path = KairosSDKExampleTests;
+			sourceTree = "<group>";
+		};
+		07AA7CF618D22D2F00C24A69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7CF718D22D2F00C24A69 /* KairosSDKExampleTests-Info.plist */,
+				07AA7CF818D22D2F00C24A69 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07AA7D3818D22DD000C24A69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7D3D18D22DD100C24A69 /* libKairosSDK.a */,
+				07AA7D3F18D22DD100C24A69 /* KairosSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07AA7CC918D22D2F00C24A69 /* KairosSDKExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AA7CFF18D22D2F00C24A69 /* Build configuration list for PBXNativeTarget "KairosSDKExample" */;
+			buildPhases = (
+				07AA7CC618D22D2F00C24A69 /* Sources */,
+				07AA7CC718D22D2F00C24A69 /* Frameworks */,
+				07AA7CC818D22D2F00C24A69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AA7D4218D22E2D00C24A69 /* PBXTargetDependency */,
+			);
+			name = KairosSDKExample;
+			productName = KairosSDKExample;
+			productReference = 07AA7CCA18D22D2F00C24A69 /* KairosSDKExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07AA7CED18D22D2F00C24A69 /* KairosSDKExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AA7D0218D22D2F00C24A69 /* Build configuration list for PBXNativeTarget "KairosSDKExampleTests" */;
+			buildPhases = (
+				07AA7CEA18D22D2F00C24A69 /* Sources */,
+				07AA7CEB18D22D2F00C24A69 /* Frameworks */,
+				07AA7CEC18D22D2F00C24A69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AA7CF418D22D2F00C24A69 /* PBXTargetDependency */,
+			);
+			name = KairosSDKExampleTests;
+			productName = KairosSDKExampleTests;
+			productReference = 07AA7CEE18D22D2F00C24A69 /* KairosSDKExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07AA7CC218D22D2F00C24A69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Kairos;
+				TargetAttributes = {
+					07AA7CC918D22D2F00C24A69 = {
+						DevelopmentTeam = EXR8AK87DX;
+					};
+					07AA7CED18D22D2F00C24A69 = {
+						TestTargetID = 07AA7CC918D22D2F00C24A69;
+					};
+				};
+			};
+			buildConfigurationList = 07AA7CC518D22D2F00C24A69 /* Build configuration list for PBXProject "KairosSDKExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07AA7CC118D22D2F00C24A69;
+			productRefGroup = 07AA7CCB18D22D2F00C24A69 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 07AA7D3818D22DD000C24A69 /* Products */;
+					ProjectRef = 07AA7D3718D22DD000C24A69 /* KairosSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				07AA7CC918D22D2F00C24A69 /* KairosSDKExample */,
+				07AA7CED18D22D2F00C24A69 /* KairosSDKExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		07AA7D3D18D22DD100C24A69 /* libKairosSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKairosSDK.a;
+			remoteRef = 07AA7D3C18D22DD100C24A69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		07AA7D3F18D22DD100C24A69 /* KairosSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KairosSDKTests.xctest;
+			remoteRef = 07AA7D3E18D22DD100C24A69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07AA7CC818D22D2F00C24A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA7CE418D22D2F00C24A69 /* Main_iPad.storyboard in Resources */,
+				07AA7CE918D22D2F00C24A69 /* Images.xcassets in Resources */,
+				07AA7CE118D22D2F00C24A69 /* Main_iPhone.storyboard in Resources */,
+				07AA7CD818D22D2F00C24A69 /* InfoPlist.strings in Resources */,
+				07DAD0661982E45200FA3048 /* liz.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AA7CEC18D22D2F00C24A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA7CFA18D22D2F00C24A69 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07AA7CC618D22D2F00C24A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA7CE718D22D2F00C24A69 /* ViewController.m in Sources */,
+				07AA7CDE18D22D2F00C24A69 /* AppDelegate.m in Sources */,
+				07AA7CDA18D22D2F00C24A69 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AA7CEA18D22D2F00C24A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA7CFC18D22D2F00C24A69 /* KairosSDKExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07AA7CF418D22D2F00C24A69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AA7CC918D22D2F00C24A69 /* KairosSDKExample */;
+			targetProxy = 07AA7CF318D22D2F00C24A69 /* PBXContainerItemProxy */;
+		};
+		07AA7D4218D22E2D00C24A69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KairosSDK;
+			targetProxy = 07AA7D4118D22E2D00C24A69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07AA7CD618D22D2F00C24A69 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AA7CD718D22D2F00C24A69 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07AA7CDF18D22D2F00C24A69 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AA7CE018D22D2F00C24A69 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		07AA7CE218D22D2F00C24A69 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AA7CE318D22D2F00C24A69 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		07AA7CF818D22D2F00C24A69 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AA7CF918D22D2F00C24A69 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07AA7CFD18D22D2F00C24A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07AA7CFE18D22D2F00C24A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07AA7D0018D22D2F00C24A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = EXR8AK87DX;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KairosSDKExample/KairosSDKExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/KairosSDK/",
+				);
+				INFOPLIST_FILE = "KairosSDKExample/KairosSDKExample-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07AA7D0118D22D2F00C24A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = EXR8AK87DX;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KairosSDKExample/KairosSDKExample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/KairosSDK/",
+				);
+				INFOPLIST_FILE = "KairosSDKExample/KairosSDKExample-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		07AA7D0318D22D2F00C24A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KairosSDKExample.app/KairosSDKExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KairosSDKExample/KairosSDKExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KairosSDKExampleTests/KairosSDKExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		07AA7D0418D22D2F00C24A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KairosSDKExample.app/KairosSDKExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KairosSDKExample/KairosSDKExample-Prefix.pch";
+				INFOPLIST_FILE = "KairosSDKExampleTests/KairosSDKExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07AA7CC518D22D2F00C24A69 /* Build configuration list for PBXProject "KairosSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AA7CFD18D22D2F00C24A69 /* Debug */,
+				07AA7CFE18D22D2F00C24A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AA7CFF18D22D2F00C24A69 /* Build configuration list for PBXNativeTarget "KairosSDKExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AA7D0018D22D2F00C24A69 /* Debug */,
+				07AA7D0118D22D2F00C24A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AA7D0218D22D2F00C24A69 /* Build configuration list for PBXNativeTarget "KairosSDKExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AA7D0318D22D2F00C24A69 /* Debug */,
+				07AA7D0418D22D2F00C24A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07AA7CC218D22D2F00C24A69 /* Project object */;
+}

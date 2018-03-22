@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>inqvz@fucnxbifxv.pbz</string>
+	<key>contactName</key>
+	<string>Vadim Shpakovski</string>
+	<key>description</key>
+	<string>Themes and Grammars for SyntaxMate</string>
+	<key>isDisabled</key>
+	<false/>
+	<key>name</key>
+	<string>SyntaxMate</string>
+	<key>uuid</key>
+	<string>9A12CF7B-6B0B-4C4B-944F-642308A33B34</string>
+</dict>
+</plist>

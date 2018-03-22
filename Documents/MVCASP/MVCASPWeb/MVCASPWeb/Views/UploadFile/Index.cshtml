@@ -1,0 +1,47 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table class="table">
+    <tr>
+        <th>
+         Files & Folders
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(Path.GetFileName(item), "DownloadFile", "UploadFile", new { filepath = item.ToString() }, null)
+            </td>
+            <td id="@Path.GetFileName(item)">
+             Delete
+            </td>
+            <td>
+          Revert
+            </td>
+            <td >
+         @Html.ActionLink("Confirm", "Delete", "UploadFile", new { filepath = item.ToString() }, null)
+            </td>
+        </tr>
+    }
+    </table>
+
+<script>
+
+
+</script>
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <label for="file1">Filename:</label>
+        <input type="file" multiple="multiple" name="files" id="file1" size="100" />
+
+        <label for="file2">Filename:</label>
+        <input type="file" name="files" id="file2" />
+
+        <input type="submit" />
+    </form>

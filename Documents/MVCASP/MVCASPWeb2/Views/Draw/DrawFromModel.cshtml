@@ -1,0 +1,92 @@
+﻿@model Model
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>DrawFromModel</title>
+</head>
+<body>
+    <div id="myBox">
+    </div>
+
+
+
+    <script>
+        window.onkeyup = function (e) {
+            var key = e.keyCode ? e.keyCode : e.which;
+               console.log(key);
+        }
+
+
+        index = 0;
+        addChildElement("canvas", "myCanvas", "myBox", "300", "300", "position:relative;border:1px solid #c3c3c3;");
+        //drawCanvas("myCanvas");
+        drawArc("myCanvas", 100, 100, 100, 0, 1.5);
+        document.getElementById("myCanvas").addEventListener("click", click)
+        //document.getElementById("myCanvas").addEventListener("mouseover", click)
+        //document.getElementById("myCanvas").addEventListener("mouseout", click)
+        function click() {
+            index = index + 1;
+            id = "myCanvas" + index.toString();
+            console.log(id);
+            console.log(index);
+            addChildElement("canvas", id, "myBox", "600", "600", "position:relative;border:1px solid #c3c3c3;");
+            drawArc(id, 100, 300, 200, 0.5, 1);
+            document.getElementById(id).addEventListener("click", click);
+            //console.log("you have click");
+        }
+
+        //addChildElement("canvas", "myCanvas1", "myBox", "200", "200", "position:absolute;border:1px solid #c3c3c3;left:200px");
+        //drawCanvas("myCanvas1")
+
+        function addChildElement(tag, id, parentId, width, height, style) {
+            var node = document.createElement(tag);
+            node.setAttribute("id", id);
+            node.setAttribute("width", width);
+            node.setAttribute("height", height);
+            node.setAttribute("style", style);
+            document.getElementById(parentId).appendChild(node);
+        }
+
+
+        function drawArc(canvasId, radius, centerX, centerY, startAngle, endAngle) {
+            var canvas = document.getElementById(canvasId);
+            var ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, startAngle, endAngle * Math.PI);
+            ctx.fillStyle = 'gray';
+            ctx.fill();
+        }
+
+        function drawCanvas(canvasId) {
+            var canvas = document.getElementById(canvasId);
+            var ctx = canvas.getContext("2d");
+
+            var radius = 300;
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2, canvas.height / 2, radius, 0, 2 * Math.PI);
+            ctx.fillStyle = 'gray';
+            ctx.fill();
+            grad = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, radius * 0.95, canvas.width / 2, canvas.height / 2, radius * 1.05);
+            // grad = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+            grad.addColorStop(0, '#333');
+            grad.addColorStop(0.5, 'white');
+            grad.addColorStop(1, '#333');
+            ctx.strokeStyle = grad;
+            ctx.lineWidth = radius * 0.1;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2, canvas.height / 2, radius * 0.1, 0, 2 * Math.PI);
+            ctx.fillStyle = '#333';
+            ctx.fill();
+        }
+    </script>
+</body>
+</html>

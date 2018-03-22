@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0721D6B01985AE450062A301 /* KAR_NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0721D6AF1985AE450062A301 /* KAR_NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07256B8F18D26241008F9BAA /* KR_AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B7D18D26241008F9BAA /* KR_AFHTTPClient.m */; };
+		07256B9018D26241008F9BAA /* KR_AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B7F18D26241008F9BAA /* KR_AFHTTPRequestOperation.m */; };
+		07256B9118D26241008F9BAA /* KR_AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8118D26241008F9BAA /* KR_AFImageRequestOperation.m */; };
+		07256B9218D26241008F9BAA /* KR_AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8318D26241008F9BAA /* KR_AFJSONRequestOperation.m */; };
+		07256B9318D26241008F9BAA /* KR_AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8518D26241008F9BAA /* KR_AFNetworkActivityIndicatorManager.m */; };
+		07256B9418D26241008F9BAA /* KR_AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8818D26241008F9BAA /* KR_AFPropertyListRequestOperation.m */; };
+		07256B9518D26241008F9BAA /* KR_AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8A18D26241008F9BAA /* KR_AFURLConnectionOperation.m */; };
+		07256B9618D26241008F9BAA /* KR_AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8C18D26241008F9BAA /* KR_AFXMLRequestOperation.m */; };
+		07256B9718D26241008F9BAA /* UIImageView+KR_AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8E18D26241008F9BAA /* UIImageView+KR_AFNetworking.m */; };
+		0762B1AA18D3687B00D7A0CB /* KairosSDKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0762B1A918D3687B00D7A0CB /* KairosSDKViewController.m */; };
+		0762B1AE18D36D9D00D7A0CB /* KairosSDKCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0762B1AD18D36D9D00D7A0CB /* KairosSDKCore.m */; };
+		0762B1B118D370C300D7A0CB /* KairosSDKCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 0762B1B018D370C300D7A0CB /* KairosSDKCommon.m */; };
+		07AA7D1218D22DD000C24A69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7D1118D22DD000C24A69 /* Foundation.framework */; };
+		07AA7D1718D22DD000C24A69 /* KairosSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 07AA7D1618D22DD000C24A69 /* KairosSDK.h */; };
+		07AA7D1918D22DD000C24A69 /* KairosSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AA7D1818D22DD000C24A69 /* KairosSDK.m */; };
+		07AA7D2018D22DD000C24A69 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7D1F18D22DD000C24A69 /* XCTest.framework */; };
+		07AA7D2118D22DD000C24A69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7D1118D22DD000C24A69 /* Foundation.framework */; };
+		07AA7D2318D22DD000C24A69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7D2218D22DD000C24A69 /* UIKit.framework */; };
+		07AA7D2618D22DD000C24A69 /* libKairosSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AA7D0E18D22DD000C24A69 /* libKairosSDK.a */; };
+		07AA7D2C18D22DD000C24A69 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07AA7D2A18D22DD000C24A69 /* InfoPlist.strings */; };
+		07AA7D2E18D22DD000C24A69 /* KairosSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AA7D2D18D22DD000C24A69 /* KairosSDKTests.m */; };
+		07DAD04019819E6B00FA3048 /* KR_AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B7D18D26241008F9BAA /* KR_AFHTTPClient.m */; };
+		07DAD0411981A07F00FA3048 /* KR_AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B7F18D26241008F9BAA /* KR_AFHTTPRequestOperation.m */; };
+		07DAD0421981A08200FA3048 /* KR_AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8118D26241008F9BAA /* KR_AFImageRequestOperation.m */; };
+		07DAD0431981A08400FA3048 /* KR_AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8318D26241008F9BAA /* KR_AFJSONRequestOperation.m */; };
+		07DAD0441981A08600FA3048 /* KR_AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8518D26241008F9BAA /* KR_AFNetworkActivityIndicatorManager.m */; };
+		07DAD0451981A08C00FA3048 /* KR_AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8818D26241008F9BAA /* KR_AFPropertyListRequestOperation.m */; };
+		07DAD0461981A08F00FA3048 /* KR_AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8A18D26241008F9BAA /* KR_AFURLConnectionOperation.m */; };
+		07DAD0471981A09100FA3048 /* KR_AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8C18D26241008F9BAA /* KR_AFXMLRequestOperation.m */; };
+		07DAD0481981A09400FA3048 /* UIImageView+KR_AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 07256B8E18D26241008F9BAA /* UIImageView+KR_AFNetworking.m */; };
+		07DAD04D1981DDDB00FA3048 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DAD04C1981DDDB00FA3048 /* CoreGraphics.framework */; };
+		07DAD0501981DE2500FA3048 /* KairosSDKFaceFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAD04E1981DE2500FA3048 /* KairosSDKFaceFrame.m */; };
+		07DAD0531981DE3800FA3048 /* KairosSDKFrameMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAD0511981DE3800FA3048 /* KairosSDKFrameMovement.m */; };
+		07DAD0551981E0D800FA3048 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DAD0541981E0D800FA3048 /* AVFoundation.framework */; };
+		07DAD0571981E0EB00FA3048 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DAD0561981E0EB00FA3048 /* CoreImage.framework */; };
+		07DAD0591981E12400FA3048 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07DAD0581981E12400FA3048 /* CoreMedia.framework */; };
+		07DAD0631981ED1500FA3048 /* KairosSDKConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07DAD0611981ED1500FA3048 /* KairosSDKConfigManager.m */; };
+		07EF7D411984057800C8EC47 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EF7D401984057800C8EC47 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07AA7D2418D22DD000C24A69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AA7D0618D22DD000C24A69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AA7D0D18D22DD000C24A69;
+			remoteInfo = KairosSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		07AA7D0C18D22DD000C24A69 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				07AA7D1718D22DD000C24A69 /* KairosSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0721D6AC1985ABE70062A301 /* KARShutterSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KARShutterSound.h; sourceTree = "<group>"; };
+		0721D6AE1985AE450062A301 /* KAR_NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KAR_NSData+Base64.h"; sourceTree = "<group>"; };
+		0721D6AF1985AE450062A301 /* KAR_NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KAR_NSData+Base64.m"; sourceTree = "<group>"; };
+		07256B7C18D26241008F9BAA /* KR_AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFHTTPClient.h; sourceTree = "<group>"; };
+		07256B7D18D26241008F9BAA /* KR_AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KR_AFHTTPClient.m; sourceTree = "<group>"; };
+		07256B7E18D26241008F9BAA /* KR_AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		07256B7F18D26241008F9BAA /* KR_AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KR_AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		07256B8018D26241008F9BAA /* KR_AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFImageRequestOperation.h; sourceTree = "<group>"; };
+		07256B8118D26241008F9BAA /* KR_AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KR_AFImageRequestOperation.m; sourceTree = "<group>"; };
+		07256B8218D26241008F9BAA /* KR_AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		07256B8318D26241008F9BAA /* KR_AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KR_AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		07256B8418D26241008F9BAA /* KR_AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		07256B8518D26241008F9BAA /* KR_AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KR_AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		07256B8618D26241008F9BAA /* KR_AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFNetworking.h; sourceTree = "<group>"; };
+		07256B8718D26241008F9BAA /* KR_AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		07256B8818D26241008F9BAA /* KR_AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KR_AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		07256B8918D26241008F9BAA /* KR_AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		07256B8A18D26241008F9BAA /* KR_AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KR_AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		07256B8B18D26241008F9BAA /* KR_AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KR_AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		07256B8C18D26241008F9BAA /* KR_AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KR_AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		07256B8D18D26241008F9BAA /* UIImageView+KR_AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+KR_AFNetworking.h"; sourceTree = "<group>"; };
+		07256B8E18D26241008F9BAA /* UIImageView+KR_AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+KR_AFNetworking.m"; sourceTree = "<group>"; };
+		0762B1A818D3687B00D7A0CB /* KairosSDKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KairosSDKViewController.h; sourceTree = "<group>"; };
+		0762B1A918D3687B00D7A0CB /* KairosSDKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KairosSDKViewController.m; sourceTree = "<group>"; };
+		0762B1AC18D36D9D00D7A0CB /* KairosSDKCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KairosSDKCore.h; sourceTree = "<group>"; };
+		0762B1AD18D36D9D00D7A0CB /* KairosSDKCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KairosSDKCore.m; sourceTree = "<group>"; };
+		0762B1AF18D370C300D7A0CB /* KairosSDKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KairosSDKCommon.h; sourceTree = "<group>"; };
+		0762B1B018D370C300D7A0CB /* KairosSDKCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KairosSDKCommon.m; sourceTree = "<group>"; };
+		07AA7D0E18D22DD000C24A69 /* libKairosSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKairosSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AA7D1118D22DD000C24A69 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07AA7D1518D22DD000C24A69 /* KairosSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KairosSDK-Prefix.pch"; sourceTree = "<group>"; };
+		07AA7D1618D22DD000C24A69 /* KairosSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KairosSDK.h; sourceTree = "<group>"; };
+		07AA7D1818D22DD000C24A69 /* KairosSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KairosSDK.m; sourceTree = "<group>"; };
+		07AA7D1E18D22DD000C24A69 /* KairosSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KairosSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AA7D1F18D22DD000C24A69 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		07AA7D2218D22DD000C24A69 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		07AA7D2918D22DD000C24A69 /* KairosSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KairosSDKTests-Info.plist"; sourceTree = "<group>"; };
+		07AA7D2B18D22DD000C24A69 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07AA7D2D18D22DD000C24A69 /* KairosSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KairosSDKTests.m; sourceTree = "<group>"; };
+		07DAD03F1981912400FA3048 /* KairosSDKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KairosSDKConstants.h; sourceTree = "<group>"; };
+		07DAD04C1981DDDB00FA3048 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07DAD04E1981DE2500FA3048 /* KairosSDKFaceFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KairosSDKFaceFrame.m; sourceTree = "<group>"; };
+		07DAD04F1981DE2500FA3048 /* KairosSDKFaceFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KairosSDKFaceFrame.h; sourceTree = "<group>"; };
+		07DAD0511981DE3800FA3048 /* KairosSDKFrameMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KairosSDKFrameMovement.m; sourceTree = "<group>"; };
+		07DAD0521981DE3800FA3048 /* KairosSDKFrameMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KairosSDKFrameMovement.h; sourceTree = "<group>"; };
+		07DAD0541981E0D800FA3048 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		07DAD0561981E0EB00FA3048 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		07DAD0581981E12400FA3048 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		07DAD0611981ED1500FA3048 /* KairosSDKConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KairosSDKConfigManager.m; sourceTree = "<group>"; };
+		07DAD0621981ED1500FA3048 /* KairosSDKConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KairosSDKConfigManager.h; sourceTree = "<group>"; };
+		07EF7D401984057800C8EC47 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07AA7D0B18D22DD000C24A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EF7D411984057800C8EC47 /* AudioToolbox.framework in Frameworks */,
+				07DAD0591981E12400FA3048 /* CoreMedia.framework in Frameworks */,
+				07DAD0571981E0EB00FA3048 /* CoreImage.framework in Frameworks */,
+				07DAD0551981E0D800FA3048 /* AVFoundation.framework in Frameworks */,
+				07DAD04D1981DDDB00FA3048 /* CoreGraphics.framework in Frameworks */,
+				07AA7D1218D22DD000C24A69 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AA7D1B18D22DD000C24A69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA7D2018D22DD000C24A69 /* XCTest.framework in Frameworks */,
+				07AA7D2318D22DD000C24A69 /* UIKit.framework in Frameworks */,
+				07AA7D2118D22DD000C24A69 /* Foundation.framework in Frameworks */,
+				07AA7D2618D22DD000C24A69 /* libKairosSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0721D6AD1985AE310062A301 /* KAR_Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				0721D6AE1985AE450062A301 /* KAR_NSData+Base64.h */,
+				0721D6AF1985AE450062A301 /* KAR_NSData+Base64.m */,
+			);
+			name = KAR_Base64;
+			sourceTree = "<group>";
+		};
+		0721D7031985C6F00062A301 /* Engine Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0762B1AC18D36D9D00D7A0CB /* KairosSDKCore.h */,
+				0762B1AD18D36D9D00D7A0CB /* KairosSDKCore.m */,
+				07DAD0611981ED1500FA3048 /* KairosSDKConfigManager.m */,
+				07DAD0621981ED1500FA3048 /* KairosSDKConfigManager.h */,
+				07DAD0511981DE3800FA3048 /* KairosSDKFrameMovement.m */,
+				07DAD0521981DE3800FA3048 /* KairosSDKFrameMovement.h */,
+				07DAD04E1981DE2500FA3048 /* KairosSDKFaceFrame.m */,
+				07DAD04F1981DE2500FA3048 /* KairosSDKFaceFrame.h */,
+				0762B1A818D3687B00D7A0CB /* KairosSDKViewController.h */,
+				0762B1A918D3687B00D7A0CB /* KairosSDKViewController.m */,
+			);
+			name = "Engine Classes";
+			sourceTree = "<group>";
+		};
+		0721D7041985C7150062A301 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0762B1AF18D370C300D7A0CB /* KairosSDKCommon.h */,
+				0762B1B018D370C300D7A0CB /* KairosSDKCommon.m */,
+				07DAD03F1981912400FA3048 /* KairosSDKConstants.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		07256B7B18D26241008F9BAA /* KR_AFNetworking_1.3.1 */ = {
+			isa = PBXGroup;
+			children = (
+				07256B7C18D26241008F9BAA /* KR_AFHTTPClient.h */,
+				07256B7D18D26241008F9BAA /* KR_AFHTTPClient.m */,
+				07256B7E18D26241008F9BAA /* KR_AFHTTPRequestOperation.h */,
+				07256B7F18D26241008F9BAA /* KR_AFHTTPRequestOperation.m */,
+				07256B8018D26241008F9BAA /* KR_AFImageRequestOperation.h */,
+				07256B8118D26241008F9BAA /* KR_AFImageRequestOperation.m */,
+				07256B8218D26241008F9BAA /* KR_AFJSONRequestOperation.h */,
+				07256B8318D26241008F9BAA /* KR_AFJSONRequestOperation.m */,
+				07256B8418D26241008F9BAA /* KR_AFNetworkActivityIndicatorManager.h */,
+				07256B8518D26241008F9BAA /* KR_AFNetworkActivityIndicatorManager.m */,
+				07256B8618D26241008F9BAA /* KR_AFNetworking.h */,
+				07256B8718D26241008F9BAA /* KR_AFPropertyListRequestOperation.h */,
+				07256B8818D26241008F9BAA /* KR_AFPropertyListRequestOperation.m */,
+				07256B8918D26241008F9BAA /* KR_AFURLConnectionOperation.h */,
+				07256B8A18D26241008F9BAA /* KR_AFURLConnectionOperation.m */,
+				07256B8B18D26241008F9BAA /* KR_AFXMLRequestOperation.h */,
+				07256B8C18D26241008F9BAA /* KR_AFXMLRequestOperation.m */,
+				07256B8D18D26241008F9BAA /* UIImageView+KR_AFNetworking.h */,
+				07256B8E18D26241008F9BAA /* UIImageView+KR_AFNetworking.m */,
+			);
+			path = KR_AFNetworking_1.3.1;
+			sourceTree = "<group>";
+		};
+		07AA7D0518D22DD000C24A69 = {
+			isa = PBXGroup;
+			children = (
+				07AA7D1318D22DD000C24A69 /* KairosSDK */,
+				07AA7D2718D22DD000C24A69 /* KairosSDKTests */,
+				07AA7D1018D22DD000C24A69 /* Frameworks */,
+				07AA7D0F18D22DD000C24A69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07AA7D0F18D22DD000C24A69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7D0E18D22DD000C24A69 /* libKairosSDK.a */,
+				07AA7D1E18D22DD000C24A69 /* KairosSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AA7D1018D22DD000C24A69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07EF7D401984057800C8EC47 /* AudioToolbox.framework */,
+				07DAD0581981E12400FA3048 /* CoreMedia.framework */,
+				07DAD0561981E0EB00FA3048 /* CoreImage.framework */,
+				07DAD0541981E0D800FA3048 /* AVFoundation.framework */,
+				07DAD04C1981DDDB00FA3048 /* CoreGraphics.framework */,
+				07AA7D1118D22DD000C24A69 /* Foundation.framework */,
+				07AA7D1F18D22DD000C24A69 /* XCTest.framework */,
+				07AA7D2218D22DD000C24A69 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07AA7D1318D22DD000C24A69 /* KairosSDK */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7D1618D22DD000C24A69 /* KairosSDK.h */,
+				07AA7D1818D22DD000C24A69 /* KairosSDK.m */,
+				0721D7041985C7150062A301 /* Common */,
+				0721D7031985C6F00062A301 /* Engine Classes */,
+				0721D6AD1985AE310062A301 /* KAR_Base64 */,
+				07256B7B18D26241008F9BAA /* KR_AFNetworking_1.3.1 */,
+				07AA7D1418D22DD000C24A69 /* Supporting Files */,
+				0721D6AC1985ABE70062A301 /* KARShutterSound.h */,
+			);
+			path = KairosSDK;
+			sourceTree = "<group>";
+		};
+		07AA7D1418D22DD000C24A69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7D1518D22DD000C24A69 /* KairosSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07AA7D2718D22DD000C24A69 /* KairosSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7D2D18D22DD000C24A69 /* KairosSDKTests.m */,
+				07AA7D2818D22DD000C24A69 /* Supporting Files */,
+			);
+			path = KairosSDKTests;
+			sourceTree = "<group>";
+		};
+		07AA7D2818D22DD000C24A69 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AA7D2918D22DD000C24A69 /* KairosSDKTests-Info.plist */,
+				07AA7D2A18D22DD000C24A69 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07AA7D0D18D22DD000C24A69 /* KairosSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AA7D3118D22DD000C24A69 /* Build configuration list for PBXNativeTarget "KairosSDK" */;
+			buildPhases = (
+				07AA7D0A18D22DD000C24A69 /* Sources */,
+				07AA7D0B18D22DD000C24A69 /* Frameworks */,
+				07AA7D0C18D22DD000C24A69 /* CopyFiles */,
+				07EF7D491984166400C8EC47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KairosSDK;
+			productName = KairosSDK;
+			productReference = 07AA7D0E18D22DD000C24A69 /* libKairosSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		07AA7D1D18D22DD000C24A69 /* KairosSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AA7D3418D22DD000C24A69 /* Build configuration list for PBXNativeTarget "KairosSDKTests" */;
+			buildPhases = (
+				07AA7D1A18D22DD000C24A69 /* Sources */,
+				07AA7D1B18D22DD000C24A69 /* Frameworks */,
+				07AA7D1C18D22DD000C24A69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AA7D2518D22DD000C24A69 /* PBXTargetDependency */,
+			);
+			name = KairosSDKTests;
+			productName = KairosSDKTests;
+			productReference = 07AA7D1E18D22DD000C24A69 /* KairosSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07AA7D0618D22DD000C24A69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KR;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Kairos;
+			};
+			buildConfigurationList = 07AA7D0918D22DD000C24A69 /* Build configuration list for PBXProject "KairosSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07AA7D0518D22DD000C24A69;
+			productRefGroup = 07AA7D0F18D22DD000C24A69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07AA7D0D18D22DD000C24A69 /* KairosSDK */,
+				07AA7D1D18D22DD000C24A69 /* KairosSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07AA7D1C18D22DD000C24A69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AA7D2C18D22DD000C24A69 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EF7D491984166400C8EC47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07AA7D0A18D22DD000C24A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DAD0471981A09100FA3048 /* KR_AFXMLRequestOperation.m in Sources */,
+				07DAD0531981DE3800FA3048 /* KairosSDKFrameMovement.m in Sources */,
+				07DAD0501981DE2500FA3048 /* KairosSDKFaceFrame.m in Sources */,
+				07DAD0451981A08C00FA3048 /* KR_AFPropertyListRequestOperation.m in Sources */,
+				07DAD04019819E6B00FA3048 /* KR_AFHTTPClient.m in Sources */,
+				0762B1AA18D3687B00D7A0CB /* KairosSDKViewController.m in Sources */,
+				07DAD0431981A08400FA3048 /* KR_AFJSONRequestOperation.m in Sources */,
+				07DAD0441981A08600FA3048 /* KR_AFNetworkActivityIndicatorManager.m in Sources */,
+				07DAD0481981A09400FA3048 /* UIImageView+KR_AFNetworking.m in Sources */,
+				07AA7D1918D22DD000C24A69 /* KairosSDK.m in Sources */,
+				0762B1AE18D36D9D00D7A0CB /* KairosSDKCore.m in Sources */,
+				07DAD0461981A08F00FA3048 /* KR_AFURLConnectionOperation.m in Sources */,
+				07DAD0411981A07F00FA3048 /* KR_AFHTTPRequestOperation.m in Sources */,
+				07DAD0631981ED1500FA3048 /* KairosSDKConfigManager.m in Sources */,
+				0762B1B118D370C300D7A0CB /* KairosSDKCommon.m in Sources */,
+				07DAD0421981A08200FA3048 /* KR_AFImageRequestOperation.m in Sources */,
+				0721D6B01985AE450062A301 /* KAR_NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AA7D1A18D22DD000C24A69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07256B9518D26241008F9BAA /* KR_AFURLConnectionOperation.m in Sources */,
+				07256B9718D26241008F9BAA /* UIImageView+KR_AFNetworking.m in Sources */,
+				07256B9618D26241008F9BAA /* KR_AFXMLRequestOperation.m in Sources */,
+				07256B9118D26241008F9BAA /* KR_AFImageRequestOperation.m in Sources */,
+				07256B9418D26241008F9BAA /* KR_AFPropertyListRequestOperation.m in Sources */,
+				07256B9018D26241008F9BAA /* KR_AFHTTPRequestOperation.m in Sources */,
+				07256B9318D26241008F9BAA /* KR_AFNetworkActivityIndicatorManager.m in Sources */,
+				07AA7D2E18D22DD000C24A69 /* KairosSDKTests.m in Sources */,
+				07256B9218D26241008F9BAA /* KR_AFJSONRequestOperation.m in Sources */,
+				07256B8F18D26241008F9BAA /* KR_AFHTTPClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07AA7D2518D22DD000C24A69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AA7D0D18D22DD000C24A69 /* KairosSDK */;
+			targetProxy = 07AA7D2418D22DD000C24A69 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07AA7D2A18D22DD000C24A69 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AA7D2B18D22DD000C24A69 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07AA7D2F18D22DD000C24A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07AA7D3018D22DD000C24A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07AA7D3218D22DD000C24A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/KairosSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KairosSDK/KairosSDK-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		07AA7D3318D22DD000C24A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/KairosSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KairosSDK/KairosSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		07AA7D3518D22DD000C24A69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KairosSDK/KairosSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KairosSDKTests/KairosSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		07AA7D3618D22DD000C24A69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KairosSDK/KairosSDK-Prefix.pch";
+				INFOPLIST_FILE = "KairosSDKTests/KairosSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07AA7D0918D22DD000C24A69 /* Build configuration list for PBXProject "KairosSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AA7D2F18D22DD000C24A69 /* Debug */,
+				07AA7D3018D22DD000C24A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AA7D3118D22DD000C24A69 /* Build configuration list for PBXNativeTarget "KairosSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AA7D3218D22DD000C24A69 /* Debug */,
+				07AA7D3318D22DD000C24A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AA7D3418D22DD000C24A69 /* Build configuration list for PBXNativeTarget "KairosSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AA7D3518D22DD000C24A69 /* Debug */,
+				07AA7D3618D22DD000C24A69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07AA7D0618D22DD000C24A69 /* Project object */;
+}

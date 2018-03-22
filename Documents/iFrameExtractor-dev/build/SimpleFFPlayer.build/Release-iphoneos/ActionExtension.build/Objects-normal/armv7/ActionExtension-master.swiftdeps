@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "98d9c4fd16fac4e8b8345c23980d9ed7"
+build_time: [547900185, 419892000]
+inputs:
+  "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/ActionExtension/ActionViewController.swift": [9223372036854775807, 0]

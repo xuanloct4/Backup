@@ -1,0 +1,11 @@
+prefix=/Users/pol/Source-Mercurial/iOS-Static-Libraries/iPhoneSimulator-4.2
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries
+Version: 1.0.0a
+Requires: 
+Libs: -L${libdir} -lssl -lcrypto -lz
+Cflags: -I${includedir} 

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="SimpleFFPlayer/Base.lproj/LaunchScreen.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3" build-num="8E162"/>
+    </header>
+    <body/>
+  </file>
+  <file original="SimpleFFPlayer/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3" build-num="8E162"/>
+    </header>
+    <body>
+      <trans-unit id="Mch-FH-KtW.normalTitle">
+        <source>Play</source>
+        <target>遊びます</target>
+        <note>Class = "UIButton"; normalTitle = "Play"; ObjectID = "Mch-FH-KtW";</note>
+      </trans-unit>
+      <trans-unit id="pFf-Lr-5gu.text">
+        <source>Label</source>
+        <target/>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "pFf-Lr-5gu";</note>
+      </trans-unit>
+      <trans-unit id="tmW-KG-Oqu.normalTitle">
+        <source>Time:</source>
+        <target>時間:</target>
+        <note>Class = "UIButton"; normalTitle = "Time:"; ObjectID = "tmW-KG-Oqu";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SimpleFFPlayer/Base.lproj/Streaming.storyboard" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3" build-num="8E162"/>
+    </header>
+    <body>
+      <trans-unit id="5BE-hu-rtt.normalTitle">
+        <source>Go</source>
+        <target>行こう</target>
+        <note>Class = "UIButton"; normalTitle = "Go"; ObjectID = "5BE-hu-rtt";</note>
+      </trans-unit>
+      <trans-unit id="9IJ-NK-qpK.normalTitle">
+        <source>Start</source>
+        <target>開始</target>
+        <note>Class = "UIButton"; normalTitle = "Start"; ObjectID = "9IJ-NK-qpK";</note>
+      </trans-unit>
+      <trans-unit id="B8i-Ds-Xdk.normalTitle">
+        <source>Send</source>
+        <target>送信する</target>
+        <note>Class = "UIButton"; normalTitle = "Send"; ObjectID = "B8i-Ds-Xdk";</note>
+      </trans-unit>
+      <trans-unit id="BAw-80-HtO.normalTitle">
+        <source>Start</source>
+        <target>開始</target>
+        <note>Class = "UIButton"; normalTitle = "Start"; ObjectID = "BAw-80-HtO";</note>
+      </trans-unit>
+      <trans-unit id="FMo-YY-w8d.text">
+        <source>8088</source>
+        <target>8088</target>
+        <note>Class = "UITextField"; text = "8088"; ObjectID = "FMo-YY-w8d";</note>
+      </trans-unit>
+      <trans-unit id="FtY-YJ-VGM.normalTitle">
+        <source>Time:</source>
+        <target>時間:</target>
+        <note>Class = "UIButton"; normalTitle = "Time:"; ObjectID = "FtY-YJ-VGM";</note>
+      </trans-unit>
+      <trans-unit id="GVv-9E-BAr.text">
+        <source>Label</source>
+        <target/>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "GVv-9E-BAr";</note>
+      </trans-unit>
+      <trans-unit id="NLg-Bo-sgQ.text">
+        <source>Message</source>
+        <target>メッセージ</target>
+        <note>Class = "UILabel"; text = "Message"; ObjectID = "NLg-Bo-sgQ";</note>
+      </trans-unit>
+      <trans-unit id="Q6c-7i-qzK.text">
+        <source>Hello</source>
+        <target>こんにちは</target>
+        <note>Class = "UITextField"; text = "Hello"; ObjectID = "Q6c-7i-qzK";</note>
+      </trans-unit>
+      <trans-unit id="R4s-VG-Nfl.normalTitle">
+        <source>Play</source>
+        <target>遊びます</target>
+        <note>Class = "UIButton"; normalTitle = "Play"; ObjectID = "R4s-VG-Nfl";</note>
+      </trans-unit>
+      <trans-unit id="TS4-pe-Gzs.normalTitle">
+        <source>Send</source>
+        <target>送信</target>
+        <note>Class = "UIButton"; normalTitle = "Send"; ObjectID = "TS4-pe-Gzs";</note>
+      </trans-unit>
+      <trans-unit id="VQE-zE-xG4.title">
+        <source>TCPVideoClient</source>
+        <target>TCPVideoClient</target>
+        <note>Class = "UITabBarItem"; title = "TCPVideoClient"; ObjectID = "VQE-zE-xG4";</note>
+      </trans-unit>
+      <trans-unit id="WqM-2F-QWg.title">
+        <source>Web Browser</source>
+        <target>Web Browser</target>
+        <note>Class = "UITabBarItem"; title = "Web Browser"; ObjectID = "WqM-2F-QWg";</note>
+      </trans-unit>
+      <trans-unit id="bFg-Pm-ww5.text">
+        <source>192.168.43.65</source>
+        <target>192.168.43.65</target>
+        <note>Class = "UITextField"; text = "192.168.43.65"; ObjectID = "bFg-Pm-ww5";</note>
+      </trans-unit>
+      <trans-unit id="bGB-xF-j09.text">
+        <source>192.168.43.65</source>
+        <target>192.168.43.65</target>
+        <note>Class = "UITextField"; text = "192.168.43.65"; ObjectID = "bGB-xF-j09";</note>
+      </trans-unit>
+      <trans-unit id="cQ0-vN-ism.title">
+        <source>TCPVideoServer</source>
+        <target>TCPVideoServer</target>
+        <note>Class = "UITabBarItem"; title = "TCPVideoServer"; ObjectID = "cQ0-vN-ism";</note>
+      </trans-unit>
+      <trans-unit id="dUf-Y1-Rq8.title">
+        <source>TCPSocketVC</source>
+        <target>TCPSocketVC</target>
+        <note>Class = "UITabBarItem"; title = "TCPSocketVC"; ObjectID = "dUf-Y1-Rq8";</note>
+      </trans-unit>
+      <trans-unit id="dg8-SC-iiK.text">
+        <source>192.168.43.163</source>
+        <target>192.168.43.163</target>
+        <note>Class = "UITextField"; text = "192.168.43.163"; ObjectID = "dg8-SC-iiK";</note>
+      </trans-unit>
+      <trans-unit id="f6S-t1-69S.text">
+        <source>Address</source>
+        <target>住所</target>
+        <note>Class = "UILabel"; text = "Address"; ObjectID = "f6S-t1-69S";</note>
+      </trans-unit>
+      <trans-unit id="fY6-aS-Lhm.normalTitle">
+        <source>Stop</source>
+        <target>やめる</target>
+        <note>Class = "UIButton"; normalTitle = "Stop"; ObjectID = "fY6-aS-Lhm";</note>
+      </trans-unit>
+      <trans-unit id="feH-BY-4CN.normalTitle">
+        <source>Disconnect</source>
+        <target>切断する</target>
+        <note>Class = "UIButton"; normalTitle = "Disconnect"; ObjectID = "feH-BY-4CN";</note>
+      </trans-unit>
+      <trans-unit id="hxs-az-Xut.text">
+        <source>http://www.youtube.com/watch?v=iYhqyfF6uZk&amp;t=585s</source>
+        <target>http://www.youtube.com/watch?v=iYhqyfF6uZk&amp;t=585s</target>
+        <note>Class = "UITextField"; text = "http://www.youtube.com/watch?v=iYhqyfF6uZk&amp;t=585s"; ObjectID = "hxs-az-Xut";</note>
+      </trans-unit>
+      <trans-unit id="jZH-dX-qRs.normalTitle">
+        <source>Connect</source>
+        <target>接続する</target>
+        <note>Class = "UIButton"; normalTitle = "Connect"; ObjectID = "jZH-dX-qRs";</note>
+      </trans-unit>
+      <trans-unit id="lFw-cH-CIj.text">
+        <source>Message Received:</source>
+        <target>受信したメッセージ:</target>
+        <note>Class = "UITextView"; text = "Message Received:"; ObjectID = "lFw-cH-CIj";</note>
+      </trans-unit>
+      <trans-unit id="mGL-lf-fGn.text">
+        <source>8089</source>
+        <target>8089</target>
+        <note>Class = "UITextField"; text = "8089"; ObjectID = "mGL-lf-fGn";</note>
+      </trans-unit>
+      <trans-unit id="qwX-tJ-QnY.text">
+        <source>Host</source>
+        <target>住所</target>
+        <note>Class = "UILabel"; text = "Host"; ObjectID = "qwX-tJ-QnY";</note>
+      </trans-unit>
+      <trans-unit id="uJi-fx-OD8.normalTitle">
+        <source>Stop</source>
+        <target>やめる</target>
+        <note>Class = "UIButton"; normalTitle = "Stop"; ObjectID = "uJi-fx-OD8";</note>
+      </trans-unit>
+      <trans-unit id="waB-Kw-dIS.text">
+        <source>Disconnected</source>
+        <target>切断する</target>
+        <note>Class = "UILabel"; text = "Disconnected"; ObjectID = "waB-Kw-dIS";</note>
+      </trans-unit>
+      <trans-unit id="ycZ-bu-P6h.text">
+        <source>8088</source>
+        <target>8088</target>
+        <note>Class = "UITextField"; text = "8088"; ObjectID = "ycZ-bu-P6h";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SimpleFFPlayer/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3" build-num="8E162"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SimpleFFPlayerTests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3" build-num="8E162"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="SimpleFFPlayerUITests/Info.plist" source-language="en" datatype="plaintext" target-language="ja">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="8.3" build-num="8E162"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

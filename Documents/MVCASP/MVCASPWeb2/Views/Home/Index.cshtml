@@ -1,0 +1,152 @@
+﻿@model List<MVCASPWeb.Models.TableModel>
+
+@{
+    ViewBag.Title = "Home Page";
+    ViewBag.inlinjeSrc = "<b>This is bold</b>";
+}
+<p >fvfdvdfvdf
+    @ViewBag.id</p>
+
+
+@Html.Raw(ViewBag.inlinjeSrc)
+
+
+<div class="video">
+    @*<object type="application/x-shockwave-flash" data="@Url.Content(@Model[10].imgUrl)" width="100%" height="100%" id="video_flash_api" name="video_flash_api" class="vjs-tech" style="display: block;"><param name="movie" value="vcplayer/VCPlayer.swf?r=1470112"><param name="flashvars" value="readyFunction=videojs.Flash.onReady&amp;eventProxyFunction=videojs.Flash.onEvent&amp;errorEventProxyFunction=videojs.Flash.onError&amp;autoplay=undefined&amp;preload=undefined&amp;loop=undefined&amp;muted=undefined&amp;"><param name="allowScriptAccess" value="always"><param name="allowNetworking" value="all"><param name="wmode" value="opaque"><param name="bgcolor" value="#000000"></object>*@
+    <object width="400" height="400" data="@Url.Content(@Model[10].imgUrl)"></object>
+
+ </div>
+
+<audio controls>
+    <source src="@Url.Action("MyAudio", "Audio")" type="audio/mp3" />
+    <p>Your browser does not support HTML 5 audio element</p>
+</audio>
+
+<div class="videoStream" id="videoStream2">
+    <video width="320" height="240" controls autoplay="autoplay">
+        <source src="@Url.Action("Video","Home")" type="video/mp4">
+    </video>
+</div>
+
+<button onclick="makeVideoFullScreen()">
+    Go Full Screen
+</button><br /><br />
+
+<script>
+    window.onload = function () {
+        document.getElementById('videoPlay').addEventListener('loadedmetadata', function () {
+            this.seekable.start();  // Returns the starting time (in seconds)
+            this.seekable.end();
+            this.currentTime = 80;
+            mediaElement.played.end();
+        }, false);
+    }
+
+    ////document.getElementById("videoStream1").requestFullScreen();
+    //window.onload = init;
+    //function init() {
+    //    makeVideoFullScreen();
+    //}
+   
+    function requestFullScreen(elementToRequest)
+    {
+        if(elementToRequest.requestFullScreen)
+        {
+            elementToRequest.requestFullScreen();
+        }
+        else if(elementToRequest.webkitRequestFullscreen)
+        {
+            elementToRequest.webkitRequestFullscreen();
+        }
+        else if(elementToRequest.mozRequestFullScreen)
+        {
+            elementToRequest.mozRequestFullScreen();
+        }
+        else if(elementToRequest.msRequestFullscreen)
+        {
+            elementToRequest.msRequestFullscreen();
+        }
+    }
+
+    function isFullScreenAvailable()
+    {
+        return (
+           document.fullscreenEnabled ||
+           document.webkitFullscreenEnabled ||
+           document.mozFullScreenEnabled ||
+           document.msFullscreenEnabled
+        );
+    }
+
+    function makeVideoFullScreen()
+    {
+        if (isFullScreenAvailable)
+        {
+            var videoElement = document.getElementById("videoPlay");
+            requestFullScreen(videoElement);
+            return;
+        }
+        alert("Sorry full screen is not available in this browser");
+    }
+</script>
+
+        <div>
+            <p>@ViewBag.videoUrl</p>
+            @Html.Raw(@Model[0].imgUrl)
+        </div>
+
+        <div>
+            <video width="320" height="240" controls>
+                @*<source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                        "@Url.Content(Model.VideoTable.VideoPath)"*@
+
+                @*<source src="@Url.Content(@ViewBag.videoUrl)" type="video/mp4">*@
+                <source src="@Url.Content(@Model[0].imgUrl)" type="video/mp4">
+                @*<source src="@Html.Raw(@Model[0].imgUrl)" type="video/mp4">*@
+
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+@*<td class="playVideoTD">
+    @{Html.BeginForm("Index", "Video", new { id = item.StreamID }, FormMethod.Post);}
+    <input type="submit" value="" class="playVideoIcon" />
+    @{Html.EndForm();}
+</td>*@
+ 
+<div class="playVideoDiv" id="videoStream1">
+    <video id="videoPlay" width="480" height="400" controls autoplay>
+        <source src="@Url.Action("GetVideo", "Video")" />
+    </video>
+</div>  
+
+
+
+        <div class="row"> fsvgdfvdfvd </div>  @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+        {
+            <p> sfdfgdgdf </p>
+            <input type="submit" value="Save" /> }
+        <button onclick="myFunction()">Click me</button>
+        <p id="demo"></p>
+        <div class="cart">
+             @Ajax.ActionLink("Add To Cart", "About", new { productId = "" }, new AjaxOptions() { HttpMethod = "Post" }); 
+    </div>
+        <script>
+            function myFunction(id) { @*$.ajax({
+            url: '@Url.Action("About", "Home")',
+            type: 'GET',
+            dataType: 'json',
+            cache: false,
+            data: { 'id': id },
+            success: function (results) {
+                alert(results)
+            },
+            error: function () {
+                alert('Error occured');
+            }
+        });*@  
+           @*window.location.href = '@Url.Action("Index", "Movies")';*@   
+                $.ajax({ url: '@Url.Action("About")', method: 'GET', success: function (data) { alert(data); } });
+            }
+        </script>

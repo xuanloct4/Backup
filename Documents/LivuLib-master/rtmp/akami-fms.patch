@@ -1,0 +1,203 @@
+diff -rub rtmpdump-2.3/librtmp/rtmp.c rtmpdump-2.3-new/librtmp/rtmp.c
+--- rtmpdump-2.3/librtmp/rtmp.c	2010-07-01 05:58:35.000000000 +1000
++++ rtmpdump-2.3-new/librtmp/rtmp.c	2010-08-10 09:31:35.000000000 +1000
+@@ -34,11 +34,18 @@
+ #ifdef CRYPTO
+ #ifdef USE_POLARSSL
+ #include <polarssl/havege.h>
++#include <polarssl/md5.h>
++#include <polarssl/base64.h>
++#define MD5_DIGEST_LENGTH 16
+ #elif defined(USE_GNUTLS)
+ #include <gnutls/gnutls.h>
++#include <gnutls/openssl.h>
+ #else	/* USE_OPENSSL */
+ #include <openssl/ssl.h>
+ #include <openssl/rc4.h>
++#ifndef NO_RTV_ADDONS
++#include <openssl/md5.h>
++#endif
+ #endif
+ TLS_CTX RTMP_TLS_ctx;
+ #endif
+@@ -126,6 +133,29 @@
+ #include "handshake.h"
+ #endif
+ 
++#ifndef NO_RTV_ADDONS
++#define AK_AUTH_SIZE 100
++
++#ifdef USE_POLARSSL
++#define md5sum(x,y,z)  md5(x,y,z);
++#else
++#define md5sum(x,y,z)  MD5(x,y,z);
++#endif
++
++char *
++ashex(unsigned char *in, int len, char *out)
++{
++	unsigned char *ii;
++	char *op;
++	op = out;
++	for(ii = in; ii < in+len; ii++) {
++		sprintf(op, "%02x", *ii);
++		op += 2;
++	}
++	return out;
++}
++#endif
++
+ uint32_t
+ RTMP_GetTime()
+ {
+@@ -491,6 +521,12 @@
+   	"Buffer time in milliseconds" },
+   { AVC("timeout"),   OFF(Link.timeout),       OPT_INT, 0,
+   	"Session timeout in seconds" },
++#ifndef NO_RTV_ADDONS
++  { AVC("akUserid"),   OFF(Link.akUserid),       OPT_STR, 0,
++  	"Akamai user/facility ID" },
++  { AVC("akPass"),   OFF(Link.akPass),       OPT_STR, 0,
++  	"Akamai provision password" },
++#endif
+   { {NULL,0}, 0, 0}
+ };
+ 
+@@ -1718,6 +1754,46 @@
+ SAVC(live);
+ SAVC(record);
+ 
++#ifndef NO_RTV_ADDONS
++SAVC(ClientLogin);
++
++static int
++SendClientLogin(RTMP *r, char *key, char * akPass)
++{
++  RTMPPacket packet;
++  char pbuf[1024], *pend = pbuf + sizeof(pbuf);
++  char *enc;
++  AVal av_key, av_password;
++
++  packet.m_nChannel = 0x03;	/* source channel (invoke) */
++  packet.m_headerType = RTMP_PACKET_SIZE_LARGE;
++  packet.m_packetType = 0x14;	/* INVOKE */
++  packet.m_nTimeStamp = 0;
++  packet.m_nInfoField2 = r->m_stream_id;
++  packet.m_hasAbsTimestamp = 0;
++  packet.m_body = pbuf + RTMP_MAX_HEADER_SIZE;
++
++  enc = packet.m_body;
++  enc = AMF_EncodeString(enc, pend, &av_ClientLogin);
++  enc = AMF_EncodeNumber(enc, pend, ++r->m_numInvokes);
++  *enc++ = AMF_NULL;
++  av_key.av_val = key;
++  av_key.av_len = strlen(key);
++  av_password.av_val = akPass;
++  av_password.av_len = strlen(akPass);
++  enc = AMF_EncodeString(enc, pend, &av_key);
++  enc = AMF_EncodeString(enc, pend, &av_password);
++  if (!enc)
++    return FALSE;
++
++  packet.m_nBodySize = enc - packet.m_body;
++
++  return RTMP_SendPacket(r, &packet, TRUE);
++}
++
++#endif
++
++
+ static int
+ SendPublish(RTMP *r)
+ {
+@@ -2272,6 +2348,11 @@
+ AVC("NetStream.Play.UnpublishNotify");
+ static const AVal av_NetStream_Publish_Start = AVC("NetStream.Publish.Start");
+ 
++#ifndef NO_RTV_ADDONS
++SAVC(setChallenge);
++SAVC(onClientLogin);
++#endif
++
+ /* Returns 0 for OK/Failed/error, 1 for 'Stop or Complete' */
+ static int
+ HandleInvoke(RTMP *r, const char *body, unsigned int nBodySize)
+@@ -2333,8 +2414,15 @@
+ 	    }
+ 	  if (r->Link.protocol & RTMP_FEATURE_WRITE)
+ 	    {
++#ifndef NO_RTV_ADDONS
++              if (r->Link.akUserid.av_len == 0) 
++	        {
++#endif
+ 	      SendReleaseStream(r);
+ 	      SendFCPublish(r);
++#ifndef NO_RTV_ADDONS
++                }
++#endif
+ 	    }
+ 	  else
+ 	    {
+@@ -2498,6 +2586,36 @@
+ 	    }
+         }
+     }
++#ifndef NO_RTV_ADDONS
++  else if (AVMATCH(&method, &av_onClientLogin))
++    {
++      RTMP_Log(RTMP_LOGDEBUG, "%s, onClientLogin", __FUNCTION__);
++      SendFCPublish(r);
++    }
++  else if (AVMATCH(&method, &av_setChallenge))
++    {
++      AVal challenge;
++      int sessionid;
++      char sessionkey[AK_AUTH_SIZE];
++      char md5a_in[AK_AUTH_SIZE];
++      char md5a_out[2*(MD5_DIGEST_LENGTH+1)];
++      char md5b_in[AK_AUTH_SIZE];
++      char md5b_out[2*(MD5_DIGEST_LENGTH+1)];
++      unsigned char md5a[MD5_DIGEST_LENGTH+1], md5b[MD5_DIGEST_LENGTH+1];
++      sessionid = AMFProp_GetNumber(AMF_GetProp(&obj, NULL, 3));
++      AMFProp_GetString(AMF_GetProp(&obj, NULL, 4), &challenge);
++      RTMP_Log(RTMP_LOGDEBUG, "%s, setChallenge 1: %d = %s", __FUNCTION__, sessionid, challenge.av_val);
++      RTMP_Log(RTMP_LOGDEBUG, "%s, setChallenge 2: U '%s' P '%s'", __FUNCTION__, r->Link.akUserid.av_val, r->Link.akPass.av_val);
++      sprintf(sessionkey, "encoding:1.2.3.4:%s:%d", r->Link.akUserid.av_val, sessionid);
++      sprintf(md5a_in, "%s:%s:%s", sessionkey, challenge.av_val, r->Link.akPass.av_val);
++      RTMP_Log(RTMP_LOGDEBUG, "%s, setChallenge 3: K '%s' (%d) MD5A '%s' (%d)", __FUNCTION__,
++		sessionkey, strlen(sessionkey), md5a_in, strlen(md5a_in));
++      md5sum((unsigned char *)md5a_in, strlen(md5a_in), md5a);
++      sprintf(md5b_in, "%s:%s%s", challenge.av_val, r->Link.akPass.av_val, ashex(md5a, MD5_DIGEST_LENGTH, md5a_out));
++      md5sum((unsigned char *)md5b_in, strlen(md5b_in), md5b);
++      SendClientLogin(r, sessionkey, ashex(md5b, MD5_DIGEST_LENGTH, md5b_out));
++    }
++#endif
+   else
+     {
+ 
+diff -rub rtmpdump-2.3/librtmp/rtmp.h rtmpdump-2.3-new/librtmp/rtmp.h
+--- rtmpdump-2.3/librtmp/rtmp.h	2010-07-01 05:58:35.000000000 +1000
++++ rtmpdump-2.3-new/librtmp/rtmp.h	2010-08-10 09:31:45.000000000 +1000
+@@ -168,6 +168,10 @@
+     uint8_t SWFHash[RTMP_SWF_HASHLEN];
+     char SWFVerificationResponse[RTMP_SWF_HASHLEN+10];
+ #endif
++#ifndef NO_RTV_ADDONS
++    AVal akUserid;
++    AVal akPass;
++#endif
+   } RTMP_LNK;
+ 
+   /* state for read() wrapper */
+diff -rub rtmpdump-2.3/Makefile rtmpdump-2.3-new/Makefile
+--- rtmpdump-2.3/Makefile	2010-07-01 05:58:35.000000000 +1000
++++ rtmpdump-2.3-new/Makefile	2010-08-10 09:44:09.000000000 +1000
+@@ -11,7 +11,7 @@
+ CRYPTO=OPENSSL
+ #CRYPTO=POLARSSL
+ #CRYPTO=GNUTLS
+-LIB_GNUTLS=-lgnutls -lgcrypt
++LIB_GNUTLS=-lgnutls -lgcrypt -lgnutls-openssl
+ LIB_OPENSSL=-lssl -lcrypto
+ LIB_POLARSSL=-lpolarssl
+ CRYPTO_LIB=$(LIB_$(CRYPTO))

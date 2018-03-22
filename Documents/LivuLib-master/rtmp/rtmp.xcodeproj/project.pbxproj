@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA747D9F0F9514B9006C5449 /* rtmp_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* rtmp_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		BAD5865812C687F40009C667 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = BAD5864812C687F40009C667 /* amf.c */; };
+		BAD5865912C687F40009C667 /* amf.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5864912C687F40009C667 /* amf.h */; };
+		BAD5865A12C687F40009C667 /* bytes.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5864A12C687F40009C667 /* bytes.h */; };
+		BAD5865B12C687F40009C667 /* dh.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5864C12C687F40009C667 /* dh.h */; };
+		BAD5865C12C687F40009C667 /* dhgroups.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5864D12C687F40009C667 /* dhgroups.h */; };
+		BAD5865D12C687F40009C667 /* handshake.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5864E12C687F40009C667 /* handshake.h */; };
+		BAD5865E12C687F40009C667 /* hashswf.c in Sources */ = {isa = PBXBuildFile; fileRef = BAD5864F12C687F40009C667 /* hashswf.c */; };
+		BAD5865F12C687F40009C667 /* http.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5865012C687F40009C667 /* http.h */; };
+		BAD5866012C687F40009C667 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = BAD5865212C687F40009C667 /* log.c */; };
+		BAD5866112C687F40009C667 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5865312C687F40009C667 /* log.h */; };
+		BAD5866212C687F40009C667 /* parseurl.c in Sources */ = {isa = PBXBuildFile; fileRef = BAD5865412C687F40009C667 /* parseurl.c */; };
+		BAD5866312C687F40009C667 /* rtmp.c in Sources */ = {isa = PBXBuildFile; fileRef = BAD5865512C687F40009C667 /* rtmp.c */; };
+		BAD5866412C687F40009C667 /* rtmp.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5865612C687F40009C667 /* rtmp.h */; };
+		BAD5866512C687F40009C667 /* rtmp_sys.h in Headers */ = {isa = PBXBuildFile; fileRef = BAD5865712C687F40009C667 /* rtmp_sys.h */; };
+		BAFD38F412C56A70000BD6FD /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38EA12C56A70000BD6FD /* libcrypto.a */; };
+		BAFD38F512C56A70000BD6FD /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38EB12C56A70000BD6FD /* libcurl.a */; };
+		BAFD38F612C56A70000BD6FD /* libetpan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38EC12C56A70000BD6FD /* libetpan.a */; };
+		BAFD38F712C56A70000BD6FD /* libgcrypt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38ED12C56A70000BD6FD /* libgcrypt.a */; };
+		BAFD38F812C56A70000BD6FD /* libgpg-error.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38EE12C56A70000BD6FD /* libgpg-error.a */; };
+		BAFD38FA12C56A70000BD6FD /* libsasl2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38F012C56A70000BD6FD /* libsasl2.a */; };
+		BAFD38FB12C56A70000BD6FD /* libssh2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38F112C56A70000BD6FD /* libssh2.a */; };
+		BAFD38FC12C56A70000BD6FD /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38F212C56A70000BD6FD /* libssl.a */; };
+		BAFD38FD12C56A70000BD6FD /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFD38F312C56A70000BD6FD /* libz.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA747D9E0F9514B9006C5449 /* rtmp_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BAD5864812C687F40009C667 /* amf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amf.c; sourceTree = "<group>"; };
+		BAD5864912C687F40009C667 /* amf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amf.h; sourceTree = "<group>"; };
+		BAD5864A12C687F40009C667 /* bytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bytes.h; sourceTree = "<group>"; };
+		BAD5864C12C687F40009C667 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		BAD5864D12C687F40009C667 /* dhgroups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dhgroups.h; sourceTree = "<group>"; };
+		BAD5864E12C687F40009C667 /* handshake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = handshake.h; sourceTree = "<group>"; };
+		BAD5864F12C687F40009C667 /* hashswf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hashswf.c; sourceTree = "<group>"; };
+		BAD5865012C687F40009C667 /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		BAD5865212C687F40009C667 /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = log.c; sourceTree = "<group>"; };
+		BAD5865312C687F40009C667 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		BAD5865412C687F40009C667 /* parseurl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parseurl.c; sourceTree = "<group>"; };
+		BAD5865512C687F40009C667 /* rtmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rtmp.c; sourceTree = "<group>"; };
+		BAD5865612C687F40009C667 /* rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp.h; sourceTree = "<group>"; };
+		BAD5865712C687F40009C667 /* rtmp_sys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp_sys.h; sourceTree = "<group>"; };
+		BAFD38EA12C56A70000BD6FD /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		BAFD38EB12C56A70000BD6FD /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = lib/libcurl.a; sourceTree = "<group>"; };
+		BAFD38EC12C56A70000BD6FD /* libetpan.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libetpan.a; path = lib/libetpan.a; sourceTree = "<group>"; };
+		BAFD38ED12C56A70000BD6FD /* libgcrypt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgcrypt.a; path = lib/libgcrypt.a; sourceTree = "<group>"; };
+		BAFD38EE12C56A70000BD6FD /* libgpg-error.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libgpg-error.a"; path = "lib/libgpg-error.a"; sourceTree = "<group>"; };
+		BAFD38F012C56A70000BD6FD /* libsasl2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsasl2.a; path = lib/libsasl2.a; sourceTree = "<group>"; };
+		BAFD38F112C56A70000BD6FD /* libssh2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssh2.a; path = lib/libssh2.a; sourceTree = "<group>"; };
+		BAFD38F212C56A70000BD6FD /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
+		BAFD38F312C56A70000BD6FD /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = lib/libz.a; sourceTree = "<group>"; };
+		D2AAC07E0554694100DB518D /* librtmp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = librtmp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				BAFD38F412C56A70000BD6FD /* libcrypto.a in Frameworks */,
+				BAFD38F512C56A70000BD6FD /* libcurl.a in Frameworks */,
+				BAFD38F612C56A70000BD6FD /* libetpan.a in Frameworks */,
+				BAFD38F712C56A70000BD6FD /* libgcrypt.a in Frameworks */,
+				BAFD38F812C56A70000BD6FD /* libgpg-error.a in Frameworks */,
+				BAFD38FA12C56A70000BD6FD /* libsasl2.a in Frameworks */,
+				BAFD38FB12C56A70000BD6FD /* libssh2.a in Frameworks */,
+				BAFD38FC12C56A70000BD6FD /* libssl.a in Frameworks */,
+				BAFD38FD12C56A70000BD6FD /* libz.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* librtmp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* rtmp */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = rtmp;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAFD38EA12C56A70000BD6FD /* libcrypto.a */,
+				BAFD38EB12C56A70000BD6FD /* libcurl.a */,
+				BAFD38EC12C56A70000BD6FD /* libetpan.a */,
+				BAFD38ED12C56A70000BD6FD /* libgcrypt.a */,
+				BAFD38EE12C56A70000BD6FD /* libgpg-error.a */,
+				BAFD38F012C56A70000BD6FD /* libsasl2.a */,
+				BAFD38F112C56A70000BD6FD /* libssh2.a */,
+				BAFD38F212C56A70000BD6FD /* libssl.a */,
+				BAFD38F312C56A70000BD6FD /* libz.a */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5864712C687F40009C667 /* librtmp */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* rtmp_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		BAD5864712C687F40009C667 /* librtmp */ = {
+			isa = PBXGroup;
+			children = (
+				BAD5864812C687F40009C667 /* amf.c */,
+				BAD5864912C687F40009C667 /* amf.h */,
+				BAD5864A12C687F40009C667 /* bytes.h */,
+				BAD5864C12C687F40009C667 /* dh.h */,
+				BAD5864D12C687F40009C667 /* dhgroups.h */,
+				BAD5864E12C687F40009C667 /* handshake.h */,
+				BAD5864F12C687F40009C667 /* hashswf.c */,
+				BAD5865012C687F40009C667 /* http.h */,
+				BAD5865212C687F40009C667 /* log.c */,
+				BAD5865312C687F40009C667 /* log.h */,
+				BAD5865412C687F40009C667 /* parseurl.c */,
+				BAD5865512C687F40009C667 /* rtmp.c */,
+				BAD5865612C687F40009C667 /* rtmp.h */,
+				BAD5865712C687F40009C667 /* rtmp_sys.h */,
+			);
+			path = librtmp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* rtmp_Prefix.pch in Headers */,
+				BAD5865912C687F40009C667 /* amf.h in Headers */,
+				BAD5865A12C687F40009C667 /* bytes.h in Headers */,
+				BAD5865B12C687F40009C667 /* dh.h in Headers */,
+				BAD5865C12C687F40009C667 /* dhgroups.h in Headers */,
+				BAD5865D12C687F40009C667 /* handshake.h in Headers */,
+				BAD5865F12C687F40009C667 /* http.h in Headers */,
+				BAD5866112C687F40009C667 /* log.h in Headers */,
+				BAD5866412C687F40009C667 /* rtmp.h in Headers */,
+				BAD5866512C687F40009C667 /* rtmp_sys.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* rtmp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "rtmp" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rtmp;
+			productName = rtmp;
+			productReference = D2AAC07E0554694100DB518D /* librtmp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "rtmp" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* rtmp */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* rtmp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAD5865812C687F40009C667 /* amf.c in Sources */,
+				BAD5865E12C687F40009C667 /* hashswf.c in Sources */,
+				BAD5866012C687F40009C667 /* log.c in Sources */,
+				BAD5866212C687F40009C667 /* parseurl.c in Sources */,
+				BAD5866312C687F40009C667 /* rtmp.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/rtmp.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = rtmp_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/extralib/iPhoneOS-4.2/lib\"",
+					"\"$(SRCROOT)/lib\"",
+				);
+				PRODUCT_NAME = rtmp;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/rtmp.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = rtmp_Prefix.pch;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/extralib/iPhoneOS-4.2/lib\"",
+					"\"$(SRCROOT)/lib\"",
+				);
+				PRODUCT_NAME = rtmp;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"$(SRCROOT)/include\"",
+					HEADER_SEARCH_PATHS,
+					"=",
+					"\"$(SRCROOT)/include\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				PRIVATE_HEADERS_FOLDER_PATH = /Users/fiona/dev/mobile/media/rtmp/include/;
+				PUBLIC_HEADERS_FOLDER_PATH = /Users/fiona/dev/mobile/media/rtmp/include/;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "rtmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "rtmp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

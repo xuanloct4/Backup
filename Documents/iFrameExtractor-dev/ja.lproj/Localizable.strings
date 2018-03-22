@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  SimpleFFPlayer
+
+  Created by tranvanloc on 5/3/17.
+  Copyright © 2017 tsdv. All rights reserved.
+*/
+minutes = "minutes";
+Close = "Fermer";
+Action = "Action";
+Drama = "Drame";
+War = "Guerre";
+Biography = "Biographie";
+Sci-Fi = "Sci-Fi";
+Thriller = "Thriller";
+Adventure = "Aventure";
+Mystery = "Mystère";

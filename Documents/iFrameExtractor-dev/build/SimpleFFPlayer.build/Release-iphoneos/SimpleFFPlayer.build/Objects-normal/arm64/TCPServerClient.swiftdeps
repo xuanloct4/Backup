@@ -1,0 +1,908 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TCPClientVC"
+- "TCPServerVC"
+provides-nominal:
+- "C14SimpleFFPlayer11TCPClientVC"
+- "C14SimpleFFPlayer11TCPServerVC"
+provides-member:
+- ["C14SimpleFFPlayer11TCPClientVC", ""]
+- ["C14SimpleFFPlayer11TCPServerVC", ""]
+provides-dynamic-lookup:
+- "client"
+- "echoService"
+- "ipAd"
+- "portt"
+- "sendButtonAction"
+- "startServer"
+- "testServer"
+- "textFieldShouldBeginEditing"
+- "textView"
+- "textViewShouldBeginEditing"
+- "viewDidLoad"
+depends-top-level:
+- !private "!="
+- !private "*"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Int"
+- !private "Int32"
+- !private "String"
+- !private "StringLiteralType"
+- "TCPClient"
+- "TCPClientVC"
+- !private "TCPServer"
+- "TCPServerVC"
+- "UITextField"
+- "UITextView"
+- !private "UnicodeScalarType"
+- "ViewControllerTextView"
+- !private "print"
+depends-member:
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "Int32"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "TCPClient"]
+- !private ["Ps9AnyObject", "TCPServer"]
+- !private ["Ps9AnyObject", "accept"]
+- !private ["Ps9AnyObject", "address"]
+- !private ["Ps9AnyObject", "appendToTextField"]
+- !private ["Ps9AnyObject", "appending"]
+- !private ["Ps9AnyObject", "client"]
+- !private ["Ps9AnyObject", "close"]
+- !private ["Ps9AnyObject", "connect"]
+- !private ["Ps9AnyObject", "echoService"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "ipAd"]
+- !private ["Ps9AnyObject", "listen"]
+- !private ["Ps9AnyObject", "port"]
+- !private ["Ps9AnyObject", "portt"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "read"]
+- !private ["Ps9AnyObject", "readResponse"]
+- !private ["Ps9AnyObject", "send"]
+- !private ["Ps9AnyObject", "sendRequest"]
+- !private ["Ps9AnyObject", "testServer"]
+- !private ["Ps9AnyObject", "text"]
+- !private ["Ps9AnyObject", "textFieldShouldBeginEditing"]
+- !private ["Ps9AnyObject", "textView"]
+- !private ["Ps9AnyObject", "textViewShouldBeginEditing"]
+- !private ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["Ps7CVarArg", "Int"]
+- !private ["Ps7CVarArg", "Int32"]
+- !private ["Ps7CVarArg", "String"]
+- !private ["Ps7CVarArg", "TCPClient"]
+- !private ["Ps7CVarArg", "TCPServer"]
+- !private ["Ps7CVarArg", "accept"]
+- !private ["Ps7CVarArg", "address"]
+- !private ["Ps7CVarArg", "appendToTextField"]
+- !private ["Ps7CVarArg", "appending"]
+- !private ["Ps7CVarArg", "client"]
+- !private ["Ps7CVarArg", "close"]
+- !private ["Ps7CVarArg", "connect"]
+- !private ["Ps7CVarArg", "echoService"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "ipAd"]
+- !private ["Ps7CVarArg", "listen"]
+- !private ["Ps7CVarArg", "port"]
+- !private ["Ps7CVarArg", "portt"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "read"]
+- !private ["Ps7CVarArg", "readResponse"]
+- !private ["Ps7CVarArg", "send"]
+- !private ["Ps7CVarArg", "sendRequest"]
+- !private ["Ps7CVarArg", "testServer"]
+- !private ["Ps7CVarArg", "text"]
+- !private ["Ps7CVarArg", "textFieldShouldBeginEditing"]
+- !private ["Ps7CVarArg", "textView"]
+- !private ["Ps7CVarArg", "textViewShouldBeginEditing"]
+- !private ["Ps7CVarArg", "viewDidLoad"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "appending"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Int"]
+- !private ["Ps28CustomDebugStringConvertible", "Int32"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
+- !private ["Ps28CustomDebugStringConvertible", "TCPClient"]
+- !private ["Ps28CustomDebugStringConvertible", "TCPServer"]
+- !private ["Ps28CustomDebugStringConvertible", "accept"]
+- !private ["Ps28CustomDebugStringConvertible", "address"]
+- !private ["Ps28CustomDebugStringConvertible", "appendToTextField"]
+- !private ["Ps28CustomDebugStringConvertible", "appending"]
+- !private ["Ps28CustomDebugStringConvertible", "client"]
+- !private ["Ps28CustomDebugStringConvertible", "close"]
+- !private ["Ps28CustomDebugStringConvertible", "connect"]
+- !private ["Ps28CustomDebugStringConvertible", "echoService"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "ipAd"]
+- !private ["Ps28CustomDebugStringConvertible", "listen"]
+- !private ["Ps28CustomDebugStringConvertible", "port"]
+- !private ["Ps28CustomDebugStringConvertible", "portt"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "read"]
+- !private ["Ps28CustomDebugStringConvertible", "readResponse"]
+- !private ["Ps28CustomDebugStringConvertible", "send"]
+- !private ["Ps28CustomDebugStringConvertible", "sendRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "testServer"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- !private ["Ps28CustomDebugStringConvertible", "textFieldShouldBeginEditing"]
+- !private ["Ps28CustomDebugStringConvertible", "textView"]
+- !private ["Ps28CustomDebugStringConvertible", "textViewShouldBeginEditing"]
+- !private ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "appending"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "appending"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Int"]
+- !private ["Ps23CustomStringConvertible", "Int32"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "TCPClient"]
+- !private ["Ps23CustomStringConvertible", "TCPServer"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "accept"]
+- !private ["Ps23CustomStringConvertible", "address"]
+- !private ["Ps23CustomStringConvertible", "appendToTextField"]
+- !private ["Ps23CustomStringConvertible", "appending"]
+- !private ["Ps23CustomStringConvertible", "client"]
+- !private ["Ps23CustomStringConvertible", "close"]
+- !private ["Ps23CustomStringConvertible", "connect"]
+- !private ["Ps23CustomStringConvertible", "echoService"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "ipAd"]
+- !private ["Ps23CustomStringConvertible", "listen"]
+- !private ["Ps23CustomStringConvertible", "port"]
+- !private ["Ps23CustomStringConvertible", "portt"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "read"]
+- !private ["Ps23CustomStringConvertible", "readResponse"]
+- !private ["Ps23CustomStringConvertible", "send"]
+- !private ["Ps23CustomStringConvertible", "sendRequest"]
+- !private ["Ps23CustomStringConvertible", "testServer"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "textFieldShouldBeginEditing"]
+- !private ["Ps23CustomStringConvertible", "textView"]
+- !private ["Ps23CustomStringConvertible", "textViewShouldBeginEditing"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- !private ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["VE10FoundationSS8Encoding", "utf8"]
+- !private ["Ps9Equatable", "Int"]
+- !private ["Ps9Equatable", "Int32"]
+- !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "TCPClient"]
+- !private ["Ps9Equatable", "TCPServer"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "accept"]
+- !private ["Ps9Equatable", "address"]
+- !private ["Ps9Equatable", "appendToTextField"]
+- !private ["Ps9Equatable", "appending"]
+- !private ["Ps9Equatable", "client"]
+- !private ["Ps9Equatable", "close"]
+- !private ["Ps9Equatable", "connect"]
+- !private ["Ps9Equatable", "echoService"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "ipAd"]
+- !private ["Ps9Equatable", "listen"]
+- !private ["Ps9Equatable", "port"]
+- !private ["Ps9Equatable", "portt"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "read"]
+- !private ["Ps9Equatable", "readResponse"]
+- !private ["Ps9Equatable", "send"]
+- !private ["Ps9Equatable", "sendRequest"]
+- !private ["Ps9Equatable", "testServer"]
+- !private ["Ps9Equatable", "text"]
+- !private ["Ps9Equatable", "textFieldShouldBeginEditing"]
+- !private ["Ps9Equatable", "textView"]
+- !private ["Ps9Equatable", "textViewShouldBeginEditing"]
+- !private ["Ps9Equatable", "utf8"]
+- !private ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "appending"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "appending"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "appending"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Int"]
+- !private ["Ps8Hashable", "Int32"]
+- !private ["Ps8Hashable", "String"]
+- !private ["Ps8Hashable", "TCPClient"]
+- !private ["Ps8Hashable", "TCPServer"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "accept"]
+- !private ["Ps8Hashable", "address"]
+- !private ["Ps8Hashable", "appendToTextField"]
+- !private ["Ps8Hashable", "appending"]
+- !private ["Ps8Hashable", "client"]
+- !private ["Ps8Hashable", "close"]
+- !private ["Ps8Hashable", "connect"]
+- !private ["Ps8Hashable", "echoService"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "ipAd"]
+- !private ["Ps8Hashable", "listen"]
+- !private ["Ps8Hashable", "port"]
+- !private ["Ps8Hashable", "portt"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "read"]
+- !private ["Ps8Hashable", "readResponse"]
+- !private ["Ps8Hashable", "send"]
+- !private ["Ps8Hashable", "sendRequest"]
+- !private ["Ps8Hashable", "testServer"]
+- !private ["Ps8Hashable", "text"]
+- !private ["Ps8Hashable", "textFieldShouldBeginEditing"]
+- !private ["Ps8Hashable", "textView"]
+- !private ["Ps8Hashable", "textViewShouldBeginEditing"]
+- !private ["Ps8Hashable", "utf8"]
+- !private ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- !private ["Si", "init"]
+- !private ["Vs5Int32", "init"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "appending"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "appending"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["PSo8NSCoding", "Int"]
+- !private ["PSo8NSCoding", "Int32"]
+- !private ["PSo8NSCoding", "String"]
+- !private ["PSo8NSCoding", "TCPClient"]
+- !private ["PSo8NSCoding", "TCPServer"]
+- !private ["PSo8NSCoding", "appendToTextField"]
+- !private ["PSo8NSCoding", "appending"]
+- !private ["PSo8NSCoding", "client"]
+- !private ["PSo8NSCoding", "echoService"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "ipAd"]
+- !private ["PSo8NSCoding", "portt"]
+- !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "readResponse"]
+- !private ["PSo8NSCoding", "sendRequest"]
+- !private ["PSo8NSCoding", "testServer"]
+- !private ["PSo8NSCoding", "text"]
+- !private ["PSo8NSCoding", "textFieldShouldBeginEditing"]
+- !private ["PSo8NSCoding", "textView"]
+- !private ["PSo8NSCoding", "textViewShouldBeginEditing"]
+- !private ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "appending"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "Int"]
+- !private ["PSo26NSExtensionRequestHandling", "Int32"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
+- !private ["PSo26NSExtensionRequestHandling", "TCPClient"]
+- !private ["PSo26NSExtensionRequestHandling", "TCPServer"]
+- !private ["PSo26NSExtensionRequestHandling", "appendToTextField"]
+- !private ["PSo26NSExtensionRequestHandling", "client"]
+- !private ["PSo26NSExtensionRequestHandling", "echoService"]
+- !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "ipAd"]
+- !private ["PSo26NSExtensionRequestHandling", "portt"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "readResponse"]
+- !private ["PSo26NSExtensionRequestHandling", "sendRequest"]
+- !private ["PSo26NSExtensionRequestHandling", "testServer"]
+- !private ["PSo26NSExtensionRequestHandling", "textFieldShouldBeginEditing"]
+- !private ["PSo26NSExtensionRequestHandling", "textView"]
+- !private ["PSo26NSExtensionRequestHandling", "textViewShouldBeginEditing"]
+- !private ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "appending"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "Int32"]
+- !private ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "TCPClient"]
+- !private ["CSo8NSObject", "TCPServer"]
+- ["CSo8NSObject", "UITextField"]
+- ["CSo8NSObject", "UITextView"]
+- !private ["CSo8NSObject", "accept"]
+- !private ["CSo8NSObject", "address"]
+- ["CSo8NSObject", "appendToTextField"]
+- !private ["CSo8NSObject", "appending"]
+- ["CSo8NSObject", "client"]
+- !private ["CSo8NSObject", "close"]
+- !private ["CSo8NSObject", "connect"]
+- ["CSo8NSObject", "echoService"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "ipAd"]
+- !private ["CSo8NSObject", "listen"]
+- !private ["CSo8NSObject", "port"]
+- ["CSo8NSObject", "portt"]
+- !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "read"]
+- ["CSo8NSObject", "readResponse"]
+- !private ["CSo8NSObject", "send"]
+- ["CSo8NSObject", "sendButtonAction"]
+- ["CSo8NSObject", "sendRequest"]
+- ["CSo8NSObject", "startServer"]
+- ["CSo8NSObject", "testServer"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "textFieldShouldBeginEditing"]
+- ["CSo8NSObject", "textView"]
+- ["CSo8NSObject", "textViewShouldBeginEditing"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "Int"]
+- !private ["PSo16NSObjectProtocol", "Int32"]
+- !private ["PSo16NSObjectProtocol", "String"]
+- !private ["PSo16NSObjectProtocol", "TCPClient"]
+- !private ["PSo16NSObjectProtocol", "TCPServer"]
+- !private ["PSo16NSObjectProtocol", "accept"]
+- !private ["PSo16NSObjectProtocol", "address"]
+- !private ["PSo16NSObjectProtocol", "appendToTextField"]
+- !private ["PSo16NSObjectProtocol", "appending"]
+- !private ["PSo16NSObjectProtocol", "client"]
+- !private ["PSo16NSObjectProtocol", "close"]
+- !private ["PSo16NSObjectProtocol", "connect"]
+- !private ["PSo16NSObjectProtocol", "echoService"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "ipAd"]
+- !private ["PSo16NSObjectProtocol", "listen"]
+- !private ["PSo16NSObjectProtocol", "port"]
+- !private ["PSo16NSObjectProtocol", "portt"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "read"]
+- !private ["PSo16NSObjectProtocol", "readResponse"]
+- !private ["PSo16NSObjectProtocol", "send"]
+- !private ["PSo16NSObjectProtocol", "sendRequest"]
+- !private ["PSo16NSObjectProtocol", "testServer"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- !private ["PSo16NSObjectProtocol", "textFieldShouldBeginEditing"]
+- !private ["PSo16NSObjectProtocol", "textView"]
+- !private ["PSo16NSObjectProtocol", "textViewShouldBeginEditing"]
+- !private ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "appending"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "appending"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps16RawRepresentable", "utf8"]
+- ["O14SimpleFFPlayer6Result", "failure"]
+- ["O14SimpleFFPlayer6Result", "success"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["C14SimpleFFPlayer6Socket", "accept"]
+- !private ["C14SimpleFFPlayer6Socket", "address"]
+- !private ["C14SimpleFFPlayer6Socket", "close"]
+- !private ["C14SimpleFFPlayer6Socket", "connect"]
+- !private ["C14SimpleFFPlayer6Socket", "init"]
+- !private ["C14SimpleFFPlayer6Socket", "listen"]
+- !private ["C14SimpleFFPlayer6Socket", "port"]
+- !private ["C14SimpleFFPlayer6Socket", "read"]
+- !private ["C14SimpleFFPlayer6Socket", "send"]
+- !private ["Ps10Strideable", "init"]
+- !private ["SS", "appending"]
+- !private ["SS", "init"]
+- !private ["C14SimpleFFPlayer9TCPClient", "address"]
+- !private ["C14SimpleFFPlayer9TCPClient", "close"]
+- !private ["C14SimpleFFPlayer9TCPClient", "connect"]
+- !private ["C14SimpleFFPlayer9TCPClient", "init"]
+- !private ["C14SimpleFFPlayer9TCPClient", "port"]
+- !private ["C14SimpleFFPlayer9TCPClient", "read"]
+- !private ["C14SimpleFFPlayer9TCPClient", "send"]
+- ["C14SimpleFFPlayer11TCPClientVC", "Bool"]
+- !private ["C14SimpleFFPlayer11TCPClientVC", "Int"]
+- !private ["C14SimpleFFPlayer11TCPClientVC", "Int32"]
+- !private ["C14SimpleFFPlayer11TCPClientVC", "String"]
+- ["C14SimpleFFPlayer11TCPClientVC", "TCPClient"]
+- ["C14SimpleFFPlayer11TCPClientVC", "UITextField"]
+- ["C14SimpleFFPlayer11TCPClientVC", "UITextView"]
+- !private ["C14SimpleFFPlayer11TCPClientVC", "appendToTextField"]
+- ["C14SimpleFFPlayer11TCPClientVC", "client"]
+- ["C14SimpleFFPlayer11TCPClientVC", "deinit"]
+- ["C14SimpleFFPlayer11TCPClientVC", "init"]
+- ["C14SimpleFFPlayer11TCPClientVC", "ipAd"]
+- ["C14SimpleFFPlayer11TCPClientVC", "portt"]
+- !private ["C14SimpleFFPlayer11TCPClientVC", "print"]
+- !private ["C14SimpleFFPlayer11TCPClientVC", "readResponse"]
+- ["C14SimpleFFPlayer11TCPClientVC", "sendButtonAction"]
+- !private ["C14SimpleFFPlayer11TCPClientVC", "sendRequest"]
+- ["C14SimpleFFPlayer11TCPClientVC", "textFieldShouldBeginEditing"]
+- ["C14SimpleFFPlayer11TCPClientVC", "textView"]
+- ["C14SimpleFFPlayer11TCPClientVC", "textViewShouldBeginEditing"]
+- ["C14SimpleFFPlayer11TCPClientVC", "viewDidLoad"]
+- !private ["C14SimpleFFPlayer9TCPServer", "accept"]
+- !private ["C14SimpleFFPlayer9TCPServer", "init"]
+- !private ["C14SimpleFFPlayer9TCPServer", "listen"]
+- ["C14SimpleFFPlayer11TCPServerVC", "Bool"]
+- !private ["C14SimpleFFPlayer11TCPServerVC", "Int32"]
+- ["C14SimpleFFPlayer11TCPServerVC", "TCPClient"]
+- !private ["C14SimpleFFPlayer11TCPServerVC", "TCPServer"]
+- ["C14SimpleFFPlayer11TCPServerVC", "UITextField"]
+- ["C14SimpleFFPlayer11TCPServerVC", "UITextView"]
+- ["C14SimpleFFPlayer11TCPServerVC", "deinit"]
+- ["C14SimpleFFPlayer11TCPServerVC", "echoService"]
+- ["C14SimpleFFPlayer11TCPServerVC", "init"]
+- ["C14SimpleFFPlayer11TCPServerVC", "ipAd"]
+- ["C14SimpleFFPlayer11TCPServerVC", "portt"]
+- !private ["C14SimpleFFPlayer11TCPServerVC", "print"]
+- ["C14SimpleFFPlayer11TCPServerVC", "startServer"]
+- ["C14SimpleFFPlayer11TCPServerVC", "testServer"]
+- ["C14SimpleFFPlayer11TCPServerVC", "textFieldShouldBeginEditing"]
+- ["C14SimpleFFPlayer11TCPServerVC", "textViewShouldBeginEditing"]
+- ["C14SimpleFFPlayer11TCPServerVC", "viewDidLoad"]
+- !private ["Ps16TextOutputStream", "appending"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "appending"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
+- !private ["PSo12UIAppearance", "text"]
+- !private ["PSo21UIAppearanceContainer", "Int"]
+- !private ["PSo21UIAppearanceContainer", "Int32"]
+- !private ["PSo21UIAppearanceContainer", "String"]
+- !private ["PSo21UIAppearanceContainer", "TCPClient"]
+- !private ["PSo21UIAppearanceContainer", "TCPServer"]
+- !private ["PSo21UIAppearanceContainer", "appendToTextField"]
+- !private ["PSo21UIAppearanceContainer", "client"]
+- !private ["PSo21UIAppearanceContainer", "echoService"]
+- !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "ipAd"]
+- !private ["PSo21UIAppearanceContainer", "portt"]
+- !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "readResponse"]
+- !private ["PSo21UIAppearanceContainer", "sendRequest"]
+- !private ["PSo21UIAppearanceContainer", "testServer"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- !private ["PSo21UIAppearanceContainer", "textFieldShouldBeginEditing"]
+- !private ["PSo21UIAppearanceContainer", "textView"]
+- !private ["PSo21UIAppearanceContainer", "textViewShouldBeginEditing"]
+- !private ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "Int"]
+- !private ["PSo18UIContentContainer", "Int32"]
+- !private ["PSo18UIContentContainer", "String"]
+- !private ["PSo18UIContentContainer", "TCPClient"]
+- !private ["PSo18UIContentContainer", "TCPServer"]
+- !private ["PSo18UIContentContainer", "appendToTextField"]
+- !private ["PSo18UIContentContainer", "client"]
+- !private ["PSo18UIContentContainer", "echoService"]
+- !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "ipAd"]
+- !private ["PSo18UIContentContainer", "portt"]
+- !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "readResponse"]
+- !private ["PSo18UIContentContainer", "sendRequest"]
+- !private ["PSo18UIContentContainer", "testServer"]
+- !private ["PSo18UIContentContainer", "textFieldShouldBeginEditing"]
+- !private ["PSo18UIContentContainer", "textView"]
+- !private ["PSo18UIContentContainer", "textViewShouldBeginEditing"]
+- !private ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "text"]
+- !private ["PSo17UICoordinateSpace", "text"]
+- !private ["PSo13UIDynamicItem", "text"]
+- !private ["PSo18UIFocusEnvironment", "Int"]
+- !private ["PSo18UIFocusEnvironment", "Int32"]
+- !private ["PSo18UIFocusEnvironment", "String"]
+- !private ["PSo18UIFocusEnvironment", "TCPClient"]
+- !private ["PSo18UIFocusEnvironment", "TCPServer"]
+- !private ["PSo18UIFocusEnvironment", "appendToTextField"]
+- !private ["PSo18UIFocusEnvironment", "client"]
+- !private ["PSo18UIFocusEnvironment", "echoService"]
+- !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "ipAd"]
+- !private ["PSo18UIFocusEnvironment", "portt"]
+- !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "readResponse"]
+- !private ["PSo18UIFocusEnvironment", "sendRequest"]
+- !private ["PSo18UIFocusEnvironment", "testServer"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- !private ["PSo18UIFocusEnvironment", "textFieldShouldBeginEditing"]
+- !private ["PSo18UIFocusEnvironment", "textView"]
+- !private ["PSo18UIFocusEnvironment", "textViewShouldBeginEditing"]
+- !private ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["PSo11UIFocusItem", "text"]
+- !private ["PSo10UIKeyInput", "text"]
+- ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "Int32"]
+- !private ["CSo11UIResponder", "String"]
+- ["CSo11UIResponder", "TCPClient"]
+- !private ["CSo11UIResponder", "TCPServer"]
+- ["CSo11UIResponder", "UITextField"]
+- ["CSo11UIResponder", "UITextView"]
+- ["CSo11UIResponder", "appendToTextField"]
+- ["CSo11UIResponder", "client"]
+- ["CSo11UIResponder", "echoService"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "ipAd"]
+- ["CSo11UIResponder", "portt"]
+- !private ["CSo11UIResponder", "print"]
+- ["CSo11UIResponder", "readResponse"]
+- ["CSo11UIResponder", "sendButtonAction"]
+- ["CSo11UIResponder", "sendRequest"]
+- ["CSo11UIResponder", "startServer"]
+- ["CSo11UIResponder", "testServer"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "textFieldShouldBeginEditing"]
+- ["CSo11UIResponder", "textView"]
+- ["CSo11UIResponder", "textViewShouldBeginEditing"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "Int"]
+- !private ["PSo30UIResponderStandardEditActions", "Int32"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
+- !private ["PSo30UIResponderStandardEditActions", "TCPClient"]
+- !private ["PSo30UIResponderStandardEditActions", "TCPServer"]
+- !private ["PSo30UIResponderStandardEditActions", "appendToTextField"]
+- !private ["PSo30UIResponderStandardEditActions", "client"]
+- !private ["PSo30UIResponderStandardEditActions", "echoService"]
+- !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "ipAd"]
+- !private ["PSo30UIResponderStandardEditActions", "portt"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "readResponse"]
+- !private ["PSo30UIResponderStandardEditActions", "sendRequest"]
+- !private ["PSo30UIResponderStandardEditActions", "testServer"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- !private ["PSo30UIResponderStandardEditActions", "textFieldShouldBeginEditing"]
+- !private ["PSo30UIResponderStandardEditActions", "textView"]
+- !private ["PSo30UIResponderStandardEditActions", "textViewShouldBeginEditing"]
+- !private ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
+- ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo12UIScrollView", "text"]
+- !private ["PSo20UIScrollViewDelegate", "Int"]
+- !private ["PSo20UIScrollViewDelegate", "Int32"]
+- !private ["PSo20UIScrollViewDelegate", "String"]
+- !private ["PSo20UIScrollViewDelegate", "TCPClient"]
+- !private ["PSo20UIScrollViewDelegate", "TCPServer"]
+- !private ["PSo20UIScrollViewDelegate", "appendToTextField"]
+- !private ["PSo20UIScrollViewDelegate", "client"]
+- !private ["PSo20UIScrollViewDelegate", "echoService"]
+- !private ["PSo20UIScrollViewDelegate", "init"]
+- !private ["PSo20UIScrollViewDelegate", "ipAd"]
+- !private ["PSo20UIScrollViewDelegate", "portt"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
+- !private ["PSo20UIScrollViewDelegate", "readResponse"]
+- !private ["PSo20UIScrollViewDelegate", "sendRequest"]
+- !private ["PSo20UIScrollViewDelegate", "testServer"]
+- !private ["PSo20UIScrollViewDelegate", "textFieldShouldBeginEditing"]
+- !private ["PSo20UIScrollViewDelegate", "textView"]
+- !private ["PSo20UIScrollViewDelegate", "textViewShouldBeginEditing"]
+- !private ["PSo20UIScrollViewDelegate", "viewDidLoad"]
+- ["PSo20UIScrollViewDelegate", ""]
+- !private ["PSo16UIStateRestoring", "Int"]
+- !private ["PSo16UIStateRestoring", "Int32"]
+- !private ["PSo16UIStateRestoring", "String"]
+- !private ["PSo16UIStateRestoring", "TCPClient"]
+- !private ["PSo16UIStateRestoring", "TCPServer"]
+- !private ["PSo16UIStateRestoring", "appendToTextField"]
+- !private ["PSo16UIStateRestoring", "client"]
+- !private ["PSo16UIStateRestoring", "echoService"]
+- !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "ipAd"]
+- !private ["PSo16UIStateRestoring", "portt"]
+- !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "readResponse"]
+- !private ["PSo16UIStateRestoring", "sendRequest"]
+- !private ["PSo16UIStateRestoring", "testServer"]
+- !private ["PSo16UIStateRestoring", "textFieldShouldBeginEditing"]
+- !private ["PSo16UIStateRestoring", "textView"]
+- !private ["PSo16UIStateRestoring", "textViewShouldBeginEditing"]
+- !private ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo11UITextField", "text"]
+- !private ["PSo19UITextFieldDelegate", "Int"]
+- !private ["PSo19UITextFieldDelegate", "Int32"]
+- !private ["PSo19UITextFieldDelegate", "String"]
+- !private ["PSo19UITextFieldDelegate", "TCPClient"]
+- !private ["PSo19UITextFieldDelegate", "TCPServer"]
+- !private ["PSo19UITextFieldDelegate", "appendToTextField"]
+- !private ["PSo19UITextFieldDelegate", "client"]
+- !private ["PSo19UITextFieldDelegate", "echoService"]
+- !private ["PSo19UITextFieldDelegate", "init"]
+- !private ["PSo19UITextFieldDelegate", "ipAd"]
+- !private ["PSo19UITextFieldDelegate", "portt"]
+- !private ["PSo19UITextFieldDelegate", "print"]
+- !private ["PSo19UITextFieldDelegate", "readResponse"]
+- !private ["PSo19UITextFieldDelegate", "sendRequest"]
+- !private ["PSo19UITextFieldDelegate", "testServer"]
+- !private ["PSo19UITextFieldDelegate", "textFieldShouldBeginEditing"]
+- !private ["PSo19UITextFieldDelegate", "textView"]
+- !private ["PSo19UITextFieldDelegate", "textViewShouldBeginEditing"]
+- !private ["PSo19UITextFieldDelegate", "viewDidLoad"]
+- ["PSo19UITextFieldDelegate", ""]
+- !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "text"]
+- !private ["CSo10UITextView", "text"]
+- !private ["PSo18UITextViewDelegate", "Int"]
+- !private ["PSo18UITextViewDelegate", "Int32"]
+- !private ["PSo18UITextViewDelegate", "String"]
+- !private ["PSo18UITextViewDelegate", "TCPClient"]
+- !private ["PSo18UITextViewDelegate", "TCPServer"]
+- !private ["PSo18UITextViewDelegate", "appendToTextField"]
+- !private ["PSo18UITextViewDelegate", "client"]
+- !private ["PSo18UITextViewDelegate", "echoService"]
+- !private ["PSo18UITextViewDelegate", "init"]
+- !private ["PSo18UITextViewDelegate", "ipAd"]
+- !private ["PSo18UITextViewDelegate", "portt"]
+- !private ["PSo18UITextViewDelegate", "print"]
+- !private ["PSo18UITextViewDelegate", "readResponse"]
+- !private ["PSo18UITextViewDelegate", "sendRequest"]
+- !private ["PSo18UITextViewDelegate", "testServer"]
+- !private ["PSo18UITextViewDelegate", "textFieldShouldBeginEditing"]
+- !private ["PSo18UITextViewDelegate", "textView"]
+- !private ["PSo18UITextViewDelegate", "textViewShouldBeginEditing"]
+- !private ["PSo18UITextViewDelegate", "viewDidLoad"]
+- ["PSo18UITextViewDelegate", ""]
+- !private ["PSo18UITraitEnvironment", "Int"]
+- !private ["PSo18UITraitEnvironment", "Int32"]
+- !private ["PSo18UITraitEnvironment", "String"]
+- !private ["PSo18UITraitEnvironment", "TCPClient"]
+- !private ["PSo18UITraitEnvironment", "TCPServer"]
+- !private ["PSo18UITraitEnvironment", "appendToTextField"]
+- !private ["PSo18UITraitEnvironment", "client"]
+- !private ["PSo18UITraitEnvironment", "echoService"]
+- !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "ipAd"]
+- !private ["PSo18UITraitEnvironment", "portt"]
+- !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "readResponse"]
+- !private ["PSo18UITraitEnvironment", "sendRequest"]
+- !private ["PSo18UITraitEnvironment", "testServer"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- !private ["PSo18UITraitEnvironment", "textFieldShouldBeginEditing"]
+- !private ["PSo18UITraitEnvironment", "textView"]
+- !private ["PSo18UITraitEnvironment", "textViewShouldBeginEditing"]
+- !private ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "text"]
+- ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "Int32"]
+- !private ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "TCPClient"]
+- !private ["CSo16UIViewController", "TCPServer"]
+- ["CSo16UIViewController", "UITextField"]
+- ["CSo16UIViewController", "UITextView"]
+- ["CSo16UIViewController", "appendToTextField"]
+- ["CSo16UIViewController", "client"]
+- ["CSo16UIViewController", "echoService"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "ipAd"]
+- ["CSo16UIViewController", "portt"]
+- !private ["CSo16UIViewController", "print"]
+- ["CSo16UIViewController", "readResponse"]
+- ["CSo16UIViewController", "sendButtonAction"]
+- ["CSo16UIViewController", "sendRequest"]
+- ["CSo16UIViewController", "startServer"]
+- ["CSo16UIViewController", "testServer"]
+- ["CSo16UIViewController", "textFieldShouldBeginEditing"]
+- ["CSo16UIViewController", "textView"]
+- ["CSo16UIViewController", "textViewShouldBeginEditing"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo22ViewControllerTextView", "Bool"]
+- !private ["CSo22ViewControllerTextView", "Int"]
+- !private ["CSo22ViewControllerTextView", "Int32"]
+- !private ["CSo22ViewControllerTextView", "String"]
+- ["CSo22ViewControllerTextView", "TCPClient"]
+- !private ["CSo22ViewControllerTextView", "TCPServer"]
+- ["CSo22ViewControllerTextView", "UITextField"]
+- ["CSo22ViewControllerTextView", "UITextView"]
+- ["CSo22ViewControllerTextView", "appendToTextField"]
+- ["CSo22ViewControllerTextView", "client"]
+- ["CSo22ViewControllerTextView", "echoService"]
+- ["CSo22ViewControllerTextView", "init"]
+- ["CSo22ViewControllerTextView", "ipAd"]
+- ["CSo22ViewControllerTextView", "portt"]
+- !private ["CSo22ViewControllerTextView", "print"]
+- ["CSo22ViewControllerTextView", "readResponse"]
+- ["CSo22ViewControllerTextView", "sendButtonAction"]
+- ["CSo22ViewControllerTextView", "sendRequest"]
+- ["CSo22ViewControllerTextView", "startServer"]
+- ["CSo22ViewControllerTextView", "testServer"]
+- ["CSo22ViewControllerTextView", "textFieldShouldBeginEditing"]
+- ["CSo22ViewControllerTextView", "textView"]
+- ["CSo22ViewControllerTextView", "textViewShouldBeginEditing"]
+- ["CSo22ViewControllerTextView", "viewDidLoad"]
+- ["CSo22ViewControllerTextView", ""]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "appending"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "appending"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "appending"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "appending"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "appending"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "appending"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Int"]
+- !private ["Ps9_Hashable", "Int32"]
+- !private ["Ps9_Hashable", "String"]
+- !private ["Ps9_Hashable", "TCPClient"]
+- !private ["Ps9_Hashable", "TCPServer"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "accept"]
+- !private ["Ps9_Hashable", "address"]
+- !private ["Ps9_Hashable", "appendToTextField"]
+- !private ["Ps9_Hashable", "appending"]
+- !private ["Ps9_Hashable", "client"]
+- !private ["Ps9_Hashable", "close"]
+- !private ["Ps9_Hashable", "connect"]
+- !private ["Ps9_Hashable", "echoService"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "ipAd"]
+- !private ["Ps9_Hashable", "listen"]
+- !private ["Ps9_Hashable", "port"]
+- !private ["Ps9_Hashable", "portt"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "read"]
+- !private ["Ps9_Hashable", "readResponse"]
+- !private ["Ps9_Hashable", "send"]
+- !private ["Ps9_Hashable", "sendRequest"]
+- !private ["Ps9_Hashable", "testServer"]
+- !private ["Ps9_Hashable", "text"]
+- !private ["Ps9_Hashable", "textFieldShouldBeginEditing"]
+- !private ["Ps9_Hashable", "textView"]
+- !private ["Ps9_Hashable", "textViewShouldBeginEditing"]
+- !private ["Ps9_Hashable", "utf8"]
+- !private ["Ps9_Hashable", "viewDidLoad"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "appending"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "PSo15CALayerDelegate"
+- "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "VE10FoundationSS8Encoding"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Si"
+- !private "Vs5Int32"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps16RawRepresentable"
+- "O14SimpleFFPlayer6Result"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "C14SimpleFFPlayer6Socket"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "C14SimpleFFPlayer9TCPClient"
+- "C14SimpleFFPlayer11TCPClientVC"
+- !private "C14SimpleFFPlayer9TCPServer"
+- "C14SimpleFFPlayer11TCPServerVC"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
+- !private "CSo9UIControl"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- !private "PSo11UIFocusItem"
+- !private "PSo10UIKeyInput"
+- "CSo11UIResponder"
+- "PSo30UIResponderStandardEditActions"
+- !private "CSo12UIScrollView"
+- "PSo20UIScrollViewDelegate"
+- "PSo16UIStateRestoring"
+- !private "CSo11UITextField"
+- "PSo19UITextFieldDelegate"
+- !private "PSo11UITextInput"
+- !private "PSo17UITextInputTraits"
+- !private "CSo10UITextView"
+- "PSo18UITextViewDelegate"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- "CSo22ViewControllerTextView"
+- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/SimpleFFPlayer-Bridging-Header.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/SimpleFFPlayer/Utils/ViewControllerTextView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/Utilities.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFDecoder.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/avformat.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/avcodec.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/samplefmt.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/avutil.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/common.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/clang/include/inttypes.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/attributes.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/macros.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/avconfig.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/mem.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/error.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/rational.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/mathematics.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/intfloat.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/log.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/pixfmt.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/old_pix_fmts.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/buffer.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/cpu.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/channel_layout.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/dict.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/frame.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/old_codec_ids.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/avio.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libswscale/swscale.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libswscale/version.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "029cfb88466df619135606623452b8c5"

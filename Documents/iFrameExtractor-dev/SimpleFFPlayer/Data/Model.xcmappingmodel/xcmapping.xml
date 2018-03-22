@@ -1,0 +1,84 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE database SYSTEM "file:///System/Library/DTDs/CoreData.dtd">
+
+<database>
+    <databaseInfo>
+        <version>134481920</version>
+        <UUID>1EBE5FE2-863B-492D-9AE1-2DD2EBC9D624</UUID>
+        <nextObjectID>108</nextObjectID>
+        <metadata>
+            <plist version="1.0">
+                <dict>
+                    <key>NSPersistenceFrameworkVersion</key>
+                    <integer>752</integer>
+                    <key>NSStoreModelVersionHashes</key>
+                    <dict>
+                        <key>XDDevAttributeMapping</key>
+                        <data>
+		0plcXXRN7XHKl5CcF+fwriFmUpON3ZtcI/AfK748aWc=
+		</data>
+                        <key>XDDevEntityMapping</key>
+                        <data>
+		qeN1Ym3TkWN1G6dU9RfX6Kd2ccEvcDVWHpd3LpLgboI=
+		</data>
+                        <key>XDDevMappingModel</key>
+                        <data>
+		EqtMzvRnVZWkXwBHu4VeVGy8UyoOe+bi67KC79kphlQ=
+		</data>
+                        <key>XDDevPropertyMapping</key>
+                        <data>
+		XN33V44TTGY4JETlMoOB5yyTKxB+u4slvDIinv0rtGA=
+		</data>
+                        <key>XDDevRelationshipMapping</key>
+                        <data>
+		akYY9LhehVA/mCb4ATLWuI9XGLcjpm14wWL1oEBtIcs=
+		</data>
+                    </dict>
+                    <key>NSStoreModelVersionHashesVersion</key>
+                    <integer>3</integer>
+                    <key>NSStoreModelVersionIdentifiers</key>
+                    <array>
+                        <string></string>
+                    </array>
+                </dict>
+            </plist>
+        </metadata>
+    </databaseInfo>
+    <object type="XDDEVMAPPINGMODEL" id="z102">
+        <attribute name="sourcemodelpath" type="string">SimpleFFPlayer/Data/Model.xcdatamodeld/Model.xcdatamodel</attribute>
+        <attribute name="sourcemodeldata" type="binary">YnBsaXN0MDDUAQIDBAUGZmdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8Q
+EAcIFzM0NTtCRkpOVlldYWJVJG51bGzXCQoLDA0ODxAREhMUExZfEA9feGRfcm9vdFBhY2thZ2VWJGNsYXNzXF94ZF9jb21tZW50c18QEF94ZF9tb2RlbE1hbmFnZXJfEBVfY29uZmlndXJhdGlvbnNCeU5hbWVdX3hkX21vZGVsTmFtZV8QF19tb2RlbFZlcnNpb25JZGVudGlmaWVygAKAD4ALgACADYAAgA7eGBkaGxwdHgofICEiIyQlJicoJRMrLC0uLyUlE18QHFhEQnVja2V0Rm9yQ2xhc3Nlc3dhc0VuY29kZWRfEBpYREJ1Y2tldEZvclBhY2thZ2Vzc3RvcmFnZV8QHFhEQnVja2V0Rm9ySW50ZXJmYWNlc3N0b3JhZ2VfEA9feGRfb3duaW5nTW9kZWxfEB1YREJ1Y2tldEZvclBhY2thZ2Vzd2FzRW5jb2RlZFZfb3duZXJfEBtYREJ1Y2tldEZvckRhdGFUeXBlc3N0b3JhZ2VbX3Zpc2liaWxpdHlfEBlYREJ1Y2tldEZvckNsYXNzZXNzdG9yYWdlVV9uYW1lXxAfWERCdWNrZXRGb3JJbnRlcmZhY2Vzd2FzRW5jb2RlZF8QHlhEQnVja2V0Rm9yRGF0YVR5cGVzd2FzRW5jb2RlZF8QEF91bmlxdWVFbGVtZW50SUSABIAJgAeAAYAEgACACIAKEACABYADgASABIAAUFNZRVPTNjcKODk6V05TLmtleXNaTlMub2JqZWN0c6CggAbSPD0+P1okY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxlRGljdGlvbmFyeaM+QEFcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00zY3CkNEOqCggAbTNjcKR0g6oKCABtM2NwpLTDqgoIAG0jw9T1BeWERNb2RlbFBhY2thZ2WmUVJTVFVBXlhETW9kZWxQYWNrYWdlXxAPWERVTUxQYWNrYWdlSW1wXxARWERVTUxOYW1lc3BhY2VJbXBfEBRYRFVNTE5hbWVkRWxlbWVudEltcF8QD1hEVU1MRWxlbWVudEltcNI3CldYoIAM0jw9WlteTlNNdXRhYmxlQXJyYXmjWlxBV05TQXJyYXnTNjcKXl86oKCABlDSPD1jZFlYRFBNTW9kZWyjY2VBV1hETW9kZWxfEA9OU0tleWVkQXJjaGl2ZXLRaChUcm9vdIABAAgAEQAaACMALQAyADcASgBQAF8AcQB4AIUAmACwAL4A2ADaANwA3gDgAOIA5ADmAQMBIgE/AV4BcAGQAZcBtQHBAd0B4wIFAiYCOQI7Aj0CPwJBAkMCRQJHAkkCSwJNAk8CUQJTAlUCVgJaAmECaQJ0AnUCdgJ4An0CiAKRAqcCqwK4AsECyALJAsoCzALTAtQC1QLXAt4C3wLgAuIC5wL2Av0DDAMeAzIDSQNbA2ADYQNjA2gDdwN7A4MDigOLA4wDjgOPA5QDngOiA6oDvAO/A8QAAAAAAAACAQAAAAAAAABqAAAAAAAAAAAAAAAAAAADxg==
+</attribute>
+        <attribute name="destinationmodelpath" type="string">SimpleFFPlayer/Data/Model.xcdatamodeld/Model.xcdatamodel</attribute>
+        <attribute name="destinationmodeldata" type="binary">YnBsaXN0MDDUAQIDBAUGZmdYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8Q
+EAcIFzM0NTtCRkpOVlldYWJVJG51bGzXCQoLDA0ODxAREhMUExZfEA9feGRfcm9vdFBhY2thZ2VWJGNsYXNzXF94ZF9jb21tZW50c18QEF94ZF9tb2RlbE1hbmFnZXJfEBVfY29uZmlndXJhdGlvbnNCeU5hbWVdX3hkX21vZGVsTmFtZV8QF19tb2RlbFZlcnNpb25JZGVudGlmaWVygAKAD4ALgACADYAAgA7eGBkaGxwdHgofICEiIyQlJicoJRMrLC0uLyUlE18QHFhEQnVja2V0Rm9yQ2xhc3Nlc3dhc0VuY29kZWRfEBpYREJ1Y2tldEZvclBhY2thZ2Vzc3RvcmFnZV8QHFhEQnVja2V0Rm9ySW50ZXJmYWNlc3N0b3JhZ2VfEA9feGRfb3duaW5nTW9kZWxfEB1YREJ1Y2tldEZvclBhY2thZ2Vzd2FzRW5jb2RlZFZfb3duZXJfEBtYREJ1Y2tldEZvckRhdGFUeXBlc3N0b3JhZ2VbX3Zpc2liaWxpdHlfEBlYREJ1Y2tldEZvckNsYXNzZXNzdG9yYWdlVV9uYW1lXxAfWERCdWNrZXRGb3JJbnRlcmZhY2Vzd2FzRW5jb2RlZF8QHlhEQnVja2V0Rm9yRGF0YVR5cGVzd2FzRW5jb2RlZF8QEF91bmlxdWVFbGVtZW50SUSABIAJgAeAAYAEgACACIAKEACABYADgASABIAAUFNZRVPTNjcKODk6V05TLmtleXNaTlMub2JqZWN0c6CggAbSPD0+P1okY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxlRGljdGlvbmFyeaM+QEFcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00zY3CkNEOqCggAbTNjcKR0g6oKCABtM2NwpLTDqgoIAG0jw9T1BeWERNb2RlbFBhY2thZ2WmUVJTVFVBXlhETW9kZWxQYWNrYWdlXxAPWERVTUxQYWNrYWdlSW1wXxARWERVTUxOYW1lc3BhY2VJbXBfEBRYRFVNTE5hbWVkRWxlbWVudEltcF8QD1hEVU1MRWxlbWVudEltcNI3CldYoIAM0jw9WlteTlNNdXRhYmxlQXJyYXmjWlxBV05TQXJyYXnTNjcKXl86oKCABlDSPD1jZFlYRFBNTW9kZWyjY2VBV1hETW9kZWxfEA9OU0tleWVkQXJjaGl2ZXLRaChUcm9vdIABAAgAEQAaACMALQAyADcASgBQAF8AcQB4AIUAmACwAL4A2ADaANwA3gDgAOIA5ADmAQMBIgE/AV4BcAGQAZcBtQHBAd0B4wIFAiYCOQI7Aj0CPwJBAkMCRQJHAkkCSwJNAk8CUQJTAlUCVgJaAmECaQJ0AnUCdgJ4An0CiAKRAqcCqwK4AsECyALJAsoCzALTAtQC1QLXAt4C3wLgAuIC5wL2Av0DDAMeAzIDSQNbA2ADYQNjA2gDdwN7A4MDigOLA4wDjgOPA5QDngOiA6oDvAO/A8QAAAAAAAACAQAAAAAAAABqAAAAAAAAAAAAAAAAAAADxg==
+</attribute>
+        <relationship name="entitymappings" type="0/0" destination="XDDEVENTITYMAPPING" idrefs="z104"></relationship>
+    </object>
+    <object type="XDDEVATTRIBUTEMAPPING" id="z103">
+        <relationship name="entitymapping" type="1/1" destination="XDDEVENTITYMAPPING" idrefs="z104"></relationship>
+    </object>
+    <object type="XDDEVENTITYMAPPING" id="z104">
+        <attribute name="name" type="string">Mapping</attribute>
+        <attribute name="mappingtypename" type="string">Undefined</attribute>
+        <attribute name="mappingnumber" type="int16">1</attribute>
+        <attribute name="autogenerateexpression" type="bool">1</attribute>
+        <relationship name="mappingmodel" type="1/1" destination="XDDEVMAPPINGMODEL" idrefs="z102"></relationship>
+        <relationship name="attributemappings" type="0/0" destination="XDDEVATTRIBUTEMAPPING" idrefs="z108 z103 z106"></relationship>
+        <relationship name="relationshipmappings" type="0/0" destination="XDDEVRELATIONSHIPMAPPING" idrefs="z105 z107"></relationship>
+    </object>
+    <object type="XDDEVRELATIONSHIPMAPPING" id="z105">
+        <attribute name="autogenerateexpression" type="bool">1</attribute>
+        <relationship name="entitymapping" type="1/1" destination="XDDEVENTITYMAPPING" idrefs="z104"></relationship>
+    </object>
+    <object type="XDDEVATTRIBUTEMAPPING" id="z106">
+        <relationship name="entitymapping" type="1/1" destination="XDDEVENTITYMAPPING" idrefs="z104"></relationship>
+    </object>
+    <object type="XDDEVRELATIONSHIPMAPPING" id="z107">
+        <attribute name="autogenerateexpression" type="bool">1</attribute>
+        <relationship name="entitymapping" type="1/1" destination="XDDEVENTITYMAPPING" idrefs="z104"></relationship>
+    </object>
+    <object type="XDDEVATTRIBUTEMAPPING" id="z108">
+        <relationship name="entitymapping" type="1/1" destination="XDDEVENTITYMAPPING" idrefs="z104"></relationship>
+    </object>
+</database>

@@ -1,0 +1,156 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MethodFromString"
+provides-nominal:
+- "C13BrowserEngine16MethodFromString"
+provides-member:
+- ["C13BrowserEngine16MethodFromString", ""]
+provides-dynamic-lookup:
+- "extractMethodFrom"
+depends-top-level:
+- !private "!="
+- !private "AnyClass"
+- "AnyObject"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- !private "Method"
+- "MethodFromString"
+- "NSObject"
+- "Selector"
+- "UIImage"
+- !private "Unmanaged"
+- !private "class_getClassMethod"
+- !private "class_getInstanceMethod"
+- !private "method_getImplementation"
+- !private "unsafeBitCast"
+depends-member:
+- !private ["Ps9AnyObject", "class_getClassMethod"]
+- !private ["Ps9AnyObject", "class_getInstanceMethod"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "method_getImplementation"]
+- !private ["Ps9AnyObject", "unsafeBitCast"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "class_getClassMethod"]
+- !private ["Ps7CVarArg", "class_getInstanceMethod"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "method_getImplementation"]
+- !private ["Ps7CVarArg", "unsafeBitCast"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps28CustomDebugStringConvertible", "class_getClassMethod"]
+- !private ["Ps28CustomDebugStringConvertible", "class_getInstanceMethod"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "method_getImplementation"]
+- !private ["Ps28CustomDebugStringConvertible", "unsafeBitCast"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "class_getClassMethod"]
+- !private ["Ps23CustomStringConvertible", "class_getInstanceMethod"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "method_getImplementation"]
+- !private ["Ps23CustomStringConvertible", "unsafeBitCast"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "class_getClassMethod"]
+- !private ["Ps9Equatable", "class_getInstanceMethod"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "method_getImplementation"]
+- !private ["Ps9Equatable", "unsafeBitCast"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "class_getClassMethod"]
+- !private ["Ps8Hashable", "class_getInstanceMethod"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "method_getImplementation"]
+- !private ["Ps8Hashable", "unsafeBitCast"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["C13BrowserEngine16MethodFromString", "AnyClass"]
+- ["C13BrowserEngine16MethodFromString", "AnyObject"]
+- ["C13BrowserEngine16MethodFromString", "Bool"]
+- !private ["C13BrowserEngine16MethodFromString", "Method"]
+- ["C13BrowserEngine16MethodFromString", "Selector"]
+- ["C13BrowserEngine16MethodFromString", "UIImage"]
+- !private ["C13BrowserEngine16MethodFromString", "Unmanaged"]
+- !private ["C13BrowserEngine16MethodFromString", "class_getClassMethod"]
+- !private ["C13BrowserEngine16MethodFromString", "class_getInstanceMethod"]
+- ["C13BrowserEngine16MethodFromString", "deinit"]
+- ["C13BrowserEngine16MethodFromString", "extractMethodFrom"]
+- ["C13BrowserEngine16MethodFromString", "init"]
+- !private ["C13BrowserEngine16MethodFromString", "method_getImplementation"]
+- !private ["C13BrowserEngine16MethodFromString", "unsafeBitCast"]
+- !private ["CSo8NSObject", "AnyClass"]
+- ["CSo8NSObject", "AnyObject"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Method"]
+- ["CSo8NSObject", "Selector"]
+- ["CSo8NSObject", "UIImage"]
+- !private ["CSo8NSObject", "Unmanaged"]
+- !private ["CSo8NSObject", "class_getClassMethod"]
+- !private ["CSo8NSObject", "class_getInstanceMethod"]
+- ["CSo8NSObject", "extractMethodFrom"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "method_getImplementation"]
+- !private ["CSo8NSObject", "unsafeBitCast"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "class_getClassMethod"]
+- !private ["PSo16NSObjectProtocol", "class_getInstanceMethod"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "method_getImplementation"]
+- !private ["PSo16NSObjectProtocol", "unsafeBitCast"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["Vs9Unmanaged", "takeUnretainedValue"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "class_getClassMethod"]
+- !private ["Ps9_Hashable", "class_getInstanceMethod"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "method_getImplementation"]
+- !private ["Ps9_Hashable", "unsafeBitCast"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- "Ps7CVarArg"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- "C13BrowserEngine16MethodFromString"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "Vs9Unmanaged"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.apinotesc"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.apinotesc"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.apinotesc"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.apinotesc"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.apinotesc"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreText.apinotesc"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/loctv/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/loctv/Documents/loctv/iFrameExtractor-dev/BrowserEngine/DynamicObjects/BrowserEngine-Bridging-Header.h"
+interface-hash: "7f94f4845e8a57c74cc1309f78931415"

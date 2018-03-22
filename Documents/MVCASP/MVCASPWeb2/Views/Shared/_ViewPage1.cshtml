@@ -1,0 +1,39 @@
+﻿
+@*@{
+    Layout = "~/Views/Shared/_Cell.cshtml";
+}*@
+
+@*Nominate where to load the bundles. The bundles themselves are automatically generated.*@
+
+
+<html>
+<head>
+<title></title>
+</head>
+<body>
+
+    <link href="@Url.Content("~/Views/Shared/StyleSheet1.css")" rel="stylesheet" type="text/css" />
+    <div class="container111">
+        <div class="leftpane">
+            @Html.Action("PartialPage1", "Shared", new { col = 2, row = 3})
+        </div>
+
+        <div class="rightpane">
+            @*@Html.Action("PartialPage1", "Shared", new { col = 3, row = 3 })*@
+            r4tregerg
+        </div>
+       
+
+    </div>
+
+
+    <div class="tttt">
+        @RenderBody()
+    </div>
+
+    <style>
+    
+    </style>
+
+</body>
+</html>

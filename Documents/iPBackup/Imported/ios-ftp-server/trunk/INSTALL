@@ -1,0 +1,5 @@
+This is an example project using diddyFtpServer lib.
+
+The xcode project contains 2 targets, the library and an example iphone app using the static lib file (.a)
+
+The main library code is kept up to date on the google code page under the svn source section in the lib directory.

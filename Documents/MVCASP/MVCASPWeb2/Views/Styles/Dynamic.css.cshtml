@@ -1,0 +1,9 @@
+﻿@{    var className = "dynamicCss";
+    var bkColor = Request.QueryString["color"] ?? "red";
+}
+<style>
+.@className
+{
+    background-color:@bkColor;
+}
+</style>

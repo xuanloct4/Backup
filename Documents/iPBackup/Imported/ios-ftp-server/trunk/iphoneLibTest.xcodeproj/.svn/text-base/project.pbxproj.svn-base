@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E42382B0EB0D8AA0064EEE4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42382A0EB0D8AA0064EEE4 /* CFNetwork.framework */; };
+		0E42384D0EB0D96D0064EEE4 /* ftp_commands.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E42384C0EB0D96D0064EEE4 /* ftp_commands.plist */; };
+		0E4239040EB0DF210064EEE4 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0E4239030EB0DF210064EEE4 /* README */; };
+		0E5184261306D1D600E95713 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0E5184251306D1D600E95713 /* LICENSE */; };
+		0EC53AAC0EC5B9E000165BE6 /* list.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4238AE0EB0DD370064EEE4 /* list.m */; };
+		0EC53AAD0EC5B9E000165BE6 /* FtpServer.m in Sources */ = {isa = PBXBuildFile; fileRef = F98C25B00EBEBA0F00ADB82B /* FtpServer.m */; };
+		0EC53AAE0EC5B9E000165BE6 /* FtpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4238A90EB0DD370064EEE4 /* FtpConnection.m */; };
+		0EC53AAF0EC5B9E000165BE6 /* FtpDataConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4238AB0EB0DD370064EEE4 /* FtpDataConnection.m */; };
+		0EC53AB00EC5B9E000165BE6 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4238A50EB0DD370064EEE4 /* AsyncSocket.m */; };
+		0EC53B590EC5B9F100165BE6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E42382A0EB0D8AA0064EEE4 /* CFNetwork.framework */; };
+		0EC53B5A0EC5B9F100165BE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		0EC53B5B0EC5B9F100165BE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		0EC53B5C0EC5B9F100165BE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		0EC53BCB0EC5BE7000165BE6 /* libdiddyFtpServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC53A9C0EC5B95500165BE6 /* libdiddyFtpServer.a */; };
+		0EC53C720EC5CD0D00165BE6 /* CHANGES in Resources */ = {isa = PBXBuildFile; fileRef = 0EC53C6E0EC5CD0D00165BE6 /* CHANGES */; };
+		0EC53C730EC5CD0D00165BE6 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 0EC53C6F0EC5CD0D00165BE6 /* COPYING */; };
+		0EC53C740EC5CD0D00165BE6 /* INSTALL in Resources */ = {isa = PBXBuildFile; fileRef = 0EC53C700EC5CD0D00165BE6 /* INSTALL */; };
+		0EC53C750EC5CD0D00165BE6 /* TODO in Resources */ = {isa = PBXBuildFile; fileRef = 0EC53C710EC5CD0D00165BE6 /* TODO */; };
+		0EF940030F123163007EAD2C /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF940010F123163007EAD2C /* NetworkController.m */; };
+		0EF940200F123352007EAD2C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF9401F0F123352007EAD2C /* SystemConfiguration.framework */; };
+		1D3623260D0F684500981E51 /* iphoneLibTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* iphoneLibTestAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* iphoneLibTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* iphoneLibTestViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* iphoneLibTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* iphoneLibTestViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0EE0F47C0F14AE280073EAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0EC53A9B0EC5B95500165BE6;
+			remoteInfo = diddyFtpServer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E42382A0EB0D8AA0064EEE4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0E42384C0EB0D96D0064EEE4 /* ftp_commands.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ftp_commands.plist; sourceTree = "<group>"; };
+		0E4238A40EB0DD370064EEE4 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		0E4238A50EB0DD370064EEE4 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		0E4238A80EB0DD370064EEE4 /* FtpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpConnection.h; sourceTree = "<group>"; };
+		0E4238A90EB0DD370064EEE4 /* FtpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpConnection.m; sourceTree = "<group>"; };
+		0E4238AA0EB0DD370064EEE4 /* FtpDataConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpDataConnection.h; sourceTree = "<group>"; };
+		0E4238AB0EB0DD370064EEE4 /* FtpDataConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpDataConnection.m; sourceTree = "<group>"; };
+		0E4238AD0EB0DD370064EEE4 /* list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = list.h; sourceTree = "<group>"; };
+		0E4238AE0EB0DD370064EEE4 /* list.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = list.m; sourceTree = "<group>"; };
+		0E4238B60EB0DD5D0064EEE4 /* FtpDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpDefines.h; sourceTree = "<group>"; };
+		0E4239030EB0DF210064EEE4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		0E5184251306D1D600E95713 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0EC53A9C0EC5B95500165BE6 /* libdiddyFtpServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdiddyFtpServer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EC53C6E0EC5CD0D00165BE6 /* CHANGES */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES; sourceTree = "<group>"; };
+		0EC53C6F0EC5CD0D00165BE6 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		0EC53C700EC5CD0D00165BE6 /* INSTALL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = INSTALL; sourceTree = "<group>"; };
+		0EC53C710EC5CD0D00165BE6 /* TODO */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO; sourceTree = "<group>"; };
+		0EF940010F123163007EAD2C /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
+		0EF940020F123163007EAD2C /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		0EF9401F0F123352007EAD2C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* iphoneLibTestAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphoneLibTestAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* iphoneLibTestAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iphoneLibTestAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* iphoneLibTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iphoneLibTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* iphoneLibTestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iphoneLibTestViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* iphoneLibTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphoneLibTestViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* iphoneLibTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iphoneLibTestViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* iphoneLibTest_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iphoneLibTest_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98C25AF0EBEBA0F00ADB82B /* FtpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FtpServer.h; sourceTree = "<group>"; };
+		F98C25B00EBEBA0F00ADB82B /* FtpServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FtpServer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EC53A9A0EC5B95500165BE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC53B590EC5B9F100165BE6 /* CFNetwork.framework in Frameworks */,
+				0EC53B5A0EC5B9F100165BE6 /* UIKit.framework in Frameworks */,
+				0EC53B5B0EC5B9F100165BE6 /* Foundation.framework in Frameworks */,
+				0EC53B5C0EC5B9F100165BE6 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC53BCB0EC5BE7000165BE6 /* libdiddyFtpServer.a in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				0E42382B0EB0D8AA0064EEE4 /* CFNetwork.framework in Frameworks */,
+				0EF940200F123352007EAD2C /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E4238A20EB0DD370064EEE4 /* Ftp Server */,
+				1D3623240D0F684500981E51 /* iphoneLibTestAppDelegate.h */,
+				1D3623250D0F684500981E51 /* iphoneLibTestAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* iphoneLibTestViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* iphoneLibTestViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0E4238A20EB0DD370064EEE4 /* Ftp Server */ = {
+			isa = PBXGroup;
+			children = (
+				0EF940020F123163007EAD2C /* NetworkController.h */,
+				0EF940010F123163007EAD2C /* NetworkController.m */,
+				0E4238B60EB0DD5D0064EEE4 /* FtpDefines.h */,
+				0E4238AC0EB0DD370064EEE4 /* List Command */,
+				F98C25AF0EBEBA0F00ADB82B /* FtpServer.h */,
+				F98C25B00EBEBA0F00ADB82B /* FtpServer.m */,
+				0E4238A80EB0DD370064EEE4 /* FtpConnection.h */,
+				0E4238A90EB0DD370064EEE4 /* FtpConnection.m */,
+				0E4238AA0EB0DD370064EEE4 /* FtpDataConnection.h */,
+				0E4238AB0EB0DD370064EEE4 /* FtpDataConnection.m */,
+				0E4238A30EB0DD370064EEE4 /* Async */,
+			);
+			name = "Ftp Server";
+			sourceTree = "<group>";
+		};
+		0E4238A30EB0DD370064EEE4 /* Async */ = {
+			isa = PBXGroup;
+			children = (
+				0E4238A40EB0DD370064EEE4 /* AsyncSocket.h */,
+				0E4238A50EB0DD370064EEE4 /* AsyncSocket.m */,
+			);
+			name = Async;
+			sourceTree = "<group>";
+		};
+		0E4238AC0EB0DD370064EEE4 /* List Command */ = {
+			isa = PBXGroup;
+			children = (
+				0E4238AD0EB0DD370064EEE4 /* list.h */,
+				0E4238AE0EB0DD370064EEE4 /* list.m */,
+			);
+			name = "List Command";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EC53A9C0EC5B95500165BE6 /* libdiddyFtpServer.a */,
+				1D6058910D05DD3D006BFB54 /* iphoneLibTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				0E4239030EB0DF210064EEE4 /* README */,
+				0EC53C6E0EC5CD0D00165BE6 /* CHANGES */,
+				0EC53C6F0EC5CD0D00165BE6 /* COPYING */,
+				0EC53C700EC5CD0D00165BE6 /* INSTALL */,
+				0EC53C710EC5CD0D00165BE6 /* TODO */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				0E5184251306D1D600E95713 /* LICENSE */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* iphoneLibTest_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2899E5210DE3E06400AC0155 /* iphoneLibTestViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				0E42384C0EB0D96D0064EEE4 /* ftp_commands.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EF9401F0F123352007EAD2C /* SystemConfiguration.framework */,
+				0E42382A0EB0D8AA0064EEE4 /* CFNetwork.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0EC53A980EC5B95500165BE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0EC53A9B0EC5B95500165BE6 /* diddyFtpServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EC53AA40EC5B96700165BE6 /* Build configuration list for PBXNativeTarget "diddyFtpServer" */;
+			buildPhases = (
+				0EC53A980EC5B95500165BE6 /* Headers */,
+				0EC53A990EC5B95500165BE6 /* Sources */,
+				0EC53A9A0EC5B95500165BE6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = diddyFtpServer;
+			productName = diddyFtpServer;
+			productReference = 0EC53A9C0EC5B95500165BE6 /* libdiddyFtpServer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1D6058900D05DD3D006BFB54 /* iphoneLibTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iphoneLibTest" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EE0F47D0F14AE280073EAB6 /* PBXTargetDependency */,
+			);
+			name = iphoneLibTest;
+			productName = iphoneLibTest;
+			productReference = 1D6058910D05DD3D006BFB54 /* iphoneLibTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iphoneLibTest" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EC53A9B0EC5B95500165BE6 /* diddyFtpServer */,
+				1D6058900D05DD3D006BFB54 /* iphoneLibTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* iphoneLibTestViewController.xib in Resources */,
+				0E42384D0EB0D96D0064EEE4 /* ftp_commands.plist in Resources */,
+				0E4239040EB0DF210064EEE4 /* README in Resources */,
+				0EC53C720EC5CD0D00165BE6 /* CHANGES in Resources */,
+				0EC53C730EC5CD0D00165BE6 /* COPYING in Resources */,
+				0EC53C740EC5CD0D00165BE6 /* INSTALL in Resources */,
+				0EC53C750EC5CD0D00165BE6 /* TODO in Resources */,
+				0E5184261306D1D600E95713 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EC53A990EC5B95500165BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EC53AAC0EC5B9E000165BE6 /* list.m in Sources */,
+				0EC53AAD0EC5B9E000165BE6 /* FtpServer.m in Sources */,
+				0EC53AAE0EC5B9E000165BE6 /* FtpConnection.m in Sources */,
+				0EC53AAF0EC5B9E000165BE6 /* FtpDataConnection.m in Sources */,
+				0EC53AB00EC5B9E000165BE6 /* AsyncSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* iphoneLibTestAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* iphoneLibTestViewController.m in Sources */,
+				0EF940030F123163007EAD2C /* NetworkController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EE0F47D0F14AE280073EAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0EC53A9B0EC5B95500165BE6 /* diddyFtpServer */;
+			targetProxy = 0EE0F47C0F14AE280073EAB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0EC53A9D0EC5B95500165BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PREBINDING = NO;
+				PRODUCT_NAME = diddyFtpServer;
+			};
+			name = Debug;
+		};
+		0EC53A9E0EC5B95500165BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = diddyFtpServer;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iphoneLibTest_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Downloads/DiddyFtpServerLib/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = iphoneLibTest;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iphoneLibTest_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../../Downloads/DiddyFtpServerLib/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = iphoneLibTest;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EC53AA40EC5B96700165BE6 /* Build configuration list for PBXNativeTarget "diddyFtpServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EC53A9D0EC5B95500165BE6 /* Debug */,
+				0EC53A9E0EC5B95500165BE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iphoneLibTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iphoneLibTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,23 @@
+﻿               .leftpane{
+ display:inline-block;
+background-color:aqua;
+width:26%;
+height:100%;
+/*margin-left:10px;*/
+position:relative;
+}
+
+.rightpane{
+   display:inline-block;
+background-color:seagreen;
+position:relative;
+/*margin-left:10px;*/
+width:68%;
+height:100%;
+}
+
+ .container111 {
+        width:100%;
+    height:800px;
+    display:block;
+    }

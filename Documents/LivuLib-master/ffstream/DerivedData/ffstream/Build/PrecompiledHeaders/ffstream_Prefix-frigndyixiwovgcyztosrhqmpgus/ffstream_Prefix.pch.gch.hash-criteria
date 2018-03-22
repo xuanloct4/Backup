@@ -1,0 +1,20 @@
+Contents of /Users/fiona/dev/mobile/media/distro/ffstream/ffstream_Prefix.pch
+4.2.1 (Apple Inc. build 5666) (dot 3)
+-x
+objective-c
+-arch
+armv7
+-fmessage-length=0
+-pipe
+-std=c99
+-fpascal-strings
+-O0
+-isysroot
+/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+-gdwarf-2
+-mthumb
+-miphoneos-version-min=4.3
+-I/Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Products/Debug-iphoneos/include
+-I../ffmpeg
+-I../rtmp/librtmp
+-F/Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Products/Debug-iphoneos

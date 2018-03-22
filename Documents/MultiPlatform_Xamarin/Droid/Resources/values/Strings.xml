@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">AndroidFirst</string>
+  <string name="hello_world">Hello world!</string>
+  <string name="action_settings">Settings</string>
+  <string name="button_send">Send</string>
+  <string name="button_send1">Send1</string>
+  <string name="enter_text">Enter text</string>
+  <string name="action_save_as">Save as</string>
+</resources>

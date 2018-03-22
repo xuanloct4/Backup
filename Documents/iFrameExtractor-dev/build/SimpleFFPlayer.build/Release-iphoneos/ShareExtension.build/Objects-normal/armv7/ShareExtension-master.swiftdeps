@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "aa9b892ded2054185e4a298a007d7894"
+build_time: [547900172, 418080000]
+inputs:
+  "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/ShareExtension/Deck.swift": [9223372036854775807, 0]
+  "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/ShareExtension/ShareViewController.swift": [9223372036854775807, 0]
+  "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/ShareExtension/ShareSelectViewController.swift": [9223372036854775807, 0]
