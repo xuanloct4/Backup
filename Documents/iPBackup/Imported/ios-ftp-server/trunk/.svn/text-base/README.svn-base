@@ -1,0 +1,30 @@
+DiddyFtpServer is a very simple Ftp server library written in Cocoa/Objective C that you can include into your 
+projects to add file access.
+
+
+I have only added a subset of Ftp Commands.
+
+Currently the major issue is...
+
+Windows Explorer : hangs when asked to transfer a file
+Long file transfers sometimes hang.  
+
+I'm still working on this, but someone else might spot a bug faster.
+
+Known clients I have got this working with are   Transmit from Panic and FileZilla.
+
+I'm releasing this as I want to concentrate on other parts of my app and hope that other people can get involved and 
+make this into a really useful library for cocoa programmers.
+
+My thanks to Dustin Voss for the AsyncSocket routines which I have used.
+AsyncSocket can be found at http://code.google.com/p/cocoaasyncsocket/
+and that part is covered by his own copyright that is included in the headers.
+
+
+This library is covered by the terms of LGPL which is included.  share code, make life easier.
+
+
+
+
+
+

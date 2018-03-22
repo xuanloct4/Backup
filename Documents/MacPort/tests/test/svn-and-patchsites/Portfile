@@ -1,0 +1,44 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+
+PortSystem          1.0
+
+name                svn-and-patchsites
+version             2
+
+categories          test
+maintainers         nomaintainer
+platforms           darwin
+
+homepage            https://www.macports.org/
+description         Test port for svn+distant patchfiles functionalities
+long_description    ${description}
+
+# use a MacPorts svn URL so we don't ping a remote SVN server every time the
+# tests are run
+# taken from the mpvim port
+fetch.type          svn
+svn.url             https://svn.macports.org/repository/macports/contrib/mpvim
+
+# use a MacPorts distfiles server to avoid hitting a remote server every time
+# the tests are run (and possibly causing failures when the server is down)
+# taken from the vim port
+patch_sites         http://distfiles.macports.org/vim/7.4
+patchfiles          7.4.001 \
+                    7.4.002 \
+                    7.4.003
+checksums           7.4.001 md5 f234692c9ab5265ba6ba6f55c0f81764 \
+                    7.4.002 md5 a03e1a5ad3722f2011751dda977641af \
+                    7.4.003 md5 e6d070f592bb6da4d8cf2f7f134425e5
+
+# disable the patch phase because the patches would never apply
+patch		{}
+extract		{}
+configure	{}
+build		{}
+destroot	{
+	system "touch ${destroot}${prefix}/lib/${name}"
+}
+
+test {
+	# test is actually running the fetch target
+}

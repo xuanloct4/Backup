@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		041EDBCF1A625CEC00ECDA48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDBCE1A625CEC00ECDA48 /* AppDelegate.swift */; };
+		041EDBD11A625CEC00ECDA48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDBD01A625CEC00ECDA48 /* ViewController.swift */; };
+		041EDBD41A625CEC00ECDA48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBD21A625CEC00ECDA48 /* Main.storyboard */; };
+		041EDBD61A625CEC00ECDA48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBD51A625CEC00ECDA48 /* Images.xcassets */; };
+		041EDBD91A625CEC00ECDA48 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBD71A625CEC00ECDA48 /* LaunchScreen.xib */; };
+		041EDBE51A625CED00ECDA48 /* LoveInASnapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */; };
+		041EDBF01A625D9200ECDA48 /* Envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEE1A625D9200ECDA48 /* Envelope.png */; };
+		041EDBF11A625D9200ECDA48 /* Swap.png in Resources */ = {isa = PBXBuildFile; fileRef = 041EDBEF1A625D9200ECDA48 /* Swap.png */; };
+		7821EDD31A8C7A9C009573CF /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7821EDD21A8C7A9C009573CF /* TesseractOCR.framework */; };
+		7821EDD51A8C7AA3009573CF /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 7821EDD41A8C7AA3009573CF /* tessdata */; };
+		7821EDD71A8C7AC3009573CF /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7821EDD61A8C7AC3009573CF /* CoreImage.framework */; };
+		7821EDD91A8C7ACC009573CF /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7821EDD81A8C7ACC009573CF /* libstdc++.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041EDBDF1A625CED00ECDA48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041EDBC11A625CEC00ECDA48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041EDBC81A625CEC00ECDA48;
+			remoteInfo = LoveInASnap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041EDBC91A625CEC00ECDA48 /* LoveInASnap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoveInASnap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		041EDBCD1A625CEC00ECDA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041EDBCE1A625CEC00ECDA48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		041EDBD01A625CEC00ECDA48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		041EDBD31A625CEC00ECDA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		041EDBD51A625CEC00ECDA48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		041EDBD81A625CEC00ECDA48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		041EDBDE1A625CED00ECDA48 /* LoveInASnapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoveInASnapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041EDBE31A625CED00ECDA48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoveInASnapTests.swift; sourceTree = "<group>"; };
+		041EDBEE1A625D9200ECDA48 /* Envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Envelope.png; sourceTree = "<group>"; };
+		041EDBEF1A625D9200ECDA48 /* Swap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Swap.png; sourceTree = "<group>"; };
+		7821EDD21A8C7A9C009573CF /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		7821EDD41A8C7AA3009573CF /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		7821EDD61A8C7AC3009573CF /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		7821EDD81A8C7ACC009573CF /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		7821EDDA1A8C7AE9009573CF /* LoveInASnap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoveInASnap-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041EDBC61A625CEC00ECDA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7821EDD91A8C7ACC009573CF /* libstdc++.dylib in Frameworks */,
+				7821EDD71A8C7AC3009573CF /* CoreImage.framework in Frameworks */,
+				7821EDD31A8C7A9C009573CF /* TesseractOCR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041EDBDB1A625CED00ECDA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041EDBC01A625CEC00ECDA48 = {
+			isa = PBXGroup;
+			children = (
+				7821EDD81A8C7ACC009573CF /* libstdc++.dylib */,
+				7821EDD61A8C7AC3009573CF /* CoreImage.framework */,
+				041EDBCB1A625CEC00ECDA48 /* LoveInASnap */,
+				041EDBE11A625CED00ECDA48 /* LoveInASnapTests */,
+				041EDBCA1A625CEC00ECDA48 /* Products */,
+				7821EDDA1A8C7AE9009573CF /* LoveInASnap-Bridging-Header.h */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		041EDBCA1A625CEC00ECDA48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				041EDBC91A625CEC00ECDA48 /* LoveInASnap.app */,
+				041EDBDE1A625CED00ECDA48 /* LoveInASnapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		041EDBCB1A625CEC00ECDA48 /* LoveInASnap */ = {
+			isa = PBXGroup;
+			children = (
+				7821EDD21A8C7A9C009573CF /* TesseractOCR.framework */,
+				041EDBCE1A625CEC00ECDA48 /* AppDelegate.swift */,
+				041EDBD01A625CEC00ECDA48 /* ViewController.swift */,
+				041EDBD21A625CEC00ECDA48 /* Main.storyboard */,
+				041EDBD51A625CEC00ECDA48 /* Images.xcassets */,
+				041EDBD71A625CEC00ECDA48 /* LaunchScreen.xib */,
+				041EDBCC1A625CEC00ECDA48 /* Supporting Files */,
+			);
+			path = LoveInASnap;
+			sourceTree = "<group>";
+		};
+		041EDBCC1A625CEC00ECDA48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7821EDD41A8C7AA3009573CF /* tessdata */,
+				041EDBEE1A625D9200ECDA48 /* Envelope.png */,
+				041EDBEF1A625D9200ECDA48 /* Swap.png */,
+				041EDBCD1A625CEC00ECDA48 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		041EDBE11A625CED00ECDA48 /* LoveInASnapTests */ = {
+			isa = PBXGroup;
+			children = (
+				041EDBE41A625CED00ECDA48 /* LoveInASnapTests.swift */,
+				041EDBE21A625CED00ECDA48 /* Supporting Files */,
+			);
+			path = LoveInASnapTests;
+			sourceTree = "<group>";
+		};
+		041EDBE21A625CED00ECDA48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				041EDBE31A625CED00ECDA48 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041EDBC81A625CEC00ECDA48 /* LoveInASnap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041EDBE81A625CED00ECDA48 /* Build configuration list for PBXNativeTarget "LoveInASnap" */;
+			buildPhases = (
+				041EDBC51A625CEC00ECDA48 /* Sources */,
+				041EDBC61A625CEC00ECDA48 /* Frameworks */,
+				041EDBC71A625CEC00ECDA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoveInASnap;
+			productName = LoveInASnap;
+			productReference = 041EDBC91A625CEC00ECDA48 /* LoveInASnap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041EDBDD1A625CED00ECDA48 /* LoveInASnapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041EDBEB1A625CED00ECDA48 /* Build configuration list for PBXNativeTarget "LoveInASnapTests" */;
+			buildPhases = (
+				041EDBDA1A625CED00ECDA48 /* Sources */,
+				041EDBDB1A625CED00ECDA48 /* Frameworks */,
+				041EDBDC1A625CED00ECDA48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041EDBE01A625CED00ECDA48 /* PBXTargetDependency */,
+			);
+			name = LoveInASnapTests;
+			productName = LoveInASnapTests;
+			productReference = 041EDBDE1A625CED00ECDA48 /* LoveInASnapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041EDBC11A625CEC00ECDA48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Lyndsey Scott";
+				TargetAttributes = {
+					041EDBC81A625CEC00ECDA48 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = EXR8AK87DX;
+					};
+					041EDBDD1A625CED00ECDA48 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 041EDBC81A625CEC00ECDA48;
+					};
+				};
+			};
+			buildConfigurationList = 041EDBC41A625CEC00ECDA48 /* Build configuration list for PBXProject "LoveInASnap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041EDBC01A625CEC00ECDA48;
+			productRefGroup = 041EDBCA1A625CEC00ECDA48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041EDBC81A625CEC00ECDA48 /* LoveInASnap */,
+				041EDBDD1A625CED00ECDA48 /* LoveInASnapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041EDBC71A625CEC00ECDA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041EDBD41A625CEC00ECDA48 /* Main.storyboard in Resources */,
+				041EDBF01A625D9200ECDA48 /* Envelope.png in Resources */,
+				041EDBF11A625D9200ECDA48 /* Swap.png in Resources */,
+				041EDBD91A625CEC00ECDA48 /* LaunchScreen.xib in Resources */,
+				041EDBD61A625CEC00ECDA48 /* Images.xcassets in Resources */,
+				7821EDD51A8C7AA3009573CF /* tessdata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041EDBDC1A625CED00ECDA48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041EDBC51A625CEC00ECDA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041EDBD11A625CEC00ECDA48 /* ViewController.swift in Sources */,
+				041EDBCF1A625CEC00ECDA48 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041EDBDA1A625CED00ECDA48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041EDBE51A625CED00ECDA48 /* LoveInASnapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041EDBE01A625CED00ECDA48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041EDBC81A625CEC00ECDA48 /* LoveInASnap */;
+			targetProxy = 041EDBDF1A625CED00ECDA48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		041EDBD21A625CEC00ECDA48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041EDBD31A625CEC00ECDA48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		041EDBD71A625CEC00ECDA48 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				041EDBD81A625CEC00ECDA48 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		041EDBE61A625CED00ECDA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		041EDBE71A625CED00ECDA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041EDBE91A625CED00ECDA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = EXR8AK87DX;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoveInASnap",
+				);
+				INFOPLIST_FILE = LoveInASnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "StandableInc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoveInASnap-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		041EDBEA1A625CED00ECDA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = EXR8AK87DX;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LoveInASnap",
+				);
+				INFOPLIST_FILE = LoveInASnap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "StandableInc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LoveInASnap-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		041EDBEC1A625CED00ECDA48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LoveInASnapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "StandableInc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveInASnap.app/LoveInASnap";
+			};
+			name = Debug;
+		};
+		041EDBED1A625CED00ECDA48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LoveInASnapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "StandableInc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoveInASnap.app/LoveInASnap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041EDBC41A625CEC00ECDA48 /* Build configuration list for PBXProject "LoveInASnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041EDBE61A625CED00ECDA48 /* Debug */,
+				041EDBE71A625CED00ECDA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041EDBE81A625CED00ECDA48 /* Build configuration list for PBXNativeTarget "LoveInASnap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041EDBE91A625CED00ECDA48 /* Debug */,
+				041EDBEA1A625CED00ECDA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041EDBEB1A625CED00ECDA48 /* Build configuration list for PBXNativeTarget "LoveInASnapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041EDBEC1A625CED00ECDA48 /* Debug */,
+				041EDBED1A625CED00ECDA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041EDBC11A625CEC00ECDA48 /* Project object */;
+}

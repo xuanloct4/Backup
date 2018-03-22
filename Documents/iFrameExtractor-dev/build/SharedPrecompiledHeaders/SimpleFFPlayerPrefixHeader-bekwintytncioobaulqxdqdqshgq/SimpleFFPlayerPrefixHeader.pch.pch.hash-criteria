@@ -1,0 +1,26 @@
+-x
+c
+-arch
+armv7
+-std=gnu99
+-fmodules
+-gmodules
+-fbuild-session-file=/var/folders/t3/lsk7zc0926g7bd_2kv9d0pp80000gn/C/org.llvm.clang/ModuleCache/Session.modulevalidation
+-fpascal-strings
+-O0
+-fno-common
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk
+-miphoneos-version-min=8.0
+-g
+-fvisibility=hidden
+-fembed-bitcode-marker
+-iquote
+-iquote
+-I/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/build/Release-iphoneos/include
+-I/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include
+-F/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/build/Release-iphoneos
+arm-apple-darwin16.4.0
+"4.2.1 Compatible Apple LLVM 8.1.0 (clang-802.0.38)"
+SDK_PRODUCT_BUILD_VERSION=14E269
+14E269

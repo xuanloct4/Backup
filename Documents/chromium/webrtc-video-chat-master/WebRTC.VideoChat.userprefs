@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{26D135CF-133C-4392-918A-BCB1E9F16DB5}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="VideoChat/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="VideoChat/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="VideoChat/Models/User.cs" Line="1" Column="1" />
+      <File FileName="VideoChat/Models/UserCall.cs" Line="1" Column="1" />
+      <File FileName="VideoChat/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="VideoChat/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.VideoChat PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

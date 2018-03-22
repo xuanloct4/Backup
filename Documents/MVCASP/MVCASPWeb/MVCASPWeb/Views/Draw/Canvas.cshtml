@@ -1,0 +1,723 @@
+﻿@{
+    ViewBag.Title = "Canvas";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Canvas</title>
+</head>
+<body>
+    <div id="myBox">
+    </div>
+
+    <style>
+        #myBox {
+            position: relative;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+            border: 3px solid #000;
+        }
+
+        .example_path {
+            position: relative;
+            overflow: hidden;
+            width: 530px;
+            height: 30px;
+            border: 3px solid #000;
+        }
+
+            .example_path .example_block {
+                position: absolute;
+                background-color: blue;
+                width: 30px;
+                height: 20px;
+                padding-top: 10px;
+                text-align: center;
+                color: #fff;
+                font-size: 10px;
+                white-space: nowrap;
+            }
+
+        #scrollView {
+            position: relative;
+            background-color: #333;
+            width: 350px;
+            height: 200px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        #rightScrollBar {
+            position: absolute;
+            background-color: #00FF00;
+            overflow: hidden;
+        }
+
+        #bottomScrollBar {
+            position: absolute;
+            background-color: #00FF00;
+            overflow: hidden;
+        }
+
+        #bottomBar {
+            position: absolute;
+            background-color: #fff;
+            height: 10px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        #rigthBar {
+            position: absolute;
+            background-color: #fff;
+            width: 10px;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        #bar {
+            position: absolute;
+            background-color: #f00;
+            overflow: hidden;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        #container {
+            position: absolute;
+            background-color: #ffd800;
+            overflow: hidden;
+            top: 0px;
+            left: 0px;
+            width: 350px;
+            height: 200px;
+        }
+    </style>
+
+    <div onclick="move(this.children[0])" class="example_path">
+        <div class="example_block"></div>
+    </div>
+
+    <div id="scrollView">
+        <div id="container">
+        </div>
+
+        <div id="bottomBar">
+        </div>
+        <div id="rigthBar">
+        </div>
+        <div id="rightScrollBar">
+        </div>
+        <div id="bottomScrollBar">
+        </div>
+        @*<img src="https://www.kirupa.com/html5/images/circle_colorful.png">*@
+
+
+    </div>
+
+    <script>
+
+    // Helper function to get an element's exact position
+    function getPosition(el) {
+        var xPos = 0;
+        var yPos = 0;
+
+        while (el) {
+            if (el.tagName == "BODY") {
+                // deal with browser quirks with body/window/document and page scroll
+                var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+                var yScroll = el.scrollTop || document.documentElement.scrollTop;
+
+                xPos += (el.offsetLeft - xScroll + el.clientLeft);
+                yPos += (el.offsetTop - yScroll + el.clientTop);
+            } else {
+                // for all other non-BODY elements
+                xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+                yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+            }
+
+            el = el.offsetParent;
+        }
+        return {
+            x: xPos,
+            y: yPos
+        };
+    }
+
+
+
+        var rsb = document.getElementById('rightScrollBar');
+        var bsb = document.getElementById('bottomScrollBar');
+        var field = document.getElementById('scrollView');
+var dragStart = false;
+field.onmouseup = function(e)
+{
+dragStart = false;
+}
+	field.onmousemove = ddd;
+	field.onmousedown = function(e)
+	{
+	dragStart = true;
+	}
+
+        function exceptScrollBars(scrollView, elementId)
+        {
+            if ((elementId == 'rightScrollBar') || (elementId == 'bottomScrollBar') || (elementId == 'rigthBar') || (elementId == 'bottomBar')) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function qq(scrollView, scrollId, offset, isVertical) {
+            var els = scrollView.childNodes;
+            var length = scrollView.childNodes.length;
+            for (i = 0; i < length; i++) {
+                if (els[i].id == scrollId) {
+                    continue;
+                } else {
+
+                    if (exceptScrollBars(scrollView, els[i].id)) {
+                        continue;
+                    } else {
+                        els[i].style.overflow = "hidden";
+                        els[i].style.position = "absolute";
+                        if (isVertical) {
+                            var scrollHeight = scrollView.style.height;
+                            els[i].style.top = els[i].style.top - (offset - scrollHeight) + 'px';
+                        } else {
+                            var scrollWidth = scrollView.style.width;
+                            els[i].style.left = els[i].style.left - (offset - scrollWidth) + 'px';
+                        }
+                    }
+                }
+            }
+        }
+
+        function offSetFromScrollBarPosition(scrollView, scrollId, startPosition, endPosition, isVertical) {
+            var contentSize = endPosition - startPosition;
+            var scrollBar;
+            var els = scrollView.childNodes;
+            var length = scrollView.childNodes.length;
+            for (i = 0; i < length; i++) {
+                if (els[i].id == scrollId) {
+                    scrollBar = els[i];
+                    break;
+                }
+            }
+
+            var parentSize;
+            if (isVertical) {
+                parentSize = scrollView.clientHeight;
+            } else {
+                parentSize = scrollView.clientWidth;
+            }
+
+            var scrollBarSize = scrollBar.style.height;
+            var top = scrollBar.style.top;
+
+            console.log(scrollBarSize);
+            console.log(top);
+
+            var offset = parseInt(top * (contentSize - parentSize) / (parentSize - scrollBarSize) + parentSize);
+
+            console.log(offset);
+
+            return offset + startPosition;
+        }
+
+        function offSetFromScrollBarPosition(scrollView, scrollId, startPosition, endPosition, point, isVertical) {
+            var contentSize = endPosition - startPosition;
+            var scrollBar;
+            var els = scrollView.childNodes;
+            var length = scrollView.childNodes.length;
+            for (i = 0; i < length; i++) {
+                if (els[i].id == scrollId) {
+                    scrollBar = els[i];
+                    break;
+                }
+            }
+
+            var parentSize;
+            var scrollBarSize;
+            if (isVertical) {
+                parentSize = scrollView.clientHeight;
+                scrollBarSize = parseInt(scrollBar.style.height);
+            } else {
+                parentSize = scrollView.clientWidth;
+                scrollBarSize = parseInt(scrollBar.style.width);
+            }
+
+            var offset = parseInt(point * (contentSize - parentSize) / (parentSize - scrollBarSize - 10) + parentSize);
+            console.log('contentSize: ' + contentSize);
+            console.log('parentSize: ' + parentSize);
+            console.log('scrollBarSize: ' + scrollBarSize);
+            console.log('offset: ' + offset);
+
+            return offset + startPosition;
+        }
+
+
+
+        function setPositionScrollBar(scrollView, scrollId, offset, startPosition, endPosition, isVertical) {
+            var contentSize = endPosition - startPosition;
+            var scrollBar;
+            var els = scrollView.childNodes;
+            var length = scrollView.childNodes.length;
+            for (i = 0; i < length; i++) {
+                if (els[i].id == scrollId) {
+                    scrollBar = els[i];
+                    break;
+                }
+            }
+
+            var parentSize;
+            if (isVertical) {
+                parentSize = scrollView.clientHeight;
+            } else {
+                parentSize = scrollView.clientWidth;
+            }
+
+            var scale = contentSize / parentSize;
+
+            var scrollBarSize = parseInt((parentSize - 10) / scale);
+
+            var top = 0;
+            if (contentSize - parentSize > 0) {
+                var top = parseInt((parentSize - 10 - scrollBarSize) * (offset - parentSize) / (contentSize - parentSize));
+            }
+
+            if (isVertical) {
+                scrollBar.style.top = top + 'px';
+                scrollBar.style.height = scrollBarSize + 'px';
+                scrollBar.style.left = scrollView.clientWidth - 10 + 'px';
+                scrollBar.style.width = '10px';
+            } else {
+                scrollBar.style.top = scrollView.clientHeight - 10 + 'px';
+                scrollBar.style.height = '10px';
+                scrollBar.style.left = top + 'px';
+                scrollBar.style.width = scrollBarSize + 'px';
+            }
+        }
+
+        function scrollToPosition(scrollView, scrollBar, startPosition, endPosition, clickPoint, isVertical)
+        {
+            var contentSize = endPosition - startPosition;
+            var scrollViewHeight;
+            var scrollBarHeight;
+            var scrollBarTop;
+            if (isVertical) {
+                scrollViewHeight = scrollView.clientHeight;
+                scrollBarHeight = parseInt(scrollBar.style.height);
+                scrollBarTop = parseInt(scrollBar.style.top);
+            } else {
+                scrollViewHeight = scrollView.clientWidth;
+                scrollBarHeight = parseInt(scrollBar.style.width);
+                scrollBarTop = parseInt(scrollBar.style.left);
+            }
+
+            console.log("scrollViewHeight :" + scrollView.clientHeight);
+            console.log("scrollBarHeight :" + scrollBarHeight);
+            console.log("scrollBarTop :" + scrollBarTop);
+console.log("click point:" + clickPoint);
+
+            if (pointLieInRange(scrollBarTop + scrollBarHeight, scrollBarTop, clickPoint))
+            {
+                return;
+            } else {
+                if (clickPoint > scrollBarTop + scrollBarHeight)
+                {
+                    if (clickPoint - scrollBarTop - scrollBarHeight < scrollBarHeight) {
+                        //Move down a distance equals: clickPoint - scrollBarTop - scrollBarHeight
+                        var point = clickPoint - scrollBarHeight;
+                    } else {
+                        //Move down a distance equals: scrollBarHeight
+                        var point = scrollBarTop + scrollBarHeight;
+                    }
+                }else if (clickPoint < scrollBarTop) {
+                    if(scrollBarTop - clickPoint < scrollBarHeight)
+                    {
+                        //Move up a distance equals: scrollBarTop - clickPoint
+                        var point = clickPoint;
+                    }else{
+                        //Move up a distance equals: scrollBarHeight
+                        var point = scrollBarTop - scrollBarHeight;
+                    }
+
+                }
+
+                if (point < 0)
+                {
+                    point = 0;
+                } if (point > scrollViewHeight - scrollBarHeight - 10) {
+                    point = scrollViewHeight - scrollBarHeight - 10;
+                }
+
+                console.log("point: " + point);
+
+                moveScrollBarFromToPosition(scrollView, scrollBar.id, startPosition, endPosition, scrollBarTop, point, isVertical);
+            }
+        }
+
+		function ddd(e)
+		{
+		 if (!dragStart) {return};
+            if (!e) { var e= window.event};
+             var targ=e.target?e.target:e.srcElement;
+
+			 offsetX = e.clientX;
+             offsetY = e.clientY;
+
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+
+            // calculate integer values for top and left
+            // properties
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            // move div element
+
+           // targ.style.left=coordX+e.clientX-offsetX+'px';
+            //targ.style.top=coordY+e.clientY-offsetY+'px';
+
+			console.log("Dragging: " + dragStart + " e.top:"  + e.clientY + " field.offsetTop: " + this.offsetTop);
+
+
+			scrollToPosition(field, rsb, 0, 400, e.pageY - targ.offsetTop, true);
+
+            return false;
+		}
+
+        function moveScrollBarFromToPosition(scrollView, scrollId, startPosition, endPosition, fromPoint, toPoint, isVertical) {
+            var contentSize = endPosition - startPosition;
+
+            var fromOffset = offSetFromScrollBarPosition(scrollView, scrollId, startPosition, endPosition, fromPoint, isVertical);
+            var toOffset = offSetFromScrollBarPosition(scrollView, scrollId, startPosition, endPosition, toPoint, isVertical);
+
+            console.log('fromOffset: ' + fromOffset);
+            console.log('toOffset: ' + toOffset);
+
+            var els = scrollView.childNodes;
+            var length = scrollView.childNodes.length;
+            for (i = 0; i < length; i++) {
+                if (els[i].id == scrollId) {
+                    if (isVertical) {
+                        els[i].style.top = toPoint + 'px';
+                    } else {
+                        els[i].style.left = toPoint + 'px';
+                    }
+                    continue;
+                } else {
+                    if (exceptScrollBars(scrollView, els[i].id)) {
+                        continue;
+                    } else {
+
+
+                        console.log("elements: " + els[i]);
+
+                        try {
+                            els[i].style.overflow = "hidden";
+                            els[i].style.position = "absolute";
+                            if (isVertical) {
+
+                                console.log("elements top: " + els[i].clientTop);
+                                    els[i].style.top = parseInt(els[i].offsetTop) - (toOffset - fromOffset) + 'px';
+                            } else {
+                                console.log("elements left: " + els[i].getBoundingClientRect().left);
+                                els[i].style.left = parseInt(els[i].offsetLeft) - (toOffset - fromOffset) + 'px';
+                                }
+
+                            }catch(err)
+                            {
+                            }
+                    }
+                }
+            }
+        }
+
+        function pointLieInRange(upperLimit, lowerLimit, point)
+        {
+            if ((point >= lowerLimit) && (point <= upperLimit)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+
+        function makeEaseInOut(delta) {
+            return function (progress) {
+                if (progress < .5)
+                    return delta(2 * progress) / 2
+                else
+                    return (2 - delta(2 * (1 - progress))) / 2
+            }
+        }
+
+        function bounce(progress) {
+            for (var a = 0, b = 1, result; 1; a += b, b /= 2) {
+                if (progress >= (7 - 4 * a) / 11) {
+                    return -Math.pow((11 - 6 * a - 11 * progress) / 4, 2) + Math.pow(b, 2)
+                }
+            }
+        }
+
+
+   //     rsb.onclick = function () {
+        //    console.log("Clicked");
+         //   var from = 0
+          //  var to = field.clientHeight - rsb.clientHeight
+          //  animate({
+         //       delay: 20,
+         //       duration: 1000,
+         //       delta: makeEaseInOut(bounce),
+         //       step: function (delta) {
+          //          img.style.top = to * delta + 'px'
+          //    }
+         //   })
+       // }
+
+
+
+        window.onkeyup = function (e) {
+            var key = e.keyCode ? e.keyCode : e.which;
+            console.log(key);
+        }
+
+
+        index = 0;
+        addChildElement("canvas", "myCanvas", "myBox", "300", "300", "position:relative;border:1px solid #c3c3c3;");
+        //drawCanvas("myCanvas");
+        drawArc("myCanvas", 100, 100, 100, 0, 1.5);
+        document.getElementById("myCanvas").addEventListener("click", click)
+        //document.getElementById("myCanvas").addEventListener("mouseover", click)
+        //document.getElementById("myCanvas").addEventListener("mouseout", click)
+        function click() {
+            //index = index + 1;
+            //id = "myCanvas" + index.toString();
+            //console.log(id);
+            //console.log(index);
+            //addChildElement("canvas", id, "myBox", "600", "600", "position:relative;border:1px solid #c3c3c3;");
+            //drawArc(id, 100, 300, 200, 0.5, 1);
+            //document.getElementById(id).addEventListener("click", click);
+            ////console.log("you have click");
+
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+
+
+            setPositionScrollBar(field, 'rightScrollBar', 200, 0, 400, true);
+            setPositionScrollBar(field, 'bottomScrollBar', 350, 0, 700, false);
+
+@*
+            var rightBar = document.getElementById('rigthBar');
+            var bottomBar = document.getElementById('bottomBar');
+
+            rightBar.addEventListener('click', function(e){
+			  var parentPosition = getPosition(e.currentTarget);
+
+                var xPosition = e.clientX;
+                var yPosition = e.clientY;
+
+                var X = e.clientX - this.offsetLeft;
+                var Y = e.clientY - this.offsetTop;
+
+                if ((Y >= 0) && (Y <= this.clientHeight - 10))
+                {
+                    scrollToPosition(field, rsb, 0, 400, Y, true);
+                }
+			}, true);
+            bottomBar.addEventListener('click', function(e)
+			{
+			 var parentPosition = getPosition(e.currentTarget);
+
+                var xPosition = e.clientX;
+                var yPosition = e.clientY;
+
+                var X = e.clientX - this.offsetLeft;
+                var Y = e.clientY - this.offsetTop;
+
+                if ((X >= 0) && (Y <= this.clientWidth - 10)) {
+                    scrollToPosition(field, bsb, 0, 700, X, false);
+                }
+			}, true);
+*@
+     field.addEventListener('click', getClickPosition, true);
+
+
+
+            function getClickPosition(e) {
+                var parentPosition = getPosition(e.currentTarget);
+                //var xPosition = e.clientX - parentPosition.x - (this.clientWidth / 2);
+                //var yPosition = e.clientY - parentPosition.y - (this.clientHeight / 2);
+
+                var xPosition = parentPosition.clientX;
+                var yPosition = parentPosition.clientY;
+
+                console.log('e.offsetX: ' + e.pageX);
+                console.log('e.offsetY: ' + e.pageY);
+
+
+                var X = e.pageX - this.offsetLeft;
+                var Y = e.pageY - this.offsetTop;
+
+                console.log('this.offsetLeft: ' + this.offsetLeft);
+                console.log('this.offsetTop: ' + this.offsetTop);
+
+                console.log('X: ' + X);
+                console.log('Y: ' + Y);
+                if ((X >= this.clientWidth - 10) && (X <= this.clientWidth) && (Y >= 0) && (Y <= this.clientHeight - 10))
+                {
+                    scrollToPosition(field, rsb, 0, 400, Y, true);
+                }
+
+                if ((Y >= this.clientHeight - 10) && (Y <= this.clientHeight) && (X >= 0) && (Y <= this.clientWidth - 10)) {
+                    scrollToPosition(field, bsb, 0, 700, X, false);
+                }
+            }
+        }
+
+
+
+		  function startDrag(e) {
+            // determine event object
+           //if (!e) {
+          //     var e = window.event;
+          // }
+           //if(e.preventDefault) e.preventDefault();
+
+            // IE uses srcElement, others use target
+           // targ = e.target ? e.target : e.srcElement;
+
+           // if (targ.className != 'dragme') {return};
+            // calculate event X, Y coordinates
+
+            drag = true;
+
+			console.log("Enter drag");
+
+            // move div element
+            // move div element
+            // document.onmousemove=onDrag;
+
+
+            return false;
+
+        }
+        function onDrag(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+             var targ=e.target?e.target:e.srcElement;
+
+			 offsetX = e.clientX;
+             offsetY = e.clientY;
+
+           // assign default values for top and left properties
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+
+            // calculate integer values for top and left
+            // properties
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            // move div element
+
+           // targ.style.left=coordX+e.clientX-offsetX+'px';
+            //targ.style.top=coordY+e.clientY-offsetY+'px';
+            var val = coordY + e.clientY - offsetY;
+            console.log("Dragging: " + val);
+
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+
+		// window.onload = function() {
+		// drag = false;
+         //   rsb.onmousedown = startDrag;
+		//	rsb.ondrag = onDrag;
+         //   rsb.onmouseup = function stopDrag() {
+         //   drag=false;
+       // };
+		//	 bsb.onmousedown = startDrag;
+         //   bsb.onmouseup = function stopDrag() {
+         //   drag=false;
+        // };
+       // }
+
+        //addChildElement("canvas", "myCanvas1", "myBox", "200", "200", "position:absolute;border:1px solid #c3c3c3;left:200px");
+        //drawCanvas("myCanvas1")
+
+        function addChildElement(tag, id, parentId, width, height, style) {
+            var node = document.createElement(tag);
+            node.setAttribute("id", id);
+            node.setAttribute("width", width);
+            node.setAttribute("height", height);
+            node.setAttribute("style", style);
+            document.getElementById(parentId).appendChild(node);
+        }
+
+
+        function drawArc(canvasId, radius, centerX, centerY, startAngle, endAngle) {
+            var canvas = document.getElementById(canvasId);
+            var ctx = canvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius, startAngle, endAngle * Math.PI);
+            ctx.fillStyle = 'gray';
+            ctx.fill();
+        }
+
+        function drawCanvas(canvasId) {
+            var canvas = document.getElementById(canvasId);
+            var ctx = canvas.getContext("2d");
+
+            var radius = 300;
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2, canvas.height / 2, radius, 0, 2 * Math.PI);
+            ctx.fillStyle = 'gray';
+            ctx.fill();
+            grad = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, radius * 0.95, canvas.width / 2, canvas.height / 2, radius * 1.05);
+            // grad = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+            grad.addColorStop(0, '#333');
+            grad.addColorStop(0.5, 'white');
+            grad.addColorStop(1, '#333');
+            ctx.strokeStyle = grad;
+            ctx.lineWidth = radius * 0.1;
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(canvas.width / 2, canvas.height / 2, radius * 0.1, 0, 2 * Math.PI);
+            ctx.fillStyle = '#333';
+            ctx.fill();
+        }
+
+        function move(elem) {
+
+
+
+            var left = 0
+
+            function frame() {
+
+                left++  // update parameters
+
+                elem.style.left = left + 'px' // show frame
+
+                if (left == 300)  // check finish condition
+                    clearInterval(id)
+            }
+
+            var id = setInterval(frame, 10) // draw every 10ms
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "DisPatchQueue"
+provides-nominal:
+- "C14SimpleFFPlayer13DisPatchQueue"
+provides-member:
+- ["C14SimpleFFPlayer13DisPatchQueue", ""]
+provides-dynamic-lookup:
+- "count"
+- "lock"
+- "testThread"
+- "thread1"
+- "thread2"
+- "ttt"
+depends-top-level:
+- !private "..<"
+- "DisPatchQueue"
+- !private "DispatchQueue"
+- "Int"
+- "NSLock"
+- "NSObject"
+- "String"
+- !private "StringLiteralType"
+- !private "print"
+depends-member:
+- !private ["Ps9AnyObject", "DispatchQueue"]
+- !private ["Ps9AnyObject", "async"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "lock"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "thread2"]
+- !private ["Ps9AnyObject", "ttt"]
+- !private ["Ps9AnyObject", "unlock"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps7CVarArg", "DispatchQueue"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "async"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "lock"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "thread2"]
+- !private ["Ps7CVarArg", "ttt"]
+- !private ["Ps7CVarArg", "unlock"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "async"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "lock"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "thread2"]
+- !private ["Ps28CustomDebugStringConvertible", "ttt"]
+- !private ["Ps28CustomDebugStringConvertible", "unlock"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "DispatchQueue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "async"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "lock"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "thread2"]
+- !private ["Ps23CustomStringConvertible", "ttt"]
+- !private ["Ps23CustomStringConvertible", "unlock"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C14SimpleFFPlayer13DisPatchQueue", "DispatchQueue"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "Int"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "NSLock"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "String"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "count"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "deinit"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "init"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "lock"]
+- !private ["C14SimpleFFPlayer13DisPatchQueue", "print"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "testThread"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "thread1"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "thread2"]
+- ["C14SimpleFFPlayer13DisPatchQueue", "ttt"]
+- !private ["CSo14DispatchObject", "async"]
+- !private ["CSo13DispatchQueue", "async"]
+- !private ["CSo13DispatchQueue", "init"]
+- !private ["Ps9Equatable", "DispatchQueue"]
+- !private ["Ps9Equatable", "async"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "lock"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "thread2"]
+- !private ["Ps9Equatable", "ttt"]
+- !private ["Ps9Equatable", "unlock"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "DispatchQueue"]
+- !private ["Ps8Hashable", "async"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "lock"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "thread2"]
+- !private ["Ps8Hashable", "ttt"]
+- !private ["Ps8Hashable", "unlock"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["CSo6NSLock", "lock"]
+- !private ["CSo6NSLock", "unlock"]
+- !private ["PSo9NSLocking", "lock"]
+- !private ["PSo9NSLocking", "unlock"]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "DispatchQueue"]
+- ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "NSLock"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "async"]
+- ["CSo8NSObject", "count"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "lock"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "testThread"]
+- ["CSo8NSObject", "thread1"]
+- ["CSo8NSObject", "thread2"]
+- ["CSo8NSObject", "ttt"]
+- !private ["CSo8NSObject", "unlock"]
+- ["CSo8NSObject", ""]
+- !private ["PSo16NSObjectProtocol", "DispatchQueue"]
+- !private ["PSo16NSObjectProtocol", "async"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "lock"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "thread2"]
+- !private ["PSo16NSObjectProtocol", "ttt"]
+- !private ["PSo16NSObjectProtocol", "unlock"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["CSo9OS_object", "async"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps8Sequence", "append"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "DispatchQueue"]
+- !private ["Ps9_Hashable", "async"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "lock"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "thread2"]
+- !private ["Ps9_Hashable", "ttt"]
+- !private ["Ps9_Hashable", "unlock"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- "C14SimpleFFPlayer13DisPatchQueue"
+- !private "CSo14DispatchObject"
+- !private "CSo13DispatchQueue"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo6NSLock"
+- !private "PSo9NSLocking"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "CSo9OS_object"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps8Sequence"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/SimpleFFPlayer-Bridging-Header.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/SimpleFFPlayer/Utils/ViewControllerTextView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/Utilities.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFDecoder.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/avformat.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/avcodec.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/samplefmt.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/avutil.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/common.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/clang/include/inttypes.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/attributes.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/macros.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/avconfig.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/mem.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/error.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/rational.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/mathematics.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/intfloat.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/log.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/pixfmt.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/old_pix_fmts.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/buffer.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/cpu.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/channel_layout.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/dict.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/frame.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/old_codec_ids.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/avio.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libswscale/swscale.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libswscale/version.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "bf9af11bb632de0b43945434f3363435"

@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# This script assumes a command line parameter specifying the location of librtmp. You must point this
+# to the included rtmp xCode project base directory.
+#
+
+mkdir armv7
+mkdir lib
+
+
+#rm armv7/*.a
+
+
+# if test $1 -gt 0
+# then
+# make clean
+# fi
+
+#./configure --disable-doc --enable-cross-compile --arch=arm --target-os=darwin --cc=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc --as='gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc' --sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk --cpu=cortex-a8 --extra-cflags='-arch armv7' --extra-ldflags='-arch armv7' --enable-pic
+#
+
+# if test $1 -gt 1
+# then
+./configure --disable-doc --disable-ffmpeg --disable-ffserver --disable-ffplay --disable-ffprobe \
+--disable-debug --disable-shared --enable-static --disable-muxers --disable-demuxers \
+--disable-filters \
+--enable-muxer=mov --enable-muxer=flv \
+--enable-demuxer=mov --enable-demuxer=flv --enable-decoder=h264 --enable-decoder=mov \
+--enable-encoder=mjpeg --enable-decoder=mjpeg \
+--enable-parser=mov --enable-parser=flv --enable-librtmp \
+--enable-cross-compile \
+--arch=arm --target-os=darwin --enable-pic \
+--cc=/usr/bin/gcc \
+--as='./gas-preprocessor/gas-preprocessor.pl /usr/bin/gcc' \
+--sysroot=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk \
+--cpu=cortex-a8 --extra-cflags='-arch armv7 -I/Users/xuanloctn/Downloads/LivuLib-master/rtmp/' \
+--extra-ldflags='-arch armv7 -L/Users/xuanloctn/Downloads/LivuLib-master/rtmp/ -lcrypto -lssl' \
+--extra-libs='../rtmp/build/Release-iphoneos/librtmp.a'
+# fi
+
+#--disable-debug
+#./configure --disable-doc --disable-ffmpeg --disable-ffserver --disable-ffplay --disable-ffprobe \
+#--disable-shared --enable-static \
+#--enable-cross-compile --arch=arm --target-os=darwin \
+#--cc=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc \
+#--as='./gas-preprocessor/gas-preprocessor.pl /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc' \
+#--sysroot=/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk \
+#--cpu=cortex-a8 --extra-cflags='-arch armv7 -I/Users/fiona/dev/mobile/media/rtmp/' \
+#--enable-pic --extra-ldflags='-arch armv7 -L/Users/fiona/dev/mobile/media/rtmp/' \
+#--extra-libs='../rtmp/build/Release-iphoneos/librtmp.a ../rtmp/extralib/iPhoneOS-4.2/lib/libssl.a'
+
+
+make
+
+mv libavcodec/libavcodec.a armv7/
+mv libavdevice/libavdevice.a armv7/
+mv libavformat/libavformat.a armv7/
+mv libavutil/libavutil.a armv7/
+mv libswscale/libswscale.a armv7/
+
+mv libavcore/libavcore.a armv7/
+mv libavfilter/libavfilter.a armv7/
+
+cp armv7/*.a lib/

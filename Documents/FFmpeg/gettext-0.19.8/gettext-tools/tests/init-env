@@ -1,0 +1,48 @@
+# Variable needed by LTLIBINTL.
+top_builddir=../..
+
+# Variable needed by xgettext.
+GETTEXTDATADIR="$abs_top_srcdir"
+export GETTEXTDATADIR
+
+OBJEXT="o"
+EXEEXT=""
+CC="gcc"
+CFLAGS="-g -O2"
+CXX="g++"
+CXXFLAGS="-g -O2"
+CPPFLAGS=""
+LDFLAGS=""
+LTLIBINTL="${top_builddir}/intl/libintl.la -liconv  -Wl,-framework -Wl,CoreFoundation"
+JAVA_CHOICE="yes"
+BUILDJAVA="yes"
+TESTJAVA="yes"
+CSHARP_CHOICE="any"
+BUILDCSHARP="yes"
+TESTCSHARP="yes"
+TESTLIBASPRINTF="yes"
+GLIBC2="no"
+LOCALE_FR="fr_FR.ISO8859-1"
+LOCALE_FR_UTF8="fr_FR.UTF-8"
+LOCALE_JA="ja_JP.eucJP"
+host_os="darwin16.4.0"
+ARCHIVE_VERSION="0.19.8"
+
+: ${GETTEXT=tstgettext}
+: ${NGETTEXT=tstngettext}
+: ${XGETTEXT=xgettext}
+: ${MSGATTRIB=msgattrib}
+: ${MSGCAT=msgcat}
+: ${MSGCMP=msgcmp}
+: ${MSGCOMM=msgcomm}
+: ${MSGCONV=msgconv}
+: ${MSGEN=msgen}
+: ${MSGEXEC=msgexec}
+: ${MSGFILTER=msgfilter}
+: ${MSGFMT=msgfmt}
+: ${MSGGREP=msggrep}
+: ${MSGINIT=msginit}
+: ${MSGMERGE=msgmerge}
+: ${MSGUNFMT=msgunfmt}
+: ${MSGUNIQ=msguniq}
+: ${RECODE=recode}

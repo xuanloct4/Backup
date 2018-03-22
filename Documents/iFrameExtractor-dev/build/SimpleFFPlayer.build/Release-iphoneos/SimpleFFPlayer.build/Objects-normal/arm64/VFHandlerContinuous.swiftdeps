@@ -1,0 +1,572 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "VFReceiverContinuous"
+- "VFHandlerContinuous"
+provides-nominal:
+- "C14SimpleFFPlayer20VFReceiverContinuous"
+- "C14SimpleFFPlayer19VFHandlerContinuous"
+provides-member:
+- ["C14SimpleFFPlayer20VFReceiverContinuous", ""]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", ""]
+provides-dynamic-lookup:
+- "checkPartlyHeaderFooter"
+- "dataHandle"
+- "processBodyFrameData"
+- "processCompleteFrameData"
+- "processFooterFrameData"
+- "processHeaderFrameData"
+depends-top-level:
+- !private "!="
+- !private "&&"
+- !private "+"
+- !private "-"
+- !private "<"
+- !private "=="
+- !private ">"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "CastingPrecedence"
+- !private "Date"
+- "StringLiteralType"
+- "UInt8"
+- "VFHandlerContinuous"
+- !private "VFPosition"
+- "VFReceiverContinuous"
+- "VideoFrameHandler"
+- !private "VideoFrameInfo"
+- "VideoFrameReceiver"
+- !private "VideoTransUtils"
+- !private "print"
+depends-member:
+- !private ["Ps9AnyObject", "Date"]
+- !private ["Ps9AnyObject", "VFPosition"]
+- !private ["Ps9AnyObject", "VideoFrameInfo"]
+- !private ["Ps9AnyObject", "VideoTransUtils"]
+- !private ["Ps9AnyObject", "checkPartlyHeaderFooter"]
+- !private ["Ps9AnyObject", "data"]
+- !private ["Ps9AnyObject", "dataContain"]
+- !private ["Ps9AnyObject", "dataHandle"]
+- !private ["Ps9AnyObject", "findFrameRateInfo"]
+- !private ["Ps9AnyObject", "findSeekTimeInfo"]
+- !private ["Ps9AnyObject", "findSendTimeInfo"]
+- !private ["Ps9AnyObject", "footFooterSample"]
+- !private ["Ps9AnyObject", "footerSample"]
+- !private ["Ps9AnyObject", "frameReceiver"]
+- !private ["Ps9AnyObject", "headHeaderSample"]
+- !private ["Ps9AnyObject", "headerSample"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "lock"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "processBodyFrameData"]
+- !private ["Ps9AnyObject", "processCompleteFrameData"]
+- !private ["Ps9AnyObject", "processFooterFrameData"]
+- !private ["Ps9AnyObject", "processHeaderFrameData"]
+- !private ["Ps9AnyObject", "unlockClosure"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "append"]
+- !private ["Sa", "arrayElements"]
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "arrayElements"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps7CVarArg", "Date"]
+- !private ["Ps7CVarArg", "VFPosition"]
+- !private ["Ps7CVarArg", "VideoFrameInfo"]
+- !private ["Ps7CVarArg", "VideoTransUtils"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "arrayElements"]
+- !private ["Ps7CVarArg", "checkPartlyHeaderFooter"]
+- !private ["Ps7CVarArg", "count"]
+- !private ["Ps7CVarArg", "data"]
+- !private ["Ps7CVarArg", "dataContain"]
+- !private ["Ps7CVarArg", "dataHandle"]
+- !private ["Ps7CVarArg", "findFrameRateInfo"]
+- !private ["Ps7CVarArg", "findSeekTimeInfo"]
+- !private ["Ps7CVarArg", "findSendTimeInfo"]
+- !private ["Ps7CVarArg", "footFooterSample"]
+- !private ["Ps7CVarArg", "footerSample"]
+- !private ["Ps7CVarArg", "frameReceiver"]
+- !private ["Ps7CVarArg", "headHeaderSample"]
+- !private ["Ps7CVarArg", "headerSample"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "lock"]
+- !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "processBodyFrameData"]
+- !private ["Ps7CVarArg", "processCompleteFrameData"]
+- !private ["Ps7CVarArg", "processFooterFrameData"]
+- !private ["Ps7CVarArg", "processHeaderFrameData"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "unlockClosure"]
+- ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "arrayElements"]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps28CustomDebugStringConvertible", "Date"]
+- !private ["Ps28CustomDebugStringConvertible", "VFPosition"]
+- !private ["Ps28CustomDebugStringConvertible", "VideoFrameInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "VideoTransUtils"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "arrayElements"]
+- !private ["Ps28CustomDebugStringConvertible", "checkPartlyHeaderFooter"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "data"]
+- !private ["Ps28CustomDebugStringConvertible", "dataContain"]
+- !private ["Ps28CustomDebugStringConvertible", "dataHandle"]
+- !private ["Ps28CustomDebugStringConvertible", "findFrameRateInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "findSeekTimeInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "findSendTimeInfo"]
+- !private ["Ps28CustomDebugStringConvertible", "footFooterSample"]
+- !private ["Ps28CustomDebugStringConvertible", "footerSample"]
+- !private ["Ps28CustomDebugStringConvertible", "frameReceiver"]
+- !private ["Ps28CustomDebugStringConvertible", "headHeaderSample"]
+- !private ["Ps28CustomDebugStringConvertible", "headerSample"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "lock"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "processBodyFrameData"]
+- !private ["Ps28CustomDebugStringConvertible", "processCompleteFrameData"]
+- !private ["Ps28CustomDebugStringConvertible", "processFooterFrameData"]
+- !private ["Ps28CustomDebugStringConvertible", "processHeaderFrameData"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "timeIntervalSinceReferenceDate"]
+- !private ["Ps28CustomDebugStringConvertible", "unlockClosure"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "arrayElements"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps17CustomReflectable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps23CustomStringConvertible", "Date"]
+- !private ["Ps23CustomStringConvertible", "VFPosition"]
+- !private ["Ps23CustomStringConvertible", "VideoFrameInfo"]
+- !private ["Ps23CustomStringConvertible", "VideoTransUtils"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "arrayElements"]
+- !private ["Ps23CustomStringConvertible", "checkPartlyHeaderFooter"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- !private ["Ps23CustomStringConvertible", "data"]
+- !private ["Ps23CustomStringConvertible", "dataContain"]
+- !private ["Ps23CustomStringConvertible", "dataHandle"]
+- !private ["Ps23CustomStringConvertible", "findFrameRateInfo"]
+- !private ["Ps23CustomStringConvertible", "findSeekTimeInfo"]
+- !private ["Ps23CustomStringConvertible", "findSendTimeInfo"]
+- !private ["Ps23CustomStringConvertible", "footFooterSample"]
+- !private ["Ps23CustomStringConvertible", "footerSample"]
+- !private ["Ps23CustomStringConvertible", "frameReceiver"]
+- !private ["Ps23CustomStringConvertible", "headHeaderSample"]
+- !private ["Ps23CustomStringConvertible", "headerSample"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "lock"]
+- !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "processBodyFrameData"]
+- !private ["Ps23CustomStringConvertible", "processCompleteFrameData"]
+- !private ["Ps23CustomStringConvertible", "processFooterFrameData"]
+- !private ["Ps23CustomStringConvertible", "processHeaderFrameData"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Ps23CustomStringConvertible", "timeIntervalSinceReferenceDate"]
+- !private ["Ps23CustomStringConvertible", "unlockClosure"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["V10Foundation4Date", "timeIntervalSinceReferenceDate"]
+- !private ["Ps9Equatable", "Date"]
+- !private ["Ps9Equatable", "VFPosition"]
+- !private ["Ps9Equatable", "VideoFrameInfo"]
+- !private ["Ps9Equatable", "VideoTransUtils"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "checkPartlyHeaderFooter"]
+- !private ["Ps9Equatable", "data"]
+- !private ["Ps9Equatable", "dataContain"]
+- !private ["Ps9Equatable", "dataHandle"]
+- !private ["Ps9Equatable", "findFrameRateInfo"]
+- !private ["Ps9Equatable", "findSeekTimeInfo"]
+- !private ["Ps9Equatable", "findSendTimeInfo"]
+- !private ["Ps9Equatable", "footFooterSample"]
+- !private ["Ps9Equatable", "footerSample"]
+- !private ["Ps9Equatable", "frameReceiver"]
+- !private ["Ps9Equatable", "head"]
+- !private ["Ps9Equatable", "headHeaderSample"]
+- !private ["Ps9Equatable", "headerSample"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "lock"]
+- !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "processBodyFrameData"]
+- !private ["Ps9Equatable", "processCompleteFrameData"]
+- !private ["Ps9Equatable", "processFooterFrameData"]
+- !private ["Ps9Equatable", "processHeaderFrameData"]
+- !private ["Ps9Equatable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps9Equatable", "unlockClosure"]
+- ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "arrayElements"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "Date"]
+- !private ["Ps8Hashable", "VFPosition"]
+- !private ["Ps8Hashable", "VideoFrameInfo"]
+- !private ["Ps8Hashable", "VideoTransUtils"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "checkPartlyHeaderFooter"]
+- !private ["Ps8Hashable", "data"]
+- !private ["Ps8Hashable", "dataContain"]
+- !private ["Ps8Hashable", "dataHandle"]
+- !private ["Ps8Hashable", "findFrameRateInfo"]
+- !private ["Ps8Hashable", "findSeekTimeInfo"]
+- !private ["Ps8Hashable", "findSendTimeInfo"]
+- !private ["Ps8Hashable", "footFooterSample"]
+- !private ["Ps8Hashable", "footerSample"]
+- !private ["Ps8Hashable", "frameReceiver"]
+- !private ["Ps8Hashable", "head"]
+- !private ["Ps8Hashable", "headHeaderSample"]
+- !private ["Ps8Hashable", "headerSample"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "lock"]
+- !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "processBodyFrameData"]
+- !private ["Ps8Hashable", "processCompleteFrameData"]
+- !private ["Ps8Hashable", "processFooterFrameData"]
+- !private ["Ps8Hashable", "processHeaderFrameData"]
+- !private ["Ps8Hashable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps8Hashable", "unlockClosure"]
+- ["Ps8Hashable", ""]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "arrayElements"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "subscript"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "Date"]
+- ["CSo8NSObject", "UInt8"]
+- !private ["CSo8NSObject", "VFPosition"]
+- !private ["CSo8NSObject", "VideoFrameInfo"]
+- !private ["CSo8NSObject", "VideoTransUtils"]
+- ["CSo8NSObject", "checkPartlyHeaderFooter"]
+- !private ["CSo8NSObject", "data"]
+- !private ["CSo8NSObject", "dataContain"]
+- ["CSo8NSObject", "dataHandle"]
+- !private ["CSo8NSObject", "findFrameRateInfo"]
+- !private ["CSo8NSObject", "findSeekTimeInfo"]
+- !private ["CSo8NSObject", "findSendTimeInfo"]
+- !private ["CSo8NSObject", "footFooterSample"]
+- !private ["CSo8NSObject", "footerSample"]
+- !private ["CSo8NSObject", "frameReceiver"]
+- !private ["CSo8NSObject", "headHeaderSample"]
+- !private ["CSo8NSObject", "headerSample"]
+- !private ["CSo8NSObject", "lock"]
+- !private ["CSo8NSObject", "print"]
+- ["CSo8NSObject", "processBodyFrameData"]
+- ["CSo8NSObject", "processCompleteFrameData"]
+- ["CSo8NSObject", "processFooterFrameData"]
+- ["CSo8NSObject", "processHeaderFrameData"]
+- !private ["CSo8NSObject", "unlockClosure"]
+- !private ["PSo16NSObjectProtocol", "Date"]
+- !private ["PSo16NSObjectProtocol", "VFPosition"]
+- !private ["PSo16NSObjectProtocol", "VideoFrameInfo"]
+- !private ["PSo16NSObjectProtocol", "VideoTransUtils"]
+- !private ["PSo16NSObjectProtocol", "checkPartlyHeaderFooter"]
+- !private ["PSo16NSObjectProtocol", "data"]
+- !private ["PSo16NSObjectProtocol", "dataContain"]
+- !private ["PSo16NSObjectProtocol", "dataHandle"]
+- !private ["PSo16NSObjectProtocol", "findFrameRateInfo"]
+- !private ["PSo16NSObjectProtocol", "findSeekTimeInfo"]
+- !private ["PSo16NSObjectProtocol", "findSendTimeInfo"]
+- !private ["PSo16NSObjectProtocol", "footFooterSample"]
+- !private ["PSo16NSObjectProtocol", "footerSample"]
+- !private ["PSo16NSObjectProtocol", "frameReceiver"]
+- !private ["PSo16NSObjectProtocol", "headHeaderSample"]
+- !private ["PSo16NSObjectProtocol", "headerSample"]
+- !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "lock"]
+- !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "processBodyFrameData"]
+- !private ["PSo16NSObjectProtocol", "processCompleteFrameData"]
+- !private ["PSo16NSObjectProtocol", "processFooterFrameData"]
+- !private ["PSo16NSObjectProtocol", "processHeaderFrameData"]
+- !private ["PSo16NSObjectProtocol", "unlockClosure"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "arrayElements"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "arrayElements"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps16RawRepresentable", "head"]
+- !private ["P10Foundation20ReferenceConvertible", "timeIntervalSinceReferenceDate"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "arrayElements"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["C14SimpleFFPlayer6VALock", "unlockClosure"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "Bool"]
+- !private ["C14SimpleFFPlayer19VFHandlerContinuous", "Date"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "UInt8"]
+- !private ["C14SimpleFFPlayer19VFHandlerContinuous", "VFPosition"]
+- !private ["C14SimpleFFPlayer19VFHandlerContinuous", "VideoFrameInfo"]
+- !private ["C14SimpleFFPlayer19VFHandlerContinuous", "VideoTransUtils"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "checkPartlyHeaderFooter"]
+- !private ["C14SimpleFFPlayer19VFHandlerContinuous", "data"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "dataHandle"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "deinit"]
+- !private ["C14SimpleFFPlayer19VFHandlerContinuous", "frameReceiver"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "init"]
+- !private ["C14SimpleFFPlayer19VFHandlerContinuous", "lock"]
+- !private ["C14SimpleFFPlayer19VFHandlerContinuous", "print"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "processBodyFrameData"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "processCompleteFrameData"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "processFooterFrameData"]
+- ["C14SimpleFFPlayer19VFHandlerContinuous", "processHeaderFrameData"]
+- !private ["O14SimpleFFPlayer10VFPosition", "head"]
+- ["C14SimpleFFPlayer20VFReceiverContinuous", "deinit"]
+- ["C14SimpleFFPlayer20VFReceiverContinuous", "init"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "Bool"]
+- !private ["C14SimpleFFPlayer17VideoFrameHandler", "Date"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "UInt8"]
+- !private ["C14SimpleFFPlayer17VideoFrameHandler", "VFPosition"]
+- !private ["C14SimpleFFPlayer17VideoFrameHandler", "VideoFrameInfo"]
+- !private ["C14SimpleFFPlayer17VideoFrameHandler", "VideoTransUtils"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "checkPartlyHeaderFooter"]
+- !private ["C14SimpleFFPlayer17VideoFrameHandler", "data"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "dataHandle"]
+- !private ["C14SimpleFFPlayer17VideoFrameHandler", "frameReceiver"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "init"]
+- !private ["C14SimpleFFPlayer17VideoFrameHandler", "lock"]
+- !private ["C14SimpleFFPlayer17VideoFrameHandler", "print"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "processBodyFrameData"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "processCompleteFrameData"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "processFooterFrameData"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", "processHeaderFrameData"]
+- ["C14SimpleFFPlayer17VideoFrameHandler", ""]
+- !private ["V14SimpleFFPlayer14VideoFrameInfo", "data"]
+- !private ["V14SimpleFFPlayer14VideoFrameInfo", "init"]
+- ["C14SimpleFFPlayer18VideoFrameReceiver", "init"]
+- ["C14SimpleFFPlayer18VideoFrameReceiver", ""]
+- !private ["P14SimpleFFPlayer26VideoFrameReceiverDelegate", "init"]
+- !private ["P14SimpleFFPlayer26VideoFrameReceiverDelegate", "receiverNewFrame"]
+- ["P14SimpleFFPlayer26VideoFrameReceiverDelegate", ""]
+- !private ["C14SimpleFFPlayer15VideoTransUtils", "dataContain"]
+- !private ["C14SimpleFFPlayer15VideoTransUtils", "findFrameRateInfo"]
+- !private ["C14SimpleFFPlayer15VideoTransUtils", "findSeekTimeInfo"]
+- !private ["C14SimpleFFPlayer15VideoTransUtils", "findSendTimeInfo"]
+- !private ["C14SimpleFFPlayer15VideoTransUtils", "footFooterSample"]
+- !private ["C14SimpleFFPlayer15VideoTransUtils", "footerSample"]
+- !private ["C14SimpleFFPlayer15VideoTransUtils", "headHeaderSample"]
+- !private ["C14SimpleFFPlayer15VideoTransUtils", "headerSample"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "arrayElements"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "arrayElements"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "arrayElements"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Date"]
+- !private ["Ps9_Hashable", "VFPosition"]
+- !private ["Ps9_Hashable", "VideoFrameInfo"]
+- !private ["Ps9_Hashable", "VideoTransUtils"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "checkPartlyHeaderFooter"]
+- !private ["Ps9_Hashable", "data"]
+- !private ["Ps9_Hashable", "dataContain"]
+- !private ["Ps9_Hashable", "dataHandle"]
+- !private ["Ps9_Hashable", "findFrameRateInfo"]
+- !private ["Ps9_Hashable", "findSeekTimeInfo"]
+- !private ["Ps9_Hashable", "findSendTimeInfo"]
+- !private ["Ps9_Hashable", "footFooterSample"]
+- !private ["Ps9_Hashable", "footerSample"]
+- !private ["Ps9_Hashable", "frameReceiver"]
+- !private ["Ps9_Hashable", "head"]
+- !private ["Ps9_Hashable", "headHeaderSample"]
+- !private ["Ps9_Hashable", "headerSample"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "lock"]
+- !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "processBodyFrameData"]
+- !private ["Ps9_Hashable", "processCompleteFrameData"]
+- !private ["Ps9_Hashable", "processFooterFrameData"]
+- !private ["Ps9_Hashable", "processHeaderFrameData"]
+- !private ["Ps9_Hashable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps9_Hashable", "unlockClosure"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "arrayElements"]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "arrayElements"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps14_IndexableBase", "subscript"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "arrayElements"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps17_MutableIndexable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "arrayElements"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "timeIntervalSinceReferenceDate"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "arrayElements"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "arrayElements"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "V10Foundation4Date"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps16RawRepresentable"
+- !private "P10Foundation20ReferenceConvertible"
+- !private "Ps8Sequence"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "C14SimpleFFPlayer6VALock"
+- "C14SimpleFFPlayer19VFHandlerContinuous"
+- !private "O14SimpleFFPlayer10VFPosition"
+- "C14SimpleFFPlayer20VFReceiverContinuous"
+- "C14SimpleFFPlayer17VideoFrameHandler"
+- !private "V14SimpleFFPlayer14VideoFrameInfo"
+- "C14SimpleFFPlayer18VideoFrameReceiver"
+- "P14SimpleFFPlayer26VideoFrameReceiverDelegate"
+- !private "C14SimpleFFPlayer15VideoTransUtils"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/SimpleFFPlayer-Bridging-Header.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/SimpleFFPlayer/Utils/ViewControllerTextView.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/Utilities.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFDecoder.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/avformat.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/avcodec.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/samplefmt.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/avutil.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/common.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/clang/include/inttypes.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/attributes.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/macros.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/avconfig.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/mem.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/error.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/rational.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/mathematics.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/intfloat.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/log.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/pixfmt.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/old_pix_fmts.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/buffer.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/cpu.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/channel_layout.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/dict.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavutil/frame.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavcodec/old_codec_ids.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/avio.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libavformat/version.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libswscale/swscale.h"
+- "/Users/xuanloctn/Documents/Backup/LocTV/iFrameExtractor-dev/FFmpeg-iOS/include/libswscale/version.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "90deab0eb65bad0be97474c74e83871a"

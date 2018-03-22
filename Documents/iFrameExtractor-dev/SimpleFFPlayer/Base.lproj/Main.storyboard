@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmW-KG-Oqu">
+                                <rect key="frame" x="243" y="631" width="39" height="30"/>
+                                <state key="normal" title="Time:"/>
+                                <connections>
+                                    <action selector="showTime:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gdF-KP-Ofr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFf-Lr-5gu">
+                                <rect key="frame" x="290" y="635" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LU8-qq-GM9">
+                                <rect key="frame" x="61" y="51" width="271" height="555"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mch-FH-KtW">
+                                <rect key="frame" x="61" y="631" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qJH-TD-Z3E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LU8-qq-GM9" firstAttribute="trailing" secondItem="pFf-Lr-5gu" secondAttribute="trailing" id="1wX-Dh-Vtl"/>
+                            <constraint firstItem="LU8-qq-GM9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="31" id="4dY-hZ-9z1"/>
+                            <constraint firstItem="pFf-Lr-5gu" firstAttribute="baseline" secondItem="tmW-KG-Oqu" secondAttribute="baseline" id="ZT2-T1-qwu"/>
+                            <constraint firstItem="LU8-qq-GM9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="czd-Wu-lo2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LU8-qq-GM9" secondAttribute="trailing" constant="27" id="iWS-KB-44b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mch-FH-KtW" secondAttribute="bottom" constant="6" id="pLU-hC-Zvz"/>
+                            <constraint firstItem="Mch-FH-KtW" firstAttribute="top" secondItem="LU8-qq-GM9" secondAttribute="bottom" constant="25" id="peR-Se-ppM"/>
+                            <constraint firstItem="pFf-Lr-5gu" firstAttribute="leading" secondItem="tmW-KG-Oqu" secondAttribute="trailing" constant="8" symbolic="YES" id="pf2-c8-IYA"/>
+                            <constraint firstItem="Mch-FH-KtW" firstAttribute="leading" secondItem="LU8-qq-GM9" secondAttribute="leading" id="uXb-3C-3xW"/>
+                            <constraint firstItem="tmW-KG-Oqu" firstAttribute="baseline" secondItem="Mch-FH-KtW" secondAttribute="baseline" id="vyJ-5d-qsC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="LU8-qq-GM9" id="wAL-ZN-W8I"/>
+                        <outlet property="label" destination="pFf-Lr-5gu" id="kII-3j-1eN"/>
+                        <outlet property="playButton" destination="Mch-FH-KtW" id="VJU-Jw-U8y"/>
+                        <outlet property="time" destination="tmW-KG-Oqu" id="wLw-xk-Ab1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="662" y="483"/>
+        </scene>
+    </scenes>
+</document>

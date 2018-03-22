@@ -1,0 +1,176 @@
+﻿@model List<MVCASPWeb.Models.TableModel>
+@*@model MVCASPWeb.Models.BlackPearlViewModel*@
+@{
+    ViewBag.Title = "TableView";
+}
+
+
+
+
+<h2>TableView</h2>
+
+<script type="text/javascript">
+    // Popup window code
+    function newPopup(url) {
+        popupWindow = window.open(
+            url, 'popUpWindow', 'height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+    }
+</script>
+<p><a href="JavaScript:newPopup('http://www.quackit.com/javascript/examples/sample_popup.cfm');">Open a popup window</a></p>
+
+<p id="abc">
+
+ 
+</p>
+
+<p id="aaa">dasad</p>
+
+<script>
+    var isHidden = false;
+    function ShowQuote() {
+        if (!isHidden) {
+            $("#aaa").hide();
+    
+        } else {
+            $("#aaa").show();
+        }
+        isHidden = !isHidden;
+    }
+
+</script>
+
+<button>
+    @Html.ActionLink("Delete", "Index", "Table",
+                         new { onClick = "ShowQuote()"})
+</button>
+
+@Html.Partial("~/Views/Shared/_PartialPage1.cshtml", Model);
+
+@*<script>
+    var pirates = @Html.Raw(Json.Encode(Model));
+    var element = document.getElementById("abc");
+    element.innerHTML = pirates.Pirates[0]["name"]
+
+    var pirates = @JavaScriptConvert.SerializeObject(Model);
+    var element = document.getElementById("abc");
+    element.innerHTML = pirates.pirates[0].name;
+</script>*@
+
+
+
+@*<table class="table">
+    <tr>
+        @for (int i = 0; i < @ViewBag.colNumber; i++)
+        {
+            <th class="@String.Format("aaa{0}",i)"> abcd</th>
+            }
+        </tr>
+
+    @for(int i = 0; i < @ViewBag.rowNumber; i++)
+    {
+        <tr>
+            @for (int j = 0; j < @ViewBag.colNumber; j++)
+            {
+                <td>
+                   dddd
+                    <div>
+                        <img src="@Url.Content(@Model[0].imgUrl)" alt="Mountain View" style="width:304px;height:228px;">
+                    </div>
+                </td>
+            }
+        </tr>
+    }
+  
+   </table>*@
+
+<div>
+    <input type="text" id="Name" />
+    <input type="text" id="Address" />
+    <button onclick="OpenDialog()">
+        Open Dialog
+    </button>
+</div>
+<div id="Dialog-Box">
+    <input type="text" id="Dialog-Name" />
+    <input type="text" id="Dialog-Address" />
+    <input type="submit" onclick="onsave()" value="save" />
+</div>
+
+<script>
+
+    var bodyRect = document.body.getBoundingClientRect();
+
+    function getPositionOfElement() {
+        var element = document.getElementById("Dialog-Box");
+        var rect = element.getBoundingClientRect();
+        console.log(rect.top, rect.right, rect.bottom, rect.left);
+        var coords = "Top: " + rect.top + ", Right: " + rect.right + ", Bottom: " + rect.bottom + ", Left: " + rect.left;
+        document.getElementById("aaa").innerHTML = coords;
+    }
+
+    function getPositionOfElement() {
+        var element = document.getElementById("Dialog-Box");
+        var rect = element.getBoundingClientRect();
+        console.log(rect.top, rect.right, rect.bottom, rect.left);
+        var coords = "Top: " + rect.top + ", Right: " + rect.right + ", Bottom: " + rect.bottom + ", Left: " + rect.left;
+        document.getElementById("aaa").innerHTML = coords;
+    }
+
+    window.onscroll = function () { myFunction() };
+   
+    function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            getPositionOfElement
+        }
+
+    }
+</script>
+
+@*<script>
+
+    $('#Dialog-Box').dialog({
+        autoOpen: false,
+        height: 500,
+        width: 700,
+        modal: false
+    });
+    function OpenDialog() {
+
+        var name = $('#Name').val();
+        var address = $('#Address').val();
+        $('#Dialog-Name').val(name);
+        $('#Dialog-Address').val(address);
+        $('#Dialog-Box').dialog('open');
+    }
+    function onsave() {
+
+        $.ajax({
+            url: '@Url.Action("ActionName", "ControllerName")',
+            type: 'POST',
+            data: {
+                name: $('#Dialog-Name').val(),
+                address: $('#Dialog-Address').val()
+            },
+            success: function (msg) {
+            },
+            error: function (msg) {
+            }
+        });
+
+    }
+</script>*@
+
+@*@foreach (var item in Model)
+{ 
+<p>
+    @item.imgUrl
+</p>
+}*@
+
+
+
+<style>
+    .aaa1 {
+    background-color:red;
+    }
+</style>

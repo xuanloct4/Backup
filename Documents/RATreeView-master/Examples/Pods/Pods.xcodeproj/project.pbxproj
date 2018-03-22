@@ -1,0 +1,1223 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		024389F1E04CD4CE4AA2593FACEAA7C7 /* RATreeNodeItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B59CE61AE50B29FA39182DCAB4D462A /* RATreeNodeItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0658F3FB5AD21C033073EDEEE7999814 /* RATreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 30237245B2F9AD41A274229A7C23AA1F /* RATreeNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0837B2748C8CE3E771C6A247A69CE485 /* RATreeView+TableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A778EEBDAF86077DD2E13E7266664B24 /* RATreeView+TableViewDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0C438088E1292F2DE48DC2AF79668379 /* Pods-RATreeViewBasicExampleSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F14144DE2F6761CB722F3ACEA3B83F /* Pods-RATreeViewBasicExampleSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DC6F82E0F92E8495E759A35355C3FF7 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 341F513C7568124FF4400816361FF7D4 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E26D3432CC44E121F962D64C09FDC46 /* RABatchChanges.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F7104CEF4DDC92F3036680324B89AF /* RABatchChanges.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		11CE869670D9AD401163B6186A122F32 /* RATreeNodeCollectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = A097980820319C4447E34FC96018C59B /* RATreeNodeCollectionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		120382A2652EAB9655391AD48D00A100 /* RATreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A66496DAF76DEDD4C4D1FD10B64332D /* RATreeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17067505676725BDF11230230DA376DE /* RATreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 30237245B2F9AD41A274229A7C23AA1F /* RATreeNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1740783A3EDE4C6D281EB843AA78B609 /* Pods-RATreeViewBasicExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4F01C67E2DEB352EE811FCF916AB7F /* Pods-RATreeViewBasicExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A70186C6A35BE0171258919D782198 /* RATreeView_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E77DB5765F936E47074000FDF60995A /* RATreeView_ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2565B149DF677232E6803DE292D5B00E /* RATreeNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38303050E79A9246F8A4D59A30F87A /* RATreeNodeController.m */; };
+		2684D8A99C37E64BF1210056BA34C2F8 /* RATreeNodeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB536EDB292554826F079FE7E714A22 /* RATreeNodeItem.m */; };
+		2AE0587EA245F611BBDA0C7D4C3F1A20 /* RABatchChanges.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F7104CEF4DDC92F3036680324B89AF /* RABatchChanges.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DD3980878F764693BF51E419C694343 /* RATreeView-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CAD3A0551C1C3EB9EE4F1DD1107F6F /* RATreeView-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37A493B70A41B88AFC0589883C5660FF /* Pods-RATreeViewTVExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AFD4ADE1D02A1C8D40672245FD1B071 /* Pods-RATreeViewTVExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AE576F25C85A831ABF59512ED3FF826 /* Pods-RATreeViewBasicExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB2C6902D7F45860C66F15DA87E45F5 /* Pods-RATreeViewBasicExample-dummy.m */; };
+		3B474BC5ACFB17BFA352FA18B8BA62BB /* RATreeNodeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679724733F96116DBDA6F86EBE0FE043 /* RATreeNodeCollectionController.m */; };
+		3BAFBAE3FB1AE1BAF5A738D2EBF5467A /* RATreeView_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E77DB5765F936E47074000FDF60995A /* RATreeView_ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3D86A41379D5DD841E070FD0D6661A39 /* RABatchChangeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB8D2B050644C3036C968B839C694F3 /* RABatchChangeEntity.m */; };
+		3E79820A3B9915C94EF551FDEF2A324A /* RATreeView+Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 01171A79697DC6EA377CCA704ECC4330 /* RATreeView+Enums.m */; };
+		414D7C24BE848306518DA52937F95147 /* RATableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5427A9242E4E59A65946504557B1E84 /* RATableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41B2592C4133FC95A68F8EF607DADEE8 /* RATreeView+TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB5DC58D06E8307DB7647BF7302F3 /* RATreeView+TableViewDelegate.m */; };
+		44E3921436BC547CABB23C79E6C8D384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48912B8B70552CB7E69D87039E4C2C /* Foundation.framework */; };
+		588595274EDCC6831025FC6E2FCEE03D /* RATreeView+TableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = A778EEBDAF86077DD2E13E7266664B24 /* RATreeView+TableViewDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		62F39818DAAEED6505690F666EE92AA9 /* Pods-RATreeViewBasicExampleSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02257BB4B844FA3C9B3882DEB373F6D7 /* Pods-RATreeViewBasicExampleSwift-dummy.m */; };
+		64BEA58185C0723F189F4CDA3B13EF47 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 341F513C7568124FF4400816361FF7D4 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		676CA655003045227EEDEC0851C44FF3 /* RATreeNodeItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A8CBDF30C7420FEEEA95F0F31F2A08 /* RATreeNodeItem+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67E465F99D56BCEE033131801C3E236F /* RATreeNodeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB536EDB292554826F079FE7E714A22 /* RATreeNodeItem.m */; };
+		69C44D9D3DE9772C316B280B9968B9E6 /* RATreeView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3082E26299F5FEF6E838F4934E9C1D /* RATreeView+Private.m */; };
+		69EBEAF4261BE10EFBF417249685A38C /* RATreeView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4C0B3FC1F8ABE7D74C130A5D74CC1B /* RATreeView+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6EAE39A2272262C9763EAC14EE959E3E /* RATreeNodeItem+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6AA9D009204BF314C104CBD5705E6 /* RATreeNodeItem+Private.m */; };
+		6F8DB3BE99B8CF73F96A8168355A6120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89CCC94F17EC560C78ED506CF416FAF /* Foundation.framework */; };
+		73E889819890512BAE84DC03372CB0FF /* RABatchChangeEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A670FDC4E04F729351D18A7010B18424 /* RABatchChangeEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7C04AFFD736A075292AA90CEF5CDE6CF /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B109D6937D79FCBEC186D6C5E295DD6 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */; };
+		815DF5B233B6FD98CF860BBA8FA17317 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 431B82588B5C7B2DDEEDF825EAB317C6 /* RATreeNode.m */; };
+		843CD581884C4D7FCFFC506EF29050C3 /* RATreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 431B82588B5C7B2DDEEDF825EAB317C6 /* RATreeNode.m */; };
+		87C2A5F6B9C0B37371839FFBD04D3087 /* RABatchChangeEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A670FDC4E04F729351D18A7010B18424 /* RABatchChangeEntity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		87F8C1FB7BD943425F871CFF9FB9523F /* RATreeNodeCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 679724733F96116DBDA6F86EBE0FE043 /* RATreeNodeCollectionController.m */; };
+		89213DFEB7F5780268110FDD4E317222 /* RATreeView+TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DAB5DC58D06E8307DB7647BF7302F3 /* RATreeView+TableViewDelegate.m */; };
+		8AB3E0A4A0C1A2EC9963F7F5A60CCEEA /* RATreeNodeController.h in Headers */ = {isa = PBXBuildFile; fileRef = B16EBAD7A92D0300F3064BFDA12E3280 /* RATreeNodeController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8D59954E9512BC24329C61822101F36E /* RATreeNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38303050E79A9246F8A4D59A30F87A /* RATreeNodeController.m */; };
+		94084AA9D2C07C26AB567B0F885B7BF5 /* RATreeView-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AE7B84EC77A66B65D2F893805AE3315 /* RATreeView-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		995F6B459E0A3C8CC47D010A6000BC55 /* RATreeView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4C0B3FC1F8ABE7D74C130A5D74CC1B /* RATreeView+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A2A05072581B818A746D390C93DBC721 /* RATreeView-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F0E5DE770DEBC6455DAE785DFB8624 /* RATreeView-tvOS-dummy.m */; };
+		A321062B1DA8275FFA502DAB1F890A7B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48912B8B70552CB7E69D87039E4C2C /* Foundation.framework */; };
+		AC4DBE98390682325C968F47F0E7D275 /* RATreeNodeItem+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6AA9D009204BF314C104CBD5705E6 /* RATreeNodeItem+Private.m */; };
+		B4BC5DA4D0816B4F1F7723E8EBA00DD2 /* RATreeView+TableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B22B12EDACC5303B43A81E9CC2E3D6F7 /* RATreeView+TableViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BC93718677E397A841585D201A79A32D /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B109D6937D79FCBEC186D6C5E295DD6 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */; };
+		C2CE21BA82FA1A6ACBDE6BB801EC112B /* RABatchChangeEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB8D2B050644C3036C968B839C694F3 /* RABatchChangeEntity.m */; };
+		C39DECA52E02105BDEEF4C04F81C5B43 /* RATreeView+TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C584517DF48BEC228E1CEFA1A96F7DB /* RATreeView+TableViewDataSource.m */; };
+		C63E60A770C012CF05F9C8B28851FACB /* RATreeNodeController.h in Headers */ = {isa = PBXBuildFile; fileRef = B16EBAD7A92D0300F3064BFDA12E3280 /* RATreeNodeController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA29345E0AD50502F12ADB150BB7F747 /* RATreeView-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA135066F886C4B8F7F1AA306640A22E /* RATreeView-iOS-dummy.m */; };
+		CAA3AAABE53B5D128D9F7A76408BDC0D /* RATreeNodeCollectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = A097980820319C4447E34FC96018C59B /* RATreeNodeCollectionController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CAFCAA38E0B6589126C978E99169DDFA /* RATreeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A66496DAF76DEDD4C4D1FD10B64332D /* RATreeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D074DE7D313A5C2D7293FF3418777A2C /* RATreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58025E08FFDA16ADE77FE04269148D87 /* RATreeView.m */; };
+		D37F4ED0A46A92FB10D0F15BFDCDBA36 /* Pods-RATreeViewTVExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD6B501DDA4783721B0C9DB01267577 /* Pods-RATreeViewTVExample-dummy.m */; };
+		D4B1F33DA754F1D92CC14A2D8CA0F7A3 /* RATreeNode_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B24285C40D4901402599CE265AB1233A /* RATreeNode_ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4BEA32BCD0AE5F63537C0C8F12658CF /* RATreeNodeItem+ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A425263F10A563FD535131F8F7EA84 /* RATreeNodeItem+ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D75508E81927E60631066AF7FA7BE06B /* RATreeView+Enums.m in Sources */ = {isa = PBXBuildFile; fileRef = 01171A79697DC6EA377CCA704ECC4330 /* RATreeView+Enums.m */; };
+		D8A2EEC920F9ED118B5A9EE4E3BF2C9A /* RATreeView+TableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B22B12EDACC5303B43A81E9CC2E3D6F7 /* RATreeView+TableViewDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D968BD670BC8D568DDCB124DEA9957D0 /* RATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C8AC75887BE240025A300FFFACF1FE /* RATableView.m */; };
+		D986939B603FA50924FF4754903E3EBA /* RATreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58025E08FFDA16ADE77FE04269148D87 /* RATreeView.m */; };
+		DC219325476BDDD9926234388B24BCA6 /* RATreeNode_ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B24285C40D4901402599CE265AB1233A /* RATreeNode_ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF49553B720A12863E392F036E8AD000 /* RATreeView+TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C584517DF48BEC228E1CEFA1A96F7DB /* RATreeView+TableViewDataSource.m */; };
+		DF4AB302807DFAC7DFEAB14D9A1E8376 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D48912B8B70552CB7E69D87039E4C2C /* Foundation.framework */; };
+		E3E82A34CDC84CA52B5A167362FFE173 /* RATreeNodeItem+ClassExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A425263F10A563FD535131F8F7EA84 /* RATreeNodeItem+ClassExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E4C1605A6A96AB547E24D847FADADB3A /* RABatchChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5D07FB26F6406D078EB4245B1D1E /* RABatchChanges.m */; };
+		E4D1B9AC1F6CFD46ADF2913D4F4D0451 /* RATreeNodeItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B59CE61AE50B29FA39182DCAB4D462A /* RATreeNodeItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E5FCDA2B3C95CD7D13AE26AF3A9C1E4C /* RATreeView+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = EA3082E26299F5FEF6E838F4934E9C1D /* RATreeView+Private.m */; };
+		E6266271F04959391A0D5A80E51EC9FA /* RATreeView+Enums.h in Headers */ = {isa = PBXBuildFile; fileRef = D0200D5C50D7B22AAAA2ADE99A9C1863 /* RATreeView+Enums.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E76ABF2C6A595152F45A645D02ED146A /* RABatchChanges.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7C5D07FB26F6406D078EB4245B1D1E /* RABatchChanges.m */; };
+		E8A4ABE1F8144609EAF28CBA2F11E363 /* RATreeNodeItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 17A8CBDF30C7420FEEEA95F0F31F2A08 /* RATreeNodeItem+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE6E264663660CFA38EBCEAA412E66EA /* RATreeView+Enums.h in Headers */ = {isa = PBXBuildFile; fileRef = D0200D5C50D7B22AAAA2ADE99A9C1863 /* RATreeView+Enums.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F045E33ADD3547D867A99987EE56EF40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89CCC94F17EC560C78ED506CF416FAF /* Foundation.framework */; };
+		F955F72F14F201F847667521D98C81C0 /* RATableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5C8AC75887BE240025A300FFFACF1FE /* RATableView.m */; };
+		FAFB2D253CFCE40497FE6C2C51AF5B31 /* RATableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5427A9242E4E59A65946504557B1E84 /* RATableView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10B2D1D147B67CED492374D3792AA601 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14BD408F89D786A1D98BCFDEADF4EBAC;
+			remoteInfo = "RATreeView-iOS";
+		};
+		12F4B311F29DA3AF934C1240ACBA0946 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14BD408F89D786A1D98BCFDEADF4EBAC;
+			remoteInfo = "RATreeView-iOS";
+		};
+		5A88D694471EA42AE7A23C4BF634A612 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFF8C4456AB01066CE4FE71C504381AD;
+			remoteInfo = "RATreeView-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01171A79697DC6EA377CCA704ECC4330 /* RATreeView+Enums.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+Enums.m"; sourceTree = "<group>"; };
+		02257BB4B844FA3C9B3882DEB373F6D7 /* Pods-RATreeViewBasicExampleSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RATreeViewBasicExampleSwift-dummy.m"; sourceTree = "<group>"; };
+		08CAD3A0551C1C3EB9EE4F1DD1107F6F /* RATreeView-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView-iOS-umbrella.h"; sourceTree = "<group>"; };
+		09EAE6886B041EDB9F7D2E187BF2784F /* RATreeView-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "RATreeView-iOS.modulemap"; sourceTree = "<group>"; };
+		0B40341529C1B93CB5168A606F5961DE /* RATreeView-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "RATreeView-tvOS.xcconfig"; path = "../RATreeView-tvOS/RATreeView-tvOS.xcconfig"; sourceTree = "<group>"; };
+		0B59CE61AE50B29FA39182DCAB4D462A /* RATreeNodeItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RATreeNodeItem.h; sourceTree = "<group>"; };
+		0C584517DF48BEC228E1CEFA1A96F7DB /* RATreeView+TableViewDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+TableViewDataSource.m"; sourceTree = "<group>"; };
+		0D7FA5E3A061059CCE08995E967985A2 /* Pods-RATreeViewBasicExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RATreeViewBasicExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		11B9AC61FB07A7C88455823B4582E681 /* Pods-RATreeViewTVExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RATreeViewTVExample.release.xcconfig"; sourceTree = "<group>"; };
+		17A8CBDF30C7420FEEEA95F0F31F2A08 /* RATreeNodeItem+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeNodeItem+Private.h"; sourceTree = "<group>"; };
+		1D4C0B3FC1F8ABE7D74C130A5D74CC1B /* RATreeView+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView+Private.h"; sourceTree = "<group>"; };
+		1E380F584F148AD81D387A778C207442 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2051E13AC0162D4CCE931D5B1B6B8E57 /* Pods-RATreeViewTVExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RATreeViewTVExample.debug.xcconfig"; sourceTree = "<group>"; };
+		228D529DDEE1DDC151DE7D3D82E12C29 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25DAB5DC58D06E8307DB7647BF7302F3 /* RATreeView+TableViewDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+TableViewDelegate.m"; sourceTree = "<group>"; };
+		2DB536EDB292554826F079FE7E714A22 /* RATreeNodeItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeItem.m; sourceTree = "<group>"; };
+		30237245B2F9AD41A274229A7C23AA1F /* RATreeNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RATreeNode.h; sourceTree = "<group>"; };
+		327AE5C751F8390A31A3FBF0024A02CF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../RATreeView-tvOS/Info.plist"; sourceTree = "<group>"; };
+		341F513C7568124FF4400816361FF7D4 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView+RATreeNodeCollectionControllerDataSource.h"; sourceTree = "<group>"; };
+		37F7104CEF4DDC92F3036680324B89AF /* RABatchChanges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RABatchChanges.h; sourceTree = "<group>"; };
+		3B109D6937D79FCBEC186D6C5E295DD6 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+RATreeNodeCollectionControllerDataSource.m"; sourceTree = "<group>"; };
+		3DB6AA9D009204BF314C104CBD5705E6 /* RATreeNodeItem+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeNodeItem+Private.m"; sourceTree = "<group>"; };
+		3EC192BAEFB5EEC166504CC8843542BF /* Pods-RATreeViewTVExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RATreeViewTVExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		40B56F39366D8C3675495C192B5D38AA /* Pods-RATreeViewTVExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RATreeViewTVExample-frameworks.sh"; sourceTree = "<group>"; };
+		431B82588B5C7B2DDEEDF825EAB317C6 /* RATreeNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RATreeNode.m; sourceTree = "<group>"; };
+		4388D89FB662CDDAFF25624CDA9F423F /* Pods-RATreeViewTVExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RATreeViewTVExample.modulemap"; sourceTree = "<group>"; };
+		4AE7B84EC77A66B65D2F893805AE3315 /* RATreeView-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView-tvOS-umbrella.h"; path = "../RATreeView-tvOS/RATreeView-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		58025E08FFDA16ADE77FE04269148D87 /* RATreeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RATreeView.m; sourceTree = "<group>"; };
+		582F7ABD5ABD4B842743797C9AB4551C /* Pods-RATreeViewBasicExampleSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RATreeViewBasicExampleSwift-resources.sh"; sourceTree = "<group>"; };
+		5C7C5D07FB26F6406D078EB4245B1D1E /* RABatchChanges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RABatchChanges.m; sourceTree = "<group>"; };
+		5D4CED9CD46107AEC13EF9742E316541 /* Pods-RATreeViewBasicExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RATreeViewBasicExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		679724733F96116DBDA6F86EBE0FE043 /* RATreeNodeCollectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeCollectionController.m; sourceTree = "<group>"; };
+		6E77DB5765F936E47074000FDF60995A /* RATreeView_ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RATreeView_ClassExtension.h; sourceTree = "<group>"; };
+		75D081F000333A157E951939DEEF2F28 /* Pods-RATreeViewTVExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RATreeViewTVExample-resources.sh"; sourceTree = "<group>"; };
+		77D6DCA8D816C3C7FF4837A0B9CD7F5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A66496DAF76DEDD4C4D1FD10B64332D /* RATreeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RATreeView.h; sourceTree = "<group>"; };
+		7AFD4ADE1D02A1C8D40672245FD1B071 /* Pods-RATreeViewTVExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RATreeViewTVExample-umbrella.h"; sourceTree = "<group>"; };
+		7EB8D2B050644C3036C968B839C694F3 /* RABatchChangeEntity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RABatchChangeEntity.m; sourceTree = "<group>"; };
+		81C029F150FB835C69F344FF1287744F /* Pods-RATreeViewBasicExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RATreeViewBasicExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		87A425263F10A563FD535131F8F7EA84 /* RATreeNodeItem+ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeNodeItem+ClassExtension.h"; sourceTree = "<group>"; };
+		8A01D03D02D4B6F081DDA53F8375B1F1 /* Pods-RATreeViewBasicExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RATreeViewBasicExample.release.xcconfig"; sourceTree = "<group>"; };
+		8D38303050E79A9246F8A4D59A30F87A /* RATreeNodeController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RATreeNodeController.m; sourceTree = "<group>"; };
+		8F7997D1AC81FBFF876CAC554C7B7C9F /* RATreeView-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView-iOS-prefix.pch"; sourceTree = "<group>"; };
+		9119455DFB45EFA1EF8AE712141165B6 /* Pods-RATreeViewBasicExampleSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RATreeViewBasicExampleSwift.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D48912B8B70552CB7E69D87039E4C2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A097980820319C4447E34FC96018C59B /* RATreeNodeCollectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RATreeNodeCollectionController.h; sourceTree = "<group>"; };
+		A670FDC4E04F729351D18A7010B18424 /* RABatchChangeEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RABatchChangeEntity.h; sourceTree = "<group>"; };
+		A778EEBDAF86077DD2E13E7266664B24 /* RATreeView+TableViewDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView+TableViewDataSource.h"; sourceTree = "<group>"; };
+		B16EBAD7A92D0300F3064BFDA12E3280 /* RATreeNodeController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RATreeNodeController.h; sourceTree = "<group>"; };
+		B22B12EDACC5303B43A81E9CC2E3D6F7 /* RATreeView+TableViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView+TableViewDelegate.h"; sourceTree = "<group>"; };
+		B24285C40D4901402599CE265AB1233A /* RATreeNode_ClassExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RATreeNode_ClassExtension.h; sourceTree = "<group>"; };
+		B61C5F3D76C0227AF8A54A03082C2BED /* RATreeView-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "RATreeView-tvOS.modulemap"; path = "../RATreeView-tvOS/RATreeView-tvOS.modulemap"; sourceTree = "<group>"; };
+		BCD6B501DDA4783721B0C9DB01267577 /* Pods-RATreeViewTVExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RATreeViewTVExample-dummy.m"; sourceTree = "<group>"; };
+		C7C2331250591873C70E23BEA41507A5 /* Pods-RATreeViewBasicExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RATreeViewBasicExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9F14144DE2F6761CB722F3ACEA3B83F /* Pods-RATreeViewBasicExampleSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RATreeViewBasicExampleSwift-umbrella.h"; sourceTree = "<group>"; };
+		CCDAD05BE75BC3DE0040B03418A49C6D /* Pods-RATreeViewBasicExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RATreeViewBasicExample.modulemap"; sourceTree = "<group>"; };
+		D0200D5C50D7B22AAAA2ADE99A9C1863 /* RATreeView+Enums.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RATreeView+Enums.h"; sourceTree = "<group>"; };
+		D1E8F5C77AFDDD495F19E34D20500A92 /* Pods-RATreeViewBasicExampleSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RATreeViewBasicExampleSwift-acknowledgements.plist"; sourceTree = "<group>"; };
+		D1F0E5DE770DEBC6455DAE785DFB8624 /* RATreeView-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RATreeView-tvOS-dummy.m"; path = "../RATreeView-tvOS/RATreeView-tvOS-dummy.m"; sourceTree = "<group>"; };
+		D2807E7F792788DCCB479BB89CBFBF0E /* Pods-RATreeViewTVExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RATreeViewTVExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D81688E1A47F4DC5A5125D1E2FE5601E /* Pods_RATreeViewTVExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RATreeViewTVExample.framework; path = "Pods-RATreeViewTVExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA135066F886C4B8F7F1AA306640A22E /* RATreeView-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeView-iOS-dummy.m"; sourceTree = "<group>"; };
+		DB73CAA9BC996792C4227537A3E97D0E /* RATreeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RATreeView.framework; path = "RATreeView-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC44D02126AD64211A52011B817B619F /* Pods-RATreeViewBasicExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RATreeViewBasicExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DE64B3E9E8FBB8F141323870E57AF9C9 /* RATreeView-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RATreeView-tvOS-prefix.pch"; path = "../RATreeView-tvOS/RATreeView-tvOS-prefix.pch"; sourceTree = "<group>"; };
+		DEB2C6902D7F45860C66F15DA87E45F5 /* Pods-RATreeViewBasicExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RATreeViewBasicExample-dummy.m"; sourceTree = "<group>"; };
+		E2502DB998F869C8C43D71AAC6BE6C8F /* Pods-RATreeViewBasicExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RATreeViewBasicExample-frameworks.sh"; sourceTree = "<group>"; };
+		E5C8AC75887BE240025A300FFFACF1FE /* RATableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RATableView.m; sourceTree = "<group>"; };
+		E8608F435FAF924D4F38036EF62B9B9F /* Pods-RATreeViewBasicExampleSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RATreeViewBasicExampleSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E89CCC94F17EC560C78ED506CF416FAF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E8F450BBFE1D1417356F3E1C3CF50D85 /* Pods_RATreeViewBasicExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RATreeViewBasicExample.framework; path = "Pods-RATreeViewBasicExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA3082E26299F5FEF6E838F4934E9C1D /* RATreeView+Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RATreeView+Private.m"; sourceTree = "<group>"; };
+		EB30E8C8734D4EE45825D5A3F4EE1B4E /* Pods_RATreeViewBasicExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RATreeViewBasicExampleSwift.framework; path = "Pods-RATreeViewBasicExampleSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD14E577D7FB90C0BFC3996F1C93780 /* Pods-RATreeViewBasicExampleSwift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RATreeViewBasicExampleSwift-frameworks.sh"; sourceTree = "<group>"; };
+		F24A3BE87D7DA8DB7CE2E7CB0F43DAA2 /* RATreeView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RATreeView.framework; path = "RATreeView-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5427A9242E4E59A65946504557B1E84 /* RATableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RATableView.h; sourceTree = "<group>"; };
+		F7D813AF40D42A98BCBE441B31EF9F1E /* RATreeView-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RATreeView-iOS.xcconfig"; sourceTree = "<group>"; };
+		FA4F01C67E2DEB352EE811FCF916AB7F /* Pods-RATreeViewBasicExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RATreeViewBasicExample-umbrella.h"; sourceTree = "<group>"; };
+		FF47CD88D7608C3502517655EDCFE2C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF501355E3854FFD69AFC07463347F16 /* Pods-RATreeViewBasicExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RATreeViewBasicExample-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0508436F0FDC49A880A6AA13F79AF541 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8DB3BE99B8CF73F96A8168355A6120 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C2F422214DE3EA4B77C043CCADBD5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F045E33ADD3547D867A99987EE56EF40 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E65E1B5DE4BD3BF4E17C25420AA7B07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4AB302807DFAC7DFEAB14D9A1E8376 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9314FBBA1711CCA171C1389DAE56506D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A321062B1DA8275FFA502DAB1F890A7B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3E64DE557D8F463DC9BE20D4A09CC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44E3921436BC547CABB23C79E6C8D384 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02BBCCAECA93C8054EDA9931B2FEECA1 /* Pods-RATreeViewBasicExample */ = {
+			isa = PBXGroup;
+			children = (
+				228D529DDEE1DDC151DE7D3D82E12C29 /* Info.plist */,
+				CCDAD05BE75BC3DE0040B03418A49C6D /* Pods-RATreeViewBasicExample.modulemap */,
+				81C029F150FB835C69F344FF1287744F /* Pods-RATreeViewBasicExample-acknowledgements.markdown */,
+				C7C2331250591873C70E23BEA41507A5 /* Pods-RATreeViewBasicExample-acknowledgements.plist */,
+				DEB2C6902D7F45860C66F15DA87E45F5 /* Pods-RATreeViewBasicExample-dummy.m */,
+				E2502DB998F869C8C43D71AAC6BE6C8F /* Pods-RATreeViewBasicExample-frameworks.sh */,
+				FF501355E3854FFD69AFC07463347F16 /* Pods-RATreeViewBasicExample-resources.sh */,
+				FA4F01C67E2DEB352EE811FCF916AB7F /* Pods-RATreeViewBasicExample-umbrella.h */,
+				DC44D02126AD64211A52011B817B619F /* Pods-RATreeViewBasicExample.debug.xcconfig */,
+				8A01D03D02D4B6F081DDA53F8375B1F1 /* Pods-RATreeViewBasicExample.release.xcconfig */,
+			);
+			name = "Pods-RATreeViewBasicExample";
+			path = "Target Support Files/Pods-RATreeViewBasicExample";
+			sourceTree = "<group>";
+		};
+		36A4617E0AB0DE36F1D97DE2053E7F60 /* RATreeView */ = {
+			isa = PBXGroup;
+			children = (
+				6A4B182FAD8B61C58DCA083542B6E2E3 /* RATreeView */,
+				48640D5AB58EB54EF90283DFFC6B318E /* Support Files */,
+			);
+			name = RATreeView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3746926E44AFC6182DEDEAB7DCF17CC4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36A4617E0AB0DE36F1D97DE2053E7F60 /* RATreeView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		40E69F54529E0CEE3EFB3A6D66970E1D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9D48912B8B70552CB7E69D87039E4C2C /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		45FAD7F01C7D686E8DA065F8A623B7DC /* RATreeView */ = {
+			isa = PBXGroup;
+			children = (
+				7A66496DAF76DEDD4C4D1FD10B64332D /* RATreeView.h */,
+				58025E08FFDA16ADE77FE04269148D87 /* RATreeView.m */,
+				D1B96E2962687BB0C73783A4584EA4B7 /* Private Files */,
+			);
+			name = RATreeView;
+			path = RATreeView;
+			sourceTree = "<group>";
+		};
+		48640D5AB58EB54EF90283DFFC6B318E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				327AE5C751F8390A31A3FBF0024A02CF /* Info.plist */,
+				FF47CD88D7608C3502517655EDCFE2C7 /* Info.plist */,
+				09EAE6886B041EDB9F7D2E187BF2784F /* RATreeView-iOS.modulemap */,
+				F7D813AF40D42A98BCBE441B31EF9F1E /* RATreeView-iOS.xcconfig */,
+				DA135066F886C4B8F7F1AA306640A22E /* RATreeView-iOS-dummy.m */,
+				8F7997D1AC81FBFF876CAC554C7B7C9F /* RATreeView-iOS-prefix.pch */,
+				08CAD3A0551C1C3EB9EE4F1DD1107F6F /* RATreeView-iOS-umbrella.h */,
+				B61C5F3D76C0227AF8A54A03082C2BED /* RATreeView-tvOS.modulemap */,
+				0B40341529C1B93CB5168A606F5961DE /* RATreeView-tvOS.xcconfig */,
+				D1F0E5DE770DEBC6455DAE785DFB8624 /* RATreeView-tvOS-dummy.m */,
+				DE64B3E9E8FBB8F141323870E57AF9C9 /* RATreeView-tvOS-prefix.pch */,
+				4AE7B84EC77A66B65D2F893805AE3315 /* RATreeView-tvOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Examples/Pods/Target Support Files/RATreeView-iOS";
+			sourceTree = "<group>";
+		};
+		609CA1E7E1C3994179D634AA71C2E4B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8F450BBFE1D1417356F3E1C3CF50D85 /* Pods_RATreeViewBasicExample.framework */,
+				EB30E8C8734D4EE45825D5A3F4EE1B4E /* Pods_RATreeViewBasicExampleSwift.framework */,
+				D81688E1A47F4DC5A5125D1E2FE5601E /* Pods_RATreeViewTVExample.framework */,
+				F24A3BE87D7DA8DB7CE2E7CB0F43DAA2 /* RATreeView.framework */,
+				DB73CAA9BC996792C4227537A3E97D0E /* RATreeView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		642E4EC447B109ED4F7F3F0BAB5E582F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02BBCCAECA93C8054EDA9931B2FEECA1 /* Pods-RATreeViewBasicExample */,
+				AAE2F60C03C200E5F131262A556391BD /* Pods-RATreeViewBasicExampleSwift */,
+				9293C4AE3D59F5DCBA8964AF055F84FF /* Pods-RATreeViewTVExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6A4B182FAD8B61C58DCA083542B6E2E3 /* RATreeView */ = {
+			isa = PBXGroup;
+			children = (
+				45FAD7F01C7D686E8DA065F8A623B7DC /* RATreeView */,
+			);
+			name = RATreeView;
+			path = RATreeView;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3746926E44AFC6182DEDEAB7DCF17CC4 /* Development Pods */,
+				A42F72DC1D780481325DD00969B19BB6 /* Frameworks */,
+				609CA1E7E1C3994179D634AA71C2E4B2 /* Products */,
+				642E4EC447B109ED4F7F3F0BAB5E582F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9293C4AE3D59F5DCBA8964AF055F84FF /* Pods-RATreeViewTVExample */ = {
+			isa = PBXGroup;
+			children = (
+				77D6DCA8D816C3C7FF4837A0B9CD7F5F /* Info.plist */,
+				4388D89FB662CDDAFF25624CDA9F423F /* Pods-RATreeViewTVExample.modulemap */,
+				D2807E7F792788DCCB479BB89CBFBF0E /* Pods-RATreeViewTVExample-acknowledgements.markdown */,
+				3EC192BAEFB5EEC166504CC8843542BF /* Pods-RATreeViewTVExample-acknowledgements.plist */,
+				BCD6B501DDA4783721B0C9DB01267577 /* Pods-RATreeViewTVExample-dummy.m */,
+				40B56F39366D8C3675495C192B5D38AA /* Pods-RATreeViewTVExample-frameworks.sh */,
+				75D081F000333A157E951939DEEF2F28 /* Pods-RATreeViewTVExample-resources.sh */,
+				7AFD4ADE1D02A1C8D40672245FD1B071 /* Pods-RATreeViewTVExample-umbrella.h */,
+				2051E13AC0162D4CCE931D5B1B6B8E57 /* Pods-RATreeViewTVExample.debug.xcconfig */,
+				11B9AC61FB07A7C88455823B4582E681 /* Pods-RATreeViewTVExample.release.xcconfig */,
+			);
+			name = "Pods-RATreeViewTVExample";
+			path = "Target Support Files/Pods-RATreeViewTVExample";
+			sourceTree = "<group>";
+		};
+		A42F72DC1D780481325DD00969B19BB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40E69F54529E0CEE3EFB3A6D66970E1D /* iOS */,
+				B95AAC6DF73A3AFC4B77A363C70E8A09 /* tvOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAE2F60C03C200E5F131262A556391BD /* Pods-RATreeViewBasicExampleSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1E380F584F148AD81D387A778C207442 /* Info.plist */,
+				9119455DFB45EFA1EF8AE712141165B6 /* Pods-RATreeViewBasicExampleSwift.modulemap */,
+				E8608F435FAF924D4F38036EF62B9B9F /* Pods-RATreeViewBasicExampleSwift-acknowledgements.markdown */,
+				D1E8F5C77AFDDD495F19E34D20500A92 /* Pods-RATreeViewBasicExampleSwift-acknowledgements.plist */,
+				02257BB4B844FA3C9B3882DEB373F6D7 /* Pods-RATreeViewBasicExampleSwift-dummy.m */,
+				EBD14E577D7FB90C0BFC3996F1C93780 /* Pods-RATreeViewBasicExampleSwift-frameworks.sh */,
+				582F7ABD5ABD4B842743797C9AB4551C /* Pods-RATreeViewBasicExampleSwift-resources.sh */,
+				C9F14144DE2F6761CB722F3ACEA3B83F /* Pods-RATreeViewBasicExampleSwift-umbrella.h */,
+				0D7FA5E3A061059CCE08995E967985A2 /* Pods-RATreeViewBasicExampleSwift.debug.xcconfig */,
+				5D4CED9CD46107AEC13EF9742E316541 /* Pods-RATreeViewBasicExampleSwift.release.xcconfig */,
+			);
+			name = "Pods-RATreeViewBasicExampleSwift";
+			path = "Target Support Files/Pods-RATreeViewBasicExampleSwift";
+			sourceTree = "<group>";
+		};
+		B95AAC6DF73A3AFC4B77A363C70E8A09 /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				E89CCC94F17EC560C78ED506CF416FAF /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+		D1B96E2962687BB0C73783A4584EA4B7 /* Private Files */ = {
+			isa = PBXGroup;
+			children = (
+				A670FDC4E04F729351D18A7010B18424 /* RABatchChangeEntity.h */,
+				7EB8D2B050644C3036C968B839C694F3 /* RABatchChangeEntity.m */,
+				37F7104CEF4DDC92F3036680324B89AF /* RABatchChanges.h */,
+				5C7C5D07FB26F6406D078EB4245B1D1E /* RABatchChanges.m */,
+				F5427A9242E4E59A65946504557B1E84 /* RATableView.h */,
+				E5C8AC75887BE240025A300FFFACF1FE /* RATableView.m */,
+				30237245B2F9AD41A274229A7C23AA1F /* RATreeNode.h */,
+				431B82588B5C7B2DDEEDF825EAB317C6 /* RATreeNode.m */,
+				B24285C40D4901402599CE265AB1233A /* RATreeNode_ClassExtension.h */,
+				A097980820319C4447E34FC96018C59B /* RATreeNodeCollectionController.h */,
+				679724733F96116DBDA6F86EBE0FE043 /* RATreeNodeCollectionController.m */,
+				B16EBAD7A92D0300F3064BFDA12E3280 /* RATreeNodeController.h */,
+				8D38303050E79A9246F8A4D59A30F87A /* RATreeNodeController.m */,
+				0B59CE61AE50B29FA39182DCAB4D462A /* RATreeNodeItem.h */,
+				2DB536EDB292554826F079FE7E714A22 /* RATreeNodeItem.m */,
+				87A425263F10A563FD535131F8F7EA84 /* RATreeNodeItem+ClassExtension.h */,
+				17A8CBDF30C7420FEEEA95F0F31F2A08 /* RATreeNodeItem+Private.h */,
+				3DB6AA9D009204BF314C104CBD5705E6 /* RATreeNodeItem+Private.m */,
+				D0200D5C50D7B22AAAA2ADE99A9C1863 /* RATreeView+Enums.h */,
+				01171A79697DC6EA377CCA704ECC4330 /* RATreeView+Enums.m */,
+				1D4C0B3FC1F8ABE7D74C130A5D74CC1B /* RATreeView+Private.h */,
+				EA3082E26299F5FEF6E838F4934E9C1D /* RATreeView+Private.m */,
+				341F513C7568124FF4400816361FF7D4 /* RATreeView+RATreeNodeCollectionControllerDataSource.h */,
+				3B109D6937D79FCBEC186D6C5E295DD6 /* RATreeView+RATreeNodeCollectionControllerDataSource.m */,
+				A778EEBDAF86077DD2E13E7266664B24 /* RATreeView+TableViewDataSource.h */,
+				0C584517DF48BEC228E1CEFA1A96F7DB /* RATreeView+TableViewDataSource.m */,
+				B22B12EDACC5303B43A81E9CC2E3D6F7 /* RATreeView+TableViewDelegate.h */,
+				25DAB5DC58D06E8307DB7647BF7302F3 /* RATreeView+TableViewDelegate.m */,
+				6E77DB5765F936E47074000FDF60995A /* RATreeView_ClassExtension.h */,
+			);
+			name = "Private Files";
+			path = "Private Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7CE999B22C7EC72911BF8628391BF475 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1740783A3EDE4C6D281EB843AA78B609 /* Pods-RATreeViewBasicExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A12667C7268B4A8651AAEDBE49DD4FF5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C2A5F6B9C0B37371839FFBD04D3087 /* RABatchChangeEntity.h in Headers */,
+				2AE0587EA245F611BBDA0C7D4C3F1A20 /* RABatchChanges.h in Headers */,
+				414D7C24BE848306518DA52937F95147 /* RATableView.h in Headers */,
+				17067505676725BDF11230230DA376DE /* RATreeNode.h in Headers */,
+				DC219325476BDDD9926234388B24BCA6 /* RATreeNode_ClassExtension.h in Headers */,
+				CAA3AAABE53B5D128D9F7A76408BDC0D /* RATreeNodeCollectionController.h in Headers */,
+				8AB3E0A4A0C1A2EC9963F7F5A60CCEEA /* RATreeNodeController.h in Headers */,
+				D4BEA32BCD0AE5F63537C0C8F12658CF /* RATreeNodeItem+ClassExtension.h in Headers */,
+				E8A4ABE1F8144609EAF28CBA2F11E363 /* RATreeNodeItem+Private.h in Headers */,
+				024389F1E04CD4CE4AA2593FACEAA7C7 /* RATreeNodeItem.h in Headers */,
+				EE6E264663660CFA38EBCEAA412E66EA /* RATreeView+Enums.h in Headers */,
+				995F6B459E0A3C8CC47D010A6000BC55 /* RATreeView+Private.h in Headers */,
+				64BEA58185C0723F189F4CDA3B13EF47 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */,
+				0837B2748C8CE3E771C6A247A69CE485 /* RATreeView+TableViewDataSource.h in Headers */,
+				D8A2EEC920F9ED118B5A9EE4E3BF2C9A /* RATreeView+TableViewDelegate.h in Headers */,
+				94084AA9D2C07C26AB567B0F885B7BF5 /* RATreeView-tvOS-umbrella.h in Headers */,
+				120382A2652EAB9655391AD48D00A100 /* RATreeView.h in Headers */,
+				23A70186C6A35BE0171258919D782198 /* RATreeView_ClassExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D21041201C1C7D718DEC0DC2A66B28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37A493B70A41B88AFC0589883C5660FF /* Pods-RATreeViewTVExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4F9A356B03FFDFE22B28566790B6110 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C438088E1292F2DE48DC2AF79668379 /* Pods-RATreeViewBasicExampleSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3E06FEEC0875FB663619AE12E14B39F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73E889819890512BAE84DC03372CB0FF /* RABatchChangeEntity.h in Headers */,
+				0E26D3432CC44E121F962D64C09FDC46 /* RABatchChanges.h in Headers */,
+				FAFB2D253CFCE40497FE6C2C51AF5B31 /* RATableView.h in Headers */,
+				0658F3FB5AD21C033073EDEEE7999814 /* RATreeNode.h in Headers */,
+				D4B1F33DA754F1D92CC14A2D8CA0F7A3 /* RATreeNode_ClassExtension.h in Headers */,
+				11CE869670D9AD401163B6186A122F32 /* RATreeNodeCollectionController.h in Headers */,
+				C63E60A770C012CF05F9C8B28851FACB /* RATreeNodeController.h in Headers */,
+				E3E82A34CDC84CA52B5A167362FFE173 /* RATreeNodeItem+ClassExtension.h in Headers */,
+				676CA655003045227EEDEC0851C44FF3 /* RATreeNodeItem+Private.h in Headers */,
+				E4D1B9AC1F6CFD46ADF2913D4F4D0451 /* RATreeNodeItem.h in Headers */,
+				E6266271F04959391A0D5A80E51EC9FA /* RATreeView+Enums.h in Headers */,
+				69EBEAF4261BE10EFBF417249685A38C /* RATreeView+Private.h in Headers */,
+				0DC6F82E0F92E8495E759A35355C3FF7 /* RATreeView+RATreeNodeCollectionControllerDataSource.h in Headers */,
+				588595274EDCC6831025FC6E2FCEE03D /* RATreeView+TableViewDataSource.h in Headers */,
+				B4BC5DA4D0816B4F1F7723E8EBA00DD2 /* RATreeView+TableViewDelegate.h in Headers */,
+				2DD3980878F764693BF51E419C694343 /* RATreeView-iOS-umbrella.h in Headers */,
+				CAFCAA38E0B6589126C978E99169DDFA /* RATreeView.h in Headers */,
+				3BAFBAE3FB1AE1BAF5A738D2EBF5467A /* RATreeView_ClassExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		14BD408F89D786A1D98BCFDEADF4EBAC /* RATreeView-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCEF2974A9672365793A170D0D9B4FD6 /* Build configuration list for PBXNativeTarget "RATreeView-iOS" */;
+			buildPhases = (
+				8B1CB9995C3EC9BFC9E347B8B851D4FA /* Sources */,
+				E3E64DE557D8F463DC9BE20D4A09CC78 /* Frameworks */,
+				F3E06FEEC0875FB663619AE12E14B39F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RATreeView-iOS";
+			productName = "RATreeView-iOS";
+			productReference = DB73CAA9BC996792C4227537A3E97D0E /* RATreeView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		968EA436255DAD3512A546845C7D1E99 /* Pods-RATreeViewBasicExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F635EFDC1C1706E28635797D5BAB93F6 /* Build configuration list for PBXNativeTarget "Pods-RATreeViewBasicExample" */;
+			buildPhases = (
+				75064604D591C56A25C27128F6BD92E6 /* Sources */,
+				6E65E1B5DE4BD3BF4E17C25420AA7B07 /* Frameworks */,
+				7CE999B22C7EC72911BF8628391BF475 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667CF94157E284E9D6CFA6DAA837D8F7 /* PBXTargetDependency */,
+			);
+			name = "Pods-RATreeViewBasicExample";
+			productName = "Pods-RATreeViewBasicExample";
+			productReference = E8F450BBFE1D1417356F3E1C3CF50D85 /* Pods_RATreeViewBasicExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFF8C4456AB01066CE4FE71C504381AD /* RATreeView-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6F81B5551B6E45B74A98186BB1F9976 /* Build configuration list for PBXNativeTarget "RATreeView-tvOS" */;
+			buildPhases = (
+				DF0028DF8A15B49DB4DFEC8E485FA351 /* Sources */,
+				0508436F0FDC49A880A6AA13F79AF541 /* Frameworks */,
+				A12667C7268B4A8651AAEDBE49DD4FF5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RATreeView-tvOS";
+			productName = "RATreeView-tvOS";
+			productReference = F24A3BE87D7DA8DB7CE2E7CB0F43DAA2 /* RATreeView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7AB08FA55FA35182208EA17D2AF4BF5 /* Pods-RATreeViewTVExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5994A2ED5FB2E61385528134A55711EC /* Build configuration list for PBXNativeTarget "Pods-RATreeViewTVExample" */;
+			buildPhases = (
+				30C43253CAE686E68053E8426E59E47C /* Sources */,
+				29C2F422214DE3EA4B77C043CCADBD5E /* Frameworks */,
+				C2D21041201C1C7D718DEC0DC2A66B28 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A51520F366B9C8B025522AFB48DFD164 /* PBXTargetDependency */,
+			);
+			name = "Pods-RATreeViewTVExample";
+			productName = "Pods-RATreeViewTVExample";
+			productReference = D81688E1A47F4DC5A5125D1E2FE5601E /* Pods_RATreeViewTVExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE65AD2B0B4BBEAD2608AA6FF6285BAB /* Pods-RATreeViewBasicExampleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A857809C2A6FEC9D91D72CB68311C3DC /* Build configuration list for PBXNativeTarget "Pods-RATreeViewBasicExampleSwift" */;
+			buildPhases = (
+				B2CD21DBDAFDB18C66B7BB7B0868E037 /* Sources */,
+				9314FBBA1711CCA171C1389DAE56506D /* Frameworks */,
+				D4F9A356B03FFDFE22B28566790B6110 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F696E4223A56E3FA774A0921E4E30142 /* PBXTargetDependency */,
+			);
+			name = "Pods-RATreeViewBasicExampleSwift";
+			productName = "Pods-RATreeViewBasicExampleSwift";
+			productReference = EB30E8C8734D4EE45825D5A3F4EE1B4E /* Pods_RATreeViewBasicExampleSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 609CA1E7E1C3994179D634AA71C2E4B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				968EA436255DAD3512A546845C7D1E99 /* Pods-RATreeViewBasicExample */,
+				DE65AD2B0B4BBEAD2608AA6FF6285BAB /* Pods-RATreeViewBasicExampleSwift */,
+				D7AB08FA55FA35182208EA17D2AF4BF5 /* Pods-RATreeViewTVExample */,
+				14BD408F89D786A1D98BCFDEADF4EBAC /* RATreeView-iOS */,
+				CFF8C4456AB01066CE4FE71C504381AD /* RATreeView-tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30C43253CAE686E68053E8426E59E47C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37F4ED0A46A92FB10D0F15BFDCDBA36 /* Pods-RATreeViewTVExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75064604D591C56A25C27128F6BD92E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE576F25C85A831ABF59512ED3FF826 /* Pods-RATreeViewBasicExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B1CB9995C3EC9BFC9E347B8B851D4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2CE21BA82FA1A6ACBDE6BB801EC112B /* RABatchChangeEntity.m in Sources */,
+				E4C1605A6A96AB547E24D847FADADB3A /* RABatchChanges.m in Sources */,
+				D968BD670BC8D568DDCB124DEA9957D0 /* RATableView.m in Sources */,
+				843CD581884C4D7FCFFC506EF29050C3 /* RATreeNode.m in Sources */,
+				3B474BC5ACFB17BFA352FA18B8BA62BB /* RATreeNodeCollectionController.m in Sources */,
+				8D59954E9512BC24329C61822101F36E /* RATreeNodeController.m in Sources */,
+				AC4DBE98390682325C968F47F0E7D275 /* RATreeNodeItem+Private.m in Sources */,
+				67E465F99D56BCEE033131801C3E236F /* RATreeNodeItem.m in Sources */,
+				D75508E81927E60631066AF7FA7BE06B /* RATreeView+Enums.m in Sources */,
+				E5FCDA2B3C95CD7D13AE26AF3A9C1E4C /* RATreeView+Private.m in Sources */,
+				BC93718677E397A841585D201A79A32D /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */,
+				DF49553B720A12863E392F036E8AD000 /* RATreeView+TableViewDataSource.m in Sources */,
+				89213DFEB7F5780268110FDD4E317222 /* RATreeView+TableViewDelegate.m in Sources */,
+				CA29345E0AD50502F12ADB150BB7F747 /* RATreeView-iOS-dummy.m in Sources */,
+				D074DE7D313A5C2D7293FF3418777A2C /* RATreeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CD21DBDAFDB18C66B7BB7B0868E037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F39818DAAEED6505690F666EE92AA9 /* Pods-RATreeViewBasicExampleSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF0028DF8A15B49DB4DFEC8E485FA351 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D86A41379D5DD841E070FD0D6661A39 /* RABatchChangeEntity.m in Sources */,
+				E76ABF2C6A595152F45A645D02ED146A /* RABatchChanges.m in Sources */,
+				F955F72F14F201F847667521D98C81C0 /* RATableView.m in Sources */,
+				815DF5B233B6FD98CF860BBA8FA17317 /* RATreeNode.m in Sources */,
+				87F8C1FB7BD943425F871CFF9FB9523F /* RATreeNodeCollectionController.m in Sources */,
+				2565B149DF677232E6803DE292D5B00E /* RATreeNodeController.m in Sources */,
+				6EAE39A2272262C9763EAC14EE959E3E /* RATreeNodeItem+Private.m in Sources */,
+				2684D8A99C37E64BF1210056BA34C2F8 /* RATreeNodeItem.m in Sources */,
+				3E79820A3B9915C94EF551FDEF2A324A /* RATreeView+Enums.m in Sources */,
+				69C44D9D3DE9772C316B280B9968B9E6 /* RATreeView+Private.m in Sources */,
+				7C04AFFD736A075292AA90CEF5CDE6CF /* RATreeView+RATreeNodeCollectionControllerDataSource.m in Sources */,
+				C39DECA52E02105BDEEF4C04F81C5B43 /* RATreeView+TableViewDataSource.m in Sources */,
+				41B2592C4133FC95A68F8EF607DADEE8 /* RATreeView+TableViewDelegate.m in Sources */,
+				A2A05072581B818A746D390C93DBC721 /* RATreeView-tvOS-dummy.m in Sources */,
+				D986939B603FA50924FF4754903E3EBA /* RATreeView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		667CF94157E284E9D6CFA6DAA837D8F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RATreeView-iOS";
+			target = 14BD408F89D786A1D98BCFDEADF4EBAC /* RATreeView-iOS */;
+			targetProxy = 12F4B311F29DA3AF934C1240ACBA0946 /* PBXContainerItemProxy */;
+		};
+		A51520F366B9C8B025522AFB48DFD164 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RATreeView-tvOS";
+			target = CFF8C4456AB01066CE4FE71C504381AD /* RATreeView-tvOS */;
+			targetProxy = 5A88D694471EA42AE7A23C4BF634A612 /* PBXContainerItemProxy */;
+		};
+		F696E4223A56E3FA774A0921E4E30142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RATreeView-iOS";
+			target = 14BD408F89D786A1D98BCFDEADF4EBAC /* RATreeView-iOS */;
+			targetProxy = 10B2D1D147B67CED492374D3792AA601 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		111B9BD30750BD13BC8000E94E3CCBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D813AF40D42A98BCBE441B31EF9F1E /* RATreeView-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RATreeView-iOS/RATreeView-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RATreeView-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RATreeView-iOS/RATreeView-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RATreeView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1D97168C0B0961E9B8C21C700DC5BA2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2051E13AC0162D4CCE931D5B1B6B8E57 /* Pods-RATreeViewTVExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RATreeViewTVExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RATreeViewTVExample;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		374664F8A1EFAE271B2320C62A581FC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC44D02126AD64211A52011B817B619F /* Pods-RATreeViewBasicExample.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RATreeViewBasicExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RATreeViewBasicExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FCE65BAFFB6F83D81BCCA7788A2A112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B40341529C1B93CB5168A606F5961DE /* RATreeView-tvOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RATreeView-tvOS/RATreeView-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RATreeView-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RATreeView-tvOS/RATreeView-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RATreeView;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5AC854ECA249E5984C76877F99397E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EE148B9BCEDCE9B030ECABC382A775A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11B9AC61FB07A7C88455823B4582E681 /* Pods-RATreeViewTVExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RATreeViewTVExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RATreeViewTVExample;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		81AA82752C7462EDBC9E3D632A36CF79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A01D03D02D4B6F081DDA53F8375B1F1 /* Pods-RATreeViewBasicExample.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RATreeViewBasicExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RATreeViewBasicExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A976A78DAFB58CED1639D63E9436D215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4CED9CD46107AEC13EF9742E316541 /* Pods-RATreeViewBasicExampleSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RATreeViewBasicExampleSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RATreeViewBasicExampleSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E998E995897E432B1BE64AD008A7FAC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D7FA5E3A061059CCE08995E967985A2 /* Pods-RATreeViewBasicExampleSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RATreeViewBasicExampleSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RATreeViewBasicExampleSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3250D7B2B0DBEA60115DC2ED08BF83B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D813AF40D42A98BCBE441B31EF9F1E /* RATreeView-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RATreeView-iOS/RATreeView-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RATreeView-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RATreeView-iOS/RATreeView-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RATreeView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F6AD1E489CF00A833FC8BB5543FA9AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		FFCC443A7E46345D34DF0CF33A161E2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B40341529C1B93CB5168A606F5961DE /* RATreeView-tvOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RATreeView-tvOS/RATreeView-tvOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RATreeView-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RATreeView-tvOS/RATreeView-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RATreeView;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6AD1E489CF00A833FC8BB5543FA9AE7 /* Debug */,
+				5AC854ECA249E5984C76877F99397E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5994A2ED5FB2E61385528134A55711EC /* Build configuration list for PBXNativeTarget "Pods-RATreeViewTVExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D97168C0B0961E9B8C21C700DC5BA2B /* Debug */,
+				7EE148B9BCEDCE9B030ECABC382A775A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A857809C2A6FEC9D91D72CB68311C3DC /* Build configuration list for PBXNativeTarget "Pods-RATreeViewBasicExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E998E995897E432B1BE64AD008A7FAC2 /* Debug */,
+				A976A78DAFB58CED1639D63E9436D215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6F81B5551B6E45B74A98186BB1F9976 /* Build configuration list for PBXNativeTarget "RATreeView-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFCC443A7E46345D34DF0CF33A161E2A /* Debug */,
+				4FCE65BAFFB6F83D81BCCA7788A2A112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F635EFDC1C1706E28635797D5BAB93F6 /* Build configuration list for PBXNativeTarget "Pods-RATreeViewBasicExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				374664F8A1EFAE271B2320C62A581FC7 /* Debug */,
+				81AA82752C7462EDBC9E3D632A36CF79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCEF2974A9672365793A170D0D9B4FD6 /* Build configuration list for PBXNativeTarget "RATreeView-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3250D7B2B0DBEA60115DC2ED08BF83B /* Debug */,
+				111B9BD30750BD13BC8000E94E3CCBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,45 @@
+Tffstream
+v3
+r1
+cCheck dependencies
+cLibtool /Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Products/Release-iphoneos/libffstream.a normal armv7
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+c000000004DABBE500000000000000110
+t1303101008
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D93E1FD00000000003E22F0
+t1301537277
+s4072176
+
+N/Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Intermediates/ffstream.build/Release-iphoneos/ffstream.build/Objects-normal/armv7/ffstream.LinkFileList
+c000000004DB070590000000000000000
+t1303408729
+s0
+
+N/Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Products/Release-iphoneos/libffstream.a
+t2
+s0
+
+N/Users/fiona/dev/mobile/media/distro/ffstream/ffstream.o
+c000000004DB06DD7000000000000FE34
+t1303408087
+s65076
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies2365a3d9a760b341^2252afd9a760b341^---0#1#0#--18"Check dependencies
+
+CLibtool /Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Products/Release-iphoneos/libffstream.a normal armv7
+s325101529.687616
+e325101529.737514
+r0
+xLibtool
+x/Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Products/Release-iphoneos/libffstream.a
+xnormal
+xarmv7
+o/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/libtool: file list file: /Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Intermediates/ffstream.build/Release-iphoneos/ffstream.build/Objects-normal/armv7/ffstream.LinkFileList is empty
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Libtool DerivedData/ffstream/Build/Products/Release-iphoneos/libffstream.a normal armv7bc22b0d9a760b341^49d7bcd9a760b341^-365"/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/libtool: file list file: /Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Intermediates/ffstream.build/Release-iphoneos/ffstream.build/Objects-normal/armv7/ffstream.LinkFileList is emptyCommand /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/libtool failed with exit code 11(21%IDEActivityLogMessage2@96"Command /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/libtool failed with exit code 1-325101529#18446744073709551615#0#-2#--28"Apple Mach-O Librarian Error--0#0#0#--1021"Libtool DerivedData/ffstream/Build/Products/Release-iphoneos/libffstream.a normal armv7    cd /Users/fiona/dev/mobile/media/distro/ffstream    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/libtool -static -arch_only armv7 -syslibroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -L/Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Products/Release-iphoneos -L../ffmpeg/lib -L../rtmp/build/Release-iphoneos -filelist /Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Intermediates/ffstream.build/Release-iphoneos/ffstream.build/Objects-normal/armv7/ffstream.LinkFileList -ObjC -framework Foundation /Users/fiona/dev/mobile/media/distro/ffstream/ffstream.o -o /Users/fiona/dev/mobile/media/distro/ffstream/DerivedData/ffstream/Build/Products/Release-iphoneos/libffstream.a
+

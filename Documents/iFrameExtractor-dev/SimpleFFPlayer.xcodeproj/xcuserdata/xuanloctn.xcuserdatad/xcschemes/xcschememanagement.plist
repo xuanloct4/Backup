@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ActionExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>BrowserEngine.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>ShareExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>SimpleFFPlayer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9C1F3C631C45EEBE00175F3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C1F3C7C1C45EEBE00175F3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C1F3C871C45EEBE00175F3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA7EA72B1EBC2D80003343D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA92F7C61EBC1E50002497D0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AA9654971EC2C0BD003E03B5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

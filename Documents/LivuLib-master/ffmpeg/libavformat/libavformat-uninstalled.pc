@@ -1,0 +1,12 @@
+prefix=
+exec_prefix=
+libdir=${pcfiledir}
+includedir=/Users/fiona/dev/mobile/media/ffmpeg
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 52.87.1
+Requires: libavcodec = 52.97.2
+Conflicts:
+Libs: ${libdir}/libavformat.a -L/Users/fiona/dev/mobile/media/rtmp/lib -lrtmp -lz -lm -lz ../rtmp/build/Release-iphoneos/librtmp.a 
+Cflags: -I${includedir}

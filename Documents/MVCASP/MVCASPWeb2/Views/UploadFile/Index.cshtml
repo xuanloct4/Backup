@@ -1,0 +1,28 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model)
+{
+    <p>
+      @Html.ActionLink(Path.GetFileName(item), "DownloadFile", "UploadFile", new { filepath = item.ToString()}, null)
+    </p>
+
+<br />
+}
+
+
+
+<form action="" method="post" enctype="multipart/form-data">
+
+    <label for="file1">Filename:</label>
+    <input type="file" name="files" id="file1" />
+
+    <label for="file2">Filename:</label>
+    <input type="file" name="files" id="file2" />
+
+    <input type="submit" />
+</form>

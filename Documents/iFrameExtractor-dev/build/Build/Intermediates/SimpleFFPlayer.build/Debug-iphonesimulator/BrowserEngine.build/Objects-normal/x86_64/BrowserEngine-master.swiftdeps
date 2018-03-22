@@ -1,0 +1,12 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.53 clang-802.0.42)"
+options: "d9d29ab4e2fa93877e67b1c344be9aac"
+build_time: [550750016, 66618000]
+inputs:
+  "/Users/loctv/Documents/loctv/iFrameExtractor-dev/BrowserEngine/Browser/Browser.swift": [547285151, 0]
+  "/Users/loctv/Documents/loctv/iFrameExtractor-dev/BrowserEngine/Browser/JavaScript.swift": [547293079, 0]
+  "/Users/loctv/Documents/loctv/iFrameExtractor-dev/BrowserEngine/Browser/Serializer.swift": [547805895, 0]
+  "/Users/loctv/Documents/loctv/iFrameExtractor-dev/BrowserEngine/AppDelegate.swift": [547703265, 0]
+  "/Users/loctv/Documents/loctv/iFrameExtractor-dev/BrowserEngine/DynamicObjects/MethodFromString.swift": [547802385, 0]
+  "/Users/loctv/Documents/loctv/iFrameExtractor-dev/build/Build/Intermediates/SimpleFFPlayer.build/Debug-iphonesimulator/BrowserEngine.build/DerivedSources/CoreDataGenerated/BrowserEngine/Note+CoreDataClass.swift": [550750016, 0]
+  "/Users/loctv/Documents/loctv/iFrameExtractor-dev/build/Build/Intermediates/SimpleFFPlayer.build/Debug-iphonesimulator/BrowserEngine.build/DerivedSources/CoreDataGenerated/BrowserEngine/Note+CoreDataProperties.swift": [550750016, 0]
+  "/Users/loctv/Documents/loctv/iFrameExtractor-dev/build/Build/Intermediates/SimpleFFPlayer.build/Debug-iphonesimulator/BrowserEngine.build/DerivedSources/CoreDataGenerated/BrowserEngine/BrowserEngine+CoreDataModel.swift": [550750016, 0]

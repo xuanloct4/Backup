@@ -1,0 +1,41 @@
+﻿
+@model List<MVCASPWeb.Models.TableModel>
+
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddProduct</title>
+</head>
+<body>
+    <div>asgadsa</div>
+    <table class="table">
+        <tr>
+            @for (int i = 0; i < @ViewBag.colNumber; i++)
+            {
+                <th class="@String.Format("aaa{0}",i)"> abcd</th>
+            }
+        </tr>
+
+        @for (int i = 0; i < @ViewBag.rowNumber; i++)
+        {
+            <tr>
+                @for (int j = 0; j < @ViewBag.colNumber; j++)
+                {
+                    <td>
+                        dddd
+                        <div>
+                            <img src="@Url.Content(@Model[0].imgUrl)" alt="Mountain View" style="width:100px;height:120px;">
+                        </div>
+                    </td>
+                }
+            </tr>
+        }
+        </table>
+</body>
+</html>

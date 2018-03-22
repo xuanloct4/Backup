@@ -1,0 +1,955 @@
+Running main() from gtest_main.cc
+[==========] Running 405 tests from 45 test cases.
+[----------] Global test environment set-up.
+[----------] 10 tests from Common
+[ RUN      ] Common.Size
+[       OK ] Common.Size (0 ms)
+[ RUN      ] Common.Maybe
+[       OK ] Common.Maybe (0 ms)
+[ RUN      ] Common.MaybeConstness
+[       OK ] Common.MaybeConstness (0 ms)
+[ RUN      ] Common.Downcast
+[       OK ] Common.Downcast (0 ms)
+[ RUN      ] Common.MinMax
+[       OK ] Common.MinMax (0 ms)
+[ RUN      ] Common.MinMaxValue
+[       OK ] Common.MinMaxValue (0 ms)
+[ RUN      ] Common.Defer
+[       OK ] Common.Defer (0 ms)
+[ RUN      ] Common.CanConvert
+[       OK ] Common.CanConvert (0 ms)
+[ RUN      ] Common.ArrayAsBytes
+[       OK ] Common.ArrayAsBytes (0 ms)
+[ RUN      ] Common.Version
+[       OK ] Common.Version (0 ms)
+[----------] 10 tests from Common (0 ms total)
+
+[----------] 3 tests from Memory
+[ RUN      ] Memory.OwnConst
+[       OK ] Memory.OwnConst (0 ms)
+[ RUN      ] Memory.CanConvert
+[       OK ] Memory.CanConvert (0 ms)
+[ RUN      ] Memory.AssignNested
+[       OK ] Memory.AssignNested (0 ms)
+[----------] 3 tests from Memory (0 ms total)
+
+[----------] 1 test from Refcount
+[ RUN      ] Refcount.Basic
+[       OK ] Refcount.Basic (0 ms)
+[----------] 1 test from Refcount (0 ms total)
+
+[----------] 9 tests from Array
+[ RUN      ] Array.TrivialConstructor
+[       OK ] Array.TrivialConstructor (0 ms)
+[ RUN      ] Array.ComplexConstructor
+[       OK ] Array.ComplexConstructor (0 ms)
+[ RUN      ] Array.ThrowingConstructor
+[       OK ] Array.ThrowingConstructor (1 ms)
+[ RUN      ] Array.ThrowingDestructor
+[       OK ] Array.ThrowingDestructor (0 ms)
+[ RUN      ] Array.AraryBuilder
+[       OK ] Array.AraryBuilder (0 ms)
+[ RUN      ] Array.AraryBuilderAddAll
+[       OK ] Array.AraryBuilderAddAll (0 ms)
+[ RUN      ] Array.HeapCopy
+[       OK ] Array.HeapCopy (0 ms)
+[ RUN      ] Array.OwnConst
+[       OK ] Array.OwnConst (0 ms)
+[ RUN      ] Array.Map
+[       OK ] Array.Map (0 ms)
+[----------] 9 tests from Array (1 ms total)
+
+[----------] 4 tests from String
+[ RUN      ] String.Str
+[       OK ] String.Str (0 ms)
+[ RUN      ] String.StartsEndsWith
+[       OK ] String.StartsEndsWith (0 ms)
+[ RUN      ] String.StlInterop
+[       OK ] String.StlInterop (0 ms)
+[ RUN      ] String.ToString
+[       OK ] String.ToString (0 ms)
+[----------] 4 tests from String (0 ms total)
+
+[----------] 2 tests from StringTree
+[ RUN      ] StringTree.StrTree
+[       OK ] StringTree.StrTree (0 ms)
+[ RUN      ] StringTree.DelimitedArray
+[       OK ] StringTree.DelimitedArray (0 ms)
+[----------] 2 tests from StringTree (0 ms total)
+
+[----------] 4 tests from Exception
+[ RUN      ] Exception.RunCatchingExceptions
+[       OK ] Exception.RunCatchingExceptions (0 ms)
+[ RUN      ] Exception.UnwindDetector
+src/kj/exception-test.c++:56: failed: this is a test, not a real bug
+stack: 0x1089b9184 0x1089be245 0x1081cca40 0x1081cc878 0x1089b9e3e 0x1089b9df7 0x1081ccc86 0x1089b9e3e 0x1081cc26b 0x1086e858a 0x1086e83ea 0x1086e93e2 0x1086e9ca3 0x1086f17db 0x1086f1323 0x1086f123e
+[       OK ] Exception.UnwindDetector (0 ms)
+[ RUN      ] Exception.ExceptionCallbackMustBeOnStack
+[       OK ] Exception.ExceptionCallbackMustBeOnStack (0 ms)
+[ RUN      ] Exception.ScopeSuccessFail
+[       OK ] Exception.ScopeSuccessFail (0 ms)
+[----------] 4 tests from Exception (0 ms total)
+
+[----------] 5 tests from Debug
+[ RUN      ] Debug.Log
+[       OK ] Debug.Log (0 ms)
+[ RUN      ] Debug.Exception
+[       OK ] Debug.Exception (0 ms)
+[ RUN      ] Debug.Catch
+[       OK ] Debug.Catch (0 ms)
+[ RUN      ] Debug.Syscall
+[       OK ] Debug.Syscall (1 ms)
+[ RUN      ] Debug.Context
+[       OK ] Debug.Context (0 ms)
+[----------] 5 tests from Debug (1 ms total)
+
+[----------] 15 tests from Arena
+[ RUN      ] Arena.Object
+[       OK ] Arena.Object (0 ms)
+[ RUN      ] Arena.TrivialObject
+[       OK ] Arena.TrivialObject (0 ms)
+[ RUN      ] Arena.OwnObject
+[       OK ] Arena.OwnObject (0 ms)
+[ RUN      ] Arena.Array
+[       OK ] Arena.Array (0 ms)
+[ RUN      ] Arena.TrivialArray
+[       OK ] Arena.TrivialArray (0 ms)
+[ RUN      ] Arena.OwnArray
+[       OK ] Arena.OwnArray (0 ms)
+[ RUN      ] Arena.ObjectThrow
+[       OK ] Arena.ObjectThrow (0 ms)
+[ RUN      ] Arena.ArrayThrow
+[       OK ] Arena.ArrayThrow (0 ms)
+[ RUN      ] Arena.Alignment
+[       OK ] Arena.Alignment (0 ms)
+[ RUN      ] Arena.EndOfChunk
+[       OK ] Arena.EndOfChunk (0 ms)
+[ RUN      ] Arena.EndOfChunkAlignment
+[       OK ] Arena.EndOfChunkAlignment (0 ms)
+[ RUN      ] Arena.TooBig
+[       OK ] Arena.TooBig (0 ms)
+[ RUN      ] Arena.MultiSegment
+[       OK ] Arena.MultiSegment (0 ms)
+[ RUN      ] Arena.Constructor
+[       OK ] Arena.Constructor (0 ms)
+[ RUN      ] Arena.Strings
+[       OK ] Arena.Strings (0 ms)
+[----------] 15 tests from Arena (0 ms total)
+
+[----------] 1 test from UnitMeasure
+[ RUN      ] UnitMeasure.Basics
+[       OK ] UnitMeasure.Basics (0 ms)
+[----------] 1 test from UnitMeasure (0 ms total)
+
+[----------] 1 test from Tuple
+[ RUN      ] Tuple.Tuple
+[       OK ] Tuple.Tuple (0 ms)
+[----------] 1 test from Tuple (0 ms total)
+
+[----------] 2 tests from OneOf
+[ RUN      ] OneOf.Basic
+[       OK ] OneOf.Basic (0 ms)
+[ RUN      ] OneOf.Copy
+[       OK ] OneOf.Copy (0 ms)
+[----------] 2 tests from OneOf (0 ms total)
+
+[----------] 2 tests from Function
+[ RUN      ] Function.Lambda
+[       OK ] Function.Lambda (0 ms)
+[ RUN      ] Function.Method
+[       OK ] Function.Method (0 ms)
+[----------] 2 tests from Function (0 ms total)
+
+[----------] 1 test from ConstFunction
+[ RUN      ] ConstFunction.Method
+[       OK ] ConstFunction.Method (0 ms)
+[----------] 1 test from ConstFunction (0 ms total)
+
+[----------] 1 test from Io
+[ RUN      ] Io.WriteVec
+[       OK ] Io.WriteVec (0 ms)
+[----------] 1 test from Io (0 ms total)
+
+[----------] 3 tests from Mutex
+[ RUN      ] Mutex.MutexGuarded
+[       OK ] Mutex.MutexGuarded (21 ms)
+[ RUN      ] Mutex.Lazy
+[       OK ] Mutex.Lazy (11 ms)
+[ RUN      ] Mutex.LazyException
+[       OK ] Mutex.LazyException (0 ms)
+[----------] 3 tests from Mutex (32 ms total)
+
+[----------] 2 tests from ThreadLocal
+[ RUN      ] ThreadLocal.Basic
+[       OK ] ThreadLocal.Basic (0 ms)
+[ RUN      ] ThreadLocal.Basic
+[       OK ] ThreadLocal.Basic (0 ms)
+[----------] 2 tests from ThreadLocal (0 ms total)
+
+[----------] 4 tests from Blob
+[ RUN      ] Blob.Text
+[       OK ] Blob.Text (0 ms)
+[ RUN      ] Blob.Data
+[       OK ] Blob.Data (0 ms)
+[ RUN      ] Blob.Compare
+[       OK ] Blob.Compare (0 ms)
+[ RUN      ] Blob.StlInterop
+[       OK ] Blob.StlInterop (0 ms)
+[----------] 4 tests from Blob (0 ms total)
+
+[----------] 4 tests from Endian
+[ RUN      ] Endian.Byte
+[       OK ] Endian.Byte (0 ms)
+[ RUN      ] Endian.TwoBytes
+[       OK ] Endian.TwoBytes (0 ms)
+[ RUN      ] Endian.FourBytes
+[       OK ] Endian.FourBytes (0 ms)
+[ RUN      ] Endian.EightBytes
+[       OK ] Endian.EightBytes (0 ms)
+[----------] 4 tests from Endian (0 ms total)
+
+[----------] 4 tests from EndianUnoptimized
+[ RUN      ] EndianUnoptimized.Byte
+[       OK ] EndianUnoptimized.Byte (0 ms)
+[ RUN      ] EndianUnoptimized.TwoBytes
+[       OK ] EndianUnoptimized.TwoBytes (0 ms)
+[ RUN      ] EndianUnoptimized.FourBytes
+[       OK ] EndianUnoptimized.FourBytes (0 ms)
+[ RUN      ] EndianUnoptimized.EightBytes
+[       OK ] EndianUnoptimized.EightBytes (0 ms)
+[----------] 4 tests from EndianUnoptimized (0 ms total)
+
+[----------] 4 tests from EndianReverse
+[ RUN      ] EndianReverse.Byte
+[       OK ] EndianReverse.Byte (0 ms)
+[ RUN      ] EndianReverse.TwoBytes
+[       OK ] EndianReverse.TwoBytes (0 ms)
+[ RUN      ] EndianReverse.FourBytes
+[       OK ] EndianReverse.FourBytes (0 ms)
+[ RUN      ] EndianReverse.EightBytes
+[       OK ] EndianReverse.EightBytes (0 ms)
+[----------] 4 tests from EndianReverse (0 ms total)
+
+[----------] 5 tests from WireFormat
+[ RUN      ] WireFormat.SimpleRawDataStruct
+[       OK ] WireFormat.SimpleRawDataStruct (0 ms)
+[ RUN      ] WireFormat.StructRoundTrip_OneSegment
+[       OK ] WireFormat.StructRoundTrip_OneSegment (0 ms)
+[ RUN      ] WireFormat.StructRoundTrip_OneSegmentPerAllocation
+[       OK ] WireFormat.StructRoundTrip_OneSegmentPerAllocation (0 ms)
+[ RUN      ] WireFormat.StructRoundTrip_MultipleSegmentsWithMultipleAllocations
+[       OK ] WireFormat.StructRoundTrip_MultipleSegmentsWithMultipleAllocations (0 ms)
+[ RUN      ] WireFormat.NanPatching
+[       OK ] WireFormat.NanPatching (0 ms)
+[----------] 5 tests from WireFormat (0 ms total)
+
+[----------] 3 tests from Any
+[ RUN      ] Any.AnyPointer
+[       OK ] Any.AnyPointer (0 ms)
+[ RUN      ] Any.AnyStruct
+[       OK ] Any.AnyStruct (0 ms)
+[ RUN      ] Any.AnyList
+[       OK ] Any.AnyList (0 ms)
+[----------] 3 tests from Any (0 ms total)
+
+[----------] 4 tests from Message
+[ RUN      ] Message.MallocBuilderWithFirstSegment
+[       OK ] Message.MallocBuilderWithFirstSegment (0 ms)
+[ RUN      ] Message.MessageBuilderInit
+[       OK ] Message.MessageBuilderInit (0 ms)
+[ RUN      ] Message.MessageBuilderInitMultiSegment
+[       OK ] Message.MessageBuilderInitMultiSegment (1 ms)
+[ RUN      ] Message.MessageBuilderInitSpaceAvailable
+[       OK ] Message.MessageBuilderInitSpaceAvailable (0 ms)
+[----------] 4 tests from Message (1 ms total)
+
+[----------] 44 tests from Encoding
+[ RUN      ] Encoding.AllTypes
+[       OK ] Encoding.AllTypes (0 ms)
+[ RUN      ] Encoding.AllTypesMultiSegment
+[       OK ] Encoding.AllTypesMultiSegment (0 ms)
+[ RUN      ] Encoding.Defaults
+[       OK ] Encoding.Defaults (0 ms)
+[ RUN      ] Encoding.DefaultInitialization
+[       OK ] Encoding.DefaultInitialization (0 ms)
+[ RUN      ] Encoding.DefaultInitializationMultiSegment
+[       OK ] Encoding.DefaultInitializationMultiSegment (0 ms)
+[ RUN      ] Encoding.DefaultsFromEmptyMessage
+[       OK ] Encoding.DefaultsFromEmptyMessage (0 ms)
+[ RUN      ] Encoding.Unions
+[       OK ] Encoding.Unions (0 ms)
+[ RUN      ] Encoding.UnionLayout
+[       OK ] Encoding.UnionLayout (0 ms)
+[ RUN      ] Encoding.UnnamedUnion
+[       OK ] Encoding.UnnamedUnion (0 ms)
+[ RUN      ] Encoding.Groups
+[       OK ] Encoding.Groups (0 ms)
+[ RUN      ] Encoding.InterleavedGroups
+[       OK ] Encoding.InterleavedGroups (0 ms)
+[ RUN      ] Encoding.UnionDefault
+[       OK ] Encoding.UnionDefault (0 ms)
+[ RUN      ] Encoding.ListDefaults
+[       OK ] Encoding.ListDefaults (0 ms)
+[ RUN      ] Encoding.BuildListDefaults
+[       OK ] Encoding.BuildListDefaults (0 ms)
+[ RUN      ] Encoding.SmallStructLists
+[       OK ] Encoding.SmallStructLists (0 ms)
+[ RUN      ] Encoding.ListUpgrade
+[       OK ] Encoding.ListUpgrade (0 ms)
+[ RUN      ] Encoding.BitListDowngrade
+[       OK ] Encoding.BitListDowngrade (0 ms)
+[ RUN      ] Encoding.BitListDowngradeFromStruct
+[       OK ] Encoding.BitListDowngradeFromStruct (0 ms)
+[ RUN      ] Encoding.BitListUpgrade
+[       OK ] Encoding.BitListUpgrade (0 ms)
+[ RUN      ] Encoding.UpgradeStructInBuilder
+[       OK ] Encoding.UpgradeStructInBuilder (0 ms)
+[ RUN      ] Encoding.UpgradeStructInBuilderMultiSegment
+[       OK ] Encoding.UpgradeStructInBuilderMultiSegment (0 ms)
+[ RUN      ] Encoding.UpgradeStructInBuilderFarPointers
+[       OK ] Encoding.UpgradeStructInBuilderFarPointers (0 ms)
+[ RUN      ] Encoding.UpgradeStructInBuilderDoubleFarPointers
+[       OK ] Encoding.UpgradeStructInBuilderDoubleFarPointers (0 ms)
+[ RUN      ] Encoding.UpgradeListInBuilder
+[       OK ] Encoding.UpgradeListInBuilder (1 ms)
+[ RUN      ] Encoding.NestedTypes
+[       OK ] Encoding.NestedTypes (0 ms)
+[ RUN      ] Encoding.Imports
+[       OK ] Encoding.Imports (0 ms)
+[ RUN      ] Encoding.Using
+[       OK ] Encoding.Using (0 ms)
+[ RUN      ] Encoding.StructSetters
+[       OK ] Encoding.StructSetters (0 ms)
+[ RUN      ] Encoding.OneBitStructSetters
+[       OK ] Encoding.OneBitStructSetters (0 ms)
+[ RUN      ] Encoding.ListSetters
+[       OK ] Encoding.ListSetters (0 ms)
+[ RUN      ] Encoding.ZeroOldObject
+[       OK ] Encoding.ZeroOldObject (0 ms)
+[ RUN      ] Encoding.Has
+[       OK ] Encoding.Has (0 ms)
+[ RUN      ] Encoding.VoidListAmplification
+[       OK ] Encoding.VoidListAmplification (0 ms)
+[ RUN      ] Encoding.EmptyStructListAmplification
+[       OK ] Encoding.EmptyStructListAmplification (0 ms)
+[ RUN      ] Encoding.Constants
+[       OK ] Encoding.Constants (0 ms)
+[ RUN      ] Encoding.GlobalConstants
+[       OK ] Encoding.GlobalConstants (0 ms)
+[ RUN      ] Encoding.HasEmptyStruct
+[       OK ] Encoding.HasEmptyStruct (0 ms)
+[ RUN      ] Encoding.HasEmptyList
+[       OK ] Encoding.HasEmptyList (0 ms)
+[ RUN      ] Encoding.HasEmptyStructList
+[       OK ] Encoding.HasEmptyStructList (0 ms)
+[ RUN      ] Encoding.NameAnnotation
+[       OK ] Encoding.NameAnnotation (0 ms)
+[ RUN      ] Encoding.DefaultFloatPlusNan
+[       OK ] Encoding.DefaultFloatPlusNan (1 ms)
+[ RUN      ] Encoding.WholeFloatDefault
+[       OK ] Encoding.WholeFloatDefault (0 ms)
+[ RUN      ] Encoding.Generics
+[       OK ] Encoding.Generics (0 ms)
+[ RUN      ] Encoding.GenericDefaults
+[       OK ] Encoding.GenericDefaults (0 ms)
+[----------] 44 tests from Encoding (2 ms total)
+
+[----------] 46 tests from Orphans
+[ RUN      ] Orphans.Structs
+[       OK ] Orphans.Structs (0 ms)
+[ RUN      ] Orphans.Lists
+[       OK ] Orphans.Lists (0 ms)
+[ RUN      ] Orphans.StructLists
+[       OK ] Orphans.StructLists (0 ms)
+[ RUN      ] Orphans.Text
+[       OK ] Orphans.Text (0 ms)
+[ RUN      ] Orphans.Data
+[       OK ] Orphans.Data (0 ms)
+[ RUN      ] Orphans.NoCrossMessageTransfers
+[       OK ] Orphans.NoCrossMessageTransfers (0 ms)
+[ RUN      ] Orphans.OrphanageStruct
+[       OK ] Orphans.OrphanageStruct (0 ms)
+[ RUN      ] Orphans.OrphanageList
+[       OK ] Orphans.OrphanageList (0 ms)
+[ RUN      ] Orphans.OrphanageText
+[       OK ] Orphans.OrphanageText (0 ms)
+[ RUN      ] Orphans.OrphanageData
+[       OK ] Orphans.OrphanageData (0 ms)
+[ RUN      ] Orphans.OrphanageStructCopy
+[       OK ] Orphans.OrphanageStructCopy (0 ms)
+[ RUN      ] Orphans.OrphanageListCopy
+[       OK ] Orphans.OrphanageListCopy (0 ms)
+[ RUN      ] Orphans.OrphanageTextCopy
+[       OK ] Orphans.OrphanageTextCopy (0 ms)
+[ RUN      ] Orphans.OrphanageDataCopy
+[       OK ] Orphans.OrphanageDataCopy (0 ms)
+[ RUN      ] Orphans.ZeroOut
+[       OK ] Orphans.ZeroOut (0 ms)
+[ RUN      ] Orphans.StructAnyPointer
+[       OK ] Orphans.StructAnyPointer (0 ms)
+[ RUN      ] Orphans.ListAnyPointer
+[       OK ] Orphans.ListAnyPointer (0 ms)
+[ RUN      ] Orphans.DynamicStruct
+[       OK ] Orphans.DynamicStruct (1 ms)
+[ RUN      ] Orphans.DynamicList
+[       OK ] Orphans.DynamicList (0 ms)
+[ RUN      ] Orphans.DynamicStructList
+[       OK ] Orphans.DynamicStructList (0 ms)
+[ RUN      ] Orphans.OrphanageDynamicStruct
+[       OK ] Orphans.OrphanageDynamicStruct (0 ms)
+[ RUN      ] Orphans.OrphanageDynamicList
+[       OK ] Orphans.OrphanageDynamicList (0 ms)
+[ RUN      ] Orphans.OrphanageDynamicStructCopy
+[       OK ] Orphans.OrphanageDynamicStructCopy (0 ms)
+[ RUN      ] Orphans.OrphanageDynamicListCopy
+[       OK ] Orphans.OrphanageDynamicListCopy (0 ms)
+[ RUN      ] Orphans.DynamicStructAs
+[       OK ] Orphans.DynamicStructAs (0 ms)
+[ RUN      ] Orphans.DynamicListAs
+[       OK ] Orphans.DynamicListAs (0 ms)
+[ RUN      ] Orphans.DynamicAnyPointer
+[       OK ] Orphans.DynamicAnyPointer (0 ms)
+[ RUN      ] Orphans.DynamicDisown
+[       OK ] Orphans.DynamicDisown (0 ms)
+[ RUN      ] Orphans.DynamicDisownGroup
+[       OK ] Orphans.DynamicDisownGroup (0 ms)
+[ RUN      ] Orphans.OrphanageFromBuilder
+[       OK ] Orphans.OrphanageFromBuilder (0 ms)
+[ RUN      ] Orphans.StructsZerodAfterUse
+[       OK ] Orphans.StructsZerodAfterUse (0 ms)
+[ RUN      ] Orphans.ListsZerodAfterUse
+[       OK ] Orphans.ListsZerodAfterUse (0 ms)
+[ RUN      ] Orphans.EmptyListsZerodAfterUse
+[       OK ] Orphans.EmptyListsZerodAfterUse (0 ms)
+[ RUN      ] Orphans.StructListsZerodAfterUse
+[       OK ] Orphans.StructListsZerodAfterUse (0 ms)
+[ RUN      ] Orphans.EmptyStructListsZerodAfterUse
+[       OK ] Orphans.EmptyStructListsZerodAfterUse (0 ms)
+[ RUN      ] Orphans.TextZerodAfterUse
+[       OK ] Orphans.TextZerodAfterUse (0 ms)
+[ RUN      ] Orphans.DataZerodAfterUse
+[       OK ] Orphans.DataZerodAfterUse (0 ms)
+[ RUN      ] Orphans.FarPointer
+[       OK ] Orphans.FarPointer (1 ms)
+[ RUN      ] Orphans.UpgradeStruct
+[       OK ] Orphans.UpgradeStruct (0 ms)
+[ RUN      ] Orphans.UpgradeStructList
+[       OK ] Orphans.UpgradeStructList (0 ms)
+[ RUN      ] Orphans.DisownNull
+[       OK ] Orphans.DisownNull (0 ms)
+[ RUN      ] Orphans.ReferenceExternalData
+[       OK ] Orphans.ReferenceExternalData (0 ms)
+[ RUN      ] Orphans.ReferenceExternalData_NoZeroOnSet
+[       OK ] Orphans.ReferenceExternalData_NoZeroOnSet (0 ms)
+[ RUN      ] Orphans.ReferenceExternalData_NoZeroImmediateAbandon
+[       OK ] Orphans.ReferenceExternalData_NoZeroImmediateAbandon (0 ms)
+[ RUN      ] Orphans.Truncate
+[       OK ] Orphans.Truncate (0 ms)
+[ RUN      ] Orphans.TruncateText
+[       OK ] Orphans.TruncateText (0 ms)
+[----------] 46 tests from Orphans (2 ms total)
+
+[----------] 17 tests from Serialize
+[ RUN      ] Serialize.FlatArray
+[       OK ] Serialize.FlatArray (0 ms)
+[ RUN      ] Serialize.FlatArrayOddSegmentCount
+[       OK ] Serialize.FlatArrayOddSegmentCount (0 ms)
+[ RUN      ] Serialize.FlatArrayEvenSegmentCount
+[       OK ] Serialize.FlatArrayEvenSegmentCount (0 ms)
+[ RUN      ] Serialize.InputStream
+[       OK ] Serialize.InputStream (0 ms)
+[ RUN      ] Serialize.InputStreamScratchSpace
+[       OK ] Serialize.InputStreamScratchSpace (0 ms)
+[ RUN      ] Serialize.InputStreamLazy
+[       OK ] Serialize.InputStreamLazy (0 ms)
+[ RUN      ] Serialize.InputStreamOddSegmentCount
+[       OK ] Serialize.InputStreamOddSegmentCount (0 ms)
+[ RUN      ] Serialize.InputStreamOddSegmentCountLazy
+[       OK ] Serialize.InputStreamOddSegmentCountLazy (0 ms)
+[ RUN      ] Serialize.InputStreamEvenSegmentCount
+[       OK ] Serialize.InputStreamEvenSegmentCount (0 ms)
+[ RUN      ] Serialize.InputStreamEvenSegmentCountLazy
+[       OK ] Serialize.InputStreamEvenSegmentCountLazy (0 ms)
+[ RUN      ] Serialize.InputStreamToBuilder
+[       OK ] Serialize.InputStreamToBuilder (0 ms)
+[ RUN      ] Serialize.WriteMessage
+[       OK ] Serialize.WriteMessage (0 ms)
+[ RUN      ] Serialize.WriteMessageOddSegmentCount
+[       OK ] Serialize.WriteMessageOddSegmentCount (0 ms)
+[ RUN      ] Serialize.WriteMessageEvenSegmentCount
+[       OK ] Serialize.WriteMessageEvenSegmentCount (0 ms)
+[ RUN      ] Serialize.FileDescriptors
+[       OK ] Serialize.FileDescriptors (29 ms)
+[ RUN      ] Serialize.RejectTooManySegments
+[       OK ] Serialize.RejectTooManySegments (0 ms)
+[ RUN      ] Serialize.RejectHugeMessage
+[       OK ] Serialize.RejectHugeMessage (0 ms)
+[----------] 17 tests from Serialize (29 ms total)
+
+[----------] 23 tests from Packed
+[ RUN      ] Packed.SimplePacking
+[       OK ] Packed.SimplePacking (0 ms)
+[ RUN      ] Packed.RoundTrip
+[       OK ] Packed.RoundTrip (0 ms)
+[ RUN      ] Packed.RoundTripScratchSpace
+[       OK ] Packed.RoundTripScratchSpace (0 ms)
+[ RUN      ] Packed.RoundTripLazy
+[       OK ] Packed.RoundTripLazy (0 ms)
+[ RUN      ] Packed.RoundTripOddSegmentCount
+[       OK ] Packed.RoundTripOddSegmentCount (0 ms)
+[ RUN      ] Packed.RoundTripOddSegmentCountLazy
+[       OK ] Packed.RoundTripOddSegmentCountLazy (0 ms)
+[ RUN      ] Packed.RoundTripEvenSegmentCount
+[       OK ] Packed.RoundTripEvenSegmentCount (0 ms)
+[ RUN      ] Packed.RoundTripEvenSegmentCountLazy
+[       OK ] Packed.RoundTripEvenSegmentCountLazy (0 ms)
+[ RUN      ] Packed.RoundTripTwoMessages
+[       OK ] Packed.RoundTripTwoMessages (0 ms)
+[ RUN      ] Packed.RoundTripAllZero
+[       OK ] Packed.RoundTripAllZero (0 ms)
+[ RUN      ] Packed.RoundTripAllZeroScratchSpace
+[       OK ] Packed.RoundTripAllZeroScratchSpace (0 ms)
+[ RUN      ] Packed.RoundTripAllZeroLazy
+[       OK ] Packed.RoundTripAllZeroLazy (0 ms)
+[ RUN      ] Packed.RoundTripAllZeroOddSegmentCount
+[       OK ] Packed.RoundTripAllZeroOddSegmentCount (0 ms)
+[ RUN      ] Packed.RoundTripAllZeroOddSegmentCountLazy
+[       OK ] Packed.RoundTripAllZeroOddSegmentCountLazy (0 ms)
+[ RUN      ] Packed.RoundTripAllZeroEvenSegmentCount
+[       OK ] Packed.RoundTripAllZeroEvenSegmentCount (0 ms)
+[ RUN      ] Packed.RoundTripAllZeroEvenSegmentCountLazy
+[       OK ] Packed.RoundTripAllZeroEvenSegmentCountLazy (0 ms)
+[ RUN      ] Packed.RoundTripHugeString
+[       OK ] Packed.RoundTripHugeString (0 ms)
+[ RUN      ] Packed.RoundTripHugeStringScratchSpace
+[       OK ] Packed.RoundTripHugeStringScratchSpace (0 ms)
+[ RUN      ] Packed.RoundTripHugeStringLazy
+[       OK ] Packed.RoundTripHugeStringLazy (0 ms)
+[ RUN      ] Packed.RoundTripHugeStringOddSegmentCount
+[       OK ] Packed.RoundTripHugeStringOddSegmentCount (0 ms)
+[ RUN      ] Packed.RoundTripHugeStringOddSegmentCountLazy
+[       OK ] Packed.RoundTripHugeStringOddSegmentCountLazy (0 ms)
+[ RUN      ] Packed.RoundTripHugeStringEvenSegmentCount
+[       OK ] Packed.RoundTripHugeStringEvenSegmentCount (0 ms)
+[ RUN      ] Packed.RoundTripHugeStringEvenSegmentCountLazy
+[       OK ] Packed.RoundTripHugeStringEvenSegmentCountLazy (0 ms)
+[----------] 23 tests from Packed (0 ms total)
+
+[----------] 31 tests from Async
+[ RUN      ] Async.EvalVoid
+[       OK ] Async.EvalVoid (0 ms)
+[ RUN      ] Async.EvalInt
+[       OK ] Async.EvalInt (0 ms)
+[ RUN      ] Async.There
+[       OK ] Async.There (0 ms)
+[ RUN      ] Async.ThereVoid
+[       OK ] Async.ThereVoid (0 ms)
+[ RUN      ] Async.Exception
+[       OK ] Async.Exception (0 ms)
+[ RUN      ] Async.HandleException
+[       OK ] Async.HandleException (0 ms)
+[ RUN      ] Async.PropagateException
+[       OK ] Async.PropagateException (0 ms)
+[ RUN      ] Async.PropagateExceptionTypeChange
+[       OK ] Async.PropagateExceptionTypeChange (0 ms)
+[ RUN      ] Async.Then
+[       OK ] Async.Then (0 ms)
+[ RUN      ] Async.Chain
+[       OK ] Async.Chain (0 ms)
+[ RUN      ] Async.DeepChain
+[       OK ] Async.DeepChain (0 ms)
+[ RUN      ] Async.DeepChain2
+[       OK ] Async.DeepChain2 (1 ms)
+[ RUN      ] Async.DeepChain3
+[       OK ] Async.DeepChain3 (0 ms)
+[ RUN      ] Async.DeepChain4
+[       OK ] Async.DeepChain4 (1 ms)
+[ RUN      ] Async.SeparateFulfiller
+[       OK ] Async.SeparateFulfiller (0 ms)
+[ RUN      ] Async.SeparateFulfillerVoid
+[       OK ] Async.SeparateFulfillerVoid (0 ms)
+[ RUN      ] Async.SeparateFulfillerCanceled
+[       OK ] Async.SeparateFulfillerCanceled (0 ms)
+[ RUN      ] Async.SeparateFulfillerChained
+[       OK ] Async.SeparateFulfillerChained (0 ms)
+[ RUN      ] Async.SeparateFulfillerDiscarded
+[       OK ] Async.SeparateFulfillerDiscarded (0 ms)
+[ RUN      ] Async.SeparateFulfillerMemoryLeak
+[       OK ] Async.SeparateFulfillerMemoryLeak (0 ms)
+[ RUN      ] Async.Ordering
+[       OK ] Async.Ordering (0 ms)
+[ RUN      ] Async.Fork
+[       OK ] Async.Fork (0 ms)
+[ RUN      ] Async.ForkRef
+[       OK ] Async.ForkRef (0 ms)
+[ RUN      ] Async.ExclusiveJoin
+[       OK ] Async.ExclusiveJoin (0 ms)
+[ RUN      ] Async.ArrayJoin
+[       OK ] Async.ArrayJoin (0 ms)
+[ RUN      ] Async.ArrayJoinVoid
+[       OK ] Async.ArrayJoinVoid (0 ms)
+[ RUN      ] Async.TaskSet
+[       OK ] Async.TaskSet (0 ms)
+[ RUN      ] Async.Attach
+[       OK ] Async.Attach (0 ms)
+[ RUN      ] Async.EagerlyEvaluate
+[       OK ] Async.EagerlyEvaluate (0 ms)
+[ RUN      ] Async.Detach
+[       OK ] Async.Detach (0 ms)
+[ RUN      ] Async.SetRunnable
+[       OK ] Async.SetRunnable (0 ms)
+[----------] 31 tests from Async (3 ms total)
+
+[----------] 13 tests from AsyncUnixTest
+[ RUN      ] AsyncUnixTest.Signals
+[       OK ] AsyncUnixTest.Signals (0 ms)
+[ RUN      ] AsyncUnixTest.SignalsMultiListen
+[       OK ] AsyncUnixTest.SignalsMultiListen (0 ms)
+[ RUN      ] AsyncUnixTest.SignalsMultiReceive
+[       OK ] AsyncUnixTest.SignalsMultiReceive (0 ms)
+[ RUN      ] AsyncUnixTest.SignalsAsync
+[       OK ] AsyncUnixTest.SignalsAsync (12 ms)
+[ RUN      ] AsyncUnixTest.SignalsNoWait
+[       OK ] AsyncUnixTest.SignalsNoWait (0 ms)
+[ RUN      ] AsyncUnixTest.ReadObserver
+[       OK ] AsyncUnixTest.ReadObserver (0 ms)
+[ RUN      ] AsyncUnixTest.ReadObserverMultiListen
+[       OK ] AsyncUnixTest.ReadObserverMultiListen (0 ms)
+[ RUN      ] AsyncUnixTest.ReadObserverMultiReceive
+[       OK ] AsyncUnixTest.ReadObserverMultiReceive (0 ms)
+[ RUN      ] AsyncUnixTest.ReadObserverAsync
+[       OK ] AsyncUnixTest.ReadObserverAsync (11 ms)
+[ RUN      ] AsyncUnixTest.ReadObserverNoWait
+[       OK ] AsyncUnixTest.ReadObserverNoWait (0 ms)
+[ RUN      ] AsyncUnixTest.WriteObserver
+[       OK ] AsyncUnixTest.WriteObserver (11 ms)
+[ RUN      ] AsyncUnixTest.SteadyTimers
+[       OK ] AsyncUnixTest.SteadyTimers (42 ms)
+[ RUN      ] AsyncUnixTest.Wake
+[       OK ] AsyncUnixTest.Wake (12 ms)
+[----------] 13 tests from AsyncUnixTest (88 ms total)
+
+[----------] 7 tests from AsyncIo
+[ RUN      ] AsyncIo.SimpleNetwork
+[       OK ] AsyncIo.SimpleNetwork (3 ms)
+[ RUN      ] AsyncIo.AddressParsing
+[       OK ] AsyncIo.AddressParsing (26 ms)
+[ RUN      ] AsyncIo.OneWayPipe
+[       OK ] AsyncIo.OneWayPipe (0 ms)
+[ RUN      ] AsyncIo.TwoWayPipe
+[       OK ] AsyncIo.TwoWayPipe (0 ms)
+[ RUN      ] AsyncIo.PipeThread
+[       OK ] AsyncIo.PipeThread (0 ms)
+[ RUN      ] AsyncIo.PipeThreadDisconnects
+[       OK ] AsyncIo.PipeThreadDisconnects (1 ms)
+[ RUN      ] AsyncIo.Timeouts
+[       OK ] AsyncIo.Timeouts (10 ms)
+[----------] 7 tests from AsyncIo (40 ms total)
+
+[----------] 17 tests from CommonParsers
+[ RUN      ] CommonParsers.AnyParser
+[       OK ] CommonParsers.AnyParser (0 ms)
+[ RUN      ] CommonParsers.ExactElementParser
+[       OK ] CommonParsers.ExactElementParser (0 ms)
+[ RUN      ] CommonParsers.ExactlyConstParser
+[       OK ] CommonParsers.ExactlyConstParser (0 ms)
+[ RUN      ] CommonParsers.ConstResultParser
+[       OK ] CommonParsers.ConstResultParser (0 ms)
+[ RUN      ] CommonParsers.DiscardParser
+[       OK ] CommonParsers.DiscardParser (0 ms)
+[ RUN      ] CommonParsers.SequenceParser
+[       OK ] CommonParsers.SequenceParser (0 ms)
+[ RUN      ] CommonParsers.ManyParserCountOnly
+[       OK ] CommonParsers.ManyParserCountOnly (0 ms)
+[ RUN      ] CommonParsers.TimesParser
+[       OK ] CommonParsers.TimesParser (0 ms)
+[ RUN      ] CommonParsers.TimesParserCountOnly
+[       OK ] CommonParsers.TimesParserCountOnly (0 ms)
+[ RUN      ] CommonParsers.ManyParserSubResult
+[       OK ] CommonParsers.ManyParserSubResult (0 ms)
+[ RUN      ] CommonParsers.OptionalParser
+[       OK ] CommonParsers.OptionalParser (0 ms)
+[ RUN      ] CommonParsers.OneOfParser
+[       OK ] CommonParsers.OneOfParser (0 ms)
+[ RUN      ] CommonParsers.TransformParser
+[       OK ] CommonParsers.TransformParser (0 ms)
+[ RUN      ] CommonParsers.TransformOrRejectParser
+[       OK ] CommonParsers.TransformOrRejectParser (0 ms)
+[ RUN      ] CommonParsers.References
+[       OK ] CommonParsers.References (0 ms)
+[ RUN      ] CommonParsers.NotLookingAt
+[       OK ] CommonParsers.NotLookingAt (0 ms)
+[ RUN      ] CommonParsers.EndOfInput
+[       OK ] CommonParsers.EndOfInput (0 ms)
+[----------] 17 tests from CommonParsers (0 ms total)
+
+[----------] 10 tests from CharParsers
+[ RUN      ] CharParsers.ExactChar
+[       OK ] CharParsers.ExactChar (0 ms)
+[ RUN      ] CharParsers.ExactString
+[       OK ] CharParsers.ExactString (0 ms)
+[ RUN      ] CharParsers.CharRange
+[       OK ] CharParsers.CharRange (0 ms)
+[ RUN      ] CharParsers.AnyOfChars
+[       OK ] CharParsers.AnyOfChars (0 ms)
+[ RUN      ] CharParsers.CharGroupCombo
+[       OK ] CharParsers.CharGroupCombo (0 ms)
+[ RUN      ] CharParsers.Identifier
+[       OK ] CharParsers.Identifier (0 ms)
+[ RUN      ] CharParsers.Integer
+[       OK ] CharParsers.Integer (0 ms)
+[ RUN      ] CharParsers.Number
+[       OK ] CharParsers.Number (0 ms)
+[ RUN      ] CharParsers.DoubleQuotedString
+[       OK ] CharParsers.DoubleQuotedString (0 ms)
+[ RUN      ] CharParsers.SingleQuotedString
+[       OK ] CharParsers.SingleQuotedString (0 ms)
+[----------] 10 tests from CharParsers (0 ms total)
+
+[----------] 3 tests from StdIoStream
+[ RUN      ] StdIoStream.WriteVec
+[       OK ] StdIoStream.WriteVec (0 ms)
+[ RUN      ] StdIoStream.TryReadToEndOfFile
+[       OK ] StdIoStream.TryReadToEndOfFile (0 ms)
+[ RUN      ] StdIoStream.ReadToEndOfFile
+[       OK ] StdIoStream.ReadToEndOfFile (0 ms)
+[----------] 3 tests from StdIoStream (0 ms total)
+
+[----------] 18 tests from Capability
+[ RUN      ] Capability.Basic
+[       OK ] Capability.Basic (0 ms)
+[ RUN      ] Capability.Inheritance
+[       OK ] Capability.Inheritance (0 ms)
+[ RUN      ] Capability.Pipelining
+[       OK ] Capability.Pipelining (1 ms)
+[ RUN      ] Capability.TailCall
+[       OK ] Capability.TailCall (0 ms)
+[ RUN      ] Capability.AsyncCancelation
+[       OK ] Capability.AsyncCancelation (0 ms)
+[ RUN      ] Capability.DynamicClient
+[       OK ] Capability.DynamicClient (0 ms)
+[ RUN      ] Capability.DynamicClientInheritance
+[       OK ] Capability.DynamicClientInheritance (0 ms)
+[ RUN      ] Capability.DynamicClientPipelining
+[       OK ] Capability.DynamicClientPipelining (0 ms)
+[ RUN      ] Capability.DynamicServer
+[       OK ] Capability.DynamicServer (0 ms)
+[ RUN      ] Capability.DynamicServerInheritance
+[       OK ] Capability.DynamicServerInheritance (0 ms)
+[ RUN      ] Capability.DynamicServerPipelining
+[       OK ] Capability.DynamicServerPipelining (0 ms)
+[ RUN      ] Capability.DynamicServerTailCall
+[       OK ] Capability.DynamicServerTailCall (1 ms)
+[ RUN      ] Capability.AnyPointersAndOrphans
+[       OK ] Capability.AnyPointersAndOrphans (0 ms)
+[ RUN      ] Capability.Lists
+[       OK ] Capability.Lists (0 ms)
+[ RUN      ] Capability.KeywordMethods
+[       OK ] Capability.KeywordMethods (0 ms)
+[ RUN      ] Capability.Generics
+[       OK ] Capability.Generics (0 ms)
+[ RUN      ] Capability.Generics2
+[       OK ] Capability.Generics2 (0 ms)
+[ RUN      ] Capability.ImplicitParams
+[       OK ] Capability.ImplicitParams (0 ms)
+[----------] 18 tests from Capability (10 ms total)
+
+[----------] 9 tests from Schema
+[ RUN      ] Schema.Structs
+[       OK ] Schema.Structs (0 ms)
+[ RUN      ] Schema.FieldLookupOutOfOrder
+[       OK ] Schema.FieldLookupOutOfOrder (0 ms)
+[ RUN      ] Schema.Unions
+[       OK ] Schema.Unions (0 ms)
+[ RUN      ] Schema.Enums
+[       OK ] Schema.Enums (0 ms)
+[ RUN      ] Schema.Lists
+[       OK ] Schema.Lists (0 ms)
+[ RUN      ] Schema.UnnamedUnion
+[       OK ] Schema.UnnamedUnion (0 ms)
+[ RUN      ] Schema.NullSchemas
+[       OK ] Schema.NullSchemas (0 ms)
+[ RUN      ] Schema.Interfaces
+[       OK ] Schema.Interfaces (0 ms)
+[ RUN      ] Schema.Generics
+[       OK ] Schema.Generics (0 ms)
+[----------] 9 tests from Schema (0 ms total)
+
+[----------] 12 tests from SchemaLoader
+[ RUN      ] SchemaLoader.Load
+[       OK ] SchemaLoader.Load (1 ms)
+[ RUN      ] SchemaLoader.LoadLateUnion
+[       OK ] SchemaLoader.LoadLateUnion (0 ms)
+[ RUN      ] SchemaLoader.LoadUnnamedUnion
+[       OK ] SchemaLoader.LoadUnnamedUnion (0 ms)
+[ RUN      ] SchemaLoader.Use
+[       OK ] SchemaLoader.Use (0 ms)
+[ RUN      ] SchemaLoader.Upgrade
+[       OK ] SchemaLoader.Upgrade (0 ms)
+[ RUN      ] SchemaLoader.Downgrade
+[       OK ] SchemaLoader.Downgrade (0 ms)
+[ RUN      ] SchemaLoader.Incompatible
+[       OK ] SchemaLoader.Incompatible (0 ms)
+[ RUN      ] SchemaLoader.Enumerate
+[       OK ] SchemaLoader.Enumerate (0 ms)
+[ RUN      ] SchemaLoader.EnumerateNoPlaceholders
+[       OK ] SchemaLoader.EnumerateNoPlaceholders (0 ms)
+[ RUN      ] SchemaLoader.LazyLoad
+[       OK ] SchemaLoader.LazyLoad (0 ms)
+[ RUN      ] SchemaLoader.LazyLoadGetDependency
+[       OK ] SchemaLoader.LazyLoadGetDependency (0 ms)
+[ RUN      ] SchemaLoader.Generics
+[       OK ] SchemaLoader.Generics (0 ms)
+[----------] 12 tests from SchemaLoader (2 ms total)
+
+[----------] 19 tests from DynamicApi
+[ RUN      ] DynamicApi.Build
+[       OK ] DynamicApi.Build (0 ms)
+[ RUN      ] DynamicApi.Read
+[       OK ] DynamicApi.Read (0 ms)
+[ RUN      ] DynamicApi.Defaults
+[       OK ] DynamicApi.Defaults (0 ms)
+[ RUN      ] DynamicApi.DefaultsBuilder
+[       OK ] DynamicApi.DefaultsBuilder (0 ms)
+[ RUN      ] DynamicApi.Zero
+[       OK ] DynamicApi.Zero (0 ms)
+[ RUN      ] DynamicApi.ListListsBuild
+[       OK ] DynamicApi.ListListsBuild (5 ms)
+[ RUN      ] DynamicApi.ListListsRead
+[       OK ] DynamicApi.ListListsRead (0 ms)
+[ RUN      ] DynamicApi.AnyPointers
+[       OK ] DynamicApi.AnyPointers (0 ms)
+[ RUN      ] DynamicApi.DynamicAnyPointers
+[       OK ] DynamicApi.DynamicAnyPointers (0 ms)
+[ RUN      ] DynamicApi.UnionsRead
+[       OK ] DynamicApi.UnionsRead (0 ms)
+[ RUN      ] DynamicApi.UnionsWrite
+[       OK ] DynamicApi.UnionsWrite (0 ms)
+[ RUN      ] DynamicApi.UnnamedUnion
+[       OK ] DynamicApi.UnnamedUnion (0 ms)
+[ RUN      ] DynamicApi.ConversionFailures
+[       OK ] DynamicApi.ConversionFailures (1 ms)
+[ RUN      ] DynamicApi.LateUnion
+[       OK ] DynamicApi.LateUnion (0 ms)
+[ RUN      ] DynamicApi.Has
+[       OK ] DynamicApi.Has (0 ms)
+[ RUN      ] DynamicApi.HasWhenEmpty
+[       OK ] DynamicApi.HasWhenEmpty (0 ms)
+[ RUN      ] DynamicApi.SetEnumFromNative
+[       OK ] DynamicApi.SetEnumFromNative (0 ms)
+[ RUN      ] DynamicApi.SetDataFromText
+[       OK ] DynamicApi.SetDataFromText (0 ms)
+[ RUN      ] DynamicApi.BuilderAssign
+[       OK ] DynamicApi.BuilderAssign (0 ms)
+[----------] 19 tests from DynamicApi (14 ms total)
+
+[----------] 9 tests from Stringify
+[ RUN      ] Stringify.KjStringification
+[       OK ] Stringify.KjStringification (0 ms)
+[ RUN      ] Stringify.PrettyPrint
+[       OK ] Stringify.PrettyPrint (0 ms)
+[ RUN      ] Stringify.PrettyPrintAdvanced
+[       OK ] Stringify.PrettyPrintAdvanced (1 ms)
+[ RUN      ] Stringify.Unions
+[       OK ] Stringify.Unions (0 ms)
+[ RUN      ] Stringify.UnionDefaults
+[       OK ] Stringify.UnionDefaults (0 ms)
+[ RUN      ] Stringify.UnnamedUnions
+[       OK ] Stringify.UnnamedUnions (0 ms)
+[ RUN      ] Stringify.StructUnions
+[       OK ] Stringify.StructUnions (0 ms)
+[ RUN      ] Stringify.MoreValues
+[       OK ] Stringify.MoreValues (0 ms)
+[ RUN      ] Stringify.Generics
+[       OK ] Stringify.Generics (0 ms)
+[----------] 9 tests from Stringify (1 ms total)
+
+[----------] 6 tests from SerializeAsyncTest
+[ RUN      ] SerializeAsyncTest.ParseAsync
+[       OK ] SerializeAsyncTest.ParseAsync (79 ms)
+[ RUN      ] SerializeAsyncTest.ParseAsyncOddSegmentCount
+[       OK ] SerializeAsyncTest.ParseAsyncOddSegmentCount (235 ms)
+[ RUN      ] SerializeAsyncTest.ParseAsyncEvenSegmentCount
+[       OK ] SerializeAsyncTest.ParseAsyncEvenSegmentCount (373 ms)
+[ RUN      ] SerializeAsyncTest.WriteAsync
+[       OK ] SerializeAsyncTest.WriteAsync (3 ms)
+[ RUN      ] SerializeAsyncTest.WriteAsyncOddSegmentCount
+[       OK ] SerializeAsyncTest.WriteAsyncOddSegmentCount (5 ms)
+[ RUN      ] SerializeAsyncTest.WriteAsyncEvenSegmentCount
+[       OK ] SerializeAsyncTest.WriteAsyncEvenSegmentCount (4 ms)
+[----------] 6 tests from SerializeAsyncTest (699 ms total)
+
+[----------] 16 tests from Rpc
+[ RUN      ] Rpc.Basic
+[       OK ] Rpc.Basic (0 ms)
+[ RUN      ] Rpc.Pipelining
+[       OK ] Rpc.Pipelining (0 ms)
+[ RUN      ] Rpc.Release
+[       OK ] Rpc.Release (0 ms)
+[ RUN      ] Rpc.ReleaseOnCancel
+[       OK ] Rpc.ReleaseOnCancel (0 ms)
+[ RUN      ] Rpc.TailCall
+[       OK ] Rpc.TailCall (0 ms)
+[ RUN      ] Rpc.Cancelation
+[       OK ] Rpc.Cancelation (0 ms)
+[ RUN      ] Rpc.PromiseResolve
+[       OK ] Rpc.PromiseResolve (1 ms)
+[ RUN      ] Rpc.RetainAndRelease
+[       OK ] Rpc.RetainAndRelease (0 ms)
+[ RUN      ] Rpc.Cancel
+[       OK ] Rpc.Cancel (1 ms)
+[ RUN      ] Rpc.SendTwice
+[       OK ] Rpc.SendTwice (0 ms)
+[ RUN      ] Rpc.Embargo
+[       OK ] Rpc.Embargo (0 ms)
+[ RUN      ] Rpc.EmbargoError
+[       OK ] Rpc.EmbargoError (1 ms)
+[ RUN      ] Rpc.CallBrokenPromise
+[       OK ] Rpc.CallBrokenPromise (0 ms)
+[ RUN      ] Rpc.Abort
+[       OK ] Rpc.Abort (0 ms)
+[ RUN      ] Rpc.RealmGatewayImport
+[       OK ] Rpc.RealmGatewayImport (0 ms)
+[ RUN      ] Rpc.RealmGatewayExport
+[       OK ] Rpc.RealmGatewayExport (0 ms)
+[----------] 16 tests from Rpc (4 ms total)
+
+[----------] 4 tests from TwoPartyNetwork
+[ RUN      ] TwoPartyNetwork.Basic
+[       OK ] TwoPartyNetwork.Basic (1 ms)
+[ RUN      ] TwoPartyNetwork.Pipelining
+[       OK ] TwoPartyNetwork.Pipelining (1 ms)
+[ RUN      ] TwoPartyNetwork.Release
+[       OK ] TwoPartyNetwork.Release (36 ms)
+[ RUN      ] TwoPartyNetwork.Abort
+[       OK ] TwoPartyNetwork.Abort (0 ms)
+[----------] 4 tests from TwoPartyNetwork (38 ms total)
+
+[----------] 2 tests from EzRpc
+[ RUN      ] EzRpc.Basic
+src/kj/async-io.c++:868: warning: Bind address resolved to multiple addresses.  Only the first address will be used.  If this is incorrect, specify the address numerically.  This may be fixed in the future.; addrs[0].toString() = [::1]:0
+[       OK ] EzRpc.Basic (2 ms)
+[ RUN      ] EzRpc.DeprecatedNames
+src/kj/async-io.c++:868: warning: Bind address resolved to multiple addresses.  Only the first address will be used.  If this is incorrect, specify the address numerically.  This may be fixed in the future.; addrs[0].toString() = [::1]:0
+[       OK ] EzRpc.DeprecatedNames (2 ms)
+[----------] 2 tests from EzRpc (18 ms total)
+
+[----------] 4 tests from Lexer
+[ RUN      ] Lexer.Tokens
+[       OK ] Lexer.Tokens (0 ms)
+[ RUN      ] Lexer.Statements
+[       OK ] Lexer.Statements (1 ms)
+[ RUN      ] Lexer.DocComments
+[       OK ] Lexer.DocComments (0 ms)
+[ RUN      ] Lexer.Utf8Bom
+[       OK ] Lexer.Utf8Bom (0 ms)
+[----------] 4 tests from Lexer (1 ms total)
+
+[----------] 1 test from Md5
+[ RUN      ] Md5.Sum
+[       OK ] Md5.Sum (0 ms)
+[----------] 1 test from Md5 (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 405 tests from 45 test cases ran. (986 ms total)
+[  PASSED  ] 405 tests.

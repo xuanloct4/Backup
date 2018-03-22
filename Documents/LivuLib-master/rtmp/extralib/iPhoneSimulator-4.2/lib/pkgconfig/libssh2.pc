@@ -1,0 +1,16 @@
+###########################################################################
+# libssh2 installation details
+###########################################################################
+
+prefix=/Users/pol/Source-Mercurial/iOS-Static-Libraries/iPhoneSimulator-4.2
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libssh2
+URL: http://www.libssh2.org/
+Description: Library for SSH based connunication
+Version: 1.2.7
+Libs: -L${libdir} -lssh2 -arch i386 -pipe -no-cpp-precomp -isysroot /Xcode3.2.5/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/pol/Source-Mercurial/iOS-Static-Libraries/iPhoneSimulator-4.2/lib 
+Libs.private: 
+Cflags: -I${includedir}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "VideoFrameReceiver.dataHandle(bytes : [UInt8]) -&gt; ():VideoFrameReceiver.swift">
+      </ContextState>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "subtractedBuffSize">
+            </PersistentString>
+            <PersistentString
+               value = "processTime1">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TCPClientVideoVC viewDidAppear:]:TCPClientVideoVC.m">
+      </ContextState>
+      <ContextState
+         contextName = "specialized VideoFrameTransfer.divideIntoFrames(data : Data?) -&gt; [[UInt8]]:VideoFrameTransfer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+            <PersistentString
+               value = "frameNumber">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController displayNextFrame:]:ViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "VideoFrameHandler.dataHandle(frames : [[UInt8]]) -&gt; ():VideoFrameReceiver.swift">
+      </ContextState>
+      <ContextState
+         contextName = "VideoFrameReceiver.dataHandle(frames : [[UInt8]]) -&gt; ():VideoFrameReceiver.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[FFDecoder convertFrameToRGB]:FFDecoder.m">
+      </ContextState>
+      <ContextState
+         contextName = "VideoFrameHandler.(dataHandle(frames : [[UInt8]]) -&gt; ()).(closure #1):VideoFrameReceiver.swift">
+      </ContextState>
+      <ContextState
+         contextName = "VideoFrameHandler.replace(frame : VideoFrameInfo, to : Int) -&gt; ():VideoFrameReceiver.swift">
+      </ContextState>
+      <ContextState
+         contextName = "VideoFrameTransfer.init(image : UIImage!, sendTime : Date, seekTime : Double, fps : Int, transferDelegate : VideoTransferDelegate?) -&gt; VideoFrameTransfer:VideoFrameTransfer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "buffSize">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VideoFrameTransfer.processFrameData() -&gt; ():VideoFrameTransfer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "b">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VideoFrameReceiver.getFrameHandler(by : String) -&gt; VideoFrameHandler:VideoFrameReceiver.swift">
+      </ContextState>
+      <ContextState
+         contextName = "VALock.lock(object : AnyObject) -&gt; ():VideoTransUtils.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TCPServerVideoVC.timerMethod(Timer) -&gt; ():TCPServerVideoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.proceedFrames">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TCPServerVideoVC.(timerMethod(Timer) -&gt; ()).(closure #1):TCPServerVideoVC.swift">
+      </ContextState>
+      <ContextState
+         contextName = "VideoFrameTransfer.divideIntoFrames() -&gt; [[UInt8]]:VideoFrameTransfer.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

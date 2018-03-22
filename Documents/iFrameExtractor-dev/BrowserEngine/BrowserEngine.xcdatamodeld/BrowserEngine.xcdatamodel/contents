@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Note" representedClassName="Note" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="String" customClassName="." syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Note"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="Subject" representedClassName="Subject" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Note" syncable="YES"/>
+        <relationship name="relationship1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Subject" inverseName="relationship1" inverseEntity="Subject" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Subject"/>
+        </fetchedProperty>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="Note" predicateString="image CONTAINS &quot;&quot;"/>
+    <configuration name="Configuration"/>
+    <elements>
+        <element name="Note" positionX="-63" positionY="-18" width="128" height="101"/>
+        <element name="Subject" positionX="-308" positionY="-32" width="128" height="101"/>
+    </elements>
+</model>

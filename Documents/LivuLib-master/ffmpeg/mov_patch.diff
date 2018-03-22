@@ -1,0 +1,315 @@
+Index: libavcodec/avcodec.h
+===================================================================
+--- libavcodec/avcodec.h	(revision 23607)
++++ libavcodec/avcodec.h	(working copy)
+@@ -1005,6 +1005,7 @@
+     int64_t convergence_duration;
+ } AVPacket;
+ #define AV_PKT_FLAG_KEY   0x0001
++#define AV_PKT_FLAG_DISCARD   0x0002
+ #if LIBAVCODEC_VERSION_MAJOR < 53
+ #define PKT_FLAG_KEY AV_PKT_FLAG_KEY
+ #endif
+Index: libavcodec/utils.c
+===================================================================
+--- libavcodec/utils.c	(revision 23607)
++++ libavcodec/utils.c	(working copy)
+@@ -613,6 +613,8 @@
+ 
+         emms_c(); //needed to avoid an emms_c() call before every return;
+ 
++        if (avpkt->flags & AV_PKT_FLAG_DISCARD)
++            *got_picture_ptr = 0;
+         if (*got_picture_ptr)
+             avctx->frame_number++;
+     }else
+Index: libavformat/isom.h
+===================================================================
+--- libavformat/isom.h	(revision 23607)
++++ libavformat/isom.h	(working copy)
+@@ -87,6 +87,12 @@
+     unsigned flags;
+ } MOVTrackExt;
+ 
++typedef struct {
++    uint64_t track_duration;
++    int64_t media_time;
++    unsigned int media_rate;
++} MOVElst;
++
+ typedef struct MOVStreamContext {
+     ByteIOContext *pb;
+     int ffindex;          ///< AVStream index
+@@ -103,6 +109,8 @@
+     unsigned *stps_data;  ///< partial sync sample for mpeg-2 open gop
+     int ctts_index;
+     int ctts_sample;
++    unsigned int elst_count; ///< number of 'edit' (elst atom)
++    MOVElst *elst_table;
+     unsigned int sample_size;
+     unsigned int sample_count;
+     int *sample_sizes;
+Index: libavformat/mov.c
+===================================================================
+--- libavformat/mov.c	(revision 23607)
++++ libavformat/mov.c	(working copy)
+@@ -1523,6 +1523,149 @@
+     return 0;
+ }
+ 
++/**
++ * This is a little support function used to process the edit list when
++ * building a frame table.
++ */
++static int get_next_edit_list_entry(MOVStreamContext *msc,
++                                    unsigned int edit_list_index,
++                                    unsigned int *edit_list_media_time,
++                                    int64_t *edit_list_duration,
++                                    int64_t global_timescale)
++{
++    if (edit_list_index == msc->elst_count) {
++        return 0;
++    }
++    *edit_list_media_time = msc->elst_table[edit_list_index].media_time;
++    *edit_list_duration = msc->elst_table[edit_list_index].track_duration;
++    /* duration is in global timescale units;convert to msc timescale */
++    *edit_list_duration *= msc->time_scale;
++    *edit_list_duration /= global_timescale;
++    return 1;
++}
++
++static int find_prev_closest_keyframe_index(AVStream *st,
++                                            AVIndexEntry *e_old,
++                                            int nb_old,
++                                            int64_t timestamp,
++                                            int flag)
++{
++    int found;
++    AVIndexEntry *e_keep = st->index_entries;
++    int nb_keep = st->nb_index_entries;
++    st->index_entries = e_old;
++    st->nb_index_entries = nb_old;
++
++    found = av_index_search_timestamp(st, timestamp, flag | AVSEEK_FLAG_BACKWARD);
++    /* restore AVStream  state*/
++    st->index_entries = e_keep;
++    st->nb_index_entries = nb_keep;
++    return found;
++}
++
++static int add_index_entry(AVStream *st,
++                    int64_t pos, int64_t timestamp, int size, int distance, int flags)
++{
++    AVIndexEntry *entries, *ie;
++    int index;
++
++    if((unsigned)st->nb_index_entries + 1 >= UINT_MAX / sizeof(AVIndexEntry))
++        return -1;
++
++    entries = av_fast_realloc(st->index_entries,
++                              &st->index_entries_allocated_size,
++                              FFMIN((st->nb_index_entries + 1) * sizeof(AVIndexEntry),
++                                    2 * st->index_entries_allocated_size));
++    if(!entries)
++        return -1;
++
++    st->index_entries= entries;
++
++    index= st->nb_index_entries++;
++    ie= &entries[index];
++    assert(!index || ie[-1].timestamp <= timestamp);
++
++    ie->pos = pos;
++    ie->timestamp = timestamp;
++    ie->min_distance= distance;
++    ie->size= size;
++    ie->flags = flags;
++
++    return index;
++}
++
++
++static void mov_fix_index(MOVContext *mov, AVStream *st)
++{
++    MOVStreamContext *msc = st->priv_data;
++    AVIndexEntry *e_old = st->index_entries;
++    int nb_old = st->nb_index_entries;
++    const AVIndexEntry *e_old_end = e_old + nb_old;
++    const AVIndexEntry *current = NULL;
++    unsigned int edit_list_media_time = 0;
++    int64_t edit_list_duration = 0;
++    int64_t frame_duration = 0;
++    unsigned int edit_list_pts_counter = 0;
++    unsigned int edit_list_pts_entry_end = 0;
++    unsigned int edit_list_index = 0;
++    int index;
++    int flags;
++
++    if (!msc->elst_table || msc->elst_count <= 0) {
++        return;
++    }
++    /* Clean AVStream from traces of old index */
++    st->index_entries = NULL;
++    st->index_entries_allocated_size = 0;
++    st->nb_index_entries = 0;
++
++    while (get_next_edit_list_entry(msc, edit_list_index, &edit_list_media_time,
++                                    &edit_list_duration, mov->time_scale)) {
++        edit_list_index++;
++        edit_list_pts_counter = edit_list_pts_entry_end;
++        edit_list_pts_entry_end += edit_list_duration;
++        if (edit_list_media_time == -1) {
++            continue;
++        }
++        /*find closest previous key frame*/
++        index = find_prev_closest_keyframe_index(st, e_old, nb_old, edit_list_media_time,
++            (st->codec->codec_type == CODEC_TYPE_AUDIO) ? AVSEEK_FLAG_ANY : 0);
++        if (index == -1) {
++            av_log(mov->fc, AV_LOG_ERROR, "Missing key frame while reordering index according to edit list\n");
++            continue;
++        }
++        current = e_old + index;
++        /* Iterate over index and arrange it according to edit list */
++        for (; current < e_old_end; current++) {
++            /* check  if frame outside edit list mark it for discard */
++            frame_duration = (current + 1 <  e_old_end) ?
++                ((current + 1)->timestamp - current->timestamp) : edit_list_duration;
++
++            flags = current->flags;
++
++            /* frames before or after edit list*/
++            if (current->timestamp < edit_list_media_time || edit_list_duration <= 0) {
++                flags |= AVINDEX_DISCARD_FRAME;
++            }
++            if (add_index_entry(st, current->pos , edit_list_pts_counter, current->size,
++                                current->min_distance, flags) == -1) {
++                av_log(mov->fc, AV_LOG_ERROR, "Cannot add index entry\n");
++                break;
++            }
++            if (!(flags & AVINDEX_DISCARD_FRAME)) {
++                edit_list_pts_counter = FFMIN(edit_list_pts_counter + frame_duration, edit_list_pts_entry_end);
++                edit_list_duration -= frame_duration;
++            }
++            /* Break when found first key frame after edit entry completion*/
++            if (edit_list_duration <= 0 &&
++                ((flags & AVINDEX_KEYFRAME) || ((st->codec->codec_type == CODEC_TYPE_AUDIO)))) {
++                break;
++            }
++        }
++    }
++    av_free(e_old);
++}
++
+ static void mov_build_index(MOVContext *mov, AVStream *st)
+ {
+     MOVStreamContext *sc = st->priv_data;
+@@ -1535,10 +1678,8 @@
+     unsigned int i, j;
+     uint64_t stream_size = 0;
+ 
+-    /* adjust first dts according to edit list */
++
+     if (sc->time_offset) {
+-        int rescaled = sc->time_offset < 0 ? av_rescale(sc->time_offset, sc->time_scale, mov->time_scale) : sc->time_offset;
+-        current_dts = -rescaled;
+         if (sc->ctts_data && sc->ctts_data[0].duration / sc->stts_data[0].duration > 16) {
+             /* more than 16 frames delay, dts are likely wrong
+                this happens with files created by iMovie */
+@@ -1699,6 +1840,7 @@
+             }
+         }
+     }
++    mov_fix_index(mov, st);
+ }
+ 
+ static int mov_open_dref(ByteIOContext **pb, char *src, MOVDref *ref)
+@@ -2163,34 +2305,40 @@
+ static int mov_read_elst(MOVContext *c, ByteIOContext *pb, MOVAtom atom)
+ {
+     MOVStreamContext *sc;
+-    int i, edit_count;
++    int i;
++    MOVElst *elst;
++    AVStream *st;
+ 
+     if (c->fc->nb_streams < 1)
+         return 0;
+-    sc = c->fc->streams[c->fc->nb_streams-1]->priv_data;
++    st = c->fc->streams[c->fc->nb_streams-1];
++    sc = st->priv_data;
+ 
+     get_byte(pb); /* version */
+     get_be24(pb); /* flags */
+-    edit_count = get_be32(pb); /* entries */
++    sc->elst_count = get_be32(pb); /* entries */
++    if (sc->elst_count <= 0)
++        return 0;
+ 
+-    if((uint64_t)edit_count*12+8 > atom.size)
++    if((uint64_t)sc->elst_count*12+8 > atom.size)
+         return -1;
+ 
+-    for(i=0; i<edit_count; i++){
+-        int time;
+-        int duration = get_be32(pb); /* Track duration */
+-        time = get_be32(pb); /* Media time */
+-        get_be32(pb); /* Media rate */
+-        if (i == 0 && time >= -1) {
+-            sc->time_offset = time != -1 ? time : -duration;
++    sc->elst_table = elst = av_mallocz(sc->elst_count*sizeof(MOVElst));
++
++    av_log(c->fc, AV_LOG_WARNING, "track[%d].elst_count = %d\n",
++        c->fc->nb_streams-1, sc->elst_count);
++
++    for(i=0; i<sc->elst_count; i++, elst++){
++        elst->track_duration = get_be32(pb); /* Track duration */
++        elst->media_time = get_be32(pb); /* Media time */
++        elst->media_rate = get_be32(pb); /* Media rate */
++        if (!i && elst->media_time >= -1) {
++            sc->time_offset = elst->media_time != -1 ?
++                elst->media_time : -elst->track_duration;
+         }
++        av_log(c->fc, AV_LOG_WARNING, "\t#%d: time=%ld, duration=%ld\n",
++               i, elst->media_time, elst->track_duration);
+     }
+-
+-    if(edit_count > 1)
+-        av_log(c->fc, AV_LOG_WARNING, "multiple edit list entries, "
+-               "a/v desync might occur, patch welcome\n");
+-
+-    dprintf(c->fc, "track[%i].edit_count = %i\n", c->fc->nb_streams-1, edit_count);
+     return 0;
+ }
+ 
+@@ -2463,6 +2611,9 @@
+ 
+     pkt->stream_index = sc->ffindex;
+     pkt->dts = sample->timestamp;
++    if (sample->flags & AVINDEX_DISCARD_FRAME) {
++      pkt->flags |= AV_PKT_FLAG_DISCARD;
++    }
+     if (sc->ctts_data) {
+         pkt->pts = pkt->dts + sc->dts_shift + sc->ctts_data[sc->ctts_index].duration;
+         /* update ctts context */
+@@ -2557,6 +2708,7 @@
+         AVStream *st = s->streams[i];
+         MOVStreamContext *sc = st->priv_data;
+ 
++        av_freep(&sc->elst_table);
+         av_freep(&sc->ctts_data);
+         for (j = 0; j < sc->drefs_count; j++) {
+             av_freep(&sc->drefs[j].path);
+Index: libavformat/avformat.h
+===================================================================
+--- libavformat/avformat.h	(revision 23607)
++++ libavformat/avformat.h	(working copy)
+@@ -385,7 +385,8 @@
+     int64_t pos;
+     int64_t timestamp;
+ #define AVINDEX_KEYFRAME 0x0001
+-    int flags:2;
++#define AVINDEX_DISCARD_FRAME  0x0002
++    unsigned int flags:2;
+     int size:30; //Yeah, trying to keep the size of this small to reduce memory requirements (it is 24 vs. 32 bytes due to possible 8-byte alignment).
+     int min_distance;         /**< Minimum distance between this and the previous keyframe, used to avoid unneeded searching. */
+ } AVIndexEntry;

@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03013C10-8B1D-45E1-AB6C-504C529594EF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVCASPWeb</RootNamespace>
+    <AssemblyName>MVCASPWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.AgDataGrid.v8.2, Version=8.2.9.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Types\DynamicObject\DevExpress.AgDataGrid.v8.2.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="IronPython, Version=2.7.5.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Types\DynamicObject\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules, Version=2.7.5.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Types\DynamicObject\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Types\DynamicObject\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Types\DynamicObject\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Types\DynamicObject\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.2\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=__MvcPagesVersion__, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\Convertor.cs" />
+    <Compile Include="Adapter\Migrator.cs" />
+    <Compile Include="Algorithm\Branching.cs" />
+    <Compile Include="Algorithm\Negotiating.cs" />
+    <Compile Include="Algorithm\RecursiveReduction.cs" />
+    <Compile Include="Algorithm\Referencing.cs" />
+    <Compile Include="Algorithm\Reflex.cs" />
+    <Compile Include="Algorithm\SynAsyn.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\UploadFileController.cs" />
+    <Compile Include="Drawing\MultiDimensDrawer.cs" />
+    <Compile Include="MergeSplit\SimilarityDefinition.cs" />
+    <Compile Include="SerializeInflation\Serialization.cs" />
+    <Compile Include="Simulating\Standard.cs" />
+    <Compile Include="Utility\AV\Audio\Chunks.cs" />
+    <Compile Include="Utility\AV\Audio\MainWaveGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\AV\Audio\WaveGenerator.cs" />
+    <Compile Include="Utility\AV\Video\VideoCapture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Utility\AV\Video\WebCam_Capture.cs" />
+    <Compile Include="Utility\Concurrency\AsyncExample1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Concurrency\AsyncExample1.Designer.cs">
+      <DependentUpon>AsyncExample1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Concurrency\MainWindow.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AudioController.cs" />
+    <Compile Include="Controllers\DrawController.cs" />
+    <Compile Include="Controllers\HelloWorldController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\ScriptsController.cs" />
+    <Compile Include="Controllers\SharedController.cs" />
+    <Compile Include="Controllers\StylesController.cs" />
+    <Compile Include="Controllers\TableController.cs" />
+    <Compile Include="Controllers\VideoController.cs" />
+    <Compile Include="Utility\PacketCapture\Sniffer.cs" />
+    <Compile Include="Views\CSS\DynamicCSS.cs" />
+    <Compile Include="Utility\Database\ConnectDatabase.cs" />
+    <Compile Include="Utility\Database\DataReaderMapper.cs" />
+    <Compile Include="Utility\Database\DataRecordHelper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\Database\SaveObjectToDB.cs" />
+    <Compile Include="Utility\Interop\OfficeInterop.cs" />
+    <Compile Include="Utility\IO\Byte\ImageByte.cs" />
+    <Compile Include="Utility\IO\IOPath.cs" />
+    <Compile Include="Utility\IO\SerialPort\SerialPortConstructor.cs" />
+    <Compile Include="Utility\IO\String\File ToHex.cs" />
+    <Compile Include="Utility\IO\String\FileTo String.cs" />
+    <Compile Include="JavaScriptConvert.cs" />
+    <Compile Include="Migrations\201510200424117_Initial.cs" />
+    <Compile Include="Migrations\201510200424117_Initial.Designer.cs">
+      <DependentUpon>201510200424117_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510200653419_Rating.cs" />
+    <Compile Include="Migrations\201510200653419_Rating.Designer.cs">
+      <DependentUpon>201510200653419_Rating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510200710465_DataAnnotation.cs" />
+    <Compile Include="Migrations\201510200710465_DataAnnotation.Designer.cs">
+      <DependentUpon>201510200710465_DataAnnotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model1D.cs" />
+    <Compile Include="Modelling\CloneModel.cs" />
+    <Compile Include="Modelling\ConstraintOnModel.cs" />
+    <Compile Include="Modelling\DataStructure.cs" />
+    <Compile Include="Modelling\DirectoriesFiles.cs" />
+    <Compile Include="Modelling\ExtractSampleByModel.cs" />
+    <Compile Include="Modelling\Model.cs" />
+    <Compile Include="Modelling\Model1D.cs" />
+    <Compile Include="Modelling\ObjectToBuffer.cs" />
+    <Compile Include="Modelling\OptionalDesc.cs" />
+    <Compile Include="Modelling\SaveBufferToFile.cs" />
+    <Compile Include="Modelling\SaveModelToAotherModelForUsing.cs" />
+    <Compile Include="Modelling\SaveModelToBuffer.cs" />
+    <Compile Include="Modelling\SaveModelToDB.cs" />
+    <Compile Include="Modelling\SerializeToFile.cs" />
+    <Compile Include="Modelling\TypeDef.cs" />
+    <Compile Include="Modelling\Unittest.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FileTableInfo.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\TableModel.cs" />
+    <Compile Include="MonitorSample.cs" />
+    <Compile Include="MvcExtension.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\JSUtils\JSClassification.cs" />
+    <Compile Include="Utility\Runtime\CompileCSCAtRuntime.cs" />
+    <Compile Include="Simulating\Checker.cs" />
+    <Compile Include="Simulating\ContactingFacet.cs" />
+    <Compile Include="Simulating\DataConstraint.cs" />
+    <Compile Include="Simulating\DataSampling.cs" />
+    <Compile Include="Simulating\Visualizer.cs" />
+    <Compile Include="Simulating\ElementStructure.cs" />
+    <Compile Include="Simulating\InternalElement.cs" />
+    <Compile Include="Simulating\ObjectStructure.cs" />
+    <Compile Include="Simulating\ProcessReflector.cs" />
+    <Compile Include="Simulating\Shape.cs" />
+    <Compile Include="Simulating\Simulator.cs" />
+    <Compile Include="Simulating\Topo.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="TypeDef.cs" />
+    <Compile Include="Utility\Threading\Cancellation.cs" />
+    <Compile Include="Utility\Threading\Continue.cs" />
+    <Compile Include="Utility\Threading\Delay.cs" />
+    <Compile Include="Utility\Threading\RunAsyn.cs" />
+    <Compile Include="Utility\Threading\RunSyn.cs" />
+    <Compile Include="Utility\Threading\TaskFromCompleted.cs" />
+    <Compile Include="Utility\Threading\TaskScheduler.cs" />
+    <Compile Include="Utility\Threading\Timer.cs" />
+    <Compile Include="Utility\Threading\Unwrap.cs" />
+    <Compile Include="Utility\Threading\Wait.cs" />
+    <Compile Include="Utility\Types\DynamicObject\CreateDynamicClass.cs" />
+    <Compile Include="Utility\Types\DynamicObject\CreateDynamicsClass.cs" />
+    <Compile Include="Utility\Types\DynamicObject\DynamicBuilder.cs" />
+    <Compile Include="Utility\Types\DynamicObject\DynamicDemo.cs" />
+    <Compile Include="Utility\Types\DynamicObject\DynamicReference.cs" />
+    <Compile Include="Utility\Types\DynamicObject\ExpandoObject.cs" />
+    <Compile Include="Utility\Types\DynamicObject\UsingDynamicType.cs" />
+    <Compile Include="Utility\Types\Generic\ConstraintTypeParams.cs" />
+    <Compile Include="Utility\Types\Generic\GenericClasses.cs" />
+    <Compile Include="Utility\Types\Generic\GenericDelegate.cs" />
+    <Compile Include="Utility\Types\Generic\GenericInterface.cs" />
+    <Compile Include="Utility\Types\Generic\GenericMethod.cs" />
+    <Compile Include="Utility\Types\Generic\TypeParams.cs" />
+    <Compile Include="Utility\Types\KeyValue.cs" />
+    <Compile Include="Utility\Types\View\Button.cs" />
+    <Compile Include="Utility\Types\View\FormWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utility\Types\View\Grid.cs" />
+    <Compile Include="Utility\Types\View\MultiViewLayer.cs" />
+    <Compile Include="Utility\Types\View\Picturebox.cs" />
+    <Compile Include="Utility\Types\View\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utility\Types\View\RoutedEventArgs.cs" />
+    <Compile Include="Utility\Types\View\ScrollView.cs" />
+    <Compile Include="Utility\Types\View\StackPanel.cs" />
+    <Compile Include="Utility\Types\View\TextBlock.cs" />
+    <Compile Include="Utility\Types\View\ToggleSwitch.cs" />
+    <Compile Include="Utility\Types\View\VisualElement.cs" />
+    <Compile Include="Utility\Drawing\DrawBezierCurve.cs" />
+    <Compile Include="Utility\Drawing\DrawCommonShape.cs" />
+    <Compile Include="Utility\Drawing\DrawPixel.cs" />
+    <Compile Include="Utility\Drawing\ImageProcess.cs" />
+    <Compile Include="SerializeInflation\Inflation.cs" />
+    <Compile Include="VideoResult.cs" />
+    <Compile Include="VideoStream.cs" />
+    <Compile Include="YouTubeScript.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\MVCASPDB.mdf" />
+    <Content Include="App_Data\MVCASPDB_log.ldf">
+      <DependentUpon>MVCASPDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="Views\Content\bootstrap.css" />
+    <Content Include="Views\Content\bootstrap.min.css" />
+    <Content Include="Views\Content\StyleSheet1.css" />
+    <Content Include="Views\CSS\StyleSheet1.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Views\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Content\Site.css" />
+    <Content Include="Views\JS\AddRemove.js" />
+    <Content Include="Views\Resource\Audios\audio.mp3" />
+    <Content Include="Views\Resource\Images\IMG_0096.PNG" />
+    <Content Include="Views\Resource\Images\IMG_0097.PNG" />
+    <Content Include="Views\Resource\Images\IMG_0098.PNG" />
+    <Content Include="Views\Resource\Images\IMG_0099.PNG" />
+    <Content Include="Views\Resource\Videos\590x90.swf" />
+    <Content Include="Views\Resource\Videos\movie.mp4" />
+    <Content Include="Views\Resource\Videos\movie1.mp4" />
+    <Content Include="Views\Scripts\bootstrap.js" />
+    <Content Include="Views\Scripts\bootstrap.min.js" />
+    <None Include="Views\Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Views\Scripts\jquery-1.10.2.js" />
+    <Content Include="Views\Scripts\jquery-1.10.2.min.js" />
+    <None Include="Views\Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Views\Scripts\jquery.validate.js" />
+    <Content Include="Views\Scripts\jquery.validate.min.js" />
+    <Content Include="Views\Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Views\Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Views\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Views\Scripts\respond.js" />
+    <Content Include="Views\Scripts\respond.min.js" />
+    <Content Include="Views\JS\static.js" />
+    <Content Include="Views\Scripts\_references.js" />
+    <Content Include="Views\Styles\static.css" />
+    <Content Include="Utility\Types\DynamicObject\DevExpress.AgDataGrid.v8.2.dll" />
+    <Content Include="Utility\Types\DynamicObject\IronPython.dll" />
+    <Content Include="Utility\Types\DynamicObject\IronPython.Modules.dll" />
+    <Content Include="Utility\Types\DynamicObject\Microsoft.Dynamic.dll" />
+    <Content Include="Utility\Types\DynamicObject\Microsoft.Scripting.dll" />
+    <Content Include="Utility\Types\DynamicObject\Microsoft.Scripting.Metadata.dll" />
+    <Content Include="Utility\Types\DynamicObject\TextFile1.txt" />
+    <Content Include="Views\Shared\StyleSheet1.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Draw\Canvas.cshtml" />
+    <Content Include="Views\Draw\DrawFromModel.cshtml" />
+    <Content Include="Views\Draw\Index.cshtml" />
+    <Content Include="Views\HelloWorld\Index.cshtml" />
+    <Content Include="Views\HelloWorld\Welcome.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Movies\Create.cshtml" />
+    <Content Include="Views\Movies\Delete.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Movies\Edit.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_Cell.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Shared\_PartialPage1.cshtml" />
+    <Content Include="Views\Shared\_ViewPage1.cshtml" />
+    <Content Include="Views\Styles\Dynamic.css.cshtml" />
+    <Content Include="Views\Table\Index.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\UploadFile\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utility\IO\Modelling\" />
+    <Folder Include="Utility\Remote\" />
+    <Folder Include="Views\Audio\" />
+    <Folder Include="Views\Video\" />
+    <Folder Include="Visualization\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Views\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Views\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Utility\AV\Audio\MainWaveGenerator.resx">
+      <DependentUpon>MainWaveGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Concurrency\AsyncExample0.resx" />
+    <EmbeddedResource Include="Utility\Concurrency\AsyncExample1.resx">
+      <DependentUpon>AsyncExample1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510200424117_Initial.resx">
+      <DependentUpon>201510200424117_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510200653419_Rating.resx">
+      <DependentUpon>201510200653419_Rating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510200710465_DataAnnotation.resx">
+      <DependentUpon>201510200710465_DataAnnotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utility\Types\View\FormWindow.resx">
+      <DependentUpon>FormWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5255</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5255/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

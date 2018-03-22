@@ -1,0 +1,675 @@
+﻿@{
+    ViewBag.Title = "Draw Page";
+}
+
+@*<link href="~/Styles/static.css" rel="stylesheet" />
+    <link href="~/Styles/dynamic.css?color=grey" rel="stylesheet" />
+    <script src="~/Scripts/static.js"></script>
+    <script src="~/Scripts/dynamicWithModel.js?message=Hallo%20world&otherParameter=My parameter value"></script>
+    <script src="~/Scripts/otherDynamic.js"></script>*@
+
+
+@*@Html.Raw(ViewBag.insertedCss)
+    @Html.Raw(ViewBag.insertedJs)*@
+
+<h2 class="dynamicCss">@ViewBag.Title</h2>
+<div id="topLayer">
+</div>
+
+<p id="myP">
+    Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to green.
+</p>
+
+
+<div style="top:0px;left:0px;width:150px;height:150px;line-height:3em;overflow:scroll;padding:5px;">
+    This 'div' element contains more content than the previous one. Because there's too much text to fit into the box, the box grows scrollbars.
+</div>
+
+<!-- HTML -->
+<div class="dropBox">
+    <div class="toolBox" id="toolBox">
+        <canvas id="toolPad" width="100" height="600"
+                style="position:absolute;border:1px solid #c3c3c3"></canvas>
+    </div>
+    <div class="myBox" id="canvasBox">
+        <canvas id="myCanvas" width="600" height="600"
+                style="position:absolute;border:1px solid #c3c3c3">
+            Your browser does not support the canvas element.
+        </canvas>
+    </div>
+</div>
+<input type="text" id="cursorX" size="3"> X-position of the mouse cursor
+<br /><br />
+<input type="text" id="cursorY" size="3"> Y-position of the mouse cursor
+
+<!-- CSS -->
+<style>
+    #textbox1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: gray;
+    }
+    /* Force scrollbars onto browser window */
+    body {
+        margin-bottom: 200%;
+    }
+
+    /* Scrollbar styles */
+    ::-webkit-scrollbar {
+        width: 12px;
+        height: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 10px olivedrab;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: yellowgreen;
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7bac10;
+        }
+
+    .dropBox {
+        position: relative;
+        display: block;
+        width: 1000px;
+        height: 800px;
+    }
+
+    .toolBox {
+        position: relative;
+        display: inline-block;
+        border: none;
+        padding: 0px;
+        font: 24px/36px sans-serif;
+        width: 100px;
+        height: 600px;
+        overflow: scroll;
+    }
+
+    .myBox {
+        position: relative;
+        display: inline-block;
+        border: none;
+        padding: 0px;
+        font: 24px/36px sans-serif;
+        width: 800px;
+        height: 600px;
+        overflow: scroll;
+clip:rect(0px,60px,60px,0px);
+    }
+</style>
+
+
+<script>
+    function House(name, rooms, price, garage) {
+        this.name = name;
+        this.rooms = rooms;
+        this.price = price;
+        this.garage = garage;
+        this.view = view;
+    }
+
+    function view() {
+        with (this) document.write(name + ' has ' + rooms + ' rooms, ' + (garage ? 'a' : 'no') + ' garage, and costs £' + price + '<BR>');
+    }
+    house1 = new House('House 1', 4, 100000, false);
+    house2 = new House('Big House', 5, 200000, true);
+    house1.view();
+    house2.view();
+
+
+    addChildElement("canvas", "myCanvas2", "canvasBox", "300", "300", "position:absolute;border:0px solid #c3c3c3;");
+    var canv2 = document.getElementById("myCanvas2");
+    canv2.style.top = "300px";
+    canv2.style.left = "300px";
+    drawBezier(canv2, 0, 0, 300, 300, 2);
+
+    function clearCanvas(_canvas) {
+        //var c = document.getElementById("myCanvas2");
+        var ctx = _canvas.getContext("2d");
+        ctx.clearRect(0, 0, _canvas.width, _canvas.height);
+    }
+
+    function drawBezier(_canvas, _beginX, _beginY, _endX, _endY, width) {
+        var beginX = Math.min(_beginX, _endX);
+        var endX = Math.max(_beginX, _endX);
+        var beginY = Math.min(_beginY, _endY);
+        var endY = Math.max(_beginY, _endY);
+        var context = _canvas.getContext('2d');
+
+        context.beginPath();
+        context.moveTo(width / 2, width / 2);
+        context.bezierCurveTo(beginX + width / 2, beginY + width / 2, (beginX - endX) / 2, (beginY - endY) / 2, endX - width / 2, endY - width / 2);
+        context.lineWidth = width;
+
+        // line color
+        context.strokeStyle = 'black';
+        context.stroke();
+    }
+
+    var canvas = document.getElementById("myCanvas");
+    drawCanvas(canvas);
+
+
+    function addChildElement(tag, id, parentId, width, height, style) {
+        var node = document.createElement(tag);
+        node.setAttribute("id", id);
+        node.setAttribute("width", width);
+        node.setAttribute("height", height);
+        node.setAttribute("style", style);
+        document.getElementById(parentId).appendChild(node);
+    }
+
+
+    var isFlicker = false;
+    var isTimeout = false;
+    var myVar = setInterval(function () { myTimer() }, 1000);
+    //  var timeOut = setTimeout(function () { isTimeout = true;}, 10000);;
+
+    function myTimer() {
+        if (isFlicker && !isTimeout) {
+            var obj = document.getElementById("myP").style;
+            obj.backgroundColor = "red";
+        } else if (!isFlicker && !isTimeout) {
+            var obj = document.getElementById("myP").style;
+            obj.backgroundColor = "green";
+        } else if (isTimeout) {
+            myStopFunction();
+        }
+        isFlicker = !isFlicker;
+    }
+
+    function myStopFunction() {
+        clearInterval(myVar);
+    }
+
+
+
+    function eventReturner() {
+        console.log("Added evtListener");
+    }
+
+    var _eventHandlers = {}; // somewhere global
+
+    function addListener(node, event, handler, capture) {
+        if (!(node in _eventHandlers)) {
+            // _eventHandlers stores references to nodes
+            _eventHandlers[node] = {};
+            console.log("node not in _evtHandler");
+        }
+        if (!(event in _eventHandlers[node])) {
+            // each entry contains another entry for each event type
+            _eventHandlers[node][event] = [];
+            console.log("event not in _evtHandler");
+        }
+        // capture reference
+        _eventHandlers[node][event].push([handler, capture]);
+        console.log(_eventHandlers);
+        node.addEventListener(event, handler, capture);
+    }
+
+    function removeAllListeners(node, event) {
+        if (node in _eventHandlers) {
+            console.log("remover-node");
+            console.log(node);
+            console.log("remover-evtHandler");
+            console.log(_eventHandlers);
+            var handlers = _eventHandlers[node];
+            console.log(handlers);
+            if (event in handlers) {
+                var eventHandlers = handlers[event];
+                for (var i = eventHandlers.length; i--;) {
+                    var handler = eventHandlers[i];
+                    console.log("remove-handler" + handler);
+                    node.removeEventListener(event, handler[0], handler[1]);
+                }
+            }
+        }
+    }
+
+    //var div = document.getElementById('myP');
+    //addListener(div, 'mousedown', eventReturner(), false);
+    // and later
+    //removeAllListeners(div, 'click');
+
+
+    var dragEv = false;
+    var xxx;
+    var yyy;
+    var pinX;
+    var pinY;
+    window.onload = init;
+    function init() {
+        //if (window.Event) {
+        //    document.captureEvents(Event.MOUSEMOVE);
+        //    document.captureEvents(Event.MOUSEUP);
+        //}
+        document.onmousemove = getCursorXY;
+        document.onmouseup = mouseOutElement;
+    }
+
+    function getCursorXY(e) {
+        //console.log(e.pageY);
+        //console.log(event.clientY);
+        //console.log(document.body.scrollTop);
+        xxx = document.getElementById('cursorX').value = (window.Event) ? e.pageX : event.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft);
+        yyy = document.getElementById('cursorY').value = (window.Event) ? e.pageY : event.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+    }
+
+
+    function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+            //x: evt.clientX - rect.left,
+            //y: evt.clientY - rect.top
+            x: evt.clientX,
+            y: evt.clientY
+        };
+    }
+
+    //document.getElementsByTagName("body")[0].addEventListener('mousemove', function (evt) {
+    //    var mousePos = getMousePos(canvas, evt);
+    //    var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+    //   console.log(message);
+    //}, false);
+
+    document.getElementById("myCanvas").addEventListener("mousedown", mouseOnElement);
+
+
+    function mouseOnElement() {
+        // window.open('http://www.htmlcodetutorial.com/linking/linking_famsupp_72.html', 'stevie', 'width=400,height=200,scrollbars=yes');
+        dragEv = true;
+        pinX = xxx;
+        pinY = yyy;
+        console.log("mousedown");
+    }
+
+    function mouseOutElement(e) {
+        //document.getElementById("myCanvas").removeEventListener("mousedown", mouseOnElement);
+        //var pop = document.getElementById("topLayer").style;
+        //pop.position = "fixed";
+        //pop.top = "0px";
+        //pop.left = "0px";
+        //pop.width = "100%";
+        //pop.height = "100%";
+        //pop.backgroundColor = "yellow";
+        //pop.opacity = 0.5;
+
+        if (dragEv) {
+            var distX = (xxx - pinX);
+            var distY = (yyy - pinY);
+
+            var _canv1 = document.getElementById("myCanvas");
+            moveElemDist(_canv1, distX, distY);
+
+            var canv1Left = _canv1.offsetLeft;
+            var canv1Top = _canv1.offsetTop;
+
+            var _canv2 = document.getElementById("myCanvas2");
+            _canv2.style.top = canv1Top + 300 + 'px';
+            _canv2.style.left = canv1Left + 300 + 'px';
+
+            //moveElemDist(_canv2, distX, distY);
+            //clearCanvas(_canv2);
+            drawBezier(_canv2, 0, 0, 300, 300, 2);
+
+            //var posCanv2 = getPosition(canv2);
+            //console.log("posCanv2 x:" + posCanv2.x);
+            //console.log("posCanv2 y:" + posCanv2.y);
+            dragEv = false;
+        }
+    }
+
+    function moveElemDist(_element, distX, distY) {
+        var offSetLeft = _element.offsetLeft;
+        var offSetTop = _element.offsetTop;
+        offSetLeft = offSetLeft + distX;
+        offSetTop = offSetTop + distY;
+        _element.style.left = offSetLeft + 'px';
+        _element.style.top = offSetTop + 'px';
+    }
+
+
+    function getPosition(el) {
+        var xPos = 0;
+        var yPos = 0;
+
+        while (el) {
+            if (el.tagName == "BODY") {
+                // deal with browser quirks with body/window/document and page scroll
+                var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+                var yScroll = el.scrollTop || document.documentElement.scrollTop;
+
+                xPos += (el.offsetLeft - xScroll + el.clientLeft);
+                yPos += (el.offsetTop - yScroll + el.clientTop);
+            } else {
+                // for all other non-BODY elements
+                xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+                yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+            }
+
+            el = el.offsetParent;
+        }
+        return {
+            x: xPos,
+            y: yPos
+        };
+    }
+
+    function getWindowRelativeOffset(parentWindow, elem) {
+        var offset = {
+            left: 0,
+            top: 0
+        };
+        // relative to the target field's document
+        offset.left = elem.getBoundingClientRect().left;
+        offset.top = elem.getBoundingClientRect().top;
+        // now we will calculate according to the current document, this current
+        // document might be same as the document of target field or it may be
+        // parent of the document of the target field
+        var childWindow = elem.document.frames.window;
+        while (childWindow != parentWindow) {
+            offset.left = offset.left + childWindow.frameElement.getBoundingClientRect().left;
+            offset.top = offset.top + childWindow.frameElement.getBoundingClientRect().top;
+            childWindow = childWindow.parent;
+        }
+
+        return offset;
+    };
+
+
+    function drawCanvas(_canvas) {
+        var ctx = _canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 150, 75);
+
+        ctx.moveTo(0, 0);
+        ctx.lineTo(200, 100);
+        ctx.stroke();
+
+        // Create gradient
+        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "white");
+
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10, 10, 150, 80);
+
+
+        var radius = 200;
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        grad = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, radius * 0.95, canvas.width / 2, canvas.height / 2, radius * 1.05);
+        // grad = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grad.addColorStop(0, '#333');
+        grad.addColorStop(0.5, 'white');
+        grad.addColorStop(1, '#333');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = radius * 0.1;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2, radius * 0.1, 0, 2 * Math.PI);
+        ctx.fillStyle = '#333';
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2 + radius, canvas.height / 2, 10, 0, 2 * Math.PI);
+        ctx.fillStyle = 'pink';
+        ctx.fill();
+
+
+        ctx.font = "10px Verdana";
+        // textAlign aligns text horizontally relative to placement
+        ctx.textAlign = 'center';
+        // textBaseline aligns text vertically relative to font style
+        ctx.textBaseline = 'middle';
+        ctx.fillStyle = 'black';
+        ctx.fillText("S", canvas.width / 2 + radius, canvas.height / 2);
+        //// get text metrics
+        //var metrics = context.measureText(text);
+        //var width = metrics.width;
+        //ctx.font = "30px Verdana";
+        //// Create gradient
+        //var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+        //gradient.addColorStop("0", "magenta");
+        //gradient.addColorStop("0.5", "blue");
+        //gradient.addColorStop("1.0", "red");
+        //// Fill with gradient
+        //ctx.fillStyle = gradient;
+        //ctx.fillText("Big smile!", 10, 90);
+
+
+
+        ctx.beginPath();
+        ctx.moveTo(20, 20);
+        ctx.bezierCurveTo(20, 100, 200, 100, 200, 20);
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(20, 20);
+        ctx.quadraticCurveTo(20, 100, 200, 20);
+        ctx.stroke();
+
+        ////Draw ellipse
+        //var centerX = 0;
+        //var centerY = 0;
+        //var radius = 50;
+
+        //// save state
+        //ctx.save();
+
+        //// translate context
+        //ctx.translate(canvas.width / 2, canvas.height / 2);
+
+        //// scale context horizontally
+        //ctx.scale(2, 1);
+
+        //// draw circle which will be stretched into an oval
+        //ctx.beginPath();
+        //ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+
+        //// restore to original state
+        //ctx.restore();
+
+        //// apply styling
+        //ctx.fillStyle = '#8ED6FF';
+        //ctx.fill();
+        //ctx.lineWidth = 5;
+        //ctx.strokeStyle = 'black';
+        //ctx.stroke();
+
+
+        //ctx.font = "30px Comic Sans MS";
+        //ctx.fillStyle = "red";
+        //ctx.textAlign = "center";
+        //ctx.fillText("Hello World", canvas.width / 2, canvas.height / 2);
+
+        //var imageObj = new Image();
+
+        //imageObj.onload = function() {
+        //    ctx.drawImage(imageObj, 69, 50);
+        //};
+        //imageObj.src = 'http://www.html5canvastutorials.com/demos/assets/darth-vader.jpg';
+
+        var rectWidth = 150;
+        var rectHeight = 75;
+
+        // translation matrix:
+        //  1  0  tx
+        //  0  1  ty
+        //  0  0  1
+        var tx = canvas.width / 2;
+        var ty = canvas.height / 2;
+
+        // apply custom transform
+        ctx.transform(1, 1, -1, 1, 0, 0);
+        //ctx.rotate(Math.PI / 4);
+        //ctx.scale(-1, -1);
+        ctx.translate(rectWidth, rectHeight);
+        ctx.fillStyle = 'blue';
+        ctx.shadowColor = '#999';
+        ctx.shadowBlur = 20;
+        ctx.shadowOffsetX = 15;
+        ctx.shadowOffsetY = 15;
+        ctx.fillRect(rectWidth / -2, rectHeight / -2, rectWidth, rectHeight);
+
+        //// begin custom shape
+        //ctx.beginPath();
+        //ctx.moveTo(170, 80);
+        //ctx.bezierCurveTo(130, 100, 130, 150, 230, 150);
+        //ctx.bezierCurveTo(250, 180, 320, 180, 340, 150);
+        //ctx.bezierCurveTo(420, 150, 420, 120, 390, 100);
+        //ctx.bezierCurveTo(430, 40, 370, 30, 340, 50);
+        //ctx.bezierCurveTo(320, 5, 250, 20, 250, 50);
+        //ctx.bezierCurveTo(200, 5, 150, 20, 170, 80);
+
+        //// complete custom shape
+        //ctx.closePath();
+        //ctx.lineWidth = 5;
+        //ctx.strokeStyle = 'blue';
+        //ctx.stroke();
+    }
+</script>
+
+<script>
+    //EventTarget.prototype.addEventListenerBase = EventTarget.prototype.addEventListener;
+    //EventTarget.prototype.addEventListener = function (type, listener) {
+    //    if (!this.EventList) { this.EventList = []; }
+    //    this.addEventListenerBase.apply(this, arguments);
+    //    if (!this.EventList[type]) { this.EventList[type] = []; }
+    //    var list = this.EventList[type];
+    //    for (var index = 0; index != list.length; index++) {
+    //        if (list[index] === listener) { return; }
+    //    }
+    //    list.push(listener);
+    //};
+
+    //EventTarget.prototype.removeEventListenerBase = EventTarget.prototype.removeEventListener;
+    //EventTarget.prototype.removeEventListener = function (type, listener) {
+    //    if (!this.EventList) { this.EventList = []; }
+    //    if (listener instanceof Function) { this.removeEventListenerBase.apply(this, arguments); }
+    //    if (!this.EventList[type]) { return; }
+    //    var list = this.EventList[type];
+    //    for (var index = 0; index != list.length;) {
+    //        var item = list[index];
+    //        if (!listener) {
+    //            this.removeEventListenerBase(type, item);
+    //            list.splice(index, 1); continue;
+    //        }
+    //        else if (item === listener) {
+    //            list.splice(index, 1); break;
+    //        }
+    //        index++;
+    //    }
+    //    if (list.length == 0) { delete this.EventList[type]; }
+    //};
+
+    //window.addEventListener("load", function () {
+    //    var elem = document.querySelector("myP");
+    //    elem.addEventListener("mousemove", function () { console.log("mousemove 1"); });
+    //    elem.addEventListener("mousemove", function () { console.log("mousemove 2"); });
+    //    elem.addEventListener("mousemove", function () { console.log("mousemove 3"); });
+    //    elem.removeEventListener("mousemove");
+    //});
+
+
+    //OtherDynamicJsFunction();
+    //DynamicJsFunction();
+    //StaticJsFunction();
+    //function StaticJsFunction() {
+    //    document.writeln("executing static JS");
+    //}
+
+    //function getPosition() {
+    //    var element = document.getElementById("aaa");
+    //    var rect = element.getBoundingClientRect();
+    //    console.log(rect.top, rect.right, rect.bottom, rect.left);
+    //    var coords = "Top: " + rect.top + ", Right: " + rect.right + ", Bottom: " + rect.bottom + ", Left: " + rect.left;
+    //    document.writeln(coords);
+    //}
+
+    //window.onscroll = function () { scrollEvent() };
+
+    //function scrollEvent() {
+    //    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50)
+    //    {
+    //        var coords = "screenLeft: " + window.screenLeft + ", screenTop: " + window.screenTop + ", Bottom: " + rect.bottom + ", Left: " + rect.left;
+    //        window.screenLeft
+    //        getPosition();
+    //    }
+
+    //}
+
+    //function StaticJsFunction() {
+    //    document.writeln("executing static JS");
+    //}
+</script>
+
+
+@*DrawCanvas*@
+<script>
+    //addChildElement("canvas", "myCanvas", "myBox", "600", "600", "position:absolute;border:10px solid #c3c3c3;");
+    //drawCanvas("myCanvas")
+
+    //addChildElement("canvas", "myCanvas1", "myBox", "200", "200", "position:absolute;border:1px solid #c3c3c3;left:200px");
+    //drawCanvas("myCanvas1")
+
+    function addChildElement(tag, id, parentId, width, height, style) {
+        var node = document.createElement(tag);
+        node.setAttribute("id", id);
+        node.setAttribute("width", width);
+        node.setAttribute("height", height);
+        node.setAttribute("style", style);
+        document.getElementById(parentId).appendChild(node);
+    }
+
+    function drawCanvas(canvasId) {
+        var canvas = document.getElementById(canvasId);
+        var ctx = canvas.getContext("2d");
+
+        var radius = 100;
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = 'gray';
+        ctx.fill();
+        grad = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, radius * 0.95, canvas.width / 2, canvas.height / 2, radius * 1.05);
+        // grad = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        grad.addColorStop(0, '#333');
+        grad.addColorStop(0.5, 'white');
+        grad.addColorStop(1, '#333');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = radius * 0.1;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(canvas.width / 2, canvas.height / 2, radius * 0.1, 0, 2 * Math.PI);
+        ctx.fillStyle = '#333';
+        ctx.fill();
+    }
+</script>
+
+@*<style>
+        #topLayer {
+        position:fixed;
+            background-color:yellow;
+            opacity:0.5;
+            top:0px;
+            left:0px;
+    width:100%;
+    height:100%;
+        }
+    </style>*@
+@*@Html.Action("Contact")*@
+

@@ -1,0 +1,11 @@
+prefix=/Users/fiona/dev/mobile/media/rtmp
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 1.0.0a
+Requires: 
+Libs: -L${libdir} -lssl -lcrypto -lz
+Cflags: -I${includedir} 

@@ -1,0 +1,87 @@
+/* Class = "UIButton"; normalTitle = "Go"; ObjectID = "5BE-hu-rtt"; */
+"5BE-hu-rtt.normalTitle" = "行こう";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "9IJ-NK-qpK"; */
+"9IJ-NK-qpK.normalTitle" = "開始";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "B8i-Ds-Xdk"; */
+"B8i-Ds-Xdk.normalTitle" = "送信する";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "BAw-80-HtO"; */
+"BAw-80-HtO.normalTitle" = "開始";
+
+/* Class = "UITextField"; text = "8088"; ObjectID = "FMo-YY-w8d"; */
+"FMo-YY-w8d.text" = "8088";
+
+/* Class = "UIButton"; normalTitle = "Time:"; ObjectID = "FtY-YJ-VGM"; */
+"FtY-YJ-VGM.normalTitle" = "時間:";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "GVv-9E-BAr"; */
+"GVv-9E-BAr.text" = "";
+
+/* Class = "UILabel"; text = "Message"; ObjectID = "NLg-Bo-sgQ"; */
+"NLg-Bo-sgQ.text" = "メッセージ";
+
+/* Class = "UITextField"; text = "Hello"; ObjectID = "Q6c-7i-qzK"; */
+"Q6c-7i-qzK.text" = "こんにちは";
+
+/* Class = "UIButton"; normalTitle = "Play"; ObjectID = "R4s-VG-Nfl"; */
+"R4s-VG-Nfl.normalTitle" = "遊びます";
+
+/* Class = "UIButton"; normalTitle = "Send"; ObjectID = "TS4-pe-Gzs"; */
+"TS4-pe-Gzs.normalTitle" = "送信";
+
+/* Class = "UITabBarItem"; title = "TCPVideoClient"; ObjectID = "VQE-zE-xG4"; */
+"VQE-zE-xG4.title" = "TCPVideoClient";
+
+/* Class = "UITabBarItem"; title = "Web Browser"; ObjectID = "WqM-2F-QWg"; */
+"WqM-2F-QWg.title" = "Web Browser";
+
+/* Class = "UITextField"; text = "192.168.43.65"; ObjectID = "bFg-Pm-ww5"; */
+"bFg-Pm-ww5.text" = "192.168.43.65";
+
+/* Class = "UITextField"; text = "192.168.43.65"; ObjectID = "bGB-xF-j09"; */
+"bGB-xF-j09.text" = "192.168.43.65";
+
+/* Class = "UITabBarItem"; title = "TCPVideoServer"; ObjectID = "cQ0-vN-ism"; */
+"cQ0-vN-ism.title" = "TCPVideoServer";
+
+/* Class = "UITabBarItem"; title = "TCPSocketVC"; ObjectID = "dUf-Y1-Rq8"; */
+"dUf-Y1-Rq8.title" = "TCPSocketVC";
+
+/* Class = "UITextField"; text = "192.168.43.163"; ObjectID = "dg8-SC-iiK"; */
+"dg8-SC-iiK.text" = "192.168.43.163";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "f6S-t1-69S"; */
+"f6S-t1-69S.text" = "住所";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "fY6-aS-Lhm"; */
+"fY6-aS-Lhm.normalTitle" = "やめる";
+
+/* Class = "UIButton"; normalTitle = "Disconnect"; ObjectID = "feH-BY-4CN"; */
+"feH-BY-4CN.normalTitle" = "切断する";
+
+/* Class = "UITextField"; text = "http://www.youtube.com/watch?v=iYhqyfF6uZk&t=585s"; ObjectID = "hxs-az-Xut"; */
+"hxs-az-Xut.text" = "http://www.youtube.com/watch?v=iYhqyfF6uZk&t=585s";
+
+/* Class = "UIButton"; normalTitle = "Connect"; ObjectID = "jZH-dX-qRs"; */
+"jZH-dX-qRs.normalTitle" = "接続する";
+
+/* Class = "UITextView"; text = "Message Received:"; ObjectID = "lFw-cH-CIj"; */
+"lFw-cH-CIj.text" = "受信したメッセージ:";
+
+/* Class = "UITextField"; text = "8089"; ObjectID = "mGL-lf-fGn"; */
+"mGL-lf-fGn.text" = "8089";
+
+/* Class = "UILabel"; text = "Host"; ObjectID = "qwX-tJ-QnY"; */
+"qwX-tJ-QnY.text" = "住所";
+
+/* Class = "UIButton"; normalTitle = "Stop"; ObjectID = "uJi-fx-OD8"; */
+"uJi-fx-OD8.normalTitle" = "やめる";
+
+/* Class = "UILabel"; text = "Disconnected"; ObjectID = "waB-Kw-dIS"; */
+"waB-Kw-dIS.text" = "切断する";
+
+/* Class = "UITextField"; text = "8088"; ObjectID = "ycZ-bu-P6h"; */
+"ycZ-bu-P6h.text" = "8088";
+

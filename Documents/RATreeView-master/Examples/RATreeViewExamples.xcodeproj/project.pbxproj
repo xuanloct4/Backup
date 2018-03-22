@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06255D751D77151D000EC7E2 /* TreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06255D741D77151D000EC7E2 /* TreeTableViewCell.swift */; };
+		06255D771D771577000EC7E2 /* TreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06255D761D771577000EC7E2 /* TreeTableViewCell.xib */; };
+		0626D65A1BF89DCB00CD3B04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0626D6591BF89DCB00CD3B04 /* main.m */; };
+		0626D6681BF89DCB00CD3B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0626D6671BF89DCB00CD3B04 /* Assets.xcassets */; };
+		0626D66B1BF89DCB00CD3B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0626D6691BF89DCB00CD3B04 /* LaunchScreen.storyboard */; };
+		0626D67C1BF89EA700CD3B04 /* RAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0626D6741BF89EA700CD3B04 /* RAAppDelegate.m */; };
+		0626D67D1BF89EA700CD3B04 /* RADataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0626D6761BF89EA700CD3B04 /* RADataObject.m */; };
+		0626D67E1BF89EA700CD3B04 /* RAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0626D6781BF89EA700CD3B04 /* RAViewController.m */; };
+		0626D67F1BF89EA700CD3B04 /* RATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0626D67A1BF89EA700CD3B04 /* RATableViewCell.m */; };
+		0626D6801BF89EA700CD3B04 /* RATableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0626D67B1BF89EA700CD3B04 /* RATableViewCell.xib */; };
+		06A30D911D6A409F00ED86C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A30D901D6A409F00ED86C3 /* AppDelegate.swift */; };
+		06A30D931D6A409F00ED86C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A30D921D6A409F00ED86C3 /* ViewController.swift */; };
+		06A30D961D6A409F00ED86C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A30D941D6A409F00ED86C3 /* Main.storyboard */; };
+		06A30D981D6A409F00ED86C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06A30D971D6A409F00ED86C3 /* Assets.xcassets */; };
+		06A30D9F1D6A4B6700ED86C3 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A30D9E1D6A4B6700ED86C3 /* DataObject.swift */; };
+		06A30DA01D6A4B6B00ED86C3 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A30D9E1D6A4B6700ED86C3 /* DataObject.swift */; };
+		06B5291A1C00D902000F1D5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B529191C00D902000F1D5B /* AppDelegate.swift */; };
+		06B529211C00D902000F1D5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B5291F1C00D902000F1D5B /* Main.storyboard */; };
+		06B529231C00D902000F1D5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B529221C00D902000F1D5B /* Assets.xcassets */; };
+		06B529261C00D902000F1D5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B529241C00D902000F1D5B /* LaunchScreen.storyboard */; };
+		06B5293A1C00D99D000F1D5B /* TreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B529391C00D99D000F1D5B /* TreeViewController.swift */; };
+		06B5296C1C01D386000F1D5B /* TreeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5296B1C01D386000F1D5B /* TreeTableViewCell.swift */; };
+		06B5296E1C01D3A6000F1D5B /* TreeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06B5296D1C01D3A6000F1D5B /* TreeTableViewCell.xib */; };
+		5122971B07BED4483AFC0C47 /* Pods_RATreeViewBasicExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8634533E132B746F5C407E94 /* Pods_RATreeViewBasicExample.framework */; };
+		84BFB5B47BC7A174BACF07FD /* Pods_RATreeViewTVExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D20B5D56B20C929E2DD1D /* Pods_RATreeViewTVExample.framework */; };
+		E4E6AF9422F4F6FE655AE098 /* Pods_RATreeViewBasicExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195B0E3679C86B329F2516A5 /* Pods_RATreeViewBasicExampleSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06255D741D77151D000EC7E2 /* TreeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableViewCell.swift; sourceTree = "<group>"; };
+		06255D761D771577000EC7E2 /* TreeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeTableViewCell.xib; sourceTree = "<group>"; };
+		0626D6561BF89DCB00CD3B04 /* RATreeViewBasicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RATreeViewBasicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0626D6591BF89DCB00CD3B04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0626D6671BF89DCB00CD3B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0626D66A1BF89DCB00CD3B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0626D66C1BF89DCB00CD3B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0626D6731BF89EA700CD3B04 /* RAAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAAppDelegate.h; sourceTree = "<group>"; };
+		0626D6741BF89EA700CD3B04 /* RAAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAAppDelegate.m; sourceTree = "<group>"; };
+		0626D6751BF89EA700CD3B04 /* RADataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADataObject.h; sourceTree = "<group>"; };
+		0626D6761BF89EA700CD3B04 /* RADataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADataObject.m; sourceTree = "<group>"; };
+		0626D6771BF89EA700CD3B04 /* RAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAViewController.h; sourceTree = "<group>"; };
+		0626D6781BF89EA700CD3B04 /* RAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = RAViewController.m; sourceTree = "<group>"; tabWidth = 2; };
+		0626D6791BF89EA700CD3B04 /* RATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATableViewCell.h; sourceTree = "<group>"; };
+		0626D67A1BF89EA700CD3B04 /* RATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATableViewCell.m; sourceTree = "<group>"; };
+		0626D67B1BF89EA700CD3B04 /* RATableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RATableViewCell.xib; sourceTree = "<group>"; };
+		06A30D8E1D6A409F00ED86C3 /* RATreeViewTVExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RATreeViewTVExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A30D901D6A409F00ED86C3 /* AppDelegate.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; tabWidth = 4; };
+		06A30D921D6A409F00ED86C3 /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; tabWidth = 4; };
+		06A30D951D6A409F00ED86C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06A30D971D6A409F00ED86C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06A30D991D6A409F00ED86C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06A30D9E1D6A4B6700ED86C3 /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
+		06B529171C00D901000F1D5B /* RATreeViewBasicExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RATreeViewBasicExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B529191C00D902000F1D5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06B529201C00D902000F1D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06B529221C00D902000F1D5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06B529251C00D902000F1D5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06B529271C00D902000F1D5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06B529391C00D99D000F1D5B /* TreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeViewController.swift; sourceTree = "<group>"; };
+		06B5296B1C01D386000F1D5B /* TreeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableViewCell.swift; sourceTree = "<group>"; };
+		06B5296D1C01D3A6000F1D5B /* TreeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeTableViewCell.xib; sourceTree = "<group>"; };
+		0AF44B9C2D6A7A0736C7F5CE /* Pods-RATreeViewBasicExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RATreeViewBasicExampleSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		195B0E3679C86B329F2516A5 /* Pods_RATreeViewBasicExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RATreeViewBasicExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48569081761F48FF1923F18D /* Pods-RATreeViewBasicExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RATreeViewBasicExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample.debug.xcconfig"; sourceTree = "<group>"; };
+		5A4FF940C29CBDD77E66C3E8 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F65BEA2E48DB08474D7586E /* Pods-RATreeViewTVExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RATreeViewTVExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8634533E132B746F5C407E94 /* Pods_RATreeViewBasicExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RATreeViewBasicExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		926D20B5D56B20C929E2DD1D /* Pods_RATreeViewTVExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RATreeViewTVExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23A2E418DAE73B2EB4CFC0D /* Pods-RATreeViewBasicExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RATreeViewBasicExampleSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		BF5AF52A0E8C5D13184A2FED /* Pods-RATreeViewTVExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RATreeViewTVExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample.release.xcconfig"; sourceTree = "<group>"; };
+		E9C3842C595BB38E57B27420 /* Pods-RATreeViewBasicExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RATreeViewBasicExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0626D6531BF89DCB00CD3B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5122971B07BED4483AFC0C47 /* Pods_RATreeViewBasicExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A30D8B1D6A409F00ED86C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BFB5B47BC7A174BACF07FD /* Pods_RATreeViewTVExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B529141C00D901000F1D5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4E6AF9422F4F6FE655AE098 /* Pods_RATreeViewBasicExampleSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0626D62B1BF89D5B00CD3B04 = {
+			isa = PBXGroup;
+			children = (
+				0626D6511BF89DB400CD3B04 /* Examples */,
+				0626D6351BF89D5B00CD3B04 /* Products */,
+				7E1E0AFE31E152FE05BD41F7 /* Frameworks */,
+				934B45367116D696C40762F8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0626D6351BF89D5B00CD3B04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0626D6561BF89DCB00CD3B04 /* RATreeViewBasicExample.app */,
+				06B529171C00D901000F1D5B /* RATreeViewBasicExampleSwift.app */,
+				06A30D8E1D6A409F00ED86C3 /* RATreeViewTVExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0626D6511BF89DB400CD3B04 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				06A30D8F1D6A409F00ED86C3 /* RATreeViewTVExample */,
+				0626D6571BF89DCB00CD3B04 /* RATreeViewBasicExample */,
+				06B529181C00D902000F1D5B /* RATreeViewBasicExampleSwift */,
+				06A30D9D1D6A4B1600ED86C3 /* Shared */,
+			);
+			name = Examples;
+			sourceTree = "<group>";
+		};
+		0626D6571BF89DCB00CD3B04 /* RATreeViewBasicExample */ = {
+			isa = PBXGroup;
+			children = (
+				0626D6731BF89EA700CD3B04 /* RAAppDelegate.h */,
+				0626D6741BF89EA700CD3B04 /* RAAppDelegate.m */,
+				0626D6751BF89EA700CD3B04 /* RADataObject.h */,
+				0626D6761BF89EA700CD3B04 /* RADataObject.m */,
+				0626D6771BF89EA700CD3B04 /* RAViewController.h */,
+				0626D6781BF89EA700CD3B04 /* RAViewController.m */,
+				0626D6791BF89EA700CD3B04 /* RATableViewCell.h */,
+				0626D67A1BF89EA700CD3B04 /* RATableViewCell.m */,
+				0626D67B1BF89EA700CD3B04 /* RATableViewCell.xib */,
+				0626D6671BF89DCB00CD3B04 /* Assets.xcassets */,
+				0626D6691BF89DCB00CD3B04 /* LaunchScreen.storyboard */,
+				0626D66C1BF89DCB00CD3B04 /* Info.plist */,
+				0626D6581BF89DCB00CD3B04 /* Supporting Files */,
+			);
+			path = RATreeViewBasicExample;
+			sourceTree = "<group>";
+		};
+		0626D6581BF89DCB00CD3B04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0626D6591BF89DCB00CD3B04 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06A30D8F1D6A409F00ED86C3 /* RATreeViewTVExample */ = {
+			isa = PBXGroup;
+			children = (
+				06A30D901D6A409F00ED86C3 /* AppDelegate.swift */,
+				06A30D921D6A409F00ED86C3 /* ViewController.swift */,
+				06255D741D77151D000EC7E2 /* TreeTableViewCell.swift */,
+				06255D761D771577000EC7E2 /* TreeTableViewCell.xib */,
+				06A30D941D6A409F00ED86C3 /* Main.storyboard */,
+				06A30D971D6A409F00ED86C3 /* Assets.xcassets */,
+				06A30D991D6A409F00ED86C3 /* Info.plist */,
+			);
+			path = RATreeViewTVExample;
+			sourceTree = "<group>";
+		};
+		06A30D9D1D6A4B1600ED86C3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				06A30D9E1D6A4B6700ED86C3 /* DataObject.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		06B529181C00D902000F1D5B /* RATreeViewBasicExampleSwift */ = {
+			isa = PBXGroup;
+			children = (
+				06B529191C00D902000F1D5B /* AppDelegate.swift */,
+				06B529391C00D99D000F1D5B /* TreeViewController.swift */,
+				06B5296B1C01D386000F1D5B /* TreeTableViewCell.swift */,
+				06B5296D1C01D3A6000F1D5B /* TreeTableViewCell.xib */,
+				06B5291F1C00D902000F1D5B /* Main.storyboard */,
+				06B529221C00D902000F1D5B /* Assets.xcassets */,
+				06B529241C00D902000F1D5B /* LaunchScreen.storyboard */,
+				06B529271C00D902000F1D5B /* Info.plist */,
+			);
+			path = RATreeViewBasicExampleSwift;
+			sourceTree = SOURCE_ROOT;
+		};
+		7E1E0AFE31E152FE05BD41F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A4FF940C29CBDD77E66C3E8 /* Pods.framework */,
+				8634533E132B746F5C407E94 /* Pods_RATreeViewBasicExample.framework */,
+				195B0E3679C86B329F2516A5 /* Pods_RATreeViewBasicExampleSwift.framework */,
+				926D20B5D56B20C929E2DD1D /* Pods_RATreeViewTVExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		934B45367116D696C40762F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48569081761F48FF1923F18D /* Pods-RATreeViewBasicExample.debug.xcconfig */,
+				E9C3842C595BB38E57B27420 /* Pods-RATreeViewBasicExample.release.xcconfig */,
+				0AF44B9C2D6A7A0736C7F5CE /* Pods-RATreeViewBasicExampleSwift.debug.xcconfig */,
+				A23A2E418DAE73B2EB4CFC0D /* Pods-RATreeViewBasicExampleSwift.release.xcconfig */,
+				6F65BEA2E48DB08474D7586E /* Pods-RATreeViewTVExample.debug.xcconfig */,
+				BF5AF52A0E8C5D13184A2FED /* Pods-RATreeViewTVExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0626D6551BF89DCB00CD3B04 /* RATreeViewBasicExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0626D66D1BF89DCB00CD3B04 /* Build configuration list for PBXNativeTarget "RATreeViewBasicExample" */;
+			buildPhases = (
+				609A9EB0890CB4A33B5223A1 /* [CP] Check Pods Manifest.lock */,
+				0626D6521BF89DCB00CD3B04 /* Sources */,
+				0626D6531BF89DCB00CD3B04 /* Frameworks */,
+				0626D6541BF89DCB00CD3B04 /* Resources */,
+				99CE48BC763FB690A0F307E6 /* [CP] Embed Pods Frameworks */,
+				D36EDCA03A965A689A3D4E5A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RATreeViewBasicExample;
+			productName = RATreeViewBasicExample;
+			productReference = 0626D6561BF89DCB00CD3B04 /* RATreeViewBasicExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06A30D8D1D6A409F00ED86C3 /* RATreeViewTVExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06A30D9C1D6A409F00ED86C3 /* Build configuration list for PBXNativeTarget "RATreeViewTVExample" */;
+			buildPhases = (
+				57B11C44ADFD65E9BDD14944 /* [CP] Check Pods Manifest.lock */,
+				06A30D8A1D6A409F00ED86C3 /* Sources */,
+				06A30D8B1D6A409F00ED86C3 /* Frameworks */,
+				06A30D8C1D6A409F00ED86C3 /* Resources */,
+				48DF3A45C9D83D69238AF2BE /* [CP] Embed Pods Frameworks */,
+				54F6A805C2587473DE5DD229 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RATreeViewTVExample;
+			productName = RATreeViewTVExample;
+			productReference = 06A30D8E1D6A409F00ED86C3 /* RATreeViewTVExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06B529161C00D901000F1D5B /* RATreeViewBasicExampleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06B529331C00D902000F1D5B /* Build configuration list for PBXNativeTarget "RATreeViewBasicExampleSwift" */;
+			buildPhases = (
+				52459F23F737CC5E8A8F7800 /* [CP] Check Pods Manifest.lock */,
+				06B529131C00D901000F1D5B /* Sources */,
+				06B529141C00D901000F1D5B /* Frameworks */,
+				06B529151C00D901000F1D5B /* Resources */,
+				5ECCCE5B2B8C00A8C11E704B /* [CP] Embed Pods Frameworks */,
+				54A666AED1323CF1A3C6752E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RATreeViewBasicExampleSwift;
+			productName = RATreeViewBasicExampleSwift;
+			productReference = 06B529171C00D901000F1D5B /* RATreeViewBasicExampleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0626D62C1BF89D5B00CD3B04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = com.Augustyniak;
+				TargetAttributes = {
+					0626D6551BF89DCB00CD3B04 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = EXR8AK87DX;
+					};
+					06A30D8D1D6A409F00ED86C3 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
+					};
+					06B529161C00D901000F1D5B = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = 0626D62F1BF89D5B00CD3B04 /* Build configuration list for PBXProject "RATreeViewExamples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0626D62B1BF89D5B00CD3B04;
+			productRefGroup = 0626D6351BF89D5B00CD3B04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0626D6551BF89DCB00CD3B04 /* RATreeViewBasicExample */,
+				06B529161C00D901000F1D5B /* RATreeViewBasicExampleSwift */,
+				06A30D8D1D6A409F00ED86C3 /* RATreeViewTVExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0626D6541BF89DCB00CD3B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0626D66B1BF89DCB00CD3B04 /* LaunchScreen.storyboard in Resources */,
+				0626D6681BF89DCB00CD3B04 /* Assets.xcassets in Resources */,
+				0626D6801BF89EA700CD3B04 /* RATableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A30D8C1D6A409F00ED86C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06255D771D771577000EC7E2 /* TreeTableViewCell.xib in Resources */,
+				06A30D981D6A409F00ED86C3 /* Assets.xcassets in Resources */,
+				06A30D961D6A409F00ED86C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B529151C00D901000F1D5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06B529261C00D902000F1D5B /* LaunchScreen.storyboard in Resources */,
+				06B5296E1C01D3A6000F1D5B /* TreeTableViewCell.xib in Resources */,
+				06B529231C00D902000F1D5B /* Assets.xcassets in Resources */,
+				06B529211C00D902000F1D5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48DF3A45C9D83D69238AF2BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52459F23F737CC5E8A8F7800 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54A666AED1323CF1A3C6752E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54F6A805C2587473DE5DD229 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewTVExample/Pods-RATreeViewTVExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57B11C44ADFD65E9BDD14944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5ECCCE5B2B8C00A8C11E704B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewBasicExampleSwift/Pods-RATreeViewBasicExampleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		609A9EB0890CB4A33B5223A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		99CE48BC763FB690A0F307E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D36EDCA03A965A689A3D4E5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RATreeViewBasicExample/Pods-RATreeViewBasicExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0626D6521BF89DCB00CD3B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0626D67F1BF89EA700CD3B04 /* RATableViewCell.m in Sources */,
+				0626D65A1BF89DCB00CD3B04 /* main.m in Sources */,
+				0626D67C1BF89EA700CD3B04 /* RAAppDelegate.m in Sources */,
+				0626D67D1BF89EA700CD3B04 /* RADataObject.m in Sources */,
+				0626D67E1BF89EA700CD3B04 /* RAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A30D8A1D6A409F00ED86C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A30D931D6A409F00ED86C3 /* ViewController.swift in Sources */,
+				06255D751D77151D000EC7E2 /* TreeTableViewCell.swift in Sources */,
+				06A30DA01D6A4B6B00ED86C3 /* DataObject.swift in Sources */,
+				06A30D911D6A409F00ED86C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06B529131C00D901000F1D5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A30D9F1D6A4B6700ED86C3 /* DataObject.swift in Sources */,
+				06B5293A1C00D99D000F1D5B /* TreeViewController.swift in Sources */,
+				06B5296C1C01D386000F1D5B /* TreeTableViewCell.swift in Sources */,
+				06B5291A1C00D902000F1D5B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0626D6691BF89DCB00CD3B04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0626D66A1BF89DCB00CD3B04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		06A30D941D6A409F00ED86C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A30D951D6A409F00ED86C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06B5291F1C00D902000F1D5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06B529201C00D902000F1D5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06B529241C00D902000F1D5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06B529251C00D902000F1D5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0626D64C1BF89D5B00CD3B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0626D64D1BF89D5B00CD3B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0626D66E1BF89DCB00CD3B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48569081761F48FF1923F18D /* Pods-RATreeViewBasicExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EXR8AK87DX;
+				INFOPLIST_FILE = RATreeViewBasicExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Augustyniak.RATreeViewBasicExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0626D66F1BF89DCB00CD3B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C3842C595BB38E57B27420 /* Pods-RATreeViewBasicExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EXR8AK87DX;
+				INFOPLIST_FILE = RATreeViewBasicExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Augustyniak.RATreeViewBasicExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06A30D9A1D6A409F00ED86C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F65BEA2E48DB08474D7586E /* Pods-RATreeViewTVExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = RATreeViewTVExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Augustyniak.RATreeViewTVExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		06A30D9B1D6A409F00ED86C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF5AF52A0E8C5D13184A2FED /* Pods-RATreeViewTVExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = RATreeViewTVExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Augustyniak.RATreeViewTVExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		06B529341C00D902000F1D5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AF44B9C2D6A7A0736C7F5CE /* Pods-RATreeViewBasicExampleSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RATreeViewBasicExampleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Augustyniak.RATreeViewBasicExampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06B529351C00D902000F1D5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A23A2E418DAE73B2EB4CFC0D /* Pods-RATreeViewBasicExampleSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RATreeViewBasicExampleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Augustyniak.RATreeViewBasicExampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0626D62F1BF89D5B00CD3B04 /* Build configuration list for PBXProject "RATreeViewExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0626D64C1BF89D5B00CD3B04 /* Debug */,
+				0626D64D1BF89D5B00CD3B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0626D66D1BF89DCB00CD3B04 /* Build configuration list for PBXNativeTarget "RATreeViewBasicExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0626D66E1BF89DCB00CD3B04 /* Debug */,
+				0626D66F1BF89DCB00CD3B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06A30D9C1D6A409F00ED86C3 /* Build configuration list for PBXNativeTarget "RATreeViewTVExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A30D9A1D6A409F00ED86C3 /* Debug */,
+				06A30D9B1D6A409F00ED86C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06B529331C00D902000F1D5B /* Build configuration list for PBXNativeTarget "RATreeViewBasicExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B529341C00D902000F1D5B /* Debug */,
+				06B529351C00D902000F1D5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0626D62C1BF89D5B00CD3B04 /* Project object */;
+}
